@@ -15,17 +15,24 @@ import { useGesture } from 'react-use-gesture'
 import clamp from 'lodash/clamp'
 
 // Pages
-import WebDev from './WebDev'
+import Advocate from './Advocate'
+import Designer from './Designer'
+import Developer from './Developer'
+import Entrepreneur from './Entrepreneur'
+import Hobbyist from './Hobbyist'
 
 // Components
 
 // Assets 
+import Logo from '../assets/logo.png'
+
 
 const pages = [
-  <WebDev />,
-  <WebDev />,
-  <WebDev />,
-  <WebDev />,
+  <Developer />,
+  <Designer />,
+  <Entrepreneur />,
+  <Advocate />,
+  <Hobbyist />
 ]
 
 export default function Landing() {
@@ -43,10 +50,15 @@ export default function Landing() {
   })
 
   return props.map(({ x, display, sc }, i) => (
-    <animated.div className="page-viewer" {...bind()} key={i} style={{ display, transform: x.interpolate(x => `translate3d(${x}px,0,0)`) }}>
-      <animated.div className="page-viewer-pages" style={{ transform: sc.interpolate(s => `scale(${s})`) }}>
-        {pages[i]}
-      </animated.div>/>
-    </animated.div>
+    <>
+      <div className="landing-logo">
+        <img src={Logo} />
+      </div>
+      <animated.div className="page-viewer" {...bind()} key={i} style={{ display, transform: x.interpolate(x => `translate3d(${x}px,0,0)`) }}>
+        <animated.div className="page-viewer-pages" style={{ transform: sc.interpolate(s => `scale(${s})`) }}>
+          {pages[i]}
+        </animated.div>
+      </animated.div>
+    </>
   ))
 }

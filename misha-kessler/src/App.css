@@ -5,10 +5,23 @@
 /********************** Resets *********************/
 
 html,
-body {
+body, 
+#root {
+  min-height: 100vh;
+  width: 100vw;
   margin: 0;
   padding: 0;
   text-align: center;
+  overflow: hidden;
+}
+
+body {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 /***************** Headers & Fonts *****************/
@@ -79,9 +92,7 @@ p, a {
 
 
 .landing {
-  user-select: none;
   position: fixed;
-  overflow: hidden;
   min-width: 100%;
   min-height: 100%;
   cursor: url('https://uploads.codesandbox.io/uploads/user/b3e56831-8b98-4fee-b941-0e27f39883ab/Ad1_-cursor.png') 25 25,
@@ -108,14 +119,100 @@ p, a {
 .landing-logo {
   display: block;
   position: fixed;
+  width: 50vw;
   top: 5vh;
-  left: 50vw;
-  margin-left: -45vw;
+  left: 25vw;
   z-index: 9;
 }
 
 .landing-logo img {
-  max-width: 90vw;
+  width: 100%;
+}
+
+.landing-advocate, .landing-designer, .landing-developer, .landing-entrepreneur, .landing-hobbyist {
+  height: 100vh;
+  padding: 23vh 10vw 10vw 10vw;
+}
+
+.landing-advocate {
+  background: 
+  linear-gradient(
+    rgba(0, 0, 0, 0.6), 
+    rgba(0, 0, 0, 0.8)
+  ),
+  url(./assets/advocate-banner.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.landing-designer {
+  background: 
+  linear-gradient(
+    rgba(0, 0, 0, 0.6), 
+    rgba(0, 0, 0, 0.8)
+  ),
+  url(./assets/designer-banner.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.landing-developer {
+  background: 
+  linear-gradient(
+    rgba(0, 0, 0, 0.6), 
+    rgba(0, 0, 0, 0.8)
+  ),
+  url(./assets/developer-banner.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.landing-entrepreneur {
+  background: 
+  linear-gradient(
+    rgba(0, 0, 0, 0.6), 
+    rgba(0, 0, 0, 0.8)
+  ),
+  url(./assets/entrepreneur-banner.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.landing-hobbyist {
+  background: 
+  linear-gradient(
+    rgba(0, 0, 0, 0.6), 
+    rgba(0, 0, 0, 0.8)
+  ),
+  url(./assets/hobbyist-banner.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.landing-titles {
+  width: 50vw;
+  margin: 0 auto;
+}
+
+.landing-titles h6 {
+  display: inline;
+  text-transform: lowercase;
+  font-size: 1em;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin: 0 10px;
+}
+
+.landing-tagline {
+  margin-top: 20vh;
+}
+
+.landing-tagline h2 {
+  font-size: 3em;
+}
+
+.landing-specialty {
+  text-align: right;
 }
 
 
@@ -135,14 +232,6 @@ p, a {
 
 
 @media all and (min-width: 1025px) {
-  .landing-logo {
-    margin-left: -25vw;
-  }
-
-  .landing-logo img {
-    max-width: 50vw;
-  }
-
   .mobile-nav {
     display: none;
   }
@@ -153,14 +242,25 @@ p, a {
   .desktop-nav {
     display: none;
   }
+
+  .landing-logo {
+    max-width: 80vw;
+    margin-left: -40vw;
+  }
 }
 
 
 @media all and (max-width: 736px) {
-
+  .landing-logo {
+    max-width: 90vw;
+    margin-left: -45vw;
+  }
 }
 
 
 @media all and (max-width: 480px) {
-  
+  .landing-logo {
+    max-width: 98vw;
+    margin-left: -49vw;
+  }
 }
