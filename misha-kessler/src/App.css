@@ -68,23 +68,23 @@ p, a {
 /****************** Accent Colors ******************/
 
 .azureish {
-  color: #e1eaed;
+  color: #eaebed;
 }
 
 .keppel {
-  color: #3dbb9f;
+  color: #00e5bb;
 }
 
 .sea {
-  color: #28afb0;
+  color: #00bac8;
 }
 
-.ming {
-  color: #3b6877;
+.navy {
+  color: #005d7a;
 }
 
 .gunmetal {
-  color: #0F1626;
+  color: rgb(18, 23, 32);
 }
 
 
@@ -116,7 +116,7 @@ p, a {
   box-shadow: 0 62.5px 125px -25px rgba(50, 50, 73, 0.5), 0 37.5px 75px -37.5px rgba(0, 0, 0, 0.6);
 }
 
-.landing-logo {
+.landing-banner {
   display: block;
   position: fixed;
   width: 50vw;
@@ -125,14 +125,16 @@ p, a {
   z-index: 9;
 }
 
-.landing-logo img {
+.landing-banner img {
   width: 100%;
 }
 
 .landing-advocate, .landing-designer, .landing-developer, .landing-entrepreneur, .landing-hobbyist {
   height: 100vh;
-  padding: 23vh 10vw 10vw 10vw;
+  padding: 20vh 8vw 8vw 8vw;
+  color: white;
 }
+
 
 .landing-advocate {
   background: 
@@ -197,8 +199,8 @@ p, a {
 .landing-titles h6 {
   display: inline;
   text-transform: lowercase;
-  font-size: 1em;
-  font-weight: 300;
+  font-size: 1.25em;
+  font-weight: 400;
   letter-spacing: 1px;
   margin: 0 10px;
 }
@@ -212,6 +214,7 @@ p, a {
 }
 
 .landing-specialty {
+  margin-top: 20vh;
   text-align: right;
 }
 
@@ -243,7 +246,7 @@ p, a {
     display: none;
   }
 
-  .landing-logo {
+  .landing-banner {
     max-width: 80vw;
     margin-left: -40vw;
   }
@@ -251,7 +254,7 @@ p, a {
 
 
 @media all and (max-width: 736px) {
-  .landing-logo {
+  .landing-banner {
     max-width: 90vw;
     margin-left: -45vw;
   }
@@ -259,7 +262,7 @@ p, a {
 
 
 @media all and (max-width: 480px) {
-  .landing-logo {
+  .landing-banner {
     max-width: 98vw;
     margin-left: -49vw;
   }

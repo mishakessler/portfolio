@@ -22,7 +22,8 @@ import Landing from './pages/Landing'
 // Components
 
 // Assets 
-import Logo from './assets/logo.png'
+import Logomark from './assets/logomark.png'
+import Banner from './assets/banner.png'
 
 import './App.css';
 

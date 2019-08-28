@@ -24,7 +24,8 @@ import Hobbyist from './Hobbyist'
 // Components
 
 // Assets 
-import Logo from '../assets/logo.png'
+import Logomark from '../assets/logomark.png'
+import Banner from '../assets/banner.png'
 
 
 const pages = [
@@ -51,8 +52,8 @@ export default function Landing() {
 
   return props.map(({ x, display, sc }, i) => (
     <>
-      <div className="landing-logo">
-        <img src={Logo} />
+      <div className="landing-banner">
+        <img src={Banner} />
       </div>
       <animated.div className="page-viewer" {...bind()} key={i} style={{ display, transform: x.interpolate(x => `translate3d(${x}px,0,0)`) }}>
         <animated.div className="page-viewer-pages" style={{ transform: sc.interpolate(s => `scale(${s})`) }}>
