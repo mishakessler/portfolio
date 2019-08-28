@@ -1,34 +1,101 @@
+/***************************************************/
+/********************** GLOBAL *********************/
+/***************************************************/
+
+/********************** Resets *********************/
+
 html,
 body {
-  overscroll-behavior-y: contain;
   margin: 0;
   padding: 0;
-  height: 100%;
-  width: 100%;
-  user-select: none;
-  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto,
-    segoe ui, arial, sans-serif;
-  position: fixed;
-  overflow: hidden;
+  text-align: center;
 }
 
-#root {
+/***************** Headers & Fonts *****************/
+
+h1 {
+  font-family: 'Lato', sans-serif;
+  font-size: 2.5em;
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+}
+
+h2 {
+  font-family: 'Lato', sans-serif;
+  font-size: 2.25em;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+}
+
+h3 {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5em;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+}
+
+h4, h5, h6 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+}
+
+p, a {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
+}
+
+
+/****************** Accent Colors ******************/
+
+.azureish {
+  color: #e1eaed;
+}
+
+.keppel {
+  color: #3dbb9f;
+}
+
+.sea {
+  color: #28afb0;
+}
+
+.ming {
+  color: #3b6877;
+}
+
+.gunmetal {
+  color: #0F1626;
+}
+
+
+/****************** Landing Page *******************/
+
+
+.landing {
+  user-select: none;
   position: fixed;
   overflow: hidden;
-  width: 100%;
-  height: 100%;
-  cursor: url('https://uploads.codesandbox.io/uploads/user/b3e56831-8b98-4fee-b941-0e27f39883ab/Ad1_-cursor.png') 39 39,
+  min-width: 100%;
+  min-height: 100%;
+  cursor: url('https://uploads.codesandbox.io/uploads/user/b3e56831-8b98-4fee-b941-0e27f39883ab/Ad1_-cursor.png') 25 25,
     auto;
 }
 
-#root > div > div {
+.page-viewer {
   position: absolute;
   width: 100vw;
   height: 100vh;
   will-change: transform;
 }
 
-#root > div > div > div {
+.page-viewer-pages {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -36,4 +103,64 @@ body {
   height: 100%;
   will-change: transform;
   box-shadow: 0 62.5px 125px -25px rgba(50, 50, 73, 0.5), 0 37.5px 75px -37.5px rgba(0, 0, 0, 0.6);
+}
+
+.landing-logo {
+  display: block;
+  position: fixed;
+  top: 5vh;
+  left: 50vw;
+  margin-left: -45vw;
+  z-index: 9;
+}
+
+.landing-logo img {
+  max-width: 90vw;
+}
+
+
+/***************************************************/
+/******************** RESPONSIVE *******************/
+/***************************************************/
+
+
+@media all and (min-width: 1200px) {
+
+}
+
+
+@media all and (max-width: 1199px) {
+
+}
+
+
+@media all and (min-width: 1025px) {
+  .landing-logo {
+    margin-left: -25vw;
+  }
+
+  .landing-logo img {
+    max-width: 50vw;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+}
+
+
+@media all and (max-width: 1024px) {
+  .desktop-nav {
+    display: none;
+  }
+}
+
+
+@media all and (max-width: 736px) {
+
+}
+
+
+@media all and (max-width: 480px) {
+  
 }

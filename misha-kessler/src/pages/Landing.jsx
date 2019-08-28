@@ -1,17 +1,31 @@
+// React
 import React, { useRef } from 'react'
+
+// React Router
+
+// React Spring
 import { useSprings, animated } from 'react-spring'
+
+// React Gesture
 import { useGesture } from 'react-use-gesture'
 
+// React Semantic
+
+// Lodash
 import clamp from 'lodash/clamp'
 
+// Pages
+import WebDev from './WebDev'
 
+// Components
+
+// Assets 
 
 const pages = [
-  'https://images.pexels.com/photos/62689/pexels-photo-62689.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-  'https://images.pexels.com/photos/296878/pexels-photo-296878.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-  'https://images.pexels.com/photos/1509428/pexels-photo-1509428.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-  'https://images.pexels.com/photos/351265/pexels-photo-351265.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-  'https://images.pexels.com/photos/924675/pexels-photo-924675.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
+  <WebDev />,
+  <WebDev />,
+  <WebDev />,
+  <WebDev />,
 ]
 
 export default function Landing() {
@@ -29,8 +43,10 @@ export default function Landing() {
   })
 
   return props.map(({ x, display, sc }, i) => (
-    <animated.div {...bind()} key={i} style={{ display, transform: x.interpolate(x => `translate3d(${x}px,0,0)`) }}>
-      <animated.div style={{ transform: sc.interpolate(s => `scale(${s})`), backgroundImage: `url(${pages[i]})` }} />
+    <animated.div className="page-viewer" {...bind()} key={i} style={{ display, transform: x.interpolate(x => `translate3d(${x}px,0,0)`) }}>
+      <animated.div className="page-viewer-pages" style={{ transform: sc.interpolate(s => `scale(${s})`) }}>
+        {pages[i]}
+      </animated.div>/>
     </animated.div>
   ))
 }

@@ -21,13 +21,21 @@ import Landing from './pages/Landing'
 
 // Components
 
+// Assets 
+import Logo from './assets/logo.png'
+
 import './App.css';
 
 
 function App() {
   return (
     <div className="app">
-      <Landing />
+      <div className="landing-logo">
+        <img src={Logo} />
+      </div>
+      <div className="landing" >
+        <Landing />
+      </div>
     </div>
   );
 }
