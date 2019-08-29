@@ -1,26 +1,60 @@
-import React from 'react';
-import logo from './logo.svg';
+// React
+import React, { Component } from 'react'
+
+// React Router
+import {
+  Link,
+  Route,
+  withRouter,
+  Switch,
+  Redirect
+} from 'react-router-dom';
+
+// React Semantic
+import {
+  Icon,
+  Button,
+} from 'semantic-ui-react'
+
+// Pages
+import Landing from './pages/Landing'
+import About from './pages/About'
+import Contact from './pages/Contact'
+import Development from './pages/Development'
+import Design from './pages/Design'
+import Entrepreneurship from './pages/Entrepreneurship'
+import Advocacy from './pages/Advocacy'
+
+// Components
+
+// Assets 
+import Logomark from './assets/logomark.png'
+import Banner from './assets/banner.png'
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Switch>
+        <Route exact path="/" component={Landing} />
+        <Route exact path="/development" render={() =>
+          <Development />} />
+        <Route path="/design" render={() =>
+          <Design />} />
+        <Route exact path="/entrepreneurship" render={() =>
+          <Entrepreneurship />} />
+        <Route path="/advocacy" render={() =>
+          <Advocacy />} />
+        <Route path="/about" render={() =>
+          <About />} />
+        <Route path="/contact" render={() =>
+          <Contact />} />
+        <Route path='/*' render={() =>
+          <Redirect to='/' />} />
+      </Switch>
     </div>
   );
 }
 
-export default App;
+export default withRouter(App);
