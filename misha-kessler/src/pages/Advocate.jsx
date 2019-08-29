@@ -29,9 +29,9 @@ export default function Advocate() {
     <div className="landing-advocate">
       <div className="landing-titles">
         <h6>Advocate</h6>
-        <h6>|</h6>
+        <span className="hide-on-mobile"><h6>|</h6></span>
         <h6>Speaker</h6>
-        <h6>|</h6>
+        <span className="hide-on-mobile"><h6>|</h6></span>
         <h6>Thought Leader</h6>
       </div>
       <div className="landing-tagline">

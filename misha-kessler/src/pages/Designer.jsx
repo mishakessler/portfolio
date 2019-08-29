@@ -29,7 +29,7 @@ export default function Designer() {
     <div className="landing-designer">
       <div className="landing-titles">
         <h6>Graphic Designer</h6>
-        <h6>|</h6>
+        <span className="hide-on-mobile"><h6>|</h6></span>
         <h6>Corporate Brand Designer</h6>
       </div>
       <div className="landing-tagline">
