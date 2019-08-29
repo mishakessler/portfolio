@@ -44,6 +44,9 @@ export default function Developer() {
       <div className="landing-specialty">
         <p>To get started, enter the site below, or <b><span className="hide-on-desktop">swipe left</span><span className="hide-on-mobile">click and drag left</span></b> to view my other roles.</p>
       </div>
+      <div className="landing-cta">
+
+      </div>
     </div>
   )
 }

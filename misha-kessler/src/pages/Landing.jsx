@@ -54,11 +54,13 @@ export default function Landing() {
       <div className="landing-banner">
         <img src={Banner} />
       </div>
-      <animated.div className="page-viewer" {...bind()} key={i} style={{ display, transform: x.interpolate(x => `translate3d(${x}px,0,0)`) }}>
-        <animated.div className="page-viewer-pages" style={{ transform: sc.interpolate(s => `scale(${s})`) }}>
-          {pages[i]}
+      <div className="page-viewer-container">
+        <animated.div className="page-viewer" {...bind()} key={i} style={{ display, transform: x.interpolate(x => `translate3d(${x}px,0,0)`) }}>
+          <animated.div className="page-viewer-pages" style={{ transform: sc.interpolate(s => `scale(${s})`) }}>
+            {pages[i]}
+          </animated.div>
         </animated.div>
-      </animated.div>
+      </div>
     </>
   ))
 }

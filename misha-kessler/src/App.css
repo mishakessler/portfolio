@@ -7,30 +7,22 @@
 html,
 body,
 .app {
-  overscroll-behavior-y: contain;
   margin: 0;
   padding: 0;
-  min-height: 100%;
-  width: 100%;
-  /* text-align: center; */
-  position: fixed;
-  overflow: hidden;
+  min-height: 100vh;
+  width: 100vw;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
-
-.app {
-  background: #000000;
+  background-color: #1f262a;
 }
 
 /***************** Headers & Fonts *****************/
 
 h1, h2, h3, h4, h5, h6 {
-  /* padding: 0; */
   margin: 0;
 }
 
@@ -95,12 +87,12 @@ p, a {
 }
 
 .gunmetal {
-  color: rgb(18, 23, 32);
+  color: #2a3439;
 }
 
 
 /***************************************************/
-/********************** PAGES **********************/
+/********************* LANDING *********************/
 /***************************************************/
 
 /****************** Landing Page *******************/
@@ -119,12 +111,19 @@ p, a {
 }
 
 /****************** Landing Views ******************/
+.page-viewer-container {
+  overscroll-behavior-y: contain;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
 
 .page-viewer {
   position: fixed;
   overflow: hidden;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
 }
 
 .page-viewer-pages {
@@ -260,6 +259,77 @@ p, a {
 .landing-specialty p {
   font-size: 1.2em;
 }
+
+/***************************************************/
+/********************** PAGES **********************/
+/***************************************************/
+
+.page {
+  max-width: 1440px;
+  margin: 50px auto;
+  padding: 25px;
+}
+
+/********************** Hero ***********************/
+
+.hero {
+  min-height: 20vh;
+  color: white;
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+.hero p {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero img {
+  max-height: 150px;
+}
+
+.landing-hero {
+  max-width: 800px;
+}
+
+/******************* Index Cards *******************/
+
+.ui.grid>* {
+  padding: 1rem;
+}
+
+.project-cards {
+  text-align: left;
+}
+
+.ui.card>.image>img, .ui.cards>.card>.image>img {
+  background: 
+  linear-gradient(
+    rgba(21, 37, 43, .1), 
+    rgb(89, 136, 153, .2)
+  ),
+  url(./assets/graphics/featured.jpg);
+  background-size: cover;
+  background-position: top center;
+}
+
+.ui.teal.ribbon.label {
+  position: absolute;
+  top: 10px;
+  z-index: 3;
+}
+
+.ui[class*="right ribbon"].label {
+  transform: translateX(-107%);
+}
+
+.ui.card:after, .ui.cards:after {
+  display: none;
+}
+
+
+/******************** Dev Page *********************/
+
 
 
 /***************************************************/
