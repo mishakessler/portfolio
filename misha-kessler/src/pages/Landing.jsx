@@ -15,11 +15,11 @@ import { useGesture } from 'react-use-gesture'
 import clamp from 'lodash/clamp'
 
 // Pages
-import Advocate from './Advocate'
-import Designer from './Designer'
-import Developer from './Developer'
-import Entrepreneur from './Entrepreneur'
-import Hobbyist from './Hobbyist'
+import Advocate from '../components/roles/Advocate'
+import Designer from '../components/roles/Designer'
+import Developer from '../components/roles/Developer'
+import Entrepreneur from '../components/roles/Entrepreneur'
+import Hobbyist from '../components/roles/Hobbyist'
 
 // Components
 

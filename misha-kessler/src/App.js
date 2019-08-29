@@ -18,6 +18,12 @@ import {
 
 // Pages
 import Landing from './pages/Landing'
+import About from './pages/About'
+import Contact from './pages/Contact'
+import Development from './pages/Development'
+import Design from './pages/Design'
+import Entrepreneurship from './pages/Entrepreneurship'
+import Advocacy from './pages/Advocacy'
 
 // Components
 
@@ -27,30 +33,26 @@ import Banner from './assets/banner.png'
 
 import './App.css';
 
-
 function App() {
   return (
     <div className="app">
-      <div className="body">
-        <Switch>
-          <Route exact path="/" component={Landing} />
-          {/* <Route exact path="/resources" render={() =>
-              <Listings listings={this.state.listings} />} />
-            <Route path="/resources/:id" render={() =>
-              <Listing />} />
-            <Route path="/articles" render={() =>
-              <Articles />} />
-            <Route exact path="/sponsors" render={() =>
-              <Sponsors sponsors={this.state.sponsors} />} />
-            <Route path="/sponsors/:id" render={() =>
-              <Sponsor />} />
-            <Route path="/directory" render={() =>
-              <Directory sponsors={this.state.sponsors} />} /> */}
-          <Route path='/*' render={() =>
-            <Redirect to='/' />} />
-        </Switch>
-      </div>
-
+      <Switch>
+        <Route exact path="/" component={Landing} />
+        <Route exact path="/development" render={() =>
+          <Development />} />
+        <Route path="/design" render={() =>
+          <Design />} />
+        <Route exact path="/entrepreneurship" render={() =>
+          <Entrepreneurship />} />
+        <Route path="/advocacy" render={() =>
+          <Advocacy />} />
+        <Route path="/about" render={() =>
+          <About />} />
+        <Route path="/contact" render={() =>
+          <Contact />} />
+        <Route path='/*' render={() =>
+          <Redirect to='/' />} />
+      </Switch>
     </div>
   );
 }
