@@ -5,15 +5,15 @@
 /********************** Resets *********************/
 
 html,
-body, 
-#root,
-.app,
-.body {
-  min-height: 100vh;
-  width: 100vw;
+body,
+.app {
+  overscroll-behavior-y: contain;
   margin: 0;
   padding: 0;
-  text-align: center;
+  min-height: 100%;
+  width: 100%;
+  /* text-align: center; */
+  position: fixed;
   overflow: hidden;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -23,10 +23,14 @@ body,
   user-select: none;
 }
 
+.app {
+  background: #000000;
+}
+
 /***************** Headers & Fonts *****************/
 
 h1, h2, h3, h4, h5, h6 {
-  padding: 0;
+  /* padding: 0; */
   margin: 0;
 }
 
@@ -68,7 +72,7 @@ h6 {
 
 p, a {
   font-family: 'Raleway', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 
@@ -101,29 +105,6 @@ p, a {
 
 /****************** Landing Page *******************/
 
-.landing {
-  position: fixed;
-  min-width: 100%;
-  min-height: 100%;
-}
-
-.page-viewer {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  will-change: transform;
-}
-
-.page-viewer-pages {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  width: 100%;
-  height: 100%;
-  will-change: transform;
-  box-shadow: 0 62.5px 125px -25px rgba(50, 50, 73, 0.5), 0 37.5px 75px -37.5px rgba(0, 0, 0, 0.6);
-}
-
 .landing-banner {
   display: block;
   position: fixed;
@@ -137,11 +118,35 @@ p, a {
   width: 100%;
 }
 
+/****************** Landing Views ******************/
+
+.page-viewer {
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.page-viewer-pages {
+  position: absolute;
+  width: calc(100vw - 20px);
+  height: calc(100vh - 20px);
+  top: 10px;
+  left: 10px;
+  border-radius: 10px;
+  will-change: transform;
+}
+
 .landing-advocate, .landing-designer, .landing-developer, .landing-entrepreneur, .landing-hobbyist {
-  height: 100vh;
-  padding: 22vh 8vw 8vw 8vw;
+  width: 100%;
+  height: 100%;
+  will-change: transform;
+  box-shadow: 0 62.5px 125px -25px rgba(50, 50, 73, 0.5), 0 37.5px 75px -37.5px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
   color: white;
 }
+
+/****************** View Images ********************/
 
 .landing-advocate {
   background: 
@@ -173,7 +178,7 @@ p, a {
   ),
   url(./assets/developer-banner-1.jpg);
   background-size: cover;
-  background-position: center center;
+  background-position: top center;
 }
 
 .landing-entrepreneur {
@@ -198,6 +203,13 @@ p, a {
   background-position: center center;
 }
 
+/****************** Landing Text *******************/
+
+.landing-titles {
+  padding: 16vh 5vw 0 5vw;
+  text-align: center;
+}
+
 .landing-titles h6 {
   display: inline;
   text-transform: lowercase;
@@ -207,8 +219,22 @@ p, a {
   margin: 0px 15px;
 }
 
+.landing-welcome {
+  position: absolute;
+  top: 21vh;
+  left: 4vw;
+  z-index: 0;
+}
+
+.landing-welcome h1 {
+  font-size: 12em;
+  font-weight: 900;
+  opacity: .1;
+}
+
 .landing-tagline {
-  margin-top: 14vh;
+  margin-top: 19vh;
+  padding: 0 13vw;
 }
 
 .landing-tagline h2 {
@@ -216,8 +242,8 @@ p, a {
 }
 
 .landing-bio {
-  margin-top: 12vh;
-  padding: 0 10vw;
+  margin-top: 5vh;
+  padding: 0 13vw;
 }
 
 .landing-bio p {
@@ -228,6 +254,11 @@ p, a {
 
 .landing-specialty {
   margin-top: 5vh;
+  padding: 0 13vw;
+}
+
+.landing-specialty p {
+  font-size: 1.2em;
 }
 
 
@@ -245,10 +276,6 @@ p, a {
   .landing-banner {
     width: 70vw;
     left: 15vw;
-  }
-
-  .landing-advocate, .landing-designer, .landing-developer, .landing-entrepreneur, .landing-hobbyist {
-    padding-top: 18vh;
   }
 }
 
@@ -278,29 +305,19 @@ p, a {
     left: 10vw;
   }
 
-  .landing-advocate, .landing-designer, .landing-developer, .landing-entrepreneur, .landing-hobbyist {
-    padding: 18vh 5vw 5vw 5vw;
-  }
-  
+  .landing-titles {
+    padding: 12vh 2vw 0 2vw;
+  }  
+
   .landing-titles h6 {
     display: block;
     text-transform: lowercase;
     font-size: 1.25em;
   }
   
-  .landing-tagline {
-    margin-top: 12vh;
-  }
-  
   .landing-tagline h2 {
     font-size: 2.5em;
   }
-
-  .landing-bio {
-    margin-top: 10vh;
-    padding: 0 5vw;
-  }
-
 }
 
 
@@ -309,10 +326,6 @@ p, a {
     width: 90vw;
     left: 5vw;
   }
-
-  .landing-advocate, .landing-designer, .landing-developer, .landing-entrepreneur, .landing-hobbyist {
-    padding: 15vh 3vw 3vw 3vw;
-  }
 }
 
 
@@ -320,9 +333,5 @@ p, a {
   .landing-banner {
     width: 98vw;
     left: 1vw;
-  }
-
-  .landing-advocate, .landing-designer, .landing-developer, .landing-entrepreneur, .landing-hobbyist {
-    padding: 14vh 4vw 4vw 4vw;
   }
 }
