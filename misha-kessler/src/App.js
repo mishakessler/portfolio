@@ -22,7 +22,8 @@ import Landing from './pages/Landing'
 // Components
 
 // Assets 
-import Logo from './assets/logo.png'
+import Logomark from './assets/logomark.png'
+import Banner from './assets/banner.png'
 
 import './App.css';
 
@@ -30,14 +31,28 @@ import './App.css';
 function App() {
   return (
     <div className="app">
-      <div className="landing-logo">
-        <img src={Logo} />
+      <div className="body">
+        <Switch>
+          <Route exact path="/" component={Landing} />
+          {/* <Route exact path="/resources" render={() =>
+              <Listings listings={this.state.listings} />} />
+            <Route path="/resources/:id" render={() =>
+              <Listing />} />
+            <Route path="/articles" render={() =>
+              <Articles />} />
+            <Route exact path="/sponsors" render={() =>
+              <Sponsors sponsors={this.state.sponsors} />} />
+            <Route path="/sponsors/:id" render={() =>
+              <Sponsor />} />
+            <Route path="/directory" render={() =>
+              <Directory sponsors={this.state.sponsors} />} /> */}
+          <Route path='/*' render={() =>
+            <Redirect to='/' />} />
+        </Switch>
       </div>
-      <div className="landing" >
-        <Landing />
-      </div>
+
     </div>
   );
 }
 
-export default App;
+export default withRouter(App);

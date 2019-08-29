@@ -5,87 +5,106 @@
 /********************** Resets *********************/
 
 html,
-body {
+body, 
+#root,
+.app,
+.body {
+  min-height: 100vh;
+  width: 100vw;
   margin: 0;
   padding: 0;
   text-align: center;
+  overflow: hidden;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 /***************** Headers & Fonts *****************/
 
-h1 {
-  font-family: 'Lato', sans-serif;
-  font-size: 2.5em;
-  font-weight: 600;
+h1, h2, h3, h4, h5, h6 {
   padding: 0;
   margin: 0;
+}
+
+h1 {
+  font-family: 'Lato', sans-serif;
+  font-size: 2.75em;
+  font-weight: 600;
 }
 
 h2 {
   font-family: 'Lato', sans-serif;
   font-size: 2.25em;
   font-weight: 500;
-  padding: 0;
-  margin: 0;
 }
 
 h3 {
   font-family: 'Lato', sans-serif;
-  font-size: 1.5em;
+  font-size: 1.75em;
   font-weight: 400;
-  padding: 0;
-  margin: 0;
 }
 
-h4, h5, h6 {
+h4 {
   font-family: 'Raleway', sans-serif;
+  font-size: 1.5em;
   font-weight: 500;
-  padding: 0;
-  margin: 0;
+}
+
+h5 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.25em;
+  font-weight: 500;
+}
+
+h6 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.1em;
+  font-weight: 500;
 }
 
 p, a {
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
-  padding: 0;
-  margin: 0;
 }
 
 
 /****************** Accent Colors ******************/
 
 .azureish {
-  color: #e1eaed;
+  color: #eaebed;
 }
 
 .keppel {
-  color: #3dbb9f;
+  color: #00e5bb;
 }
 
 .sea {
-  color: #28afb0;
+  color: #00bac8;
 }
 
-.ming {
-  color: #3b6877;
+.navy {
+  color: #005d7a;
 }
 
 .gunmetal {
-  color: #0F1626;
+  color: rgb(18, 23, 32);
 }
 
 
+/***************************************************/
+/********************** PAGES **********************/
+/***************************************************/
+
 /****************** Landing Page *******************/
 
-
 .landing {
-  user-select: none;
   position: fixed;
-  overflow: hidden;
   min-width: 100%;
   min-height: 100%;
-  cursor: url('https://uploads.codesandbox.io/uploads/user/b3e56831-8b98-4fee-b941-0e27f39883ab/Ad1_-cursor.png') 25 25,
-    auto;
 }
 
 .page-viewer {
@@ -105,17 +124,110 @@ p, a {
   box-shadow: 0 62.5px 125px -25px rgba(50, 50, 73, 0.5), 0 37.5px 75px -37.5px rgba(0, 0, 0, 0.6);
 }
 
-.landing-logo {
+.landing-banner {
   display: block;
   position: fixed;
+  width: 50vw;
   top: 5vh;
-  left: 50vw;
-  margin-left: -45vw;
+  left: 25vw;
   z-index: 9;
 }
 
-.landing-logo img {
-  max-width: 90vw;
+.landing-banner img {
+  width: 100%;
+}
+
+.landing-advocate, .landing-designer, .landing-developer, .landing-entrepreneur, .landing-hobbyist {
+  height: 100vh;
+  padding: 22vh 8vw 8vw 8vw;
+  color: white;
+}
+
+.landing-advocate {
+  background: 
+  linear-gradient(
+    rgba(0, 0, 0, 0.6), 
+    rgba(0, 0, 0, 0.9)
+  ),
+  url(./assets/advocate-banner-1.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.landing-designer {
+  background: 
+  linear-gradient(
+    rgba(0, 0, 0, 0.6), 
+    rgba(0, 0, 0, 0.9)
+  ),
+  url(./assets/designer-banner-1.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.landing-developer {
+  background: 
+  linear-gradient(
+    rgba(0, 0, 0, 0.6), 
+    rgba(0, 0, 0, 0.9)
+  ),
+  url(./assets/developer-banner-1.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.landing-entrepreneur {
+  background: 
+  linear-gradient(
+    rgba(0, 0, 0, 0.6), 
+    rgba(0, 0, 0, 0.9)
+  ),
+  url(./assets/entrepreneur-banner-1.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.landing-hobbyist {
+  background: 
+  linear-gradient(
+    rgba(0, 0, 0, 0.6), 
+    rgba(0, 0, 0, 0.9)
+  ),
+  url(./assets/hobbyist-banner-1.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.landing-titles h6 {
+  display: inline;
+  text-transform: lowercase;
+  font-size: 1.25em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 0px 15px;
+}
+
+.landing-tagline {
+  margin-top: 14vh;
+}
+
+.landing-tagline h2 {
+  font-size: 3em;
+}
+
+.landing-bio {
+  margin-top: 12vh;
+  padding: 0 10vw;
+}
+
+.landing-bio p {
+  font-size: 1.2em;
+  font-weight: 400;
+  line-height: 1.4em;
+}
+
+.landing-specialty {
+  margin-top: 5vh;
 }
 
 
@@ -130,19 +242,22 @@ p, a {
 
 
 @media all and (max-width: 1199px) {
+  .landing-banner {
+    width: 70vw;
+    left: 15vw;
+  }
 
+  .landing-advocate, .landing-designer, .landing-developer, .landing-entrepreneur, .landing-hobbyist {
+    padding-top: 18vh;
+  }
 }
 
 
 @media all and (min-width: 1025px) {
-  .landing-logo {
-    margin-left: -25vw;
+  .hide-on-desktop {
+    display: none;
   }
-
-  .landing-logo img {
-    max-width: 50vw;
-  }
-
+  
   .mobile-nav {
     display: none;
   }
@@ -150,17 +265,64 @@ p, a {
 
 
 @media all and (max-width: 1024px) {
+  .hide-on-mobile {
+    display: none;
+  }
+  
   .desktop-nav {
     display: none;
   }
+
+  .landing-banner {
+    width: 80vw;
+    left: 10vw;
+  }
+
+  .landing-advocate, .landing-designer, .landing-developer, .landing-entrepreneur, .landing-hobbyist {
+    padding: 18vh 5vw 5vw 5vw;
+  }
+  
+  .landing-titles h6 {
+    display: block;
+    text-transform: lowercase;
+    font-size: 1.25em;
+  }
+  
+  .landing-tagline {
+    margin-top: 12vh;
+  }
+  
+  .landing-tagline h2 {
+    font-size: 2.5em;
+  }
+
+  .landing-bio {
+    margin-top: 10vh;
+    padding: 0 5vw;
+  }
+
 }
 
 
 @media all and (max-width: 736px) {
+  .landing-banner {
+    width: 90vw;
+    left: 5vw;
+  }
 
+  .landing-advocate, .landing-designer, .landing-developer, .landing-entrepreneur, .landing-hobbyist {
+    padding: 15vh 3vw 3vw 3vw;
+  }
 }
 
 
 @media all and (max-width: 480px) {
-  
+  .landing-banner {
+    width: 98vw;
+    left: 1vw;
+  }
+
+  .landing-advocate, .landing-designer, .landing-developer, .landing-entrepreneur, .landing-hobbyist {
+    padding: 14vh 4vw 4vw 4vw;
+  }
 }
