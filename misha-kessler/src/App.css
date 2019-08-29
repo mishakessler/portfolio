@@ -154,7 +154,7 @@ p, a {
     rgba(0, 0, 0, 0.6), 
     rgba(0, 0, 0, 0.9)
   ),
-  url(./assets/advocate-banner-1.jpg);
+  url(./assets/images/advocate-banner-1.jpg);
   background-size: cover;
   background-position: center center;
 }
@@ -165,7 +165,7 @@ p, a {
     rgba(0, 0, 0, 0.6), 
     rgba(0, 0, 0, 0.9)
   ),
-  url(./assets/designer-banner-1.jpg);
+  url(./assets/images/designer-banner-1.jpg);
   background-size: cover;
   background-position: center center;
 }
@@ -176,7 +176,7 @@ p, a {
     rgba(0, 0, 0, 0.6), 
     rgba(0, 0, 0, 0.9)
   ),
-  url(./assets/developer-banner-1.jpg);
+  url(./assets/images/developer-banner-1.jpg);
   background-size: cover;
   background-position: top center;
 }
@@ -187,7 +187,7 @@ p, a {
     rgba(0, 0, 0, 0.6), 
     rgba(0, 0, 0, 0.9)
   ),
-  url(./assets/entrepreneur-banner-1.jpg);
+  url(./assets/images/entrepreneur-banner-1.jpg);
   background-size: cover;
   background-position: center center;
 }
@@ -198,7 +198,7 @@ p, a {
     rgba(0, 0, 0, 0.6), 
     rgba(0, 0, 0, 0.9)
   ),
-  url(./assets/hobbyist-banner-1.jpg);
+  url(./assets/images/hobbyist-banner-1.jpg);
   background-size: cover;
   background-position: center center;
 }
