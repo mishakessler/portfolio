@@ -24,8 +24,7 @@ import Hobbyist from '../components/roles/Hobbyist'
 // Components
 
 // Assets 
-import Logomark from '../assets/logomark.png'
-import Banner from '../assets/banner.png'
+import Banner from '../assets/graphics/banner.png'
 
 
 const pages = [

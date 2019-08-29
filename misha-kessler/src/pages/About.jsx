@@ -1,6 +1,5 @@
 // React
-import React from 'react'
-
+import React, { Component } from 'react'
 // React Router
 import {
   Link,
@@ -26,12 +25,15 @@ import {
 // Assets 
 
 
-function About() {
-  return (
-    <div className="page about-page">
-      <h1>The About Page</h1>
-    </div>
-  )
+class About extends Component {
+  render() {
+    return (
+      <div className="page about-page">
+        <h1>The About Page</h1>
+      </div>
+    )
+  }
 }
 
 export default withRouter(About)
+

@@ -1,5 +1,5 @@
 // React
-import React from 'react'
+import React, { Component } from 'react'
 
 // React Router
 import {
@@ -26,12 +26,15 @@ import {
 // Assets 
 
 
-function Entrepreneurship() {
-  return (
-    <div className="page entrepreneurship-page">
-      <h1>The Entrepreneurship Page</h1>
-    </div>
-  )
+class Entrepreneurship extends Component {
+  render() {
+    return (
+      <div className="page entrepreneurship-page">
+        <h1>The Entrepreneurship Page</h1>
+      </div>
+    )
+  }
 }
+
 
 export default withRouter(Entrepreneurship)

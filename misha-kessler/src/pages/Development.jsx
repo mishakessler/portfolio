@@ -1,5 +1,5 @@
 // React
-import React from 'react'
+import React, { Component } from 'react'
 
 // React Router
 import {
@@ -26,12 +26,15 @@ import {
 // Assets 
 
 
-function Development() {
-  return (
-    <div className="page development-page">
-      <h1>The Development Page</h1>
-    </div>
-  )
+class Development extends Component {
+  render() {
+    return (
+      <div className="page development-page">
+        <h1>The Development Page</h1>
+      </div>
+    )
+  }
 }
+
 
 export default withRouter(Development)
