@@ -28,12 +28,12 @@ export default function Designer() {
   return (
     <div className="landing-designer">
       <div className="landing-titles">
-        <h6>Graphic Designer</h6>
+        <h6>UI/UX Designer</h6>
         <span className="hide-on-mobile"><h6>|</h6></span>
-        <h6>Corporate Brand Designer</h6>
+        <h6>Graphic Designer</h6>
       </div>
       <div className="landing-tagline">
-        <h2>I design and deliver meaningful, professional brand idendities.</h2>
+        <h2>I deliver meaningful, consistent, and user-friendly brand idendities across all platforms and print media.</h2>
       </div>
     </div>
   )

@@ -32,7 +32,7 @@ export default function Entrepreneur() {
         <h6>Social Innovation Entrepreneur</h6>
       </div>
       <div className="landing-tagline">
-        <h2>I conceive, design, and develop sustainably-sourced and -funded mental health tech.</h2>
+        <h2>I conceive, design, and develop sustainably-funded, socially-responsible mental health tech.</h2>
       </div>
     </div>
   )
