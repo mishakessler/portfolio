@@ -6,23 +6,11 @@ import {
   Link
 } from 'react-router-dom'
 
-// React Spring
-
-// React Gesture
-
 // React Semantic
 import {
   Button,
   Icon
 } from 'semantic-ui-react'
-
-// Lodash
-
-// Pages
-
-// Components
-
-// Assets 
 
 export default function Designer() {
   return (
@@ -32,7 +20,7 @@ export default function Designer() {
         <span className="hide-on-mobile"><h6>|</h6></span>
         <h6>Graphic Designer</h6>
       </div>
-      <div className="landing-tagline">
+      <div className="landing-tagline shaded-text">
         <h2>I deliver meaningful, consistent, and user-friendly brand idendities across all platforms and print media.</h2>
       </div>
     </div>

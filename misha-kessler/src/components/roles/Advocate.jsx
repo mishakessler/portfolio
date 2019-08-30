@@ -6,23 +6,11 @@ import {
   Link
 } from 'react-router-dom'
 
-// React Spring
-
-// React Gesture
-
 // React Semantic
 import {
   Button,
   Icon
 } from 'semantic-ui-react'
-
-// Lodash
-
-// Pages
-
-// Components
-
-// Assets 
 
 export default function Advocate() {
   return (
@@ -34,7 +22,7 @@ export default function Advocate() {
         <span className="hide-on-mobile"><h6>|</h6></span>
         <h6>Thought Leader</h6>
       </div>
-      <div className="landing-tagline">
+      <div className="landing-tagline shaded-text">
         <h2>I use my experiences and knowledge to advocate for mental health and suicide prevention.</h2>
       </div>
     </div>

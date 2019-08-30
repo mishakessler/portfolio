@@ -31,7 +31,7 @@ export default function Hobbyist() {
         <h5>Hmm... didn't think you'd swipe this far.</h5>
         <h5>So I guess you want to know more?</h5>
       </div>
-      <div className="landing-tagline">
+      <div className="landing-tagline shaded-text">
         <h2>I'm a pretty avid traveler, trekker, and cyclist.</h2>
         <br></br>
         <h2>I've also been called a plant daddy, a coffee addict, an Apple cultist, and even an Instagram "micro-influencer."</h2>
