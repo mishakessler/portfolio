@@ -1,5 +1,5 @@
 // React
-import React from 'react'
+import React, { Component } from 'react'
 
 // React Router
 import {
@@ -7,31 +7,28 @@ import {
   withRouter
 } from 'react-router-dom'
 
-// React Spring
-
-// React Gesture
-
 // React Semantic
 import {
   Button,
   Icon
 } from 'semantic-ui-react'
 
-// Lodash
-
-// Pages
-
 // Components
+import Header from '../components/modules/Header'
+import Hero from '../components/modules/Hero'
+import Footer from '../components/modules/Footer'
 
 // Assets 
 
-
-function Advocacy() {
-  return (
-    <div className="page advocacy-page">
-      <h1>The Advocacy Page</h1>
-    </div>
-  )
+class Advocacy extends Component {
+  render() {
+    return (
+      <div className="page advocacy-page">
+        <h1>The Advocacy Page</h1>
+      </div>
+    )
+  }
 }
 
 export default withRouter(Advocacy)
+
