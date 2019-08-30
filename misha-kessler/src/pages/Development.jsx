@@ -9,7 +9,6 @@ import {
 
 // React Semantic
 import {
-  Header,
   Label,
   Grid,
   Card,
@@ -20,9 +19,9 @@ import {
 } from 'semantic-ui-react'
 
 // Components
+import Header from '../components/modules/Header'
 import Hero from '../components/modules/Hero'
-
-// Pages
+import Footer from '../components/modules/Footer'
 
 // Assets 
 import Websites from '../assets/projects/Projects'
@@ -32,6 +31,11 @@ class Development extends Component {
     super(props)
 
     this.state = {
+      title: null,
+      tagline: "",
+      description: "I'm a dedicated and agile developer and entrepreneur with over seven years of experience finding creative solutions to pressing issues in the mental and behavioral health space. Results-driven, attentive, and built on a growth mindset, I'm constantly challenging myself to master new technical skills and design high-quality resources that improve the consumer experience.",
+      helper: null,
+
       projects: Websites,
     }
   }
@@ -39,13 +43,22 @@ class Development extends Component {
   render() {
     return (
       <div className="page development-page">
-        <Hero />
+
+        <Hero
+          className="development-hero"
+          type={this.state.type}
+          title={this.state.title}
+          tagline={this.state.tagline}
+          description={this.state.description}
+          helper={this.state.helper}
+        />
         <div className="index project-index">
           <Grid stackable centered columns={2}>
             {this.state.projects.map(project =>
               <div key={project.id} className="project-cards">
                 <Grid.Column>
                   <Card
+                    href={`/projects/${project.id}`}
                     color='teal'
                     className='smooth'
                   >
@@ -53,7 +66,8 @@ class Development extends Component {
                       <Label
                         as='a'
                         color='teal'
-                        ribbon='right'>
+                        ribbon='right'
+                        className="smooth">
                         {project.category} {project.type}
                       </Label>
                     }
@@ -76,7 +90,8 @@ class Development extends Component {
                         <a>
                           <Icon
                             size='big'
-                            name='html5' />
+                            name='html5'
+                            className="smooth" />
                           {project.html}
                         </a>
                       }
@@ -84,7 +99,8 @@ class Development extends Component {
                         <a>
                           <Icon
                             size='big'
-                            name='css' />
+                            name='css'
+                            className="smooth" />
                           {project.css}
                         </a>
                       }

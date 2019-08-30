@@ -7,21 +7,16 @@ import {
   withRouter
 } from 'react-router-dom'
 
-// React Spring
-
-// React Gesture
-
 // React Semantic
 import {
   Button,
   Icon
 } from 'semantic-ui-react'
 
-// Lodash
-
-// Pages
-
 // Components
+import Header from '../components/modules/Header'
+import Hero from '../components/modules/Hero'
+import Footer from '../components/modules/Footer'
 
 // Assets 
 

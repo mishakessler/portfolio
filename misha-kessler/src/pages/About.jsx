@@ -1,14 +1,11 @@
 // React
 import React, { Component } from 'react'
+
 // React Router
 import {
   Link,
   withRouter
 } from 'react-router-dom'
-
-// React Spring
-
-// React Gesture
 
 // React Semantic
 import {
@@ -16,11 +13,10 @@ import {
   Icon
 } from 'semantic-ui-react'
 
-// Lodash
-
-// Pages
-
 // Components
+import Header from '../components/modules/Header'
+import Hero from '../components/modules/Hero'
+import Footer from '../components/modules/Footer'
 
 // Assets 
 
