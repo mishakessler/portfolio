@@ -62,16 +62,32 @@ class Development extends Component {
                     color='teal'
                     className='smooth'
                   >
-                    {project.type &&
+                    {project.post_type &&
                       <Label
                         as='a'
                         color='teal'
                         ribbon='right'
                         className="smooth">
-                        {project.category} {project.type}
+                        {project.post_type}
                       </Label>
                     }
-                    <Image src={project.url_to_img} className="overlay" wrapped ui={true} />
+                    {project.featured &&
+                      <Image
+                        src={project.url_to_img}
+                        label={{
+                          as: 'a',
+                          corner: 'left',
+                          icon: 'star'
+                        }}
+                        wrapped ui={true}
+                        className="overlay"
+                      />}
+                    {!project.featured &&
+                      <Image
+                        src={project.url_to_img}
+                        wrapped ui={true}
+                        className="overlay"
+                      />}
                     <Card.Content>
                       <Card.Header>{project.name}</Card.Header>
                       <Card.Meta>
