@@ -17,7 +17,7 @@ body,
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: #1f262a;
+  /* background-color: #1f262a; */
 }
 
 
