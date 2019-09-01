@@ -17,7 +17,7 @@ body,
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: #1f262a;
+  /* background-color: #1f262a; */
 }
 
 
@@ -27,51 +27,25 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
-h1 {
-  font-family: 'Lato', sans-serif;
-  /* font-size: 2.75em;
-  font-weight: 600; */
-}
-
-h2 {
-  font-family: 'Lato', sans-serif;
-  /* font-size: 2.25em;
-  font-weight: 500; */
-}
-
-h3 {
-  font-family: 'Lato', sans-serif;
-  /* font-size: 1.75em;
-  font-weight: 400; */
-}
-
-h4 {
+h1, h2, h3 {
   font-family: 'Raleway', sans-serif;
-  /* font-size: 1.5em;
-  font-weight: 500; */
 }
 
-h5 {
-  font-family: 'Raleway', sans-serif;
-  /* font-size: 1.25em;
-  font-weight: 500; */
+h4, h5 {
+  font-family: 'Lato', sans-serif;
 }
 
 h6 {
-  font-family: 'Raleway', sans-serif;
-  /* font-size: 1.1em;
-  font-weight: 500; */
+  font-family: 'Rock Salt', 'Lato', sans-serif;
 }
 
 p, a {
-  font-family: 'Raleway', sans-serif;
-  /* font-weight: 400; */
+  font-family: 'Quattrocento Sans', sans-serif;
 }
 
-a:hover {
+a :hover {
   color: #00bac8;
 }
-
 
 /****************** Accent Colors ******************/
 
@@ -217,7 +191,7 @@ a:hover {
 .landing-entrepreneur, .entrepreneurship-page  {
   background: 
   linear-gradient(
-    rgba(0, 0, 0, 0.6), 
+    rgba(0, 0, 0, 0.7), 
     rgba(0, 0, 0, 0.9)
   ),
   url(./assets/images/entrepreneur-banner-1.jpg);
@@ -243,7 +217,7 @@ a:hover {
   text-align: center;
 }
 
-.landing-titles h6 {
+.landing-titles h5 {
   display: inline;
   text-transform: lowercase;
   font-size: 1.25em;
@@ -266,41 +240,85 @@ a:hover {
 }
 
 .landing-welcome h1:hover {
-  opacity: .7;
+  opacity: .6;
 }
 
 .landing-tagline {
-  margin-top: 17vh;
+  margin-top: 18vh;
   padding: 0 13vw;
-  font-weight: lighter;
 }
 
 .landing-tagline h2 {
-  font-size: 3em;
+  font-size: 2.8em;
   margin-bottom: 25px;
-  font-weight: lighter;
+  font-weight: 400;
 }
 
 .landing-name {
-  font-weight: 600;
+  font-weight: 700;
 }
-
+/* 
 .landing-get-started {
   position: absolute;
-  top: 66vh;
+  top: 76vh;
   left: 4vw;
   right: 4vw;
   z-index: 0;
 }
 
 .landing-get-started p {
-  font-size: 1.8em;
+  font-size: 1.5em;
   opacity: .2;
 }
 
 .landing-get-started p:hover {
+  opacity: .7;
+}
+ */
+
+/****************** Landing CTAs *******************/
+
+.ctas {
+  position: absolute;
+  height: 5vh;
+  width: 100%;
+  bottom: 5vh;
+  text-align: center;
+}
+
+.enter-cta {
+  position: absolute;
+  width: 28%;
+  left: 36%;
+  bottom: 0;
+}
+
+.left-cta, .right-cta {
+  position: absolute;
+  bottom: 1vh;
+}
+
+.right-cta {
+  right: 5vw;
+}
+
+.left-cta {
+  left: 5vw;
+}
+
+.enter-cta a {
+  font-size: 1.5em; 
+}
+
+.right-cta h6, .left-cta h6 {
+  font-size: 1.05em;
+  opacity: .2;
+}
+
+.right-cta h6:hover, .left-cta h6:hover {
   opacity: .8;
 }
+
 
 /***************************************************/
 /********************** PAGES **********************/
@@ -351,6 +369,7 @@ a:hover {
   url(./assets/graphics/featured.jpg);
   background-size: cover;
   background-position: top center;
+  min-height: 175px;
 }
 
 .ui.teal.ribbon.label {
@@ -360,13 +379,21 @@ a:hover {
 }
 
 .ui[class*="right ribbon"].label {
-  transform: translateX(-107%);
+  transform: translateX(-113%);
 }
 
 .ui.card:after, .ui.cards:after {
   display: none;
 }
 
+.ui-button-icon:hover {
+  color: unset;
+}
+
+.ui.buttons:not(.basic):not(.inverted)>.button, .ui.buttons>.ui.button:not(.basic):not(.inverted) {
+  margin-left: 1px;
+  margin-right: 1px;
+}
 
 /******************** Dev Page *********************/
 
@@ -411,7 +438,7 @@ a:hover {
     padding: 12vh 2vw 0 2vw;
   }  
 
-  .landing-titles h6 {
+  .landing-titles h5 {
     display: block;
     text-transform: lowercase;
     font-size: 1.25em;
