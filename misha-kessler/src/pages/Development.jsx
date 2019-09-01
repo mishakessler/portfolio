@@ -105,14 +105,6 @@ class Development extends Component {
                     </Card.Content>
                     <Card.Content extra>
                       <p>At a glance:</p>
-                      {project.markdown &&
-                        <a>
-                          <Icon
-                            size='big'
-                            name='markdown'
-                            className="smooth" />
-                        </a>
-                      }
                       {project.wordpress &&
                         <a>
                           <Icon
@@ -189,7 +181,7 @@ class Development extends Component {
                         <a>
                           <Icon
                             size='big'
-                            name=''
+                            name='server'
                             className="smooth" />
                         </a>
                       }
@@ -197,7 +189,7 @@ class Development extends Component {
                         <a>
                           <Icon
                             size='big'
-                            name=''
+                            name='server'
                             className="smooth" />
                         </a>
                       }
@@ -213,7 +205,17 @@ class Development extends Component {
                         <a>
                           <Icon
                             size='big'
-                            name=''
+                            name='subway'
+                            className="smooth" />
+                        </a>
+                      }
+                    </Card.Content>
+                    <Card.Content extra>
+                      {project.adobe &&
+                        <a>
+                          <Icon
+                            size='big'
+                            name='adobe'
                             className="smooth" />
                         </a>
                       }
@@ -230,8 +232,7 @@ class Development extends Component {
                           <Icon
                             size='big'
                             name='universal access'
-                            className="smooth"
-                            alt='Universal Access' />
+                            className="smooth" />
                         </a>
                       }
                     </Card.Content>
