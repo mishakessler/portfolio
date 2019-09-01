@@ -27,7 +27,8 @@ const Websites = [
     postgresql: false,
     ruby: false,
     rails: false,
-    github: false,
+    plug: true,
+    package: true,
     responsive: true,
     accessible: true,
   }, {
@@ -40,7 +41,7 @@ const Websites = [
     category: 'Full Stack', // Concept, Front End, Full Stack
     progress: 'MVP', // R&D, MVP, Post-MVP, Private Beta, Live
     url_to_img: '',
-    url_to_demo: 'https://beta.crisisinternational.org',
+    url_to_demo: 'https://crisis-international.surge.sh',
     url_to_github: 'https://github.com/mishakessler/ga-sei-project4',
     url_to_casestudy: '/projects/crisis-international',
     adobe: true,
@@ -50,16 +51,18 @@ const Websites = [
     php: false,
     javascript: true,
     jquery: false,
-    nodejs: false,
+    nodejs: true,
     expressjs: false,
     reactjs: true,
     mysql: false,
     postgresql: false,
     ruby: false,
     rails: true,
-    github: true,
+    plug: true,
+    package: true,
     responsive: true,
     accessible: true,
+
   },
 ]
 
