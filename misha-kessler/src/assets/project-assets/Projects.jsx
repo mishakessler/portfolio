@@ -6,13 +6,10 @@ const Websites = [
     name: 'Crisis International',
     meta: 'WordPress',
     tagline: 'A premium, customized WordPress site for individuals in need of crisis intervention resources.',
-    post_type: 'Case Study',
-    // Case Study, Preview
-    category: 'Front End',
-    // Concept, Front End, Full Stack
-    progress: 'Private Beta',
-    // R&D, MVP, Post-MVP, Private Beta, Live
-    url_to_img: 'https://imgur.com/ZtLFzFJ.png',
+    post_type: 'Case Study', // Case Study, Preview
+    category: 'Front End', // Concept, Front End, Full Stack
+    progress: 'Private Beta', // R&D, MVP, Post-MVP, Private Beta, Live
+    url_to_img: '',
     url_to_demo: 'https://beta.crisisinternational.org',
     url_to_github: null,
     url_to_casestudy: '/projects/crisis-international',
@@ -32,22 +29,21 @@ const Websites = [
     rails: false,
     github: false,
     responsive: true,
+    accessible: true,
   }, {
     id: 2,
     featured: true,
     name: 'Crisis International Enterprise',
     meta: 'React on Rails',
     tagline: 'A full stack enterprise solution for social services agencies and professionals.',
-    post_type: 'Case Study',
-    // Case Study, Preview
-    category: 'Full Stack',
-    // Concept, Front End, Full Stack
-    progress: 'MVP',
-    // R&D, MVP, Post-MVP, Private Beta, Live
-    url_to_img: 'https://imgur.com/ZtLFzFJ.png',
-    url_to_demo: 'http://crisis-international.surge.sh',
+    post_type: 'Case Study', // Case Study, Preview
+    category: 'Full Stack', // Concept, Front End, Full Stack
+    progress: 'MVP', // R&D, MVP, Post-MVP, Private Beta, Live
+    url_to_img: '',
+    url_to_demo: 'https://beta.crisisinternational.org',
     url_to_github: 'https://github.com/mishakessler/ga-sei-project4',
     url_to_casestudy: '/projects/crisis-international',
+    adobe: true,
     wordpress: false,
     html: true,
     css: true,
@@ -61,8 +57,9 @@ const Websites = [
     postgresql: false,
     ruby: false,
     rails: true,
-    github: false,
+    github: true,
     responsive: true,
+    accessible: true,
   },
 ]
 

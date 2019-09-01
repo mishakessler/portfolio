@@ -24,7 +24,7 @@ import Hero from '../components/modules/Hero'
 import Footer from '../components/modules/Footer'
 
 // Assets 
-import Websites from '../assets/projects/Projects'
+import Websites from '../assets/project-assets/Projects'
 
 class Development extends Component {
   constructor(props) {
@@ -62,7 +62,7 @@ class Development extends Component {
                     color='teal'
                     className='smooth'
                   >
-                    {project.post_type &&
+                    {project.category &&
                       <Label
                         as='a'
                         color='teal'
@@ -101,6 +101,14 @@ class Development extends Component {
                     </Card.Content>
                     <Card.Content extra>
                       <p>At a glance:</p>
+                      {project.markdown &&
+                        <a>
+                          <Icon
+                            size='big'
+                            name='markdown'
+                            className="smooth" />
+                        </a>
+                      }
                       {project.wordpress &&
                         <a>
                           <Icon
@@ -238,6 +246,7 @@ class Development extends Component {
                     {project.url_to_demo &&
                       <Button
                         href={project.url_to_demo}
+                        target='_blank'
                         color='teal'
                         className='smooth'
                         icon={{
@@ -249,6 +258,7 @@ class Development extends Component {
                     {project.url_to_github &&
                       <Button
                         href={project.url_to_github}
+                        target='_blank'
                         color='teal'
                         className='smooth'
                         icon={{
