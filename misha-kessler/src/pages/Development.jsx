@@ -32,11 +32,10 @@ class Development extends Component {
     super(props)
 
     this.state = {
-      title: null,
+      title: "Featured Work",
       tagline: "",
       description: "I'm a dedicated and agile developer and entrepreneur with over seven years of experience finding creative solutions to pressing issues in the mental and behavioral health space. Results-driven, attentive, and built on a growth mindset, I'm constantly challenging myself to master new technical skills and design high-quality resources that improve the consumer experience.",
       helper: `Be sure to check out the icon key if you're unsure what they refer to!`,
-
       projects: Websites,
     }
   }
@@ -44,6 +43,7 @@ class Development extends Component {
   render() {
     return (
       <div className="page development-page">
+        <Header />
         <Hero
           className="development-hero"
           type={this.state.type}
@@ -52,9 +52,6 @@ class Development extends Component {
           description={this.state.description}
           helper={this.state.helper}
         />
-        <div className='key-modal'>
-          <Key />
-        </div>
         <div className="index project-index">
           <Grid stackable centered columns={2}>
             {this.state.projects.map(project =>
@@ -157,7 +154,7 @@ class Development extends Component {
                         <a>
                           <Icon
                             size='big'
-                            name='node-js'
+                            name='node js'
                             className="smooth" />
                         </a>
                       }
@@ -211,14 +208,6 @@ class Development extends Component {
                       }
                     </Card.Content>
                     <Card.Content extra>
-                      {project.adobe &&
-                        <a>
-                          <Icon
-                            size='big'
-                            name='adobe'
-                            className="smooth" />
-                        </a>
-                      }
                       {project.responsive &&
                         <a>
                           <Icon
@@ -232,6 +221,14 @@ class Development extends Component {
                           <Icon
                             size='big'
                             name='universal access'
+                            className="smooth" />
+                        </a>
+                      }
+                      {project.adobe &&
+                        <a>
+                          <Icon
+                            size='big'
+                            name='adobe'
                             className="smooth" />
                         </a>
                       }
@@ -279,6 +276,10 @@ class Development extends Component {
             )}
           </Grid >
         </div>
+        <div className='key-modal'>
+          <Key />
+        </div>
+        <Footer />
       </div>
     )
   }
