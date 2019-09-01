@@ -28,8 +28,7 @@ export default function Hobbyist() {
   return (
     <div className="landing-hobbyist">
       <div className="landing-titles">
-        <h5>Hmm... didn't think you'd swipe this far.</h5>
-        <h5>So I guess you want to know more?</h5>
+        <h5>Hmm... didn't think you'd swipe this far. I guess you want to know more?</h5>
       </div>
       <div className="landing-tagline shaded-text">
         <h2>I'm a pretty avid traveler, trekker, and cyclist.</h2>

@@ -43,7 +43,6 @@ class Development extends Component {
   render() {
     return (
       <div className="page development-page">
-
         <Hero
           className="development-hero"
           type={this.state.type}
@@ -58,7 +57,8 @@ class Development extends Component {
               <div key={project.id} className="project-cards">
                 <Grid.Column>
                   <Card
-                    href={`/projects/${project.id}`}
+                    attached
+                    href='#'
                     color='teal'
                     className='smooth'
                   >
@@ -68,7 +68,7 @@ class Development extends Component {
                         color='teal'
                         ribbon='right'
                         className="smooth">
-                        {project.post_type}
+                        {project.category}
                       </Label>
                     }
                     {project.featured &&
@@ -92,7 +92,6 @@ class Development extends Component {
                       <Card.Header>{project.name}</Card.Header>
                       <Card.Meta>
                         <a>
-                          <Icon name='map marker alternate' />
                           {project.meta}
                         </a>
                       </Card.Meta>
@@ -102,26 +101,163 @@ class Development extends Component {
                     </Card.Content>
                     <Card.Content extra>
                       <p>At a glance:</p>
+                      {project.wordpress &&
+                        <a>
+                          <Icon
+                            size='big'
+                            name='wordpress'
+                            className="smooth" />
+                        </a>
+                      }
                       {project.html &&
                         <a>
                           <Icon
                             size='big'
                             name='html5'
                             className="smooth" />
-                          {project.html}
                         </a>
                       }
                       {project.css &&
                         <a>
                           <Icon
                             size='big'
-                            name='css'
+                            name='css3'
                             className="smooth" />
-                          {project.css}
+                        </a>
+                      }
+                      {project.php &&
+                        <a>
+                          <Icon
+                            size='big'
+                            name='php'
+                            className="smooth" />
+                        </a>
+                      }
+                      {project.javascript &&
+                        <a>
+                          <Icon
+                            size='big'
+                            name='js square'
+                            className="smooth" />
+                        </a>
+                      }
+                      {project.jquery &&
+                        <a>
+                          <Icon
+                            size='big'
+                            name=''
+                            className="smooth" />
+                        </a>
+                      }
+                      {project.nodejs &&
+                        <a>
+                          <Icon
+                            size='big'
+                            name='node-js'
+                            className="smooth" />
+                        </a>
+                      }
+                      {project.expressjs &&
+                        <a>
+                          <Icon
+                            size='big'
+                            name=''
+                            className="smooth" />
+                        </a>
+                      }
+                      {project.reactjs &&
+                        <a>
+                          <Icon
+                            size='big'
+                            name='react'
+                            className="smooth" />
+                        </a>
+                      }
+                      {project.mysql &&
+                        <a>
+                          <Icon
+                            size='big'
+                            name=''
+                            className="smooth" />
+                        </a>
+                      }
+                      {project.postgresql &&
+                        <a>
+                          <Icon
+                            size='big'
+                            name=''
+                            className="smooth" />
+                        </a>
+                      }
+                      {project.ruby &&
+                        <a>
+                          <Icon
+                            size='big'
+                            name='gem'
+                            className="smooth" />
+                        </a>
+                      }
+                      {project.rails &&
+                        <a>
+                          <Icon
+                            size='big'
+                            name=''
+                            className="smooth" />
+                        </a>
+                      }
+                      {project.responsive &&
+                        <a>
+                          <Icon
+                            size='big'
+                            name='mobile-alt'
+                            className="smooth" />
+                        </a>
+                      }
+                      {project.responsive &&
+                        <a>
+                          <Icon
+                            size='big'
+                            name='phone-laptop'
+                            className="smooth" />
                         </a>
                       }
                     </Card.Content>
                   </Card>
+                  <Button.Group attached='bottom'>
+                    {project.url_to_casestudy &&
+                      <Button
+                        href={project.url_to_casestudy}
+                        color='teal'
+                        className='smooth'
+                        icon={{
+                          name: 'search',
+                          size: 'large',
+                          className: 'ui-button-icon',
+                        }}
+                      />}
+                    {project.url_to_demo &&
+                      <Button
+                        href={project.url_to_demo}
+                        color='teal'
+                        className='smooth'
+                        icon={{
+                          name: 'globe',
+                          size: 'large',
+                          className: 'ui-button-icon',
+                        }}
+                      />}
+                    {project.url_to_github &&
+                      <Button
+                        href={project.url_to_github}
+                        color='teal'
+                        className='smooth'
+                        icon={{
+                          name: 'github',
+                          size: 'large',
+                          className: 'ui-button-icon',
+                        }}
+                      />}
+                  </Button.Group>
                 </Grid.Column>
               </div>
             )}

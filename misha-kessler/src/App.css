@@ -43,10 +43,9 @@ p, a {
   font-family: 'Quattrocento Sans', sans-serif;
 }
 
-a:hover {
+a :hover {
   color: #00bac8;
 }
-
 
 /****************** Accent Colors ******************/
 
@@ -192,7 +191,7 @@ a:hover {
 .landing-entrepreneur, .entrepreneurship-page  {
   background: 
   linear-gradient(
-    rgba(0, 0, 0, 0.6), 
+    rgba(0, 0, 0, 0.7), 
     rgba(0, 0, 0, 0.9)
   ),
   url(./assets/images/entrepreneur-banner-1.jpg);
@@ -370,6 +369,7 @@ a:hover {
   url(./assets/graphics/featured.jpg);
   background-size: cover;
   background-position: top center;
+  min-height: 175px;
 }
 
 .ui.teal.ribbon.label {
@@ -379,13 +379,21 @@ a:hover {
 }
 
 .ui[class*="right ribbon"].label {
-  transform: translateX(-107%);
+  transform: translateX(-113%);
 }
 
 .ui.card:after, .ui.cards:after {
   display: none;
 }
 
+.ui-button-icon:hover {
+  color: unset;
+}
+
+.ui.buttons:not(.basic):not(.inverted)>.button, .ui.buttons>.ui.button:not(.basic):not(.inverted) {
+  margin-left: 1px;
+  margin-right: 1px;
+}
 
 /******************** Dev Page *********************/
 

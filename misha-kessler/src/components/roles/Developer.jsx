@@ -35,7 +35,7 @@ export default function Developer() {
           <Button
             basic
             inverted
-            content='View Portfolio'
+            content='View Website Portfolio'
             href='/development'
             labelPosition='right'
             className='smooth'
