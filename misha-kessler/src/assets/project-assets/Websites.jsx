@@ -11,7 +11,7 @@ const Websites = [
     category: 'Full Stack', // Concept, Front End, Full Stack
     progress: 'MVP', // R&D, MVP, Post-MVP, Private Beta, Live
 
-    url_to_img: '',
+    url_to_img: 'https://imgur.com/HApw990.png',
     url_to_demo: 'https://crisis-international.surge.sh',
     url_to_github: 'https://github.com/mishakessler/ga-sei-project4',
     url_to_casestudy: '/projects/crisis-international',
@@ -30,6 +30,7 @@ const Websites = [
     postgresql: false,
     ruby: false,
     rails: true,
+    auth: true,
     adobe: true,
     responsive: true,
     accessible: true,
@@ -65,6 +66,7 @@ const Websites = [
     postgresql: false,
     ruby: false,
     rails: false,
+    auth: false,
     adobe: true,
     responsive: true,
     accessible: true,

@@ -13,4 +13,4 @@ const Advocacies = [
   }
 ]
 
-export default Designs
+export default Advocacies
