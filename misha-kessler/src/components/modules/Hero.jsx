@@ -8,7 +8,7 @@ export default function Hero(props) {
       <img src={props.image} />
       <h3>{props.tagline}</h3>
       <p>{props.description}</p>
-      <p><em>{props.helper}</em></p>
+      <p>{props.helper}</p>
     </div>
   )
 }

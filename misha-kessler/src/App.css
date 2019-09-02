@@ -20,7 +20,6 @@ body,
   /* background-color: #1f262a; */
 }
 
-
 /***************** Headers & Fonts *****************/
 
 h1, h2, h3, h4, h5, h6 {
@@ -396,14 +395,13 @@ a :hover {
 
 .footer {
   max-width: 1020px;
-  padding-bottom: 20px;
   margin: 50px auto 0 auto;
   color: white;
   text-align: center;
 }
 
 .footer-nav {
-  margin: 10px auto;
+  margin: 25px auto;
 }
 
 .footer-nav a {
@@ -418,11 +416,11 @@ a :hover {
 }
 
 .footer-socials {
-  margin: 15px auto;
 }
 
 .footer-info {
-  margin: 15px auto;
+  max-width: 920px;
+  margin: 25px auto;
 }
 
 
@@ -441,7 +439,7 @@ a :hover {
 }
 
 .body {
-  min-height: 50vh;
+  min-height: 45vh;
 }
 
 /********************** Hero ***********************/
@@ -459,7 +457,7 @@ a :hover {
 
 .hero p {
   max-width: 920px;
-  margin: 0 auto;
+  margin: 20px auto;
   font-size: 1.1em;
 }
 
@@ -514,9 +512,8 @@ a :hover {
 }
 
 .key-modal {
-  position: fixed;
-  right: 5vw;
-  bottom: 5vh;
+  margin-top: 50px;
+  text-align: center;
 }
 
 /***************************************************/
