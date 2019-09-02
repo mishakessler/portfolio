@@ -5,7 +5,7 @@ export default function Hero(props) {
   return (
     <div className="hero">
       <h1>{props.title}</h1>
-      <img src={props.image} />
+      {/* <img src={props.image} /> */}
       <h3>{props.tagline}</h3>
       <p>{props.description}</p>
       <p>{props.helper}</p>
