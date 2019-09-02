@@ -97,6 +97,18 @@ a :hover {
   -webkit-transition: ease-in-out .3s;
 }
 
+/**************** Page Transitions *****************/
+
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in-out;
+}
+
 /***************************************************/
 /********************* LANDING *********************/
 /***************************************************/
@@ -115,7 +127,6 @@ a :hover {
 .landing-lettermark img {
   width: 100%;
 }
-
 
 /****************** Landing Views ******************/
 
@@ -177,7 +188,7 @@ a :hover {
   background-position: center center;
 }
 
-.landing-developer, .development-page, .about-page, .contact-page   {
+.landing-developer, .development-page, .about-page, .contact-page, .error-page   {
   background: 
   linear-gradient(
     rgba(0, 0, 0, 0.6), 

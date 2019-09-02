@@ -3,7 +3,6 @@ import React, { Component } from 'react'
 
 // React Router
 import {
-  Link,
   withRouter
 } from 'react-router-dom'
 
@@ -16,32 +15,29 @@ import {
 // Components
 import Header from '../components/modules/Header'
 import Hero from '../components/modules/Hero'
-import Key from '../components/modules/Key'
 import Footer from '../components/modules/Footer'
 
 // Assets 
-// import Advocacies from '../assets/project-assets/advocacies'
 
-class Advocacy extends Component {
+class About extends Component {
   constructor(props) {
     super(props)
 
     this.state = {
-      title: "Featured Advocacy",
+      title: "Page Not Found",
       image: 'https://imgur.com/',
-      tagline: "",
-      description: "",
+      tagline: "404 Error",
+      description: "Uh-oh! We got lost somewhere along the way. That said, getting lost is a great opportunity to explore...",
       helper: "",
-      // projects: Advocacies,
     }
   }
 
   render() {
     return (
-      <div className="page advocacy-page">
+      <div className="page error-page">
         <Header />
         <Hero
-          className="advocacy-hero"
+          className="error-hero"
           image={this.state.image}
           type={this.state.type}
           title={this.state.title}
@@ -49,12 +45,8 @@ class Advocacy extends Component {
           description={this.state.description}
           helper={this.state.helper}
         />
-        <div className="body advocacy-body">
-          <div className="index advocacy-index">
-          </div>
-          <div className='key-modal'>
-            <Key />
-          </div>
+        <div className="body error-body">
+
         </div>
         <Footer />
       </div>
@@ -62,5 +54,5 @@ class Advocacy extends Component {
   }
 }
 
-export default withRouter(Advocacy)
+export default withRouter(About)
 
