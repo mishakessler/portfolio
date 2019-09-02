@@ -1,15 +1,9 @@
 // React
 import React from 'react'
 
-// React Router
-import {
-  Link
-} from 'react-router-dom'
-
 // React Semantic
 import {
   Button,
-  Icon
 } from 'semantic-ui-react'
 
 export default function Developer() {

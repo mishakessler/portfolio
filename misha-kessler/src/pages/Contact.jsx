@@ -20,12 +20,36 @@ import Footer from '../components/modules/Footer'
 
 // Assets 
 
-
 class Contact extends Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      title: "Get In Touch",
+      image: 'https://imgur.com/',
+      tagline: "",
+      description: "",
+      helper: "",
+    }
+  }
+
   render() {
     return (
       <div className="page contact-page">
-        <h1>The Contact Page</h1>
+        <Header />
+        <Hero
+          className="contact-hero"
+          image={this.state.image}
+          type={this.state.type}
+          title={this.state.title}
+          tagline={this.state.tagline}
+          description={this.state.description}
+          helper={this.state.helper}
+        />
+        <div className="body contact-body">
+
+        </div>
+        <Footer />
       </div>
     )
   }

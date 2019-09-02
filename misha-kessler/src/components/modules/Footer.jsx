@@ -12,6 +12,7 @@ import {
 
 // React Semantic
 import {
+  Divider,
   Button,
   Icon
 } from 'semantic-ui-react'
@@ -28,7 +29,22 @@ import {
 export default function Footer() {
   return (
     <div className="footer">
+      <Divider />
+      <div className="footer-nav">
+        <Link to="/" className="smooth">Home</Link>
+        <Link to="/development" className="smooth">Development</Link>
+        <Link to="/design" className="smooth">Design</Link>
+        <Link to="/entrepreneurship" className="smooth">Entrepreneurship</Link>
+        <Link to="/advocacy" className="smooth">Advocacy</Link>
+        <Link to="/about" className="smooth">About</Link>
+        <Link to="/contact" className="smooth">Contact</Link>
+      </div>
+      <div className="footer-info">
+        <p>This portfolio was conceived, designed, and developed by Misha Kessler using React.</p>
+      </div>
+      <div className="footer-socials">
 
+      </div>
     </div>
   )
 }
