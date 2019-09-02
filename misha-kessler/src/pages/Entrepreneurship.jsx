@@ -48,11 +48,13 @@ class Entrepreneurship extends Component {
           description={this.state.description}
           helper={this.state.helper}
         />
-        <div className="index entrepreneurship-index">
+        <div className="body entrepreneurship-body">
+          <div className="index entrepreneurship-index">
 
-        </div>
-        <div className='key-modal'>
-          <Key />
+          </div>
+          <div className='key-modal'>
+            <Key />
+          </div>
         </div>
         <Footer />
       </div>

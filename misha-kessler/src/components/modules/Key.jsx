@@ -63,6 +63,9 @@ const Key = () => (
         </Grid.Column>
         <Grid.Column>
           <Header>Miscellaneous</Header>
+          <p><Icon name='search' /> View Case Study</p>
+          <p><Icon name='globe' /> View Live Site</p>
+          <p><Icon name='github' /> View Github Repo</p>
           <p><Icon name='mobile alt' /> Responsive</p>
           <p><Icon name='universal access' /> Accessible</p>
           <p><Icon name='apple' /> macOS</p>
@@ -70,7 +73,6 @@ const Key = () => (
           <p><Icon name='codepen' /> CodePen</p>
           <p><Icon name='stack overflow' /> StackOverflow</p>
           <p><Icon name='slack' /> Slack</p>
-
         </Grid.Column>
       </Grid>
     </Modal.Content>

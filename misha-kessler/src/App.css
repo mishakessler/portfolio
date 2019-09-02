@@ -429,6 +429,10 @@ a :hover {
   overflow-x: hidden;
 }
 
+.body {
+  min-height: 50vh;
+}
+
 /********************** Hero ***********************/
 
 .hero {
@@ -450,10 +454,6 @@ a :hover {
 
 /******************* Index Pages *******************/
 
-.index {
-  min-height: 50vh;
-}
-
 .ui.grid>* {
   padding: 1rem;
 }
@@ -461,6 +461,11 @@ a :hover {
 .project-cards {
   text-align: left;
 }
+
+/* .ui.teal.card.disable {
+  pointer-events: none;
+  cursor: default;
+} */
 
 .ui.card>.image>img, .ui.cards>.card>.image>img {
   background: 

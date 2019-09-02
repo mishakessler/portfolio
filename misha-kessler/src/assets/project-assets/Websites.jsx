@@ -4,12 +4,12 @@ const Websites = [
     featured: true,
 
     name: 'Crisis International',
+    date: 'May 2019',
     meta: 'WordPress',
     tagline: 'A premium, customized WordPress site for individuals in need of crisis intervention resources.',
 
-    category: 'Front End', // Concept, Front End, Full Stack
-    progress: 'Private Beta', // R&D, MVP, Post-MVP, Private Beta, Live
-
+    category: 'front end', // Concept, Front End, Full Stack
+    progress: 'private beta', // R&D, MVP, Post-MVP, Private Beta, Live
     url_to_img: '',
     url_to_demo: 'https://beta.crisisinternational.org',
     url_to_github: null,
@@ -37,10 +37,11 @@ const Websites = [
     featured: true,
 
     name: 'Crisis International Enterprise',
+    date: 'Aug 2019',
     meta: 'React on Rails',
     tagline: 'A full stack enterprise solution for social services agencies and professionals.',
 
-    category: 'Full Stack', // Concept, Front End, Full Stack
+    category: 'full stack', // Concept, Front End, Full Stack
     progress: 'MVP', // R&D, MVP, Post-MVP, Private Beta, Live
 
     url_to_img: '',
