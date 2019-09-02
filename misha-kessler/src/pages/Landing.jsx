@@ -1,15 +1,11 @@
 // React
 import React, { useRef } from 'react'
 
-// React Router
-
 // React Spring
 import { useSprings, animated } from 'react-spring'
 
 // React Gesture
 import { useGesture } from 'react-use-gesture'
-
-// React Semantic
 
 // Lodash
 import clamp from 'lodash/clamp'
@@ -21,11 +17,8 @@ import Developer from '../components/roles/Developer'
 import Entrepreneur from '../components/roles/Entrepreneur'
 import Hobbyist from '../components/roles/Hobbyist'
 
-// Components
-
 // Assets 
-import Logomark from '../assets/logomark.png'
-import Banner from '../assets/banner.png'
+import Lettermark from '../assets/graphics/lettermark-white.png'
 
 
 const pages = [
@@ -52,14 +45,16 @@ export default function Landing() {
 
   return props.map(({ x, display, sc }, i) => (
     <>
-      <div className="landing-banner">
-        <img src={Banner} />
+      <div className="landing-lettermark">
+        <img src={Lettermark} />
       </div>
-      <animated.div className="page-viewer" {...bind()} key={i} style={{ display, transform: x.interpolate(x => `translate3d(${x}px,0,0)`) }}>
-        <animated.div className="page-viewer-pages" style={{ transform: sc.interpolate(s => `scale(${s})`) }}>
-          {pages[i]}
+      <div className="page-viewer-container">
+        <animated.div className="page-viewer" {...bind()} key={i} style={{ display, transform: x.interpolate(x => `translate3d(${x}px,0,0)`) }}>
+          <animated.div className="page-viewer-pages" style={{ transform: sc.interpolate(s => `scale(${s})`) }}>
+            {pages[i]}
+          </animated.div>
         </animated.div>
-      </animated.div>
+      </div>
     </>
   ))
 }

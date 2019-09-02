@@ -28,8 +28,6 @@ import Advocacy from './pages/Advocacy'
 // Components
 
 // Assets 
-import Logomark from './assets/logomark.png'
-import Banner from './assets/banner.png'
 
 import './App.css';
 
