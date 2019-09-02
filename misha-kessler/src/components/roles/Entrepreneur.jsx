@@ -1,14 +1,25 @@
 // React
 import React from 'react'
 
+// React Router
+import {
+  Link
+} from 'react-router-dom'
+
 // React Semantic
 import {
   Button,
 } from 'semantic-ui-react'
 
+// Assets 
+import Lettermark from '../../assets/graphics/lettermark-white.png'
+
 export default function Entrepreneur() {
   return (
     <div className="landing-entrepreneur">
+      <div className="landing-lettermark">
+        <img src={Lettermark} />
+      </div>
       <div className="landing-titles">
         <h5>Social Innovation Entrepreneur</h5>
       </div>
@@ -21,17 +32,18 @@ export default function Entrepreneur() {
             <span className="hide-on-desktop">swipe</span><span className="hide-on-mobile">click & drag</span> right for design</h6>
         </div>
         <div className="enter-cta">
-          <Button
-            basic
-            inverted
-            content='View Entrepreneurship'
-            href='/entrepreneurship'
-            labelPosition='right'
-            className='smooth'
-            icon={{
-              name: 'chevron down',
-            }}
-          />
+          <Link to="/entrepreneurship" className="smooth">
+            <Button
+              basic
+              inverted
+              content='View Entrepreneurship'
+              labelPosition='right'
+              className='smooth'
+              icon={{
+                name: 'chevron down',
+              }}
+            />
+          </Link>
         </div>
         <div className="right-cta">
           <h6 className="smooth">

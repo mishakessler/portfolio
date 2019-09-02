@@ -1,9 +1,15 @@
 // React
 import React from 'react'
 
+// Assets 
+import Lettermark from '../../assets/graphics/lettermark-white.png'
+
 export default function Hobbyist() {
   return (
     <div className="landing-hobbyist">
+      <div className="landing-lettermark">
+        <img src={Lettermark} />
+      </div>
       <div className="landing-titles">
         <h5>Hmm... didn't think you'd swipe this far. I guess you want to know more?</h5>
       </div>

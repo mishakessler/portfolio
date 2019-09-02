@@ -42,6 +42,7 @@ const Key = () => (
           <p><Icon name='server' /> PostgreSQL</p>
           <p><Icon name='gem' /> Ruby</p>
           <p><Icon name='subway' /> Rails</p>
+          <p><Icon name='key' /> Authentication</p>
         </Grid.Column>
         <Grid.Column>
           <Header>Design</Header>

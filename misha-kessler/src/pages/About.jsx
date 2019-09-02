@@ -24,10 +24,10 @@ class About extends Component {
     super(props)
 
     this.state = {
-      title: "About Me",
-      image: 'https://imgur.com/',
-      tagline: "",
-      description: "",
+      title: "Hey there, I'm Misha.",
+      image: null,
+      tagline: "And as you've probably noticed, I've worn many hats in my career.",
+      description: "I'm a dedicated and agile developer and entrepreneur with over seven years of experience finding creative solutions to pressing issues in the mental and behavioral health space. Results-driven, attentive, and built on a growth mindset, I'm constantly challenging myself to master new technical skills and design high-quality resources that improve the consumer experience.",
       helper: "",
     }
   }

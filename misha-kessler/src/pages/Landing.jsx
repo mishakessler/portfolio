@@ -18,7 +18,6 @@ import Entrepreneur from '../components/roles/Entrepreneur'
 import Hobbyist from '../components/roles/Hobbyist'
 
 // Assets 
-import Lettermark from '../assets/graphics/lettermark.png'
 
 const pages = [
   <Developer />,
@@ -43,17 +42,12 @@ export default function Landing() {
   })
 
   return props.map(({ x, display, sc }, i) => (
-    <>
-      <div className="landing-lettermark">
-        <img src={Lettermark} />
-      </div>
-      <div className="page-viewer-container">
-        <animated.div className="page-viewer" {...bind()} key={i} style={{ display, transform: x.interpolate(x => `translate3d(${x}px,0,0)`) }}>
-          <animated.div className="page-viewer-pages" style={{ transform: sc.interpolate(s => `scale(${s})`) }}>
-            {pages[i]}
-          </animated.div>
+    <div className="page-viewer-container">
+      <animated.div className="page-viewer" {...bind()} key={i} style={{ display, transform: x.interpolate(x => `translate3d(${x}px,0,0)`) }}>
+        <animated.div className="page-viewer-pages" style={{ transform: sc.interpolate(s => `scale(${s})`) }}>
+          {pages[i]}
         </animated.div>
-      </div>
-    </>
+      </animated.div>
+    </div>
   ))
 }
