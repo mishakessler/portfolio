@@ -13,7 +13,7 @@ import {
 } from 'semantic-ui-react'
 
 // Assets
-import Logo from '../../assets/graphics/lettermark-white.png'
+import Lettermark from '../../assets/graphics/lettermark.png'
 
 export default class Header extends React.Component {
   constructor(props) {
@@ -43,14 +43,15 @@ export default class Header extends React.Component {
     return (
       <div className="page-header">
         <div className="header-logo">
-          <Link to="/"><img src={Logo}></img></Link>
+          <Link to="/"><img src={Lettermark}></img></Link>
         </div>
         <div className="desktop-nav hide-on-mobile">
           <Link to="/development" className="smooth">Development</Link>
           <Link to="/design" className="smooth">Design</Link>
-          <Link to="/Entrepreneurship" className="smooth">Entrepreneurship</Link>
-          <Link to="/Advocacy" className="smooth">Advocacy</Link>
-          <Link to="/Contact" className="menu-cta smooth">Contact</Link>
+          <Link to="/entrepreneurship" className="smooth">Entrepreneurship</Link>
+          <Link to="/advocacy" className="smooth">Advocacy</Link>
+          <Link to="/about" className="smooth">About</Link>
+          <Link to="/contact" className="menu-cta smooth">Contact</Link>
         </div>
         <div className="mobile-nav hide-on-desktop">
           {!this.state.menuDiv &&
@@ -77,9 +78,10 @@ export default class Header extends React.Component {
               </Button>
               <Link to="/development" className="smooth">Development</Link>
               <Link to="/design" className="smooth">Design</Link>
-              <Link to="/Entrepreneurship" className="smooth">Entrepreneurship</Link>
-              <Link to="/Advocacy" className="smooth">Advocacy</Link>
-              <Link to="/Contact" className="smooth">Contact</Link>
+              <Link to="/entrepreneurship" className="smooth">Entrepreneurship</Link>
+              <Link to="/advocacy" className="smooth">Advocacy</Link>
+              <Link to="/about" className="smooth">About</Link>
+              <Link to="/contact" className="menu-cta smooth">Contact</Link>
             </div>
           }
         </div>

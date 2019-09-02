@@ -18,8 +18,7 @@ import Entrepreneur from '../components/roles/Entrepreneur'
 import Hobbyist from '../components/roles/Hobbyist'
 
 // Assets 
-import Lettermark from '../assets/graphics/lettermark-white.png'
-
+import Lettermark from '../assets/graphics/lettermark.png'
 
 const pages = [
   <Developer />,

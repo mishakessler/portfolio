@@ -3,7 +3,6 @@ import React, { Component } from 'react'
 
 // React Router
 import {
-  Link,
   withRouter
 } from 'react-router-dom'
 
@@ -15,7 +14,6 @@ import {
   Icon,
   Image,
   Button,
-  Modal
 } from 'semantic-ui-react'
 
 // Components
@@ -25,14 +23,15 @@ import Key from '../components/modules/Key'
 import Footer from '../components/modules/Footer'
 
 // Assets 
-import Websites from '../assets/project-assets/Projects'
+import Websites from '../assets/project-assets/Websites'
 
 class Development extends Component {
   constructor(props) {
     super(props)
 
     this.state = {
-      title: "Featured Work",
+      title: "Featured Websites",
+      image: 'https://imgur.com/',
       tagline: "",
       description: "I'm a dedicated and agile developer and entrepreneur with over seven years of experience finding creative solutions to pressing issues in the mental and behavioral health space. Results-driven, attentive, and built on a growth mindset, I'm constantly challenging myself to master new technical skills and design high-quality resources that improve the consumer experience.",
       helper: `Be sure to check out the icon key if you're unsure what they refer to!`,
