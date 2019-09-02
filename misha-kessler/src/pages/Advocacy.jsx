@@ -16,15 +16,48 @@ import {
 // Components
 import Header from '../components/modules/Header'
 import Hero from '../components/modules/Hero'
+import Key from '../components/modules/Key'
 import Footer from '../components/modules/Footer'
 
 // Assets 
+// import Advocacies from '../assets/project-assets/advocacies'
+
 
 class Advocacy extends Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      title: "Featured Advocacy",
+      image: 'https://imgur.com/',
+      tagline: "",
+      description: "",
+      helper: "",
+      // projects: Advocacies,
+    }
+  }
+
   render() {
     return (
       <div className="page advocacy-page">
-        <h1>The Advocacy Page</h1>
+        <Header />
+        <Hero
+          className="advocacy-hero"
+          image={this.state.image}
+          type={this.state.type}
+          title={this.state.title}
+          tagline={this.state.tagline}
+          description={this.state.description}
+          helper={this.state.helper}
+        />
+        <div className="body advocacy-body">
+          <div className="index advocacy-index">
+          </div>
+          <div className='key-modal'>
+            <Key />
+          </div>
+        </div>
+        <Footer />
       </div>
     )
   }

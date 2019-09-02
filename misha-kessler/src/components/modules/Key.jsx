@@ -35,7 +35,7 @@ const Key = () => (
           <p><Icon name='php' /> PHP</p>
           <p><Icon name='js square' /> JavaScript</p>
           <p><Icon name='code' /> jQuery</p>
-          <p><Icon name='node-js' /> NodeJS</p>
+          <p><Icon name='node js' /> NodeJS</p>
           <p><Icon name='code' /> ExpressJS</p>
           <p><Icon name='react' /> ReactJS</p>
           <p><Icon name='server' /> MySQL</p>
@@ -47,13 +47,14 @@ const Key = () => (
           <Header>Design</Header>
           <p><Icon name='adobe' /> Adobe Photoshop</p>
           <p><Icon name='adobe' /> Adobe Illustrator</p>
-          <p><Icon name='adobe' /> Adobe InDesign</p>
+          <p><Icon name='file pdf' /> Adobe InDesign</p>
+          <p><Icon name='invision' /> Invision</p>
         </Grid.Column>
         <Grid.Column>
           <Header>Advocacy</Header>
           <p><Icon name='university' /> Academic</p>
           <p><Icon name='gavel' /> Legislative</p>
-          <p><Icon name='ribbon' /> Nonprofit</p>
+          <p><Icon name='heart' /> Nonprofit</p>
           <p><Icon name='newspaper' /> News Articles</p>
           <p><Icon name='book' /> Research Publications</p>
           <p><Icon name='microphone' /> Interviews</p>
@@ -62,12 +63,16 @@ const Key = () => (
         </Grid.Column>
         <Grid.Column>
           <Header>Miscellaneous</Header>
+          <p><Icon name='search' /> View Case Study</p>
+          <p><Icon name='globe' /> View Live Site</p>
+          <p><Icon name='github' /> View Github Repo</p>
           <p><Icon name='mobile alt' /> Responsive</p>
           <p><Icon name='universal access' /> Accessible</p>
           <p><Icon name='apple' /> macOS</p>
           <p><Icon name='github' /> Github</p>
+          <p><Icon name='codepen' /> CodePen</p>
+          <p><Icon name='stack overflow' /> StackOverflow</p>
           <p><Icon name='slack' /> Slack</p>
-
         </Grid.Column>
       </Grid>
     </Modal.Content>
