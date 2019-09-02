@@ -1,14 +1,25 @@
 // React
 import React from 'react'
 
+// React Router
+import {
+  Link
+} from 'react-router-dom'
+
 // React Semantic
 import {
   Button,
 } from 'semantic-ui-react'
 
+// Assets 
+import Lettermark from '../../assets/graphics/lettermark-white.png'
+
 export default function Developer() {
   return (
     <div className="landing-developer">
+      <div className="landing-lettermark">
+        <img src={Lettermark} />
+      </div>
       <div className="landing-titles">
         <h5>Full Stack Developer</h5>
         <span className="hide-on-mobile"><h5>|</h5></span>
@@ -26,17 +37,18 @@ export default function Developer() {
           <h6 className="smooth"></h6>
         </div>
         <div className="enter-cta">
-          <Button
-            basic
-            inverted
-            content='View Website Portfolio'
-            href='/development'
-            labelPosition='right'
-            className='smooth'
-            icon={{
-              name: 'chevron down',
-            }}
-          />
+          <Link to="/development" className="smooth">
+            <Button
+              basic
+              inverted
+              content='View Website Portfolio'
+              labelPosition='right'
+              className='smooth'
+              icon={{
+                name: 'chevron down',
+              }}
+            />
+          </Link>
         </div>
         <div className="right-cta">
           <h6 className="smooth">
