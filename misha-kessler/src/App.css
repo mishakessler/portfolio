@@ -108,24 +108,19 @@ a :hover {
   transition: opacity 500ms ease-in-out;
 }
 
-/***************************************************/
-/********************* LANDING *********************/
-/***************************************************/
-
-/****************** Landing Page *******************/
-
-.landing-lettermark {
-  display: block;
-  position: fixed;
-  width: 8vw;
-  top: 5vh;
-  left: 46vw;
-  z-index: 9;
+.fade-exit {
+  opacity: 1;
+  z-index: 1;
 }
 
-.landing-lettermark img {
-  width: 100%;
+.fade-exit.fade-exit-active {
+  opacity: 0;
+  transition: opacity 250ms ease-in-out;
 }
+
+/***************************************************/
+/******************* LANDING PAGE ******************/
+/***************************************************/
 
 /****************** Landing Views ******************/
 
@@ -157,15 +152,16 @@ a :hover {
 .landing-advocate, .landing-designer, .landing-developer, .landing-entrepreneur, .landing-hobbyist {
   width: 100%;
   height: 100%;
+  padding-top: 5vh;
   will-change: transform;
   box-shadow: 0 62.5px 125px -25px rgba(0, 0, 0, 0.5), 0 37.5px 75px -37.5px rgba(0, 0, 0, 0.8);
   border-radius: 15px;
   color: white;
 }
 
-/****************** View Images ********************/
+/************** Landing Backgrounds ****************/
 
-.landing-advocate, .advocacy-page {
+.landing-advocate {
   background: 
   linear-gradient(
     rgba(0, 0, 0, 0.6), 
@@ -176,7 +172,7 @@ a :hover {
   background-position: center center;
 }
 
-.landing-designer, .design-page  {
+.landing-designer {
   background: 
   linear-gradient(
     rgba(0, 0, 0, 0.6), 
@@ -187,7 +183,7 @@ a :hover {
   background-position: center center;
 }
 
-.landing-developer, .development-page, .about-page, .contact-page, .error-page   {
+.landing-developer {
   background: 
   linear-gradient(
     rgba(0, 0, 0, 0.6), 
@@ -198,7 +194,7 @@ a :hover {
   background-position: top center;
 }
 
-.landing-entrepreneur, .entrepreneurship-page  {
+.landing-entrepreneur {
   background: 
   linear-gradient(
     rgba(0, 0, 0, 0.7), 
@@ -209,7 +205,7 @@ a :hover {
   background-position: center center;
 }
 
-.landing-hobbyist, .hobbyist-page  {
+.landing-hobbyist {
   background: 
   linear-gradient(
     rgba(0, 0, 0, 0.6), 
@@ -220,10 +216,21 @@ a :hover {
   background-position: center center;
 }
 
+/****************** Landing Logo *******************/
+
+.landing-lettermark {
+  width: 180px;
+  margin: 0 auto;
+}
+
+.landing-lettermark img {
+  width: 100%;
+}
+
 /****************** Landing Text *******************/
 
 .landing-titles {
-  padding: 20vh 5vw 0 5vw;
+  padding: 5vh 5vw 0 5vw;
   text-align: center;
 }
 
@@ -238,7 +245,7 @@ a :hover {
 
 .landing-welcome {
   position: absolute;
-  top: 24vh;
+  top: 33vh;
   left: 3vw;
   z-index: 0;
 }
@@ -246,15 +253,11 @@ a :hover {
 .landing-welcome h1 {
   font-size: 12em;
   font-weight: 900;
-  opacity: .1;
-}
-
-.landing-welcome h1:hover {
-  opacity: .6;
+  opacity: .08;
 }
 
 .landing-tagline {
-  margin-top: 18vh;
+  margin-top: 15vh;
   padding: 0 13vw;
 }
 
@@ -267,24 +270,6 @@ a :hover {
 .landing-name {
   font-weight: 700;
 }
-/* 
-.landing-get-started {
-  position: absolute;
-  top: 76vh;
-  left: 4vw;
-  right: 4vw;
-  z-index: 0;
-}
-
-.landing-get-started p {
-  font-size: 1.5em;
-  opacity: .2;
-}
-
-.landing-get-started p:hover {
-  opacity: .7;
-}
- */
 
 /****************** Landing CTAs *******************/
 
@@ -331,10 +316,8 @@ a :hover {
 
 
 /***************************************************/
-/*********************** NAV ***********************/
+/********************** HEADER *********************/
 /***************************************************/
-
-/********************* Header **********************/
 
 .page-header {
   display: inline-block;
@@ -391,7 +374,163 @@ a :hover {
 }
 
 
-/********************* Footer **********************/
+/***************************************************/
+/********************** PAGES **********************/
+/***************************************************/
+
+.page {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 20px;
+  overflow-y: scroll; 
+  overflow-x: hidden;
+}
+
+.body {
+  min-height: 45vh;
+}
+
+/**************** Page Backgrounds *****************/
+
+.advocacy-page {
+  background: 
+  linear-gradient(
+    rgba(0, 0, 0, 0.6), 
+    rgba(0, 0, 0, 0.9)
+  ),
+  url(./assets/images/advocate-banner-1.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.design-page  {
+  background: 
+  linear-gradient(
+    rgba(0, 0, 0, 0.6), 
+    rgba(0, 0, 0, 0.9)
+  ),
+  url(./assets/images/designer-banner-1.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.development-page, .about-page, .contact-page, .error-page   {
+  background: 
+  linear-gradient(
+    rgba(0, 0, 0, 0.6), 
+    rgba(0, 0, 0, 0.9)
+  ),
+  url(./assets/images/developer-banner-1.jpg);
+  background-size: cover;
+  background-position: top center;
+}
+
+.entrepreneurship-page  {
+  background: 
+  linear-gradient(
+    rgba(0, 0, 0, 0.7), 
+    rgba(0, 0, 0, 0.9)
+  ),
+  url(./assets/images/entrepreneur-banner-1.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.hobbyist-page  {
+  background: 
+  linear-gradient(
+    rgba(0, 0, 0, 0.6), 
+    rgba(0, 0, 0, 0.9)
+  ),
+  url(./assets/images/hobbyist-banner-1.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+/********************** Hero ***********************/
+
+.hero {
+  min-height: 20vh;
+  color: white;
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+}
+
+.hero img {
+  max-width: 80vw;
+  margin: 25px auto -50px auto;
+}
+
+.hero p {
+  max-width: 920px;
+  margin: 20px auto;
+  font-size: 1.1em;
+}
+
+/******************* Index Pages *******************/
+
+.ui.grid>* {
+  padding: 1rem;
+}
+
+.project-cards {
+  text-align: left;
+}
+
+.ui.card>.image {
+  min-height: 183px;
+}
+
+.ui.card>.image>img, .ui.cards>.card>.image>img {
+  background: 
+  linear-gradient(
+    rgba(21, 37, 43, .1), 
+    rgb(89, 136, 153, .2)
+  ),
+  url(./assets/graphics/featured-logo.jpg);
+  background-size: cover;
+  background-position: top center;
+  min-height: 183px;
+  padding: 20px;
+}
+
+.ui.teal.ribbon.label {
+  position: absolute;
+  top: 10px;
+  z-index: 3;
+}
+
+.ui[class*="right ribbon"].label {
+  transform: translateX(-113%);
+}
+
+.ui.card:after, .ui.cards:after {
+  display: none;
+}
+
+.ui-button-icon:hover {
+  color: unset;
+}
+
+.ui.buttons:not(.basic):not(.inverted)>.button, .ui.buttons>.ui.button:not(.basic):not(.inverted) {
+  margin-left: 1px;
+  margin-right: 1px;
+}
+
+.key-modal {
+  margin-top: 50px;
+  text-align: center;
+}
+
+
+/***************************************************/
+/********************* FOOTER **********************/
+/***************************************************/
 
 .footer {
   max-width: 1020px;
@@ -424,102 +563,9 @@ a :hover {
 }
 
 
-
-/***************************************************/
-/********************** PAGES **********************/
-/***************************************************/
-
-.page {
-  width: 100vw;
-  height: 100vh;
-  margin: 0;
-  padding: 20px;
-  overflow-y: scroll; 
-  overflow-x: hidden;
-}
-
-.body {
-  min-height: 45vh;
-}
-
-/********************** Hero ***********************/
-
-.hero {
-  min-height: 20vh;
-  color: white;
-  max-width: 1020px;
-  margin: 0 auto;
-}
-
-.hero h1 {
-  font-size: 2.5em;
-}
-
-.hero p {
-  max-width: 920px;
-  margin: 20px auto;
-  font-size: 1.1em;
-}
-
-/******************* Index Pages *******************/
-
-.ui.grid>* {
-  padding: 1rem;
-}
-
-.project-cards {
-  text-align: left;
-}
-
-/* .ui.teal.card.disable {
-  pointer-events: none;
-  cursor: default;
-} */
-
-.ui.card>.image>img, .ui.cards>.card>.image>img {
-  background: 
-  linear-gradient(
-    rgba(21, 37, 43, .1), 
-    rgb(89, 136, 153, .2)
-  ),
-  url(./assets/graphics/featured.jpg);
-  background-size: cover;
-  background-position: top center;
-  min-height: 175px;
-}
-
-.ui.teal.ribbon.label {
-  position: absolute;
-  top: 10px;
-  z-index: 3;
-}
-
-.ui[class*="right ribbon"].label {
-  transform: translateX(-113%);
-}
-
-.ui.card:after, .ui.cards:after {
-  display: none;
-}
-
-.ui-button-icon:hover {
-  color: unset;
-}
-
-.ui.buttons:not(.basic):not(.inverted)>.button, .ui.buttons>.ui.button:not(.basic):not(.inverted) {
-  margin-left: 1px;
-  margin-right: 1px;
-}
-
-.key-modal {
-  margin-top: 50px;
-  text-align: center;
-}
-
 /***************************************************/
 /******************** RESPONSIVE *******************/
 /***************************************************/
-
 
 @media all and (min-width: 1200px) {
 
