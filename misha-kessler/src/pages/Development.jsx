@@ -31,10 +31,10 @@ class Development extends Component {
 
     this.state = {
       title: "Featured Websites",
-      image: 'https://imgur.com/',
+      image: "https://imgur.com/I6WSr51.png",
       tagline: "",
       description: "",
-      helper: `Each project card features multiple icons to help you preview the project's scope. Feel free to check out the icon key beneath the card gallery, if you're unsure of what some icons imply!`,
+      helper: "Each project card features multiple icons to help you preview the project's scope. Feel free to check out the icon key beneath the card gallery, if you're unsure of what some icons imply!",
       projects: Websites,
     }
   }
@@ -46,6 +46,7 @@ class Development extends Component {
         <Hero
           className="development-hero"
           type={this.state.type}
+          image={this.state.image}
           title={this.state.title}
           tagline={this.state.tagline}
           description={this.state.description}
@@ -53,7 +54,7 @@ class Development extends Component {
         />
         <div className="body development-body">
           <div className="index development-index">
-            <Grid stackable centered columns={2}>
+            <Grid stackable centered >
               {this.state.projects.map(project =>
                 <div key={project.id} className="project-cards">
                   <Grid.Column>
@@ -70,7 +71,6 @@ class Development extends Component {
                         className="smooth">
                         {project.date}
                       </Label>
-
                       {project.featured &&
                         <Image
                           src={project.url_to_img}
@@ -110,7 +110,7 @@ class Development extends Component {
                         {project.wordpress &&
                           <a>
                             <Icon
-                              size='big'
+                              size='large'
                               name='wordpress'
                               className="smooth" />
                           </a>
@@ -118,7 +118,7 @@ class Development extends Component {
                         {project.html &&
                           <a>
                             <Icon
-                              size='big'
+                              size='large'
                               name='html5'
                               className="smooth" />
                           </a>
@@ -126,7 +126,7 @@ class Development extends Component {
                         {project.css &&
                           <a>
                             <Icon
-                              size='big'
+                              size='large'
                               name='css3'
                               className="smooth" />
                           </a>
@@ -134,7 +134,7 @@ class Development extends Component {
                         {project.php &&
                           <a>
                             <Icon
-                              size='big'
+                              size='large'
                               name='php'
                               className="smooth" />
                           </a>
@@ -142,7 +142,7 @@ class Development extends Component {
                         {project.javascript &&
                           <a>
                             <Icon
-                              size='big'
+                              size='large'
                               name='js square'
                               className="smooth" />
                           </a>
@@ -150,7 +150,7 @@ class Development extends Component {
                         {project.expressjs &&
                           <a>
                             <Icon
-                              size='big'
+                              size='large'
                               name=''
                               className="smooth" />
                           </a>
@@ -158,7 +158,7 @@ class Development extends Component {
                         {project.reactjs &&
                           <a>
                             <Icon
-                              size='big'
+                              size='large'
                               name='react'
                               className="smooth" />
                           </a>
@@ -166,7 +166,7 @@ class Development extends Component {
                         {project.mysql &&
                           <a>
                             <Icon
-                              size='big'
+                              size='large'
                               name='server'
                               className="smooth" />
                           </a>
@@ -174,7 +174,7 @@ class Development extends Component {
                         {project.postgresql &&
                           <a>
                             <Icon
-                              size='big'
+                              size='large'
                               name='server'
                               className="smooth" />
                           </a>
@@ -182,7 +182,7 @@ class Development extends Component {
                         {project.ruby &&
                           <a>
                             <Icon
-                              size='big'
+                              size='large'
                               name='gem'
                               className="smooth" />
                           </a>
@@ -190,15 +190,23 @@ class Development extends Component {
                         {project.rails &&
                           <a>
                             <Icon
-                              size='big'
+                              size='large'
                               name='subway'
+                              className="smooth" />
+                          </a>
+                        }
+                        {project.auth &&
+                          <a>
+                            <Icon
+                              size='large'
+                              name='key'
                               className="smooth" />
                           </a>
                         }
                         {project.responsive &&
                           <a>
                             <Icon
-                              size='big'
+                              size='large'
                               name='mobile alt'
                               className="smooth" />
                           </a>
@@ -206,7 +214,7 @@ class Development extends Component {
                         {project.accessible &&
                           <a>
                             <Icon
-                              size='big'
+                              size='large'
                               name='universal access'
                               className="smooth" />
                           </a>
