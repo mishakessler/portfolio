@@ -28,9 +28,8 @@ class Advocacy extends Component {
 
     this.state = {
       title: "Featured Advocacy",
-      image: 'https://imgur.com/',
       tagline: "",
-      description: "",
+      description: "Portfolio under construction. Check back soon!",
       helper: "",
       // projects: Advocacies,
     }

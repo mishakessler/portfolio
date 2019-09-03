@@ -33,7 +33,7 @@ class Design extends Component {
       title: "Featured Designs",
       image: 'https://imgur.com/',
       tagline: "",
-      description: "",
+      description: "Portfolio under construction. Check back soon!",
       helper: "",
       projects: Designs,
     }

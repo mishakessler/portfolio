@@ -18,9 +18,6 @@ import Hero from '../components/modules/Hero'
 import Key from '../components/modules/Key'
 import Footer from '../components/modules/Footer'
 
-// Assets 
-// import Projects from '../assets/project-assets/projects'
-
 class Entrepreneurship extends Component {
   constructor(props) {
     super(props)
@@ -29,9 +26,8 @@ class Entrepreneurship extends Component {
       title: "Featured Projects",
       image: 'https://imgur.com/',
       tagline: "",
-      description: "",
+      description: "Page under construction. Check back soon!",
       helper: "",
-      // projects: Projects,
     }
   }
 

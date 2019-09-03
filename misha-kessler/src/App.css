@@ -391,6 +391,25 @@ a :hover {
   min-height: 45vh;
 }
 
+.about-why, .about-journey, .about-roles {
+  
+}
+
+.body h3, .about-why h3, .about-journey h3, .about-roles h3 {
+  margin: 0 auto;
+  max-width: 1020px;
+  color: white;
+  font-size: 1.4em;
+}
+
+
+.body p, .about-why p, .about-journey p, .about-roles p {
+  margin: 0 auto;
+  max-width: 920px;
+  color: white;
+  font-size: 1.1em;
+}
+
 /**************** Page Backgrounds *****************/
 
 .advocacy-page {
@@ -459,11 +478,6 @@ a :hover {
 
 .hero h1 {
   font-size: 2.5em;
-}
-
-.hero img {
-  max-width: 80vw;
-  margin: 25px auto -50px auto;
 }
 
 .hero p {
@@ -546,10 +560,11 @@ a :hover {
 
 .vertical-timeline-element-date {
   font-family: 'Raleway', sans-serif;
-  font-weight: 300;
+  font-weight: 200 !important;
   font-size: 1.4em !important;
   text-transform: uppercase;
   color: white !important;
+  opacity: 1 !important;
 }
 
 .vertical-timeline--animate .vertical-timeline-element-icon.bounce-in {
@@ -571,6 +586,14 @@ a :hover {
 }
 
 @media only screen and (max-width: 1169px) {
+  .vertical-timeline {
+    margin-top: 4em;
+  }
+
+  .vertical-timeline-element {
+    margin: 4em 0;
+  } 
+
   .vertical-timeline--animate .vertical-timeline-element-icon.bounce-in {
     padding: 5px;
   }
@@ -579,6 +602,16 @@ a :hover {
     font-size: 1em;
     line-height: .9;
     margin-left: 1px;
+  }
+
+  .vertical-timeline-element-date {
+    position: absolute;
+    top: -35px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200 !important;
+    font-size: 1.2em !important;
+    text-transform: uppercase;
+    opacity: 1 !important;
   }
 }
 

@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 
 // React Router
 import {
+  Link,
   withRouter
 } from 'react-router-dom'
 
@@ -28,7 +29,7 @@ class About extends Component {
       title: "Hey there, I'm Misha.",
       image: null,
       tagline: "And as you've probably noticed, I've worn many hats in my career.",
-      description: "I'm a dedicated and agile developer and entrepreneur with over seven years of experience finding creative solutions to pressing issues in the mental and behavioral health space. Results-driven, attentive, and built on a growth mindset, I'm constantly challenging myself to master new technical skills and design high-quality resources that improve the consumer experience.",
+      description: "First and foremost, I'm a dedicated and agile developer and social entrepreneur. I have over seven years of experience finding creative solutions to pressing issues in the mental and behavioral health space; in that time, I've become a published and award-winning thought leader in suicide prevention, explored founding and developing my own companies and charities, climbed mountains for fundraisers, and spoken to audiences ranging from charity gala and international summit attendees to the United States Congress.",
       helper: "",
     }
   }
@@ -46,8 +47,21 @@ class About extends Component {
           description={this.state.description}
           helper={this.state.helper}
         />
-        <div className="body about-body">
-          <Timeline />
+        <div className="about-why">
+          <h3>My "Why"</h3>
+          <p>As a young adult, my own experiences with depression and anxiety became the foundation of my career, motivating, informing, and grounding my passionate pursiot of justice and equity in mental healthcare. Since then, the thread of my career has been to bring principles of consumer autonomy, user-oriented design, and evidence-based practices to mental health technology, always with treatment and prevention outcomes as my polestar.</p>
+          <p>Years later, stronger and wiser for my experiences, I'm results-driven, attentive, and built on a growth mindsetl; I'm always challenging myself to master new skills and create unique resources that improve consumer quality of life.</p>
+        </div>
+        <div className="about-journey">
+          <h3>My Journey To Full-Stack Engineering</h3>
+          <p>Want to learn more about how and why I came to the intersection of mental health, technology, socially responsible business, and mountain climbing?</p>
+          <p>Understandable. It's an odd one.</p>
+        </div>
+        <Timeline />
+        <div className="about-roles">
+          <p>Currently, I serve as: Board Member of Six Feet Over; Committee Member of the National Suicide Prevention Lifeline's Consumer-Survivor Subcommittee; Council Member of the NY State Suicide Prevention Council; Member of the NY State Department of Health's (CDC) Suicide Syndromic Surveillance Grant Advisory Board (expected).</p>
+          <p>Previously, I've served as: Board Member of the Mental Health Association of Maryland; Panel Member of the American Psychological Association's Guideline Development Panel for Depressive Disorders; Project Director of The Campbell Center's (SAMHSA) Statewide Peer Networking Grant; Task Force Member of Governor Cuomo's commissioned NY State Suicide Prevention Task Force.</p>
+          <p>For more, about out my <Link to='/advocacy'>Thought Leadership</Link> and <Link to='/entrepreneurship'>Entrepreneurship</Link> portfolios.</p>
         </div>
         <Footer />
       </div>
