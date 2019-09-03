@@ -56,7 +56,7 @@ const Key = () => (
           <p><Icon name='bolt' /> Lettermark, Logomark, & Wordmarks</p>
           <p><Icon name='images' /> Digital Deliverables</p>
           <p><Icon name='address card' /> Print Deliverables</p>
-          <p><Icon name='users' /> User Flow & Journeys</p>
+          <p><Icon name='user' /> User Flow & Journeys</p>
           <p><Icon name='handshake' /> Design Handoffs</p>
 
         </Grid.Column>
@@ -65,11 +65,14 @@ const Key = () => (
           <p><Icon name='university' /> Academic</p>
           <p><Icon name='gavel' /> Legislative</p>
           <p><Icon name='heart' /> Nonprofit</p>
+          <p><Icon name='users' /> Committee Member</p>
+          <p><Icon name='compass' /> Advisor</p>
           <p><Icon name='newspaper' /> News Article</p>
           <p><Icon name='book' /> Research Publication</p>
           <p><Icon name='microphone' /> Interview</p>
-          <p><Icon name='comment' /> Public Speech</p>
+          <p><Icon name='podium' /> Public Speech</p>
           <p><Icon name='video' /> Documentary Film</p>
+          <p><Icon name='certificate' /> Awardee</p>
         </Grid.Column>
         <Grid.Column>
           <Header>Miscellaneous</Header>

@@ -399,7 +399,7 @@ a :hover {
 }
 
 
-.body p, .about-why p, .about-journey p, .about-roles p {
+.about-why p, .about-journey p, .about-roles p {
   margin: 0 auto;
   max-width: 920px;
   color: white;
@@ -515,7 +515,7 @@ a :hover {
     rgba(21, 37, 43, .1), 
     rgb(89, 136, 153, .2)
   ),
-  url(./assets/graphics/featured-logo.jpg);
+  url(./assets/graphics/featured.jpg);
   background-size: cover;
   background-position: top center;
   min-height: 183px;
