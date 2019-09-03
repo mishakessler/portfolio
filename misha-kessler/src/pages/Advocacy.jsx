@@ -20,7 +20,7 @@ import Key from '../components/modules/Key'
 import Footer from '../components/modules/Footer'
 
 // Assets 
-// import Advocacies from '../assets/project-assets/advocacies'
+import Advocacies from '../assets/project-assets/Advocacies'
 
 class Advocacy extends Component {
   constructor(props) {
@@ -31,7 +31,7 @@ class Advocacy extends Component {
       tagline: "",
       description: "Portfolio under construction. Check back soon!",
       helper: "",
-      // projects: Advocacies,
+      projects: Advocacies,
     }
   }
 
@@ -41,8 +41,6 @@ class Advocacy extends Component {
         <Header />
         <Hero
           className="advocacy-hero"
-          image={this.state.image}
-          type={this.state.type}
           title={this.state.title}
           tagline={this.state.tagline}
           description={this.state.description}

@@ -391,10 +391,6 @@ a :hover {
   min-height: 45vh;
 }
 
-.about-why, .about-journey, .about-roles {
-  
-}
-
 .body h3, .about-why h3, .about-journey h3, .about-roles h3 {
   margin: 0 auto;
   max-width: 1020px;
@@ -478,12 +474,25 @@ a :hover {
 
 .hero h1 {
   font-size: 2.5em;
+  margin-bottom: 50px;
 }
 
 .hero p {
   max-width: 920px;
-  margin: 20px auto;
+  margin: 25px auto;
   font-size: 1.1em;
+}
+.about-page .hero {
+  text-align: center;
+}
+
+.about-page .hero img {
+  width: 200px;
+  border-radius: 100%;
+}
+
+.about-page h3, .about-page p {
+  text-align: left;
 }
 
 /******************* Index Pages *******************/

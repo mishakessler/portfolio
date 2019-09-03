@@ -24,7 +24,6 @@ class Entrepreneurship extends Component {
 
     this.state = {
       title: "Featured Projects",
-      image: 'https://imgur.com/',
       tagline: "",
       description: "Page under construction. Check back soon!",
       helper: "",
@@ -37,8 +36,6 @@ class Entrepreneurship extends Component {
         <Header />
         <Hero
           className="entrepreneurship-hero"
-          image={this.state.image}
-          type={this.state.type}
           title={this.state.title}
           tagline={this.state.tagline}
           description={this.state.description}

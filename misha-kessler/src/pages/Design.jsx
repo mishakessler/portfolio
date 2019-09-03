@@ -31,7 +31,6 @@ class Design extends Component {
 
     this.state = {
       title: "Featured Designs",
-      image: 'https://imgur.com/',
       tagline: "",
       description: "Portfolio under construction. Check back soon!",
       helper: "",
@@ -45,8 +44,6 @@ class Design extends Component {
         <Header />
         <Hero
           className="design-hero"
-          image={this.state.image}
-          type={this.state.type}
           title={this.state.title}
           tagline={this.state.tagline}
           description={this.state.description}

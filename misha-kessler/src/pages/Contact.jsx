@@ -40,7 +40,6 @@ class Contact extends Component {
         <Hero
           className="contact-hero"
           image={this.state.image}
-          type={this.state.type}
           title={this.state.title}
           tagline={this.state.tagline}
           description={this.state.description}
