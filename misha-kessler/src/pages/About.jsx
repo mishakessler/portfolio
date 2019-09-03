@@ -15,6 +15,7 @@ import {
 // Components
 import Header from '../components/modules/Header'
 import Hero from '../components/modules/Hero'
+import Timeline from '../components/modules/Timeline';
 import Footer from '../components/modules/Footer'
 
 // Assets 
@@ -46,7 +47,7 @@ class About extends Component {
           helper={this.state.helper}
         />
         <div className="body about-body">
-
+          <Timeline />
         </div>
         <Footer />
       </div>
