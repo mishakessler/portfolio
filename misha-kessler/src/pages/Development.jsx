@@ -31,7 +31,6 @@ class Development extends Component {
 
     this.state = {
       title: "Featured Websites",
-      image: "https://imgur.com/I6WSr51.png",
       tagline: "",
       description: "",
       helper: "Each project card features multiple icons to help you preview the project's scope. Feel free to check out the icon key beneath the card gallery, if you're unsure of what some icons imply!",
@@ -45,8 +44,6 @@ class Development extends Component {
         <Header />
         <Hero
           className="development-hero"
-          type={this.state.type}
-          image={this.state.image}
           title={this.state.title}
           tagline={this.state.tagline}
           description={this.state.description}

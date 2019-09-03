@@ -18,20 +18,15 @@ import Hero from '../components/modules/Hero'
 import Key from '../components/modules/Key'
 import Footer from '../components/modules/Footer'
 
-// Assets 
-// import Projects from '../assets/project-assets/projects'
-
 class Entrepreneurship extends Component {
   constructor(props) {
     super(props)
 
     this.state = {
       title: "Featured Projects",
-      image: 'https://imgur.com/',
       tagline: "",
-      description: "",
+      description: "Page under construction. Check back soon!",
       helper: "",
-      // projects: Projects,
     }
   }
 
@@ -41,8 +36,6 @@ class Entrepreneurship extends Component {
         <Header />
         <Hero
           className="entrepreneurship-hero"
-          image={this.state.image}
-          type={this.state.type}
           title={this.state.title}
           tagline={this.state.tagline}
           description={this.state.description}

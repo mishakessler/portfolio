@@ -39,7 +39,6 @@ class About extends Component {
         <Hero
           className="error-hero"
           image={this.state.image}
-          type={this.state.type}
           title={this.state.title}
           tagline={this.state.tagline}
           description={this.state.description}

@@ -40,7 +40,7 @@ export default function Footer() {
         <Link to="/contact" className="smooth">Contact</Link>
       </div>
       <div className="footer-info">
-        <p>This portfolio was conceived, designed, and developed by Misha Kessler using React, React Router, React Transition Group, React Spring, React Use Gesture, and Semantic UI.</p>
+        <p>This portfolio was conceived, designed, and developed by Misha Kessler using React, React Router, React Transition Group, React Spring, React Use Gesture, React Vertical Timeline, and Semantic UI.</p>
       </div>
       <div className="footer-socials">
 
