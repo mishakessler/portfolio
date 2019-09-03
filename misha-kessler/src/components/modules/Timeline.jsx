@@ -22,6 +22,7 @@ export default function Timeline() {
         icon={
           <Icon
             inverted
+            fitted
             size="big"
             name="university"
             className="timeline-icon" />} >
@@ -37,6 +38,7 @@ export default function Timeline() {
         icon={
           <Icon
             inverted
+            fitted
             size="big"
             name="university"
             className="timeline-icon" />} >
@@ -52,6 +54,7 @@ export default function Timeline() {
         icon={
           <Icon
             inverted
+            fitted
             size="big"
             name="university"
             className="timeline-icon" />} >
@@ -67,6 +70,7 @@ export default function Timeline() {
         icon={
           <Icon
             inverted
+            fitted
             size="big"
             name="university"
             className="timeline-icon" />} >
@@ -82,6 +86,7 @@ export default function Timeline() {
         icon={
           <Icon
             inverted
+            fitted
             size="big"
             name="university"
             className="timeline-icon" />} >
@@ -97,6 +102,7 @@ export default function Timeline() {
         icon={
           <Icon
             inverted
+            fitted
             size="big"
             name="university"
             className="timeline-icon" />} >
@@ -112,6 +118,7 @@ export default function Timeline() {
         icon={
           <Icon
             inverted
+            fitted
             size="big"
             name="university"
             className="timeline-icon" />} >
@@ -125,6 +132,7 @@ export default function Timeline() {
         icon={
           <Icon
             inverted
+            fitted
             size="big"
             name="university"
             className="timeline-icon" />} />

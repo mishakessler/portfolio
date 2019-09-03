@@ -527,6 +527,61 @@ a :hover {
   text-align: center;
 }
 
+/******************* Detail Pages ******************/
+
+
+/******************* About Page ********************/
+
+.vertical-timeline {
+  padding: 0;
+}
+
+.vertical-timeline-element-title, .vertical-timeline-element-title h3 {
+
+}
+
+.vertical-timeline-element-subtitle, .vertical-timeline-element-subtitle h4 {
+
+}
+
+.vertical-timeline-element-date {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 1.4em !important;
+  text-transform: uppercase;
+  color: white !important;
+}
+
+.vertical-timeline--animate .vertical-timeline-element-icon.bounce-in {
+  padding: 10px;
+}
+
+.timeline-icon::before {
+  font-size: 1.5em;
+  line-height: .9;
+  margin-left: -1px;
+}
+
+/***************** Timeline Mobile *****************/
+
+@media only screen and (min-width: 1170px) {
+  .vertical-timeline-element {
+    margin: 3em 0;
+  } 
+}
+
+@media only screen and (max-width: 1169px) {
+  .vertical-timeline--animate .vertical-timeline-element-icon.bounce-in {
+    padding: 5px;
+  }
+
+  .timeline-icon::before {
+    font-size: 1em;
+    line-height: .9;
+    margin-left: 1px;
+  }
+}
+
 
 /***************************************************/
 /********************* FOOTER **********************/
