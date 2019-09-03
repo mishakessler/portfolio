@@ -6,7 +6,7 @@ const Websites = [
     name: 'Crisis International Enterprise',
     date: 'Aug 2019',
     meta: 'React on Rails',
-    tagline: 'A full stack enterprise solution for social services agencies and professionals.',
+    tagline: 'A full stack B2B resource directory and knowledge base for social service agencies and related fields that provides comprehensive, filterable, searchable resources and articles.',
 
     category: 'Full Stack', // Concept, Front End, Full Stack
     progress: 'MVP', // R&D, MVP, Post-MVP, Private Beta, Live
@@ -47,7 +47,7 @@ const Websites = [
     category: 'Front End', // Concept, Front End, Full Stack
     progress: 'Private Beta', // R&D, MVP, Post-MVP, Private Beta, Live
 
-    url_to_img: '',
+    url_to_img: 'https://imgur.com/ZtLFzFJ.png',
     url_to_demo: 'https://beta.crisisinternational.org',
     url_to_github: null,
     url_to_casestudy: '/projects/crisis-international',

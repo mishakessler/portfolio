@@ -391,6 +391,21 @@ a :hover {
   min-height: 45vh;
 }
 
+.body h3, .about-why h3, .about-journey h3, .about-roles h3 {
+  margin: 0 auto;
+  max-width: 1020px;
+  color: white;
+  font-size: 1.4em;
+}
+
+
+.about-why p, .about-journey p, .about-roles p {
+  margin: 0 auto;
+  max-width: 920px;
+  color: white;
+  font-size: 1.1em;
+}
+
 /**************** Page Backgrounds *****************/
 
 .advocacy-page {
@@ -459,17 +474,25 @@ a :hover {
 
 .hero h1 {
   font-size: 2.5em;
-}
-
-.hero img {
-  max-width: 80vw;
-  margin: 25px auto -50px auto;
+  margin-bottom: 50px;
 }
 
 .hero p {
   max-width: 920px;
-  margin: 20px auto;
+  margin: 25px auto;
   font-size: 1.1em;
+}
+.about-page .hero {
+  text-align: center;
+}
+
+.about-page .hero img {
+  width: 200px;
+  border-radius: 100%;
+}
+
+.about-page h3, .about-page p {
+  text-align: left;
 }
 
 /******************* Index Pages *******************/
@@ -492,7 +515,7 @@ a :hover {
     rgba(21, 37, 43, .1), 
     rgb(89, 136, 153, .2)
   ),
-  url(./assets/graphics/featured-logo.jpg);
+  url(./assets/graphics/featured.jpg);
   background-size: cover;
   background-position: top center;
   min-height: 183px;
@@ -525,6 +548,80 @@ a :hover {
 .key-modal {
   margin-top: 50px;
   text-align: center;
+}
+
+/******************* Detail Pages ******************/
+
+
+/******************* About Page ********************/
+
+.vertical-timeline {
+  padding: 0;
+}
+
+.vertical-timeline-element-title, .vertical-timeline-element-title h3 {
+
+}
+
+.vertical-timeline-element-subtitle, .vertical-timeline-element-subtitle h4 {
+
+}
+
+.vertical-timeline-element-date {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200 !important;
+  font-size: 1.4em !important;
+  text-transform: uppercase;
+  color: white !important;
+  opacity: 1 !important;
+}
+
+.vertical-timeline--animate .vertical-timeline-element-icon.bounce-in {
+  padding: 10px;
+}
+
+.timeline-icon::before {
+  font-size: 1.5em;
+  line-height: .9;
+  margin-left: -1px;
+}
+
+/***************** Timeline Mobile *****************/
+
+@media only screen and (min-width: 1170px) {
+  .vertical-timeline-element {
+    margin: 3em 0;
+  } 
+}
+
+@media only screen and (max-width: 1169px) {
+  .vertical-timeline {
+    margin-top: 4em;
+  }
+
+  .vertical-timeline-element {
+    margin: 4em 0;
+  } 
+
+  .vertical-timeline--animate .vertical-timeline-element-icon.bounce-in {
+    padding: 5px;
+  }
+
+  .timeline-icon::before {
+    font-size: 1em;
+    line-height: .9;
+    margin-left: 1px;
+  }
+
+  .vertical-timeline-element-date {
+    position: absolute;
+    top: -35px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200 !important;
+    font-size: 1.2em !important;
+    text-transform: uppercase;
+    opacity: 1 !important;
+  }
 }
 
 

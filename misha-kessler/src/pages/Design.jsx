@@ -31,9 +31,8 @@ class Design extends Component {
 
     this.state = {
       title: "Featured Designs",
-      image: 'https://imgur.com/',
       tagline: "",
-      description: "",
+      description: "Portfolio under construction. Check back soon!",
       helper: "",
       projects: Designs,
     }
@@ -45,8 +44,6 @@ class Design extends Component {
         <Header />
         <Hero
           className="design-hero"
-          image={this.state.image}
-          type={this.state.type}
           title={this.state.title}
           tagline={this.state.tagline}
           description={this.state.description}
@@ -54,7 +51,100 @@ class Design extends Component {
         />
         <div className="body design-body">
           <div className="index design-index">
-
+            <Grid stackable centered >
+              {this.state.projects.map(project =>
+                <div key={project.id} className="project-cards">
+                  <Grid.Column>
+                    <Card
+                      attached
+                      link
+                      color='teal'
+                      className='smooth'
+                    >
+                      <Label
+                        as='a'
+                        color='teal'
+                        ribbon='right'
+                        className="smooth">
+                        {project.category}
+                      </Label>
+                      {project.featured &&
+                        <Image
+                          src={project.url_to_img}
+                          label={{
+                            as: 'a',
+                            corner: 'left',
+                            icon: 'star'
+                          }}
+                          wrapped ui={true}
+                          className="overlay"
+                        />}
+                      {!project.featured &&
+                        <Image
+                          src={project.url_to_img}
+                          wrapped ui={true}
+                          className="overlay"
+                        />}
+                      <Card.Content>
+                        <Card.Header>{project.name}</Card.Header>
+                        <Card.Meta>
+                          <a>From</a>
+                          <a>
+                            {project.meta},
+                          </a>
+                          <a>
+                            {project.date}
+                          </a>
+                        </Card.Meta>
+                        <Card.Description>
+                          {project.tagline}
+                        </Card.Description>
+                      </Card.Content>
+                      <Card.Content extra>
+                        <p>At a glance:</p>
+                        {project.wordpress &&
+                          <a>
+                            <Icon
+                              size='large'
+                              name='wordpress'
+                              className="smooth" />
+                          </a>
+                        }
+                        {project.html &&
+                          <a>
+                            <Icon
+                              size='large'
+                              name='html5'
+                              className="smooth" />
+                          </a>
+                        }
+                        {project.css &&
+                          <a>
+                            <Icon
+                              size='large'
+                              name='css3'
+                              className="smooth" />
+                          </a>
+                        }
+                      </Card.Content>
+                    </Card>
+                    {project.url_to_demo &&
+                      <Button
+                        attached='bottom'
+                        href={project.url_to_demo}
+                        target='_blank'
+                        color='teal'
+                        className='smooth'
+                        icon={{
+                          name: 'globe',
+                          size: 'large',
+                          className: 'ui-button-icon',
+                        }}
+                      />}
+                  </Grid.Column>
+                </div>
+              )}
+            </Grid >
           </div>
           <div className='key-modal'>
             <Key />
