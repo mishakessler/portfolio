@@ -134,7 +134,7 @@ a :hover {
 
 .page-viewer {
   position: fixed;
-  overflow: scroll;
+  overflow: hidden;
   width: 100vw;
   min-height: 100vh;
 }
