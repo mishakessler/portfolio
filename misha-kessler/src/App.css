@@ -886,7 +886,7 @@ margin-top: -100px;
 
   .ctas {
     height: 5vh;
-    bottom: 2vh;
+    bottom: 5vh;
   }
   
   .enter-cta {
@@ -941,8 +941,12 @@ margin-top: -100px;
     padding: 3vh 3vw 0 3vw;
   }
 
+  .landing-titles h5 {
+    font-size: 1.15em;
+  }
+
   .landing-welcome {
-    top: 30vh;
+    top: 28vh;
     left: 2vw;
   }
 
@@ -951,28 +955,28 @@ margin-top: -100px;
   }
 
   .landing-tagline {
-    margin-top: 8vh;
+    margin-top: 6vh;
     padding: 0 8vw;
   }
 
   .landing-tagline h2 {
-    font-size: 1.4em;
+    font-size: 1.5em;
   }
 
   /** Landing CTAs **/
 
   .ctas {
-    bottom: 1vh;
+    bottom: 7vh;
   }
   
   .enter-cta {
     width: 80%;
     left: 10%;
-    bottom: 9vh;
+    bottom: 10vh;
   }
   
   .left-cta, .right-cta {
-    bottom: .5vh;
+    bottom: 1vh;
   }
   
   .right-cta {
