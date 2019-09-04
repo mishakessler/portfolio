@@ -8,12 +8,14 @@ import {
 
 // React Semantic
 import {
+  Image,
   Button,
   Icon
 } from 'semantic-ui-react'
 
 // Assets
 import Lettermark from '../../assets/graphics/lettermark.png'
+import MenuLettermark from '../../assets/graphics/lettermark-white.png'
 
 export default class Header extends React.Component {
   constructor(props) {
@@ -76,6 +78,7 @@ export default class Header extends React.Component {
                 className="hamburger-icon" >
                 <Icon name="ellipsis vertical" />
               </Button>
+              <Image src={MenuLettermark} size="mini" centered />
               <Link to="/development" className="smooth">Development</Link>
               <Link to="/design" className="smooth">Design</Link>
               <Link to="/entrepreneurship" className="smooth">Entrepreneurship</Link>
