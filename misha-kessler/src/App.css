@@ -497,6 +497,12 @@ a :hover {
 
 /******************* Index Pages *******************/
 
+
+.index {
+  max-width: 1280px;
+  margin: 50px auto;
+}
+
 .ui.grid>* {
   padding: 1rem;
 }

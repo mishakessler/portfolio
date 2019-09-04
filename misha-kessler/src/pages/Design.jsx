@@ -32,8 +32,8 @@ class Design extends Component {
     this.state = {
       title: "Featured Designs",
       tagline: "",
-      description: "Portfolio under construction. Check back soon!",
-      helper: "",
+      description: "",
+      helper: "Portfolio under construction. Check back soon!",
       projects: Designs,
     }
   }
@@ -90,8 +90,9 @@ class Design extends Component {
                         <Card.Meta>
                           <a>From</a>
                           <a>
-                            {project.meta},
+                            {project.meta}
                           </a>
+                          <br></br>
                           <a>
                             {project.date}
                           </a>
@@ -131,6 +132,7 @@ class Design extends Component {
                     {project.url_to_demo &&
                       <Button
                         attached='bottom'
+                        as='a'
                         href={project.url_to_demo}
                         target='_blank'
                         color='teal'

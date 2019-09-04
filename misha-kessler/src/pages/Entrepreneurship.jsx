@@ -25,8 +25,8 @@ class Entrepreneurship extends Component {
     this.state = {
       title: "Featured Projects",
       tagline: "",
-      description: "Page under construction. Check back soon!",
-      helper: "",
+      description: "",
+      helper: "Page under construction. Check back soon!",
     }
   }
 

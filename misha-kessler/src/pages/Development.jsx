@@ -221,6 +221,7 @@ class Development extends Component {
                     <Button.Group attached='bottom'>
                       {project.url_to_casestudy &&
                         <Button
+                          as='a'
                           href={project.url_to_casestudy}
                           color='teal'
                           className='smooth'
@@ -232,6 +233,7 @@ class Development extends Component {
                         />}
                       {project.url_to_demo &&
                         <Button
+                          as='a'
                           href={project.url_to_demo}
                           target='_blank'
                           color='teal'
@@ -244,6 +246,7 @@ class Development extends Component {
                         />}
                       {project.url_to_github &&
                         <Button
+                          as='a'
                           href={project.url_to_github}
                           target='_blank'
                           color='teal'

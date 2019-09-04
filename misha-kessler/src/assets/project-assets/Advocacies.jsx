@@ -24,7 +24,7 @@ import Speaker from '../graphics/advocacy-speech.png'
 
 const Advocacies = [
   {
-    id: ,
+    id: 34,
     featured: false,
     date: 'May 2019',
     name: 'Why Behavioral Healthcare Must Be Accessible To Students In A Crisis',
@@ -35,18 +35,18 @@ const Advocacies = [
     url_to_demo: 'https://talk.crisisnow.com/2019/05/28/behavioral-healthcare-must-be-accessible-to-students/',
   },
   {
-    id: ,
+    id: 33,
     featured: true,
     date: 'Apr 2019',
-    name: 'Communities United For A Suicide Free New York: A Task Force Report',
-    meta: "Governor Cuomo's NYS Suicide Prevention Task Force",
+    name: 'Communities United For A Suicide Free New York',
+    meta: "The Report to Governor Cuomo from the NYS Suicide Prevention Task Force",
     tagline: '',
     category: 'Coauthor', // Author, Speaker, Interviewee, Committee Member, Associate Member, Advisor, Awardee
     url_to_img: `${Author}`,
-    url_to_demo: '',
+    url_to_demo: 'https://omh.ny.gov/omhweb/resources/publications/suicide-prevention-task-force-report.pdf',
   },
   {
-    id: ,
+    id: 32,
     featured: false,
     date: 'Feb 2019',
     name: 'Suicide Prevention: Self-Care Tips, True Stories On How Survivors Cope',
@@ -57,18 +57,18 @@ const Advocacies = [
     url_to_demo: 'https://www.usatoday.com/in-depth/news/investigations/surviving-suicide/2018/11/28/suicide-prevention-tips-true-stories-how-survivors-cope/1112169002/',
   },
   {
-    id: ,
+    id: 31,
     featured: true,
     date: 'Feb 2019',
     name: 'Clinical Practice Guidelines for the Treatment of Depressive Disorders',
-    meta: 'The American Psychological Association',
+    meta: 'The Report of the American Psychological Association Panel',
     tagline: '',
     category: 'Coauthor', // Author, Speaker, Interviewee, Committee Member, Associate Member, Advisor, Awardee
     url_to_img: `${Author}`,
-    url_to_demo: '',
+    url_to_demo: 'https://www.apa.org/depression-guideline/guideline.pdf',
   },
   {
-    id: ,
+    id: 30,
     featured: false,
     date: 'Apr 2019',
     name: 'Ambitious Goals, Meaningful Change: Legislative Advocacy in Suicide Prevention',
@@ -79,7 +79,7 @@ const Advocacies = [
     url_to_demo: 'https://suicidology.org/conference',
   },
   {
-    id: ,
+    id: 29,
     featured: false,
     date: 'Apr 2019',
     name: 'Beyond Crisis: An Exploration Into Post-Care & Postvention',
@@ -90,7 +90,7 @@ const Advocacies = [
     url_to_demo: 'https://suicidology.org/conference',
   },
   {
-    id: ,
+    id: 28,
     featured: false,
     date: 'Nov 2018',
     name: 'Digging Deeper Into Stigma',
@@ -101,29 +101,29 @@ const Advocacies = [
     url_to_demo: 'https://newsroom.fb.com/',
   },
   {
-    id: ,
-    featured: ,
-    date: '',
-    name: '',
-    meta: '',
+    id: 27,
+    featured: true,
+    date: 'Oct 2018',
+    name: 'Ensuring Effective Response to All In Psychiatric Crisis',
+    meta: 'The Report from the 1st Internationl Urgent & Emergency Mental Healthcare Services Summit',
     tagline: '',
-    category: '', // Author, Speaker, Interviewee, Committee Member, Associate Member, Advisor, Awardee
-    url_to_img: `${}`,
-    url_to_demo: '',
+    category: 'Coauthor', // Author, Speaker, Interviewee, Committee Member, Associate Member, Advisor, Awardee
+    url_to_img: `${Author}`,
+    url_to_demo: 'http://bhltest2.com/wp-content/uploads/2018/10/Be-the-Change.pdf',
   },
   {
-    id: ,
-    featured: ,
-    date: '',
-    name: '',
-    meta: '',
+    id: 26,
+    featured: true,
+    date: 'Oct 2018',
+    name: 'Suicide is hard to understand. Here is what my attempt taught me.',
+    meta: 'An OpEd In The Arizona Republic',
     tagline: '',
-    category: '', // Author, Speaker, Interviewee, Committee Member, Associate Member, Advisor, Awardee
-    url_to_img: `${}`,
-    url_to_demo: '',
+    category: 'Author', // Author, Speaker, Interviewee, Committee Member, Associate Member, Advisor, Awardee
+    url_to_img: `${Author}`,
+    url_to_demo: 'https://www.azcentral.com/story/opinion/op-ed/2018/06/14/suicide-attempt-depression-lessons/700134002/',
   },
   {
-    id: ,
+    id: 25,
     featured: false,
     date: 'Sep 2018',
     name: '"The S Word" Documentary Film Screening & Panel',
@@ -134,7 +134,7 @@ const Advocacies = [
     url_to_demo: 'https://nyssuicidepreventionconference.org/program/',
   },
   {
-    id: ,
+    id: 24,
     featured: false,
     date: 'May 2018',
     name: 'Embedding Peers in Crisis Intervention Services',
@@ -145,7 +145,7 @@ const Advocacies = [
     url_to_demo: 'https://www.slideshare.net/davidwcovington/urgent-and-emergency-care-summit-2018-london-iimhl',
   },
   {
-    id: ,
+    id: 23,
     featured: false,
     date: 'Apr 2018',
     name: 'Students, Suicide & Social Media',
@@ -156,7 +156,7 @@ const Advocacies = [
     url_to_demo: 'https://suicidology.org/conference',
   },
   {
-    id: ,
+    id: 22,
     featured: true,
     date: 'Jan 2018',
     name: 'Live On Stage with Logic, Khalid, and Alessia Cara',
@@ -167,7 +167,7 @@ const Advocacies = [
     url_to_demo: 'https://www.youtube.com/watch?v=rNYduKIyEvA',
   },
   {
-    id: ,
+    id: 21,
     featured: false,
     date: 'Dec 2017',
     name: 'The S Word Documentary',
@@ -178,7 +178,7 @@ const Advocacies = [
     url_to_demo: 'https://theswordmovie.com/',
   },
   {
-    id: ,
+    id: 20,
     featured: false,
     date: 'May 2017',
     name: 'Transforming Behavioral Health Crisis Care Services with Legislative Action',
@@ -189,7 +189,7 @@ const Advocacies = [
     url_to_demo: 'https://napolitano.house.gov/media/press-releases/napolitano-katko-hold-transforming-crisis-mental-health-care-briefing',
   },
   {
-    id: ,
+    id: 19,
     featured: false,
     date: 'Apr 2016',
     name: 'Storytelling As A Tool For Suicide Prevention',
@@ -200,7 +200,7 @@ const Advocacies = [
     url_to_demo: 'https://suicidology.org/conference',
   },
   {
-    id: ,
+    id: 18,
     featured: false,
     date: 'Sep 2015',
     name: 'Part 2: Suicide & Stigma: Moving Past Silence & Shame',
@@ -211,7 +211,7 @@ const Advocacies = [
     url_to_demo: 'https://health.usnews.com/health-news/patient-advice/articles/2015/09/09/suicide-and-stigma-moving-past-silence-and-shame',
   },
   {
-    id: ,
+    id: 17,
     featured: false,
     date: 'Sep 2015',
     name: 'Part 1: Coming Out As A Suicide Survivor',
@@ -222,7 +222,7 @@ const Advocacies = [
     url_to_demo: 'https://health.usnews.com/health-news/patient-advice/articles/2015/09/10/coming-out-as-a-suicide-survivor',
   },
   {
-    id: ,
+    id: 16,
     featured: false,
     date: 'Jul 2015',
     name: 'Why More White-Collar Workers Are At Risk For Suicide',
@@ -233,7 +233,7 @@ const Advocacies = [
     url_to_demo: 'https://www.marketwatch.com/story/why-more-white-collar-workers-are-at-risk-for-suicide-2015-07-01',
   },
   {
-    id: ,
+    id: 15,
     featured: false,
     date: 'Jul 2015',
     name: 'The Common Good: Stonewall Kickball',
@@ -244,7 +244,7 @@ const Advocacies = [
     url_to_demo: 'http://mentalhealthchannel.tv/episode/stonewall-kickball',
   },
   {
-    id: ,
+    id: 14,
     featured: false,
     date: 'Apr 2015',
     name: 'One Year Later: Suicide Attempt Survivors After Speaking Up',
@@ -255,7 +255,7 @@ const Advocacies = [
     url_to_demo: 'https://suicidology.org/conference',
   },
   {
-    id: ,
+    id: 13,
     featured: false,
     date: 'Mar 2015',
     name: 'Suicide Safe Smartphone App Launch',
@@ -266,7 +266,7 @@ const Advocacies = [
     url_to_demo: 'https://www.youtube.com/watch?v=FLNbgOqVB70',
   },
   {
-    id: ,
+    id: 12,
     featured: false,
     date: 'Feb 2015',
     name: 'Why the US Mental Healthcare System Needs More Places For People to Just Chill Out',
@@ -277,7 +277,7 @@ const Advocacies = [
     url_to_demo: 'https://www.mic.com/articles/109946/our-mental-health-care-system-needs-more-places-for-people-to-chill-out',
   },
   {
-    id: ,
+    id: 11,
     featured: false,
     date: 'Sep 2014',
     name: 'Everything We Knew About Suicide Is Wrong',
@@ -288,7 +288,7 @@ const Advocacies = [
     url_to_demo: 'https://riinternational.com/blog/everything-we-knew-about-suicide-is-wrong/',
   },
   {
-    id: ,
+    id: 10,
     featured: true,
     date: 'Apr 2014',
     name: 'New Voices of Suicide Attempt Survivors',
@@ -299,7 +299,7 @@ const Advocacies = [
     url_to_demo: 'https://www.youtube.com/watch?v=oYMlJlkH2S0',
   },
   {
-    id: 7,
+    id: 9,
     featured: false,
     date: 'Apr 2014',
     name: 'Misha Kessler',
@@ -310,7 +310,7 @@ const Advocacies = [
     url_to_demo: 'https://www.livethroughthis.org/misha-kessler',
   },
   {
-    id: 6,
+    id: 8,
     featured: true,
     date: 'Apr 2014',
     name: 'Mental Health on Campus: A Live-Streamed Town Hall Event',
@@ -321,7 +321,7 @@ const Advocacies = [
     url_to_demo: 'https://www.clintonfoundation.org/livestream-mental-health-and-wellness-campus-town-hall-without-walls',
   },
   {
-    id: 6,
+    id: 7,
     featured: false,
     date: 'Apr 2014',
     name: 'Suicide attempt survivors go public in hopes of aiding those at risk.',
@@ -332,7 +332,7 @@ const Advocacies = [
     url_to_demo: 'https://www.bostonglobe.com/lifestyle/style/2014/04/28/suicide-attempt-survivors-speak-about-their-experiences-hoping-reach-those-risk/ffrjBg4qQPLHlvi9srqKBP/story.html',
   },
   {
-    id: 5,
+    id: 6,
     featured: false,
     date: 'Dec 2013',
     name: 'Suffering In Silence: College Students & Suicide',
@@ -343,15 +343,15 @@ const Advocacies = [
     url_to_demo: 'https://www.wnyc.org/story/suffering-silence-college-kids-and-suicide/',
   },
   {
-    id: ,
-    featured: ,
-    date: '',
-    name: '',
-    meta: '',
+    id: 5,
+    featured: true,
+    date: 'May 2013',
+    name: 'The Youth Suicide Epidemic: Illness Prevention Models and Gaps in Nonprofit Prevention Programming',
+    meta: 'The George Washington University (BA Thesis)',
     tagline: '',
-    category: '', // Author, Speaker, Interviewee, Committee Member, Associate Member, Advisor, Awardee
-    url_to_img: `${}`,
-    url_to_demo: '',
+    category: 'Author', // Author, Speaker, Interviewee, Committee Member, Associate Member, Advisor, Awardee
+    url_to_img: `${Author}`,
+    url_to_demo: 'https://www.gwnashmancenter.org/',
   },
   {
     id: 4,
