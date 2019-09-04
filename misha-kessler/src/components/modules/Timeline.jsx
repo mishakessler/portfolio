@@ -180,14 +180,14 @@ export default function Timeline() {
       //     name="mountain"
       //     className="timeline-icon" />} 
       >
-        <h3 className="vertical-timeline-element-title">Live, On Stage, From the Grammys</h3>
+        <h3 className="vertical-timeline-element-title">Live On Stage From the Grammys</h3>
         {/* <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4> */}
         <p>As Logic, Alessia Cara, and Khalid performed their Grammy-nominated “1-800-273-8255”, a suicide prevention anthem named after the National Suicide Prevention Lifeline’s crisis number, I stood with 25 other loss and attempt survivors to send the message that those suffering and grieving are not alone.</p>
       </VerticalTimelineElement>
 
       <VerticalTimelineElement
         className="vertical-timeline-element--education"
-        date="jan 2018"
+        date="may 2019"
         iconStyle={{ background: '#28afb0' }}
       // icon={
       //   <Icon
@@ -197,9 +197,9 @@ export default function Timeline() {
       //     name="mountain"
       //     className="timeline-icon" />} 
       >
-        <h3 className="vertical-timeline-element-title">Going "All In" On Software Engineering</h3>
+        <h3 className="vertical-timeline-element-title">Going All In On Software Engineering</h3>
         {/* <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4> */}
-        <p>After starting WordPress development firm and being frustrated by not having a greater understanding of the applications I was developing, I committed to learning and further enabling my mission. This began my 3 month software engineering immersive at General Assembly.</p>
+        <p>After starting a WordPress development firm and becoming frustrated by not having a greater understanding of full stack development, I committed to learning and further enabling my mission of creating mental health technology. This began my 3 month software engineering immersive at General Assembly.</p>
       </VerticalTimelineElement>
     </VerticalTimeline >
   )

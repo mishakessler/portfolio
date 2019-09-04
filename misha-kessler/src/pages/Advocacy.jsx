@@ -33,8 +33,8 @@ class Advocacy extends Component {
     this.state = {
       title: "Featured Advocacy",
       tagline: "",
-      description: "Portfolio under construction. Check back soon!",
-      helper: "",
+      description: "The following cards feature each of the panels, speakerships, media interviews, research publications, reports, news articles, and documentaries in which I've been honored to be included.",
+      helper: "There's a lot to digest here, sorry about that! Portfolio is still under construction.",
       projects: Advocacies,
     }
   }
@@ -91,8 +91,9 @@ class Advocacy extends Component {
                         <Card.Meta>
                           <a>From</a>
                           <a>
-                            {project.meta},
+                            {project.meta}
                           </a>
+                          <br></br>
                           <a>
                             {project.date}
                           </a>
@@ -101,37 +102,11 @@ class Advocacy extends Component {
                           {project.tagline}
                         </Card.Description>
                       </Card.Content>
-                      <Card.Content extra>
-                        <p>At a glance:</p>
-                        {project.wordpress &&
-                          <a>
-                            <Icon
-                              size='large'
-                              name='wordpress'
-                              className="smooth" />
-                          </a>
-                        }
-                        {project.html &&
-                          <a>
-                            <Icon
-                              size='large'
-                              name='html5'
-                              className="smooth" />
-                          </a>
-                        }
-                        {project.css &&
-                          <a>
-                            <Icon
-                              size='large'
-                              name='css3'
-                              className="smooth" />
-                          </a>
-                        }
-                      </Card.Content>
                     </Card>
                     {project.url_to_demo &&
                       <Button
                         attached='bottom'
+                        as='a'
                         href={project.url_to_demo}
                         target='_blank'
                         color='teal'

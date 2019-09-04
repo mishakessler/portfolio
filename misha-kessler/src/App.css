@@ -72,11 +72,11 @@ a :hover {
 /****************** Accent Effects *****************/
 
 .shaded-text {
-  text-shadow: -5px -5px 10px black;
+  text-shadow: -5px 5px 10px #0F162688;
 }
 
 .shaded-box {
-  box-shadow: -5px -5px 10px black;
+  box-shadow: -5px 5px 10px #0F162688;
 }
 
 
@@ -479,23 +479,18 @@ a :hover {
 
 .hero p {
   max-width: 920px;
-  margin: 25px auto;
-  font-size: 1.1em;
-}
-.about-page .hero {
-  text-align: center;
+  margin: 35px auto;
+  font-size: 1.15em;
 }
 
-.about-page .hero img {
-  width: 200px;
-  border-radius: 100%;
-}
-
-.about-page h3, .about-page p {
-  text-align: left;
-}
 
 /******************* Index Pages *******************/
+
+
+.index {
+  max-width: 1280px;
+  margin: 50px auto;
+}
 
 .ui.grid>* {
   padding: 1rem;
@@ -555,8 +550,75 @@ a :hover {
 
 /******************* About Page ********************/
 
+.about-page .hero {
+  text-align: center;
+}
+
+.about-page .hero img {
+  width: 200px;
+  border-radius: 100%;
+}
+
+.about-page .hero p {
+  text-align: left;
+}
+
+.about-why, .about-roles {
+  margin: 50px auto;
+}
+
+.about-why h3, .about-why p, .about-roles h3, .about-roles p {
+  text-align: left;
+  margin: 25px auto;
+}
+
+.about-journey {
+  max-width: 920px;
+  margin: 100px auto;
+  padding: 25px;
+  background: #00bac8;
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 10px #0F1626;
+}
+
+.about-journey h3, .about-journey p {
+  text-align: left;
+  margin: 15px auto;
+}
+
+.about-journey img {
+  float: right;
+  max-width: 350px;
+  margin: -50px 15px 0 15px;
+  border-radius: 10px;
+}
+
+.about-roles {
+  max-width: 920px;
+  margin: 75px auto;
+  padding: 25px;
+  background-color: white;
+  border: 5px solid #00bac8;
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 10px #0F1626;
+}
+
+.about-roles p {
+  color: black;
+  margin: 0 auto;
+}
+
+.about-roles-current, .about-roles-previous {
+  margin: 0 auto;
+}
+
 .vertical-timeline {
   padding: 0;
+}
+
+.vertical-timeline::before {
+height: calc(100% + 175px);
+margin-top: -100px;
 }
 
 .vertical-timeline-element-title, .vertical-timeline-element-title h3 {
@@ -739,10 +801,18 @@ a :hover {
 
 
 @media all and (max-width: 736px) {
+  .about-journey {
+    margin-top: 275px;
+  }
 
+  .about-journey img {
+    margin-top: -255px;
+  }
 }
 
 
 @media all and (max-width: 480px) {
-
+  .about-journey img {
+    float: unset;
+  }
 }
