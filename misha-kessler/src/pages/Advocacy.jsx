@@ -12,7 +12,6 @@ import {
   Label,
   Grid,
   Card,
-  Icon,
   Image,
   Button,
 } from 'semantic-ui-react'
