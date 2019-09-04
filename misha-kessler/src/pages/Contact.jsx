@@ -26,7 +26,6 @@ class Contact extends Component {
 
     this.state = {
       title: "Get In Touch",
-      image: 'https://imgur.com/',
       tagline: "",
       description: "",
       helper: "",

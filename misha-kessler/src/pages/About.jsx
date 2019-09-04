@@ -20,7 +20,7 @@ import Timeline from '../components/modules/Timeline';
 import Footer from '../components/modules/Footer'
 
 // Assets 
-import Misha from '../assets/images/misha-2.jpg'
+import Misha from '../assets/images/misha-work.jpg'
 
 class About extends Component {
   constructor(props) {
