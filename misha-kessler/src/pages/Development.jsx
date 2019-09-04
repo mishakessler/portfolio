@@ -33,7 +33,7 @@ class Development extends Component {
       title: "Featured Websites",
       tagline: "",
       description: "",
-      helper: "Each project card features multiple icons to help you preview the project's scope. Feel free to check out the icon key beneath the card gallery, if you're unsure of what some icons imply!",
+      helper: "Each project card features multiple icons to help you preview the project's scope. Feel free to check out the icon key beneath the card gallery, if you're unsure of what some icons imply.",
       projects: Websites,
     }
   }
