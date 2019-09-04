@@ -33,7 +33,7 @@ class Development extends Component {
       title: "Featured Websites",
       tagline: "",
       description: "",
-      helper: "Each project card features multiple icons to help you preview the project's scope. Feel free to check out the icon key beneath the card gallery, if you're unsure of what some icons imply!",
+      helper: "Each project card features multiple icons to help you preview the project's scope. Feel free to check out the icon key beneath the card gallery, if you're unsure of what some icons imply.",
       projects: Websites,
     }
   }
@@ -221,6 +221,7 @@ class Development extends Component {
                     <Button.Group attached='bottom'>
                       {project.url_to_casestudy &&
                         <Button
+                          as='a'
                           href={project.url_to_casestudy}
                           color='teal'
                           className='smooth'
@@ -232,6 +233,7 @@ class Development extends Component {
                         />}
                       {project.url_to_demo &&
                         <Button
+                          as='a'
                           href={project.url_to_demo}
                           target='_blank'
                           color='teal'
@@ -244,6 +246,7 @@ class Development extends Component {
                         />}
                       {project.url_to_github &&
                         <Button
+                          as='a'
                           href={project.url_to_github}
                           target='_blank'
                           color='teal'
