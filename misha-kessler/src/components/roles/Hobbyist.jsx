@@ -15,7 +15,6 @@ export default function Hobbyist() {
       </div>
       <div className="landing-tagline shaded-text">
         <h2>I'm a pretty avid traveler, trekker, and cyclist.</h2>
-        <br></br>
         <h2>I've also been called a plant daddy, a coffee addict, an Apple cultist, and even an Instagram "micro-influencer."</h2>
         <p>** But let's be honest... "micro-influencer" sounds pretty snooty.</p>
       </div>
