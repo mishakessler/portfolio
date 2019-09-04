@@ -134,9 +134,9 @@ a :hover {
 
 .page-viewer {
   position: fixed;
-  overflow: hidden;
+  overflow: scroll;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .page-viewer-pages {
@@ -380,7 +380,7 @@ a :hover {
 
 .page {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
   padding: 20px;
   overflow-y: scroll; 
@@ -797,7 +797,6 @@ margin-top: -100px;
 
   .right-cta h6, .left-cta h6 {
     font-size: 1.1em;
-    /* opacity: .2; */
   }
 
 
@@ -849,7 +848,15 @@ margin-top: -100px;
 /***************** Under 769px *****************/
 
 @media all and (max-width: 769px) {
-  
+
+  .page-viewer-pages {
+    position: absolute;
+    width: calc(100vw - 10px);
+    height: calc(100vh - 45px);
+    top: 5px;
+    left: 5px;
+  }
+
   /** Landing Logo **/
 
   .landing-lettermark {
@@ -925,7 +932,7 @@ margin-top: -100px;
   /** Landing Logo **/
 
   .landing-lettermark {
-    width: 100px;
+    width: 75px;
   }
 
   /** Landing Text **/
@@ -935,21 +942,21 @@ margin-top: -100px;
   }
 
   .landing-welcome {
-    top: 28vh;
+    top: 30vh;
     left: 2vw;
   }
 
   .landing-welcome h1 {
-    font-size: 5.5em;
+    font-size: 5em;
   }
 
   .landing-tagline {
-    margin-top: 10vh;
+    margin-top: 8vh;
     padding: 0 8vw;
   }
 
   .landing-tagline h2 {
-    font-size: 1.9em;
+    font-size: 1.4em;
   }
 
   /** Landing CTAs **/
