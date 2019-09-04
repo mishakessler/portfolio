@@ -72,11 +72,11 @@ a :hover {
 /****************** Accent Effects *****************/
 
 .shaded-text {
-  text-shadow: -5px -5px 10px black;
+  text-shadow: -5px 5px 10px #0F162688;
 }
 
 .shaded-box {
-  box-shadow: -5px -5px 10px black;
+  box-shadow: -5px 5px 10px #0F162688;
 }
 
 
@@ -482,18 +482,7 @@ a :hover {
   margin: 25px auto;
   font-size: 1.1em;
 }
-.about-page .hero {
-  text-align: center;
-}
 
-.about-page .hero img {
-  width: 200px;
-  border-radius: 100%;
-}
-
-.about-page h3, .about-page p {
-  text-align: left;
-}
 
 /******************* Index Pages *******************/
 
@@ -560,6 +549,44 @@ a :hover {
 
 
 /******************* About Page ********************/
+
+.about-page .hero {
+  text-align: center;
+}
+
+.about-page .hero img {
+  width: 200px;
+  border-radius: 100%;
+}
+
+.about-why, .about-roles {
+  margin: 50px auto;
+}
+
+.about-why h3, .about-why p, .about-roles h3, .about-roles p  {
+  text-align: left;
+  margin: 25px auto;
+}
+
+.about-journey {
+  max-width: 820px;
+  margin: 100px auto;
+  padding: 25px;
+  background: #005d7a;
+  border-radius: 10px;
+}
+
+.about-journey h3, .about-journey p {
+  text-align: left;
+  margin: 15px auto;
+}
+
+.about-journey img {
+  float: right;
+  max-width: 350px;
+  margin: -50px 15px 0 15px;
+  border-radius: 10px;
+}
 
 .vertical-timeline {
   padding: 0;

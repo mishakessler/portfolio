@@ -20,6 +20,7 @@ import Timeline from '../components/modules/Timeline';
 import Footer from '../components/modules/Footer'
 
 // Assets 
+import Misha from '../assets/images/misha-2.jpg'
 
 class About extends Component {
   constructor(props) {
@@ -52,6 +53,7 @@ class About extends Component {
           <p>Years later, stronger and wiser for my experiences, I'm results-driven, attentive, and built on a growth mindsetl; I'm always challenging myself to master new skills and create unique resources that improve consumer quality of life.</p>
         </div>
         <div className="about-journey">
+          <img src={Misha} alt="Misha coding at General Assembly." className="shaded-box" />
           <h3>My Journey To Full-Stack Engineering</h3>
           <p>Want to learn more about how and why I came to the intersection of mental health, technology, socially responsible business, and mountain climbing?</p>
           <p>Understandable. It's an odd one.</p>
