@@ -1,5 +1,5 @@
 // React
-import React from 'react'
+import React, { Component } from 'react'
 
 // React Router
 import {
@@ -17,7 +17,7 @@ import {
 import Lettermark from '../../assets/graphics/lettermark.png'
 import MenuLettermark from '../../assets/graphics/lettermark-white.png'
 
-export default class Header extends React.Component {
+export default class Header extends Component {
   constructor(props) {
     super(props)
 
