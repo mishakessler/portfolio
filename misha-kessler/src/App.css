@@ -479,8 +479,8 @@ a :hover {
 
 .hero p {
   max-width: 920px;
-  margin: 25px auto;
-  font-size: 1.1em;
+  margin: 35px auto;
+  font-size: 1.15em;
 }
 
 
@@ -559,11 +559,15 @@ a :hover {
   border-radius: 100%;
 }
 
+.about-page .hero p {
+  text-align: left;
+}
+
 .about-why, .about-roles {
   margin: 50px auto;
 }
 
-.about-why h3, .about-why p, .about-roles h3, .about-roles p  {
+.about-why h3, .about-why p, .about-roles h3, .about-roles p {
   text-align: left;
   margin: 25px auto;
 }
