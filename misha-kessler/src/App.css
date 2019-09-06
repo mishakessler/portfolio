@@ -545,6 +545,11 @@ a :hover {
   text-align: center;
 }
 
+.card-meta p {
+  display: inline;
+
+}
+
 /******************* Detail Pages ******************/
 
 
@@ -972,11 +977,11 @@ margin-top: -100px;
   .enter-cta {
     width: 80%;
     left: 10%;
-    bottom: 10vh;
+    bottom: 12vh;
   }
   
   .left-cta, .right-cta {
-    bottom: 1vh;
+    bottom: 3vh;
   }
   
   .right-cta {
