@@ -8,20 +8,6 @@ import News from '../graphics/advocacy-news.png'
 import Author from '../graphics/advocacy-publication.png'
 import Speaker from '../graphics/advocacy-speech.png'
 
-
-// {
-//   id: ,
-//   featured: ,
-//   date: '',
-//   name: '',
-//   meta: '',
-//   tagline: '',
-//   category: '', // Author, Speaker, Interviewee, Committee Member, Associate Member, Advisor, Awardee
-//   url_to_img: `${}`,
-//   url_to_demo: '',
-// },
-
-
 const Advocacies = [
   {
     id: 34,
