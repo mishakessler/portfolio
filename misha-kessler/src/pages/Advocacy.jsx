@@ -25,8 +25,6 @@ import Footer from '../components/modules/Footer'
 // Assets 
 import Advocacies from '../assets/project-assets/Advocacies'
 
-const
-
 class Advocacy extends Component {
   constructor(props) {
     super(props)

@@ -545,6 +545,11 @@ a :hover {
   text-align: center;
 }
 
+.card-meta p {
+  display: inline;
+
+}
+
 /******************* Detail Pages ******************/
 
 

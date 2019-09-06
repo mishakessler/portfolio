@@ -88,15 +88,17 @@ class Development extends Component {
                         />}
                       <Card.Content>
                         <Card.Header>{project.name}</Card.Header>
-                        <Card.Meta>
+                        <Card.Meta
+                          className="card-meta">
                           <Icon
                             name='tags'
                             className="smooth" />
                           <a>
-                            {project.meta},
-                          </a>
-                          <a>
                             {project.category}
+                          </a>
+                          <p>via </p>
+                          <a>
+                            {project.meta}
                           </a>
                         </Card.Meta>
                         <Card.Description>

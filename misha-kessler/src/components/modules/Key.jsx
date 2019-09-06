@@ -4,12 +4,8 @@ import React from 'react'
 // React Semantic
 import {
   Header,
-  Divider,
-  Label,
   Grid,
-  Card,
   Icon,
-  Image,
   Button,
   Modal
 } from 'semantic-ui-react'
