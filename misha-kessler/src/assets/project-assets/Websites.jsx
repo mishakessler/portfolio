@@ -11,7 +11,7 @@ const Websites = [
     category: 'Front End', // Concept, Front End, Full Stack
     progress: 'Live', // R&D, MVP, Post-MVP, Private Beta, Live
 
-    url_to_img: 'https://imgur.com/lT6CSVq.png',
+    url_to_img: 'https://imgur.com/0Tawocu.png',
     url_to_demo: 'https://www.mishakessler.com',
     url_to_github: 'https://github.com/mishakessler/portfolio',
     url_to_casestudy: null,
@@ -112,14 +112,14 @@ const Websites = [
     featured: false,
 
     name: 'Cara Mia Redesign',
-    date: '',
+    date: 'Aug 2019',
     meta: 'React',
     tagline: 'A collaborative project with UX designers to conceive and develop a redesigned web presence for a local NYC eatery.',
 
     category: 'Front End', // Concept, Front End, Full Stack
     progress: 'MVP', // R&D, MVP, Post-MVP, Private Beta, Live
 
-    url_to_img: '',
+    url_to_img: 'https://imgur.com/ZLaVcDn.png',
     url_to_demo: 'https://cara-mia-redesign.surge.sh/',
     url_to_github: 'https://github.com/mishakessler/cara-mia-redesign',
     url_to_casestudy: null,
@@ -177,21 +177,21 @@ const Websites = [
     auth: true,
     adobe: true,
     responsive: true,
-    accessible: true,
+    accessible: false,
   },
   {
     id: 7,
     featured: false,
 
-    name: 'Seven Summits for Suicide Prevention',
+    name: '7 Summits Suicide Prevention',
     date: 'Jul 2019',
-    meta: "React, The DarkSky API, & The Fundraise.com API",
-    tagline: '',
+    meta: "React",
+    tagline: 'Used DarkSkyAPI & Fundraise.com API on React to develop an interactive and educational dashboard for charity donors.',
 
     category: 'Front End', // Concept, Front End, Full Stack
     progress: 'MVP', // R&D, MVP, Post-MVP, Private Beta, Live
 
-    url_to_img: '',
+    url_to_img: 'https://imgur.com/uZyd6AC.png',
     url_to_demo: 'https://7ssp.surge.sh/',
     url_to_github: 'https://github.com/mishakessler/ga-sei-project2/tree/master/seven-summits-for-suicide-prevention',
     url_to_casestudy: '',
@@ -221,13 +221,13 @@ const Websites = [
 
     name: 'Mental Healthable',
     date: 'Jun 2019',
-    meta: 'HTML, CSS, JS & The News API',
-    tagline: '',
+    meta: 'HTML, CSS, & JS',
+    tagline: 'Used NewsAPI on a vanilla HTML, CSS, and JS application to create a curated mental health news feed.',
 
     category: 'Front End', // Concept, Front End, Full Stack
     progress: 'MVP', // R&D, MVP, Post-MVP, Private Beta, Live
 
-    url_to_img: '',
+    url_to_img: 'https://imgur.com/1grhUj3.png',
     url_to_demo: 'https://mentalhealthable.surge.sh/',
     url_to_github: 'https://github.com/mishakessler/ga-sei-project1',
     url_to_casestudy: '',
@@ -299,7 +299,7 @@ const Websites = [
     category: 'Front End', // Concept, Front End, Full Stack
     progress: 'Live', // R&D, MVP, Post-MVP, Private Beta, Live
 
-    url_to_img: '',
+    url_to_img: 'https://imgur.com/T3E24bH.png',
     url_to_demo: 'https://www.remedient.com/',
     url_to_github: null,
     url_to_casestudy: null,
@@ -335,7 +335,7 @@ const Websites = [
     category: 'Front End', // Concept, Front End, Full Stack
     progress: 'Live', // R&D, MVP, Post-MVP, Private Beta, Live
 
-    url_to_img: '',
+    url_to_img: 'https://imgur.com/RsfUn52.png',
     url_to_demo: 'https://www.livethroughthis.org/',
     url_to_github: null,
     url_to_casestudy: null,
@@ -371,7 +371,7 @@ const Websites = [
     category: 'Front End', // Concept, Front End, Full Stack
     progress: 'Live', // R&D, MVP, Post-MVP, Private Beta, Live
 
-    url_to_img: '',
+    url_to_img: 'https://imgur.com/T3E24bH.png',
     url_to_demo: 'https://www.sixftover.org/',
     url_to_github: null,
     url_to_casestudy: null,
@@ -407,7 +407,7 @@ const Websites = [
     category: 'Concept', // Concept, Front End, Full Stack
     progress: 'R&D', // R&D, MVP, Post-MVP, Private Beta, Live
 
-    url_to_img: '',
+    url_to_img: 'https://imgur.com/x12PEMh.png',
     url_to_demo: 'https://www.rmdy.io/',
     url_to_github: null,
     url_to_casestudy: null,
