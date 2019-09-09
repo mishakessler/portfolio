@@ -87,19 +87,25 @@ class Development extends Component {
                           className="overlay"
                         />}
                       <Card.Content>
-                        <Card.Header>{project.name}</Card.Header>
-                        <Card.Meta>
+                        <Card.Header
+                          className="card-header">
+                          {project.name}
+                        </Card.Header>
+                        <Card.Meta
+                          className="card-meta">
                           <Icon
                             name='tags'
                             className="smooth" />
                           <a>
-                            {project.meta},
-                          </a>
-                          <a>
                             {project.category}
                           </a>
+                          <p>via </p>
+                          <a>
+                            {project.meta}
+                          </a>
                         </Card.Meta>
-                        <Card.Description>
+                        <Card.Description
+                          className="card-description">
                           {project.tagline}
                         </Card.Description>
                       </Card.Content>

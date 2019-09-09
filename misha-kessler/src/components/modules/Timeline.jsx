@@ -2,9 +2,6 @@
 import React from 'react'
 
 // React Semantic
-import {
-  Icon
-} from 'semantic-ui-react'
 
 // React Timeline
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
