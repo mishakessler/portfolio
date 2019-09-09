@@ -87,7 +87,10 @@ class Development extends Component {
                           className="overlay"
                         />}
                       <Card.Content>
-                        <Card.Header>{project.name}</Card.Header>
+                        <Card.Header
+                          className="card-header">
+                          {project.name}
+                        </Card.Header>
                         <Card.Meta
                           className="card-meta">
                           <Icon
@@ -101,7 +104,8 @@ class Development extends Component {
                             {project.meta}
                           </a>
                         </Card.Meta>
-                        <Card.Description>
+                        <Card.Description
+                          className="card-description">
                           {project.tagline}
                         </Card.Description>
                       </Card.Content>

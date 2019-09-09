@@ -164,8 +164,8 @@ a :hover {
 .landing-advocate {
   background: 
   linear-gradient(
-    rgba(0, 0, 0, 0.6), 
-    rgba(0, 0, 0, 0.9)
+    rgba(0, 93, 122, 0.8), 
+    rgba(0, 229, 187, 0.5)
   ),
   url(./assets/images/advocate-banner-1.jpg);
   background-size: cover;
@@ -175,8 +175,8 @@ a :hover {
 .landing-designer {
   background: 
   linear-gradient(
-    rgba(0, 0, 0, 0.6), 
-    rgba(0, 0, 0, 0.9)
+    rgba(0, 93, 122, 0.8), 
+    rgba(0, 229, 187, 0.5)
   ),
   url(./assets/images/designer-banner-1.jpg);
   background-size: cover;
@@ -186,8 +186,8 @@ a :hover {
 .landing-developer {
   background: 
   linear-gradient(
-    rgba(0, 0, 0, 0.6), 
-    rgba(0, 0, 0, 0.9)
+    rgba(0, 93, 122, 0.8), 
+    rgba(0, 229, 187, 0.5)
   ),
   url(./assets/images/developer-banner-1.jpg);
   background-size: cover;
@@ -197,8 +197,8 @@ a :hover {
 .landing-entrepreneur {
   background: 
   linear-gradient(
-    rgba(0, 0, 0, 0.7), 
-    rgba(0, 0, 0, 0.9)
+    rgba(0, 93, 122, 0.8), 
+    rgba(0, 229, 187, 0.5)
   ),
   url(./assets/images/entrepreneur-banner-1.jpg);
   background-size: cover;
@@ -208,8 +208,8 @@ a :hover {
 .landing-hobbyist {
   background: 
   linear-gradient(
-    rgba(0, 0, 0, 0.6), 
-    rgba(0, 0, 0, 0.9)
+    rgba(0, 93, 122, 0.8), 
+    rgba(0, 229, 187, 0.5)
   ),
   url(./assets/images/hobbyist-banner-1.jpg);
   background-size: cover;
@@ -307,11 +307,11 @@ a :hover {
 
 .right-cta h6, .left-cta h6 {
   font-size: 1.05em;
-  opacity: .2;
+  opacity: .5;
 }
 
 .right-cta h6:hover, .left-cta h6:hover {
-  opacity: .8;
+  opacity: 1;
 }
 
 
@@ -388,7 +388,7 @@ a :hover {
 }
 
 .body {
-  min-height: 45vh;
+  min-height: 30vh;
 }
 
 .body h3, .about-why h3, .about-journey h3, .about-roles h3 {
@@ -415,6 +415,7 @@ a :hover {
     rgba(0, 0, 0, 0.9)
   ),
   url(./assets/images/advocate-banner-1.jpg);
+  background-attachment: fixed;
   background-size: cover;
   background-position: center center;
 }
@@ -426,6 +427,7 @@ a :hover {
     rgba(0, 0, 0, 0.9)
   ),
   url(./assets/images/designer-banner-1.jpg);
+  background-attachment: fixed;
   background-size: cover;
   background-position: center center;
 }
@@ -437,6 +439,7 @@ a :hover {
     rgba(0, 0, 0, 0.9)
   ),
   url(./assets/images/developer-banner-1.jpg);
+  background-attachment: fixed;
   background-size: cover;
   background-position: top center;
 }
@@ -448,6 +451,7 @@ a :hover {
     rgba(0, 0, 0, 0.9)
   ),
   url(./assets/images/entrepreneur-banner-1.jpg);
+  background-attachment: fixed;
   background-size: cover;
   background-position: center center;
 }
@@ -459,6 +463,7 @@ a :hover {
     rgba(0, 0, 0, 0.9)
   ),
   url(./assets/images/hobbyist-banner-1.jpg);
+  background-attachment: fixed;
   background-size: cover;
   background-position: center center;
 }
@@ -498,6 +503,14 @@ a :hover {
 
 .project-cards {
   text-align: left;
+}
+
+.development-page .description {
+  height: 110px;
+}
+
+.advocacy-page .content {
+  height: 150px;
 }
 
 .ui.card>.image {
@@ -547,7 +560,6 @@ a :hover {
 
 .card-meta p {
   display: inline;
-
 }
 
 /******************* Detail Pages ******************/
@@ -555,16 +567,16 @@ a :hover {
 
 /******************* About Page ********************/
 
-.about-page .hero {
+.about-page .hero, .contact-page .hero {
   text-align: center;
 }
 
-.about-page .hero img {
+.about-page .hero img, .contact-page .hero img {
   width: 200px;
   border-radius: 100%;
 }
 
-.about-page .hero p {
+.about-page .hero p, .contact-page .hero p {
   text-align: left;
 }
 
@@ -683,6 +695,25 @@ margin-top: -100px;
   }
 }
 
+
+/***************** Contact Page *****************/
+
+.contact-body, .contact-socials {
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.contact-body {
+  text-align: right;
+}
+
+.contact-socials {
+  text-align: center;
+}
+
+.contact-socials a {
+  margin: 0 15px;
+}
 
 /***************************************************/
 /********************* FOOTER **********************/
@@ -951,7 +982,7 @@ margin-top: -100px;
   }
 
   .landing-welcome {
-    top: 28vh;
+    top: 27vh;
     left: 2vw;
   }
 
@@ -960,7 +991,7 @@ margin-top: -100px;
   }
 
   .landing-tagline {
-    margin-top: 6vh;
+    margin-top: 12vh;
     padding: 0 8vw;
   }
 
@@ -981,7 +1012,7 @@ margin-top: -100px;
   }
   
   .left-cta, .right-cta {
-    bottom: 3vh;
+    bottom: 4vh;
   }
   
   .right-cta {
@@ -990,7 +1021,7 @@ margin-top: -100px;
   
   .left-cta {
     left: 5vw;
-    bottom: 4vh;
+    bottom: 7vh;
   }
   
   .enter-cta a {
