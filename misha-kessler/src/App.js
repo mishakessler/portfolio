@@ -3,11 +3,9 @@ import React, { Component } from 'react'
 
 // React Router
 import {
-  Link,
   Route,
   withRouter,
   Switch,
-  Redirect
 } from 'react-router-dom';
 
 // React Transition Group

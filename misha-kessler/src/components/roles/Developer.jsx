@@ -18,7 +18,7 @@ export default function Developer() {
   return (
     <div className="landing-developer">
       <div className="landing-lettermark">
-        <img src={Lettermark} />
+        <img src={Lettermark} alt='Misha Lettermark' />
       </div>
       <div className="landing-titles">
         <h5>Full Stack Developer</h5>
@@ -34,7 +34,6 @@ export default function Developer() {
       </div>
       <div className="ctas">
         <div className="left-cta">
-          <h6 className="smooth"></h6>
         </div>
         <div className="enter-cta">
           <Link to="/development" className="smooth">

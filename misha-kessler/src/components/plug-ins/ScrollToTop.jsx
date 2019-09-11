@@ -1,5 +1,5 @@
 // React
-import React, { Component } from 'react'
+import { Component } from 'react'
 
 // React Router
 import {

@@ -3,7 +3,6 @@ import React, { Component } from 'react'
 
 // React Router
 import {
-  Link,
   withRouter
 } from 'react-router-dom'
 
@@ -65,7 +64,7 @@ class Advocacy extends Component {
                         as='a'
                         color='teal'
                         ribbon='right'
-                        className="smooth">
+                        className='dcursor smooth'>
                         {project.category}
                       </Label>
                       {project.featured &&
@@ -88,14 +87,8 @@ class Advocacy extends Component {
                       <Card.Content>
                         <Card.Header>{project.name}</Card.Header>
                         <Card.Meta>
-                          <a>From</a>
-                          <a>
-                            {project.meta}
-                          </a>
-                          <br></br>
-                          <a>
-                            {project.date}
-                          </a>
+                          <p>From <span className='pseudo-link smooth'>{project.meta}</span></p>
+                          <p><span className='pseudo-link smooth'>{project.date}</span></p>
                         </Card.Meta>
                         <Card.Description>
                           {project.tagline}

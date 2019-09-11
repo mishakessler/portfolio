@@ -18,7 +18,7 @@ export default function Designer() {
   return (
     <div className="landing-designer">
       <div className="landing-lettermark">
-        <img src={Lettermark} />
+        <img src={Lettermark} alt='Misha Lettermark' />
       </div>
       <div className="landing-titles">
         <h5>UI/UX Designer</h5>

@@ -1,10 +1,11 @@
 // React
 import React from 'react'
 
-// React Semantic
-
 // React Timeline
-import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
+import {
+  VerticalTimeline,
+  VerticalTimelineElement
+} from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
 export default function Timeline() {

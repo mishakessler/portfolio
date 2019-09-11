@@ -45,7 +45,7 @@ export default class Header extends Component {
     return (
       <div className="page-header">
         <div className="header-logo">
-          <Link to="/"><img src={Lettermark}></img></Link>
+          <Link to="/"><img src={Lettermark} alt='Misha Lettermark'></img></Link>
         </div>
         <div className="desktop-nav hide-on-mobile">
           <Link to="/development" className="smooth">Development</Link>

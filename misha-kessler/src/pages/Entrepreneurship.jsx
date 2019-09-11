@@ -3,15 +3,8 @@ import React, { Component } from 'react'
 
 // React Router
 import {
-  Link,
   withRouter
 } from 'react-router-dom'
-
-// React Semantic
-import {
-  Button,
-  Icon
-} from 'semantic-ui-react'
 
 // Components
 import Header from '../components/modules/Header'
