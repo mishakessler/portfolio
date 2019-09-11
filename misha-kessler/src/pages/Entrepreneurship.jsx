@@ -19,6 +19,7 @@ class Entrepreneurship extends Component {
     this.state = {
       preimage: null,
       title: "Featured Projects",
+      postimage: null,
       tagline: "",
       description: "",
       helper: "Page under construction. Check back soon!",
@@ -34,6 +35,7 @@ class Entrepreneurship extends Component {
           preimage={this.state.preimage}
           title={this.state.title}
           tagline={this.state.tagline}
+          postimage={this.state.postimage}
           description={this.state.description}
           helper={this.state.helper}
         />

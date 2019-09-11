@@ -33,6 +33,7 @@ class Contact extends Component {
     this.state = {
       preimage: "https://imgur.com/pcEs3MH.jpg",
       title: "Get In Touch",
+      postimage: null,
       tagline: "So you want to send a holler my way?",
       description: "Feel free to use the form here, or email me directly. I do my best to respond within 24 hours, but depending on the season and the reason for emailing, I may take up to 72 hours to respond.",
       helper: "",
@@ -48,6 +49,7 @@ class Contact extends Component {
           preimage={this.state.preimage}
           title={this.state.title}
           tagline={this.state.tagline}
+          postimage={this.state.postimage}
           description={this.state.description}
           helper={this.state.helper}
         />

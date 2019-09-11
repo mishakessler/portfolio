@@ -13,14 +13,14 @@ import Footer from '../components/modules/Footer'
 
 // Assets 
 
-class About extends Component {
+class ErrorPage extends Component {
   constructor(props) {
     super(props)
 
     this.state = {
       preimage: null,
       title: "Page Not Found",
-      image: 'https://imgur.com/',
+      postimage: 'https://imgur.com/',
       tagline: "404 Error",
       description: "Uh-oh! We got lost somewhere along the way. That said, getting lost is a great opportunity to explore...",
       helper: "",
@@ -36,6 +36,7 @@ class About extends Component {
           preimage={this.state.preimage}
           title={this.state.title}
           tagline={this.state.tagline}
+          postimage={this.state.postimage}
           description={this.state.description}
           helper={this.state.helper}
         />
@@ -48,5 +49,5 @@ class About extends Component {
   }
 }
 
-export default withRouter(About)
+export default withRouter(ErrorPage)
 

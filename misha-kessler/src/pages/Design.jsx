@@ -33,6 +33,7 @@ class Design extends Component {
       preimage: null,
       title: "Featured Designs",
       tagline: "",
+      postimage: null,
       description: "",
       helper: "Portfolio under construction. Check back soon!",
       projects: Designs,
@@ -48,6 +49,7 @@ class Design extends Component {
           preimage={this.state.preimage}
           title={this.state.title}
           tagline={this.state.tagline}
+          postimage={this.state.postimage}
           description={this.state.description}
           helper={this.state.helper}
         />

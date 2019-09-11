@@ -33,6 +33,7 @@ class Development extends Component {
       preimage: null,
       title: "Featured Websites",
       tagline: "",
+      postimage: null,
       description: "",
       helper: "Each project card features multiple icons to help you preview the project's scope. Feel free to check out the icon key beneath the card gallery, if you're unsure of what some icons imply.",
       projects: Websites,
@@ -47,6 +48,7 @@ class Development extends Component {
           className="development-hero"
           preimage={this.state.preimage}
           title={this.state.title}
+          postimage={this.state.postimage}
           tagline={this.state.tagline}
           description={this.state.description}
           helper={this.state.helper}
