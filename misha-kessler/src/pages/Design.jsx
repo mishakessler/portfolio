@@ -30,6 +30,7 @@ class Design extends Component {
     super(props)
 
     this.state = {
+      preimage: null,
       title: "Featured Designs",
       tagline: "",
       description: "",
@@ -44,6 +45,7 @@ class Design extends Component {
         <Header />
         <Hero
           className="design-hero"
+          preimage={this.state.preimage}
           title={this.state.title}
           tagline={this.state.tagline}
           description={this.state.description}

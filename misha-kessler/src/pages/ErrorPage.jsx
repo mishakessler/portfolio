@@ -18,6 +18,7 @@ class About extends Component {
     super(props)
 
     this.state = {
+      preimage: null,
       title: "Page Not Found",
       image: 'https://imgur.com/',
       tagline: "404 Error",
@@ -32,7 +33,7 @@ class About extends Component {
         <Header />
         <Hero
           className="error-hero"
-          image={this.state.image}
+          preimage={this.state.preimage}
           title={this.state.title}
           tagline={this.state.tagline}
           description={this.state.description}

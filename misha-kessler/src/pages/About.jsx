@@ -21,8 +21,8 @@ class About extends Component {
     super(props)
 
     this.state = {
+      preimage: "https://imgur.com/pcEs3MH.jpg",
       title: "Hey there, I'm Misha.",
-      image: "https://imgur.com/pcEs3MH.jpg",
       tagline: "And as you've probably noticed, I've worn many hats in my career.",
       description: "First and foremost, I'm a dedicated and agile developer and social entrepreneur. I have over seven years of experience finding creative solutions to pressing issues in the mental and behavioral health space; in that time, I've become a published and award-winning thought leader in suicide prevention, explored founding and developing my own companies and charities, climbed mountains for fundraisers, and spoken to audiences ranging from charity gala and international summit attendees to the United States Congress.",
       helper: "",
@@ -35,7 +35,7 @@ class About extends Component {
         <Header />
         <Hero
           className="about-hero"
-          image={this.state.image}
+          preimage={this.state.preimage}
           title={this.state.title}
           tagline={this.state.tagline}
           description={this.state.description}
