@@ -25,7 +25,6 @@ import Github from '../assets/graphics/github.png'
 import LinkedIn from '../assets/graphics/linkedin.png'
 import Facebook from '../assets/graphics/facebook.png'
 import Instagram from '../assets/graphics/instagram.png'
-import Resume from '../assets/graphics/resume.png'
 
 class Contact extends Component {
   constructor(props) {

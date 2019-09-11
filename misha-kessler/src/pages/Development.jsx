@@ -3,7 +3,6 @@ import React, { Component } from 'react'
 
 // React Router
 import {
-  Link,
   withRouter
 } from 'react-router-dom'
 
