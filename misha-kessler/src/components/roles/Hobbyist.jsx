@@ -8,7 +8,7 @@ export default function Hobbyist() {
   return (
     <div className="landing-hobbyist">
       <div className="landing-lettermark">
-        <img src={Lettermark} />
+        <img src={Lettermark} alt='Misha Lettermark' />
       </div>
       <div className="landing-titles">
         <h5>Hmm... didn't think you'd swipe this far. I guess you want to know more?</h5>
