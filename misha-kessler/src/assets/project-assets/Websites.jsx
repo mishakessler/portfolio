@@ -12,7 +12,7 @@ const Websites = [
     progress: 'Live', // R&D, MVP, Post-MVP, Private Beta, Live
 
     url_to_img: 'https://imgur.com/0Tawocu.png',
-    url_to_demo: 'https://www.mishakessler.com',
+    url_to_demo: '/woah',
     url_to_github: 'https://github.com/mishakessler/portfolio',
     url_to_casestudy: null,
 

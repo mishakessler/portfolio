@@ -17,7 +17,9 @@ class Entrepreneurship extends Component {
     super(props)
 
     this.state = {
+      preimage: null,
       title: "Featured Projects",
+      postimage: null,
       tagline: "",
       description: "",
       helper: "Page under construction. Check back soon!",
@@ -30,8 +32,10 @@ class Entrepreneurship extends Component {
         <Header />
         <Hero
           className="entrepreneurship-hero"
+          preimage={this.state.preimage}
           title={this.state.title}
           tagline={this.state.tagline}
+          postimage={this.state.postimage}
           description={this.state.description}
           helper={this.state.helper}
         />

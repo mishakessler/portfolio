@@ -29,8 +29,10 @@ class Advocacy extends Component {
     super(props)
 
     this.state = {
+      preimage: null,
       title: "Featured Advocacy",
       tagline: "",
+      postimage: null,
       description: "The following cards feature each of the panels, speakerships, media interviews, research publications, reports, news articles, and documentaries in which I've been honored to be included.",
       helper: "There's a lot to digest here, sorry about that! Portfolio is still under construction.",
       projects: Advocacies,
@@ -43,8 +45,10 @@ class Advocacy extends Component {
         <Header />
         <Hero
           className="advocacy-hero"
+          preimage={this.state.preimage}
           title={this.state.title}
           tagline={this.state.tagline}
+          postimage={this.state.postimage}
           description={this.state.description}
           helper={this.state.helper}
         />

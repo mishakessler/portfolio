@@ -414,6 +414,15 @@ a :hover {
   font-size: 1.1em;
 }
 
+.spacetime-page img {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+}
+
+
 /**************** Page Backgrounds *****************/
 
 .advocacy-page {
@@ -440,7 +449,7 @@ a :hover {
   background-position: center center;
 }
 
-.development-page, .about-page, .contact-page, .error-page   {
+.development-page, .about-page, .contact-page, .error-page, .spacetime-page   {
   background: 
   linear-gradient(
     rgba(0, 0, 0, 0.6), 
