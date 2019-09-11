@@ -19,7 +19,7 @@ export default function Advocate() {
   return (
     <div className="landing-advocate">
       <div className="landing-lettermark">
-        <img src={Lettermark} />
+        <img src={Lettermark} alt='Misha Lettermark' />
       </div>
       <div className="landing-titles">
         <h5>Advocate</h5>
@@ -51,7 +51,6 @@ export default function Advocate() {
           </Link>
         </div>
         <div className="right-cta">
-          <h6 className="smooth"></h6>
         </div>
       </div>
     </div>

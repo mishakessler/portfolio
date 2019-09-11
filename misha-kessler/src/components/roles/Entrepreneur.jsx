@@ -18,7 +18,7 @@ export default function Entrepreneur() {
   return (
     <div className="landing-entrepreneur">
       <div className="landing-lettermark">
-        <img src={Lettermark} />
+        <img src={Lettermark} alt='Misha Lettermark' />
       </div>
       <div className="landing-titles">
         <h5>Social Innovation Entrepreneur</h5>

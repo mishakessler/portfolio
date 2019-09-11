@@ -3,11 +3,9 @@ import React, { Component } from 'react'
 
 // React Router
 import {
-  Link,
   Route,
   withRouter,
   Switch,
-  Redirect
 } from 'react-router-dom';
 
 // React Transition Group
@@ -24,6 +22,7 @@ import Entrepreneurship from './pages/Entrepreneurship'
 import Advocacy from './pages/Advocacy'
 import About from './pages/About'
 import Contact from './pages/Contact'
+import SpaceTime from './pages/SpaceTime';
 import ErrorPage from './pages/ErrorPage'
 
 // Components
@@ -32,6 +31,7 @@ import ErrorPage from './pages/ErrorPage'
 
 // Stylesheet
 import './App.css';
+
 
 class App extends Component {
   render() {
@@ -51,6 +51,7 @@ class App extends Component {
                 <Route path="/advocacy" component={Advocacy} />
                 <Route path="/about" component={About} />
                 <Route path="/contact" component={Contact} />
+                <Route path="/woah" component={SpaceTime} />
                 <Route path='/*' component={ErrorPage} />
               </Switch>
             </CSSTransition>

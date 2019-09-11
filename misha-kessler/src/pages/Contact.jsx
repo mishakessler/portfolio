@@ -25,15 +25,15 @@ import Github from '../assets/graphics/github.png'
 import LinkedIn from '../assets/graphics/linkedin.png'
 import Facebook from '../assets/graphics/facebook.png'
 import Instagram from '../assets/graphics/instagram.png'
-import Resume from '../assets/graphics/resume.png'
 
 class Contact extends Component {
   constructor(props) {
     super(props)
 
     this.state = {
+      preimage: "https://imgur.com/pcEs3MH.jpg",
       title: "Get In Touch",
-      image: "https://imgur.com/pcEs3MH.jpg",
+      postimage: null,
       tagline: "So you want to send a holler my way?",
       description: "Feel free to use the form here, or email me directly. I do my best to respond within 24 hours, but depending on the season and the reason for emailing, I may take up to 72 hours to respond.",
       helper: "",
@@ -46,9 +46,10 @@ class Contact extends Component {
         <Header />
         <Hero
           className="contact-hero"
-          image={this.state.image}
+          preimage={this.state.preimage}
           title={this.state.title}
           tagline={this.state.tagline}
+          postimage={this.state.postimage}
           description={this.state.description}
           helper={this.state.helper}
         />
