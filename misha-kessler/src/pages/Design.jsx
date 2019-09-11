@@ -59,20 +59,19 @@ class Design extends Component {
                       attached
                       link
                       color='teal'
-                      className='smooth'
+                      className="dcursor smooth"
                     >
                       <Label
                         as='a'
                         color='teal'
                         ribbon='right'
-                        className="smooth">
+                        className="dcursor smooth">
                         {project.category}
                       </Label>
                       {project.featured &&
                         <Image
                           src={project.url_to_img}
                           label={{
-                            as: 'a',
                             corner: 'left',
                             icon: 'star'
                           }}
@@ -88,14 +87,8 @@ class Design extends Component {
                       <Card.Content>
                         <Card.Header>{project.name}</Card.Header>
                         <Card.Meta>
-                          <a>From</a>
-                          <a>
-                            {project.meta}
-                          </a>
-                          <br></br>
-                          <a>
-                            {project.date}
-                          </a>
+                          <p>From <span className='pseudo-link smooth'>{project.meta}</span></p>
+                          <p><span className='pseudo-link smooth'>{project.date}</span></p>
                         </Card.Meta>
                         <Card.Description>
                           {project.tagline}
@@ -104,28 +97,28 @@ class Design extends Component {
                       <Card.Content extra>
                         <p>At a glance:</p>
                         {project.wordpress &&
-                          <a>
+                          <span>
                             <Icon
                               size='large'
                               name='wordpress'
-                              className="smooth" />
-                          </a>
+                              className="pseudo-link smooth" />
+                          </span>
                         }
                         {project.html &&
-                          <a>
+                          <span>
                             <Icon
                               size='large'
                               name='html5'
-                              className="smooth" />
-                          </a>
+                              className="pseudo-link smooth" />
+                          </span>
                         }
                         {project.css &&
-                          <a>
+                          <span>
                             <Icon
                               size='large'
                               name='css3'
-                              className="smooth" />
-                          </a>
+                              className="pseudo-link smooth" />
+                          </span>
                         }
                       </Card.Content>
                     </Card>

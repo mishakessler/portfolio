@@ -96,6 +96,14 @@ a :hover {
   -webkit-transition: ease-in-out .3s;
 }
 
+.pseudo-link:hover {
+  color: #00bac8;
+}
+
+.dcursor {
+  cursor: default !important;
+}
+
 /**************** Page Transitions *****************/
 
 .fade-enter {
@@ -558,9 +566,11 @@ a :hover {
   text-align: center;
 }
 
-.card-meta p {
+.card-meta p, .card-icon {
   display: inline;
 }
+
+
 
 /******************* Detail Pages ******************/
 

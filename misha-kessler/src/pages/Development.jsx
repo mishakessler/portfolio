@@ -59,20 +59,19 @@ class Development extends Component {
                       attached
                       link
                       color='teal'
-                      className='smooth'
+                      className="dcursor smooth"
                     >
                       <Label
                         as='a'
                         color='teal'
                         ribbon='right'
-                        className="smooth">
+                        className="dcursor smooth">
                         {project.date}
                       </Label>
                       {project.featured &&
                         <Image
                           src={project.url_to_img}
                           label={{
-                            as: 'a',
                             corner: 'left',
                             icon: 'star'
                           }}
@@ -94,14 +93,8 @@ class Development extends Component {
                           className="card-meta">
                           <Icon
                             name='tags'
-                            className="smooth" />
-                          <a>
-                            {project.category}
-                          </a>
-                          <p>via </p>
-                          <a>
-                            {project.meta}
-                          </a>
+                            className="pseudo-link smooth" />
+                          <p><span className='pseudo-link smooth'>{project.category}</span>via <span className='pseudo-link smooth'>{project.meta}</span></p>
                         </Card.Meta>
                         <Card.Description
                           className="card-description">
@@ -111,116 +104,116 @@ class Development extends Component {
                       <Card.Content extra>
                         <p>At a glance:</p>
                         {project.wordpress &&
-                          <a>
+                          <span>
                             <Icon
                               size='large'
                               name='wordpress'
-                              className="smooth" />
-                          </a>
+                              className="pseudo-link smooth" />
+                          </span>
                         }
                         {project.html &&
-                          <a>
+                          <span>
                             <Icon
                               size='large'
                               name='html5'
-                              className="smooth" />
-                          </a>
+                              className="pseudo-link smooth" />
+                          </span>
                         }
                         {project.css &&
-                          <a>
+                          <span>
                             <Icon
                               size='large'
                               name='css3'
-                              className="smooth" />
-                          </a>
+                              className="pseudo-link smooth" />
+                          </span>
                         }
                         {project.php &&
-                          <a>
+                          <span>
                             <Icon
                               size='large'
                               name='php'
-                              className="smooth" />
-                          </a>
+                              className="pseudo-link smooth" />
+                          </span>
                         }
                         {project.javascript &&
-                          <a>
+                          <span>
                             <Icon
                               size='large'
                               name='js square'
-                              className="smooth" />
-                          </a>
+                              className="pseudo-link smooth" />
+                          </span>
                         }
                         {project.expressjs &&
-                          <a>
+                          <span>
                             <Icon
                               size='large'
                               name=''
-                              className="smooth" />
-                          </a>
+                              className="pseudo-link smooth" />
+                          </span>
                         }
                         {project.reactjs &&
-                          <a>
+                          <span>
                             <Icon
                               size='large'
                               name='react'
-                              className="smooth" />
-                          </a>
+                              className="pseudo-link smooth" />
+                          </span>
                         }
                         {project.mysql &&
-                          <a>
+                          <span>
                             <Icon
                               size='large'
                               name='server'
-                              className="smooth" />
-                          </a>
+                              className="pseudo-link smooth" />
+                          </span>
                         }
                         {project.postgresql &&
-                          <a>
+                          <span>
                             <Icon
                               size='large'
                               name='server'
-                              className="smooth" />
-                          </a>
+                              className="pseudo-link smooth" />
+                          </span>
                         }
                         {project.ruby &&
-                          <a>
+                          <span>
                             <Icon
                               size='large'
                               name='gem'
-                              className="smooth" />
-                          </a>
+                              className="pseudo-link smooth" />
+                          </span>
                         }
                         {project.rails &&
-                          <a>
+                          <span>
                             <Icon
                               size='large'
                               name='subway'
-                              className="smooth" />
-                          </a>
+                              className="pseudo-link smooth" />
+                          </span>
                         }
                         {project.auth &&
-                          <a>
+                          <span>
                             <Icon
                               size='large'
                               name='key'
-                              className="smooth" />
-                          </a>
+                              className="pseudo-link smooth" />
+                          </span>
                         }
                         {project.responsive &&
-                          <a>
+                          <span>
                             <Icon
                               size='large'
                               name='mobile alt'
-                              className="smooth" />
-                          </a>
+                              className="pseudo-link smooth" />
+                          </span>
                         }
                         {project.accessible &&
-                          <a>
+                          <span>
                             <Icon
                               size='large'
                               name='universal access'
-                              className="smooth" />
-                          </a>
+                              className="pseudo-link smooth" />
+                          </span>
                         }
                       </Card.Content>
                     </Card>
