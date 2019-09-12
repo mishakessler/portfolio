@@ -2,6 +2,7 @@ const Websites = [
   {
     id: 12,
     featured: false,
+    case_study: true,
 
     name: 'Misha Kessler',
     date: 'Sep 2019',
@@ -14,7 +15,6 @@ const Websites = [
     url_to_img: 'https://imgur.com/0Tawocu.png',
     url_to_demo: '/woah',
     url_to_github: 'https://github.com/mishakessler/portfolio',
-    url_to_casestudy: null,
 
     markdown: true,
     wordpress: false,
@@ -38,6 +38,7 @@ const Websites = [
   {
     id: 11,
     featured: true,
+    case_study: true,
 
     name: 'Crisis International Enterprise',
     date: 'Aug 2019',
@@ -50,7 +51,6 @@ const Websites = [
     url_to_img: 'https://imgur.com/HApw990.png',
     url_to_demo: 'https://crisis-international.surge.sh',
     url_to_github: 'https://github.com/mishakessler/ga-sei-project4',
-    url_to_casestudy: '/projects/crisis-international',
 
     markdown: true,
     wordpress: false,
@@ -74,6 +74,7 @@ const Websites = [
   {
     id: 10,
     featured: true,
+    case_study: true,
 
     name: 'Crisis International',
     date: 'May 2019',
@@ -86,7 +87,6 @@ const Websites = [
     url_to_img: 'https://imgur.com/ZtLFzFJ.png',
     url_to_demo: 'https://beta.crisisinternational.org',
     url_to_github: null,
-    url_to_casestudy: '/projects/crisis-international',
 
     markdown: false,
     wordpress: true,
@@ -110,6 +110,7 @@ const Websites = [
   {
     id: 9,
     featured: false,
+    case_study: true,
 
     name: 'Cara Mia Redesign',
     date: 'Aug 2019',
@@ -122,7 +123,6 @@ const Websites = [
     url_to_img: 'https://imgur.com/ZLaVcDn.png',
     url_to_demo: 'https://cara-mia-redesign.surge.sh/',
     url_to_github: 'https://github.com/mishakessler/cara-mia-redesign',
-    url_to_casestudy: null,
 
     markdown: false,
     wordpress: false,
@@ -146,6 +146,7 @@ const Websites = [
   {
     id: 8,
     featured: false,
+    case_study: true,
 
     name: 'Barrel-Aged',
     date: 'Jul 2019',
@@ -158,7 +159,6 @@ const Websites = [
     url_to_img: 'https://imgur.com/jDqHUbW.png',
     url_to_demo: 'http://www.barrel-aged.surge.sh',
     url_to_github: 'https://github.com/mishakessler/barrel-aged',
-    url_to_casestudy: null,
 
     markdown: true,
     wordpress: false,
@@ -182,6 +182,7 @@ const Websites = [
   {
     id: 7,
     featured: false,
+    case_study: true,
 
     name: '7 Summits Suicide Prevention',
     date: 'Jul 2019',
@@ -194,7 +195,6 @@ const Websites = [
     url_to_img: 'https://imgur.com/uZyd6AC.png',
     url_to_demo: 'https://7ssp.surge.sh/',
     url_to_github: 'https://github.com/mishakessler/ga-sei-project2/tree/master/seven-summits-for-suicide-prevention',
-    url_to_casestudy: '',
 
     markdown: false,
     wordpress: true,
@@ -218,6 +218,7 @@ const Websites = [
   {
     id: 6,
     featured: false,
+    case_study: true,
 
     name: 'Mental Healthable',
     date: 'Jun 2019',
@@ -230,7 +231,6 @@ const Websites = [
     url_to_img: 'https://imgur.com/1grhUj3.png',
     url_to_demo: 'https://mentalhealthable.surge.sh/',
     url_to_github: 'https://github.com/mishakessler/ga-sei-project1',
-    url_to_casestudy: '',
 
     markdown: true,
     wordpress: false,
@@ -254,6 +254,7 @@ const Websites = [
   {
     id: 5,
     featured: false,
+    case_study: false,
 
     name: "Life's New Normal",
     date: 'Mar 2019',
@@ -266,7 +267,7 @@ const Websites = [
     url_to_img: '',
     url_to_demo: 'https://lifesnewnormal.remedient.com/',
     url_to_github: null,
-    url_to_casestudy: null,
+    case_study: false,
 
     markdown: false,
     wordpress: true,
@@ -290,6 +291,7 @@ const Websites = [
   {
     id: 4,
     featured: false,
+    case_study: true,
 
     name: 'Remedient',
     date: 'Feb 2019',
@@ -302,7 +304,7 @@ const Websites = [
     url_to_img: 'https://imgur.com/T3E24bH.png',
     url_to_demo: 'https://www.remedient.com/',
     url_to_github: null,
-    url_to_casestudy: null,
+    case_study: false,
 
     markdown: false,
     wordpress: true,
@@ -326,6 +328,7 @@ const Websites = [
   {
     id: 3,
     featured: false,
+    case_study: true,
 
     name: 'Live Through This',
     date: 'Sep 2018',
@@ -338,7 +341,7 @@ const Websites = [
     url_to_img: 'https://imgur.com/RsfUn52.png',
     url_to_demo: 'https://www.livethroughthis.org/',
     url_to_github: null,
-    url_to_casestudy: null,
+    case_study: false,
 
     markdown: false,
     wordpress: true,
@@ -362,6 +365,7 @@ const Websites = [
   {
     id: 2,
     featured: false,
+    case_study: true,
 
     name: 'Six Feet Over',
     date: 'May 2017',
@@ -374,7 +378,7 @@ const Websites = [
     url_to_img: 'https://imgur.com/T3E24bH.png',
     url_to_demo: 'https://www.sixftover.org/',
     url_to_github: null,
-    url_to_casestudy: null,
+    case_study: false,
 
     markdown: false,
     wordpress: true,
@@ -398,6 +402,7 @@ const Websites = [
   {
     id: 1,
     featured: false,
+    case_study: true,
 
     name: 'Rmdy.io',
     date: 'Nov 2015',
@@ -410,7 +415,7 @@ const Websites = [
     url_to_img: 'https://imgur.com/x12PEMh.png',
     url_to_demo: 'https://www.rmdy.io/',
     url_to_github: null,
-    url_to_casestudy: null,
+    case_study: false,
 
     markdown: false,
     wordpress: true,
