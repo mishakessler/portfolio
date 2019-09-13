@@ -12,7 +12,7 @@ const Websites = [
     category: 'Front End', // Concept, Front End, Full Stack
     progress: 'Live', // R&D, MVP, Post-MVP, Private Beta, Live
 
-    url_to_img: 'https://imgur.com/0Tawocu.png',
+    url_to_img: 'https://imgur.com/TNSYeV4.png',
     url_to_demo: '/woah',
     url_to_github: 'https://github.com/mishakessler/portfolio',
 
@@ -84,7 +84,7 @@ const Websites = [
     category: 'Front End', // Concept, Front End, Full Stack
     progress: 'Private Beta', // R&D, MVP, Post-MVP, Private Beta, Live
 
-    url_to_img: 'https://imgur.com/ZtLFzFJ.png',
+    url_to_img: 'https://imgur.com/GmWGYxo.png',
     url_to_demo: 'https://beta.crisisinternational.org',
     url_to_github: null,
 
@@ -156,7 +156,7 @@ const Websites = [
     category: 'Full Stack', // Concept, Front End, Full Stack
     progress: 'MVP', // R&D, MVP, Post-MVP, Private Beta, Live
 
-    url_to_img: 'https://imgur.com/jDqHUbW.png',
+    url_to_img: 'https://imgur.com/ExrZqih.png',
     url_to_demo: 'http://www.barrel-aged.surge.sh',
     url_to_github: 'https://github.com/mishakessler/barrel-aged',
 
@@ -267,7 +267,6 @@ const Websites = [
     url_to_img: '',
     url_to_demo: 'https://lifesnewnormal.remedient.com/',
     url_to_github: null,
-    case_study: false,
 
     markdown: false,
     wordpress: true,
@@ -304,7 +303,6 @@ const Websites = [
     url_to_img: 'https://imgur.com/T3E24bH.png',
     url_to_demo: 'https://www.remedient.com/',
     url_to_github: null,
-    case_study: false,
 
     markdown: false,
     wordpress: true,
@@ -338,10 +336,9 @@ const Websites = [
     category: 'Front End', // Concept, Front End, Full Stack
     progress: 'Live', // R&D, MVP, Post-MVP, Private Beta, Live
 
-    url_to_img: 'https://imgur.com/RsfUn52.png',
+    url_to_img: 'https://imgur.com/vZUVE4r.png',
     url_to_demo: 'https://www.livethroughthis.org/',
     url_to_github: null,
-    case_study: false,
 
     markdown: false,
     wordpress: true,
@@ -375,10 +372,9 @@ const Websites = [
     category: 'Front End', // Concept, Front End, Full Stack
     progress: 'Live', // R&D, MVP, Post-MVP, Private Beta, Live
 
-    url_to_img: 'https://imgur.com/T3E24bH.png',
+    url_to_img: 'https://imgur.com/1efqxBi.png',
     url_to_demo: 'https://www.sixftover.org/',
     url_to_github: null,
-    case_study: false,
 
     markdown: false,
     wordpress: true,
@@ -415,7 +411,6 @@ const Websites = [
     url_to_img: 'https://imgur.com/x12PEMh.png',
     url_to_demo: 'https://www.rmdy.io/',
     url_to_github: null,
-    case_study: false,
 
     markdown: false,
     wordpress: true,
