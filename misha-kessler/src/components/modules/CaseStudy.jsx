@@ -2,9 +2,7 @@ import React from 'react'
 
 import {
   Modal,
-  Header,
   Button,
-  Icon,
 } from 'semantic-ui-react'
 
 export default function CaseStudy(props) {
@@ -13,7 +11,7 @@ export default function CaseStudy(props) {
       basic
       closeIcon
       centered={false}
-      dimmer={"blurring"}
+      // dimmer={"blurring"}
       trigger={
         <Button
           color='teal'
@@ -30,7 +28,12 @@ export default function CaseStudy(props) {
       />
 
       <Modal.Content>
-        <p>Testing</p>
+        {/* <img src={props.project.cs_img_1} alt="Case Study Landing" /> */}
+        {props.project.cs_img_1}
+        {props.project.cs_intro}
+        {props.project.cs_img_2}
+        {props.project.cs_description}
+        {props.project.cs_conclusion}
       </Modal.Content>
 
       <Modal.Description>
