@@ -2,19 +2,25 @@ const Websites = [
   {
     id: 12,
     featured: false,
+    case_study: true,
 
     name: 'Misha Kessler',
     date: 'Sep 2019',
     meta: 'React',
     tagline: 'A portfolio site for Misha Kessler following his stint at General Assembly, built on React with multiple React libraries.',
 
+    cs_intro: 'Intro',
+    cs_description: 'Description',
+    cs_conclusion: 'Conclusion',
+    cs_img_1: 'Img 1',
+    cs_img_2: 'Img 2',
+
     category: 'Front End', // Concept, Front End, Full Stack
     progress: 'Live', // R&D, MVP, Post-MVP, Private Beta, Live
 
-    url_to_img: 'https://imgur.com/0Tawocu.png',
+    url_to_img: 'https://imgur.com/TNSYeV4.png',
     url_to_demo: '/woah',
     url_to_github: 'https://github.com/mishakessler/portfolio',
-    url_to_casestudy: null,
 
     markdown: true,
     wordpress: false,
@@ -38,11 +44,18 @@ const Websites = [
   {
     id: 11,
     featured: true,
+    case_study: true,
 
     name: 'Crisis International Enterprise',
     date: 'Aug 2019',
     meta: 'React on Rails',
     tagline: 'A full stack B2B resource directory and knowledge base for social service agencies and related fields that provides comprehensive, filterable, searchable resources and articles.',
+
+    cs_intro: 'Intro',
+    cs_description: 'Description',
+    cs_conclusion: 'Conclusion',
+    cs_img_1: 'Img 1',
+    cs_img_2: 'Img 2',
 
     category: 'Full Stack', // Concept, Front End, Full Stack
     progress: 'MVP', // R&D, MVP, Post-MVP, Private Beta, Live
@@ -50,7 +63,6 @@ const Websites = [
     url_to_img: 'https://imgur.com/HApw990.png',
     url_to_demo: 'https://crisis-international.surge.sh',
     url_to_github: 'https://github.com/mishakessler/ga-sei-project4',
-    url_to_casestudy: '/projects/crisis-international',
 
     markdown: true,
     wordpress: false,
@@ -74,19 +86,25 @@ const Websites = [
   {
     id: 10,
     featured: true,
+    case_study: true,
 
     name: 'Crisis International',
     date: 'May 2019',
     meta: 'WordPress',
     tagline: 'A custom WordPress site for individuals in need of crisis intervention resources, featuring immersive, user-friendly design, meticulously designed data infrastructure, and a complete brand identity package.',
 
+    cs_intro: 'Intro',
+    cs_description: 'Description',
+    cs_conclusion: 'Conclusion',
+    cs_img_1: 'Img 1',
+    cs_img_2: 'Img 2',
+
     category: 'Front End', // Concept, Front End, Full Stack
     progress: 'Private Beta', // R&D, MVP, Post-MVP, Private Beta, Live
 
-    url_to_img: 'https://imgur.com/ZtLFzFJ.png',
+    url_to_img: 'https://imgur.com/GmWGYxo.png',
     url_to_demo: 'https://beta.crisisinternational.org',
     url_to_github: null,
-    url_to_casestudy: '/projects/crisis-international',
 
     markdown: false,
     wordpress: true,
@@ -110,11 +128,18 @@ const Websites = [
   {
     id: 9,
     featured: false,
+    case_study: true,
 
     name: 'Cara Mia Redesign',
     date: 'Aug 2019',
     meta: 'React',
     tagline: 'A collaborative project with UX designers to conceive and develop a redesigned web presence for a local NYC eatery.',
+
+    cs_intro: 'Intro',
+    cs_description: 'Description',
+    cs_conclusion: 'Conclusion',
+    cs_img_1: 'Img 1',
+    cs_img_2: 'Img 2',
 
     category: 'Front End', // Concept, Front End, Full Stack
     progress: 'MVP', // R&D, MVP, Post-MVP, Private Beta, Live
@@ -122,7 +147,6 @@ const Websites = [
     url_to_img: 'https://imgur.com/ZLaVcDn.png',
     url_to_demo: 'https://cara-mia-redesign.surge.sh/',
     url_to_github: 'https://github.com/mishakessler/cara-mia-redesign',
-    url_to_casestudy: null,
 
     markdown: false,
     wordpress: false,
@@ -146,19 +170,25 @@ const Websites = [
   {
     id: 8,
     featured: false,
+    case_study: true,
 
     name: 'Barrel-Aged',
     date: 'Jul 2019',
     meta: 'React & Express',
     tagline: 'The final deliverable from a 4-person group-build, a full-stack forum and review site for whiskey lovers, utilizing React, Express, Bcrypt, JSON Web Token, and Git versioning.',
 
+    cs_intro: 'Intro',
+    cs_description: 'Description',
+    cs_conclusion: 'Conclusion',
+    cs_img_1: 'Img 1',
+    cs_img_2: 'Img 2',
+
     category: 'Full Stack', // Concept, Front End, Full Stack
     progress: 'MVP', // R&D, MVP, Post-MVP, Private Beta, Live
 
-    url_to_img: 'https://imgur.com/jDqHUbW.png',
+    url_to_img: 'https://imgur.com/ExrZqih.png',
     url_to_demo: 'http://www.barrel-aged.surge.sh',
     url_to_github: 'https://github.com/mishakessler/barrel-aged',
-    url_to_casestudy: null,
 
     markdown: true,
     wordpress: false,
@@ -182,11 +212,18 @@ const Websites = [
   {
     id: 7,
     featured: false,
+    case_study: true,
 
     name: '7 Summits Suicide Prevention',
     date: 'Jul 2019',
     meta: "React",
     tagline: 'Used DarkSkyAPI & Fundraise.com API on React to develop an interactive and educational dashboard for charity donors.',
+
+    cs_intro: 'Intro',
+    cs_description: 'Description',
+    cs_conclusion: 'Conclusion',
+    cs_img_1: 'Img 1',
+    cs_img_2: 'Img 2',
 
     category: 'Front End', // Concept, Front End, Full Stack
     progress: 'MVP', // R&D, MVP, Post-MVP, Private Beta, Live
@@ -194,7 +231,6 @@ const Websites = [
     url_to_img: 'https://imgur.com/uZyd6AC.png',
     url_to_demo: 'https://7ssp.surge.sh/',
     url_to_github: 'https://github.com/mishakessler/ga-sei-project2/tree/master/seven-summits-for-suicide-prevention',
-    url_to_casestudy: '',
 
     markdown: false,
     wordpress: true,
@@ -218,11 +254,18 @@ const Websites = [
   {
     id: 6,
     featured: false,
+    case_study: true,
 
     name: 'Mental Healthable',
     date: 'Jun 2019',
     meta: 'HTML, CSS, & JS',
     tagline: 'Used NewsAPI on a vanilla HTML, CSS, and JS application to create a curated mental health news feed.',
+
+    cs_intro: 'Intro',
+    cs_description: 'Description',
+    cs_conclusion: 'Conclusion',
+    cs_img_1: 'Img 1',
+    cs_img_2: 'Img 2',
 
     category: 'Front End', // Concept, Front End, Full Stack
     progress: 'MVP', // R&D, MVP, Post-MVP, Private Beta, Live
@@ -230,7 +273,6 @@ const Websites = [
     url_to_img: 'https://imgur.com/1grhUj3.png',
     url_to_demo: 'https://mentalhealthable.surge.sh/',
     url_to_github: 'https://github.com/mishakessler/ga-sei-project1',
-    url_to_casestudy: '',
 
     markdown: true,
     wordpress: false,
@@ -254,11 +296,18 @@ const Websites = [
   {
     id: 5,
     featured: false,
+    case_study: false,
 
     name: "Life's New Normal",
     date: 'Mar 2019',
     meta: 'WordPress',
     tagline: 'A client portfolio and blogging website featuring a complete redesign and rebrand of a long-running project.',
+
+    cs_intro: 'Intro',
+    cs_description: 'Description',
+    cs_conclusion: 'Conclusion',
+    cs_img_1: 'Img 1',
+    cs_img_2: 'Img 2',
 
     category: 'Front End', // Concept, Front End, Full Stack
     progress: 'Beta', // R&D, MVP, Post-MVP, Private Beta, Live
@@ -266,7 +315,6 @@ const Websites = [
     url_to_img: '',
     url_to_demo: 'https://lifesnewnormal.remedient.com/',
     url_to_github: null,
-    url_to_casestudy: null,
 
     markdown: false,
     wordpress: true,
@@ -290,11 +338,18 @@ const Websites = [
   {
     id: 4,
     featured: false,
+    case_study: true,
 
     name: 'Remedient',
     date: 'Feb 2019',
     meta: 'WordPress',
     tagline: 'A marketing website for my design firm, Remedient LLC, utilizing best practices in tech marketing, branding, and user funneling.',
+
+    cs_intro: 'Intro',
+    cs_description: 'Description',
+    cs_conclusion: 'Conclusion',
+    cs_img_1: 'Img 1',
+    cs_img_2: 'Img 2',
 
     category: 'Front End', // Concept, Front End, Full Stack
     progress: 'Live', // R&D, MVP, Post-MVP, Private Beta, Live
@@ -302,7 +357,6 @@ const Websites = [
     url_to_img: 'https://imgur.com/T3E24bH.png',
     url_to_demo: 'https://www.remedient.com/',
     url_to_github: null,
-    url_to_casestudy: null,
 
     markdown: false,
     wordpress: true,
@@ -326,19 +380,25 @@ const Websites = [
   {
     id: 3,
     featured: false,
+    case_study: true,
 
     name: 'Live Through This',
     date: 'Sep 2018',
     meta: 'WordPress',
     tagline: 'A client project featuring suicide prevention portraiture with immersive design, consistent branding, and user engagement tactics.',
 
+    cs_intro: 'Intro',
+    cs_description: 'Description',
+    cs_conclusion: 'Conclusion',
+    cs_img_1: 'Img 1',
+    cs_img_2: 'Img 2',
+
     category: 'Front End', // Concept, Front End, Full Stack
     progress: 'Live', // R&D, MVP, Post-MVP, Private Beta, Live
 
-    url_to_img: 'https://imgur.com/RsfUn52.png',
+    url_to_img: 'https://imgur.com/vZUVE4r.png',
     url_to_demo: 'https://www.livethroughthis.org/',
     url_to_github: null,
-    url_to_casestudy: null,
 
     markdown: false,
     wordpress: true,
@@ -362,19 +422,25 @@ const Websites = [
   {
     id: 2,
     featured: false,
+    case_study: true,
 
     name: 'Six Feet Over',
     date: 'May 2017',
     meta: 'WordPress',
     tagline: 'A comprehensive pro bono website and brand package developed for a Detroit-based suicide postvention charity, Six Feet Over.',
 
+    cs_intro: 'Intro',
+    cs_description: 'Description',
+    cs_conclusion: 'Conclusion',
+    cs_img_1: 'Img 1',
+    cs_img_2: 'Img 2',
+
     category: 'Front End', // Concept, Front End, Full Stack
     progress: 'Live', // R&D, MVP, Post-MVP, Private Beta, Live
 
-    url_to_img: 'https://imgur.com/T3E24bH.png',
+    url_to_img: 'https://imgur.com/1efqxBi.png',
     url_to_demo: 'https://www.sixftover.org/',
     url_to_github: null,
-    url_to_casestudy: null,
 
     markdown: false,
     wordpress: true,
@@ -398,11 +464,18 @@ const Websites = [
   {
     id: 1,
     featured: false,
+    case_study: true,
 
     name: 'Rmdy.io',
     date: 'Nov 2015',
     meta: 'WordPress',
     tagline: 'A full stack app concept using a recommender engine to match individuals seeking counseling to the best available counselor, lowering treatment dropout, increasing treatment success rates.',
+
+    cs_intro: 'Intro',
+    cs_description: 'Description',
+    cs_conclusion: 'Conclusion',
+    cs_img_1: 'Img 1',
+    cs_img_2: 'Img 2',
 
     category: 'Concept', // Concept, Front End, Full Stack
     progress: 'R&D', // R&D, MVP, Post-MVP, Private Beta, Live
@@ -410,7 +483,6 @@ const Websites = [
     url_to_img: 'https://imgur.com/x12PEMh.png',
     url_to_demo: 'https://www.rmdy.io/',
     url_to_github: null,
-    url_to_casestudy: null,
 
     markdown: false,
     wordpress: true,

@@ -3,12 +3,34 @@
 import Awardee from '../graphics/advocacy-award.png'
 import Documentary from '../graphics/advocacy-documentary.png'
 import Interviewee from '../graphics/advocacy-interview.png'
-// import Member from '../graphics/advocacy-member.png'
+import Member from '../graphics/advocacy-member.png'
 import News from '../graphics/advocacy-news.png'
 import Author from '../graphics/advocacy-publication.png'
 import Speaker from '../graphics/advocacy-speech.png'
 
 const Advocacies = [
+  {
+    id: 36,
+    featured: true,
+    date: 'Sep 2019',
+    name: 'The International Initiative for Mental Health Leadership',
+    meta: 'Membership Organization',
+    tagline: '',
+    category: 'Member', // Author, Speaker, Interviewee, Committee Member, Associate Member, Advisor, Awardee
+    url_to_img: `${Member}`,
+    url_to_demo: 'https://www.iimhl.com',
+  },
+  {
+    id: 35,
+    featured: true,
+    date: 'Sep 2019',
+    name: 'The Urgent & Emergency Mental Health Care Global Summit',
+    meta: 'CI International',
+    tagline: '',
+    category: 'Speaker', // Author, Speaker, Interviewee, Committee Member, Associate Member, Advisor, Awardee
+    url_to_img: `${Speaker}`,
+    url_to_demo: 'https://youtu.be/yksozo9dUKg',
+  },
   {
     id: 34,
     featured: false,
@@ -360,6 +382,17 @@ const Advocacies = [
     category: 'Panelist', // Author, Speaker, Interviewee, Committee Member, Associate Member, Advisor, Awardee
     url_to_img: `${Speaker}`,
     url_to_demo: 'https://www.gwnashmancenter.org/symposium',
+  },
+  {
+    id: 37,
+    featured: true,
+    date: 'Feb 2013',
+    name: 'The American Association of Suicidology',
+    meta: 'Membership Organization',
+    tagline: '',
+    category: 'Member', // Author, Speaker, Interviewee, Committee Member, Associate Member, Advisor, Awardee
+    url_to_img: `${Member}`,
+    url_to_demo: 'https://www.suicidology.org',
   },
   {
     id: 2,

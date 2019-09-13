@@ -19,6 +19,7 @@ import {
 // Components
 import Header from '../components/modules/Header'
 import Hero from '../components/modules/Hero'
+import CaseStudy from '../components/modules/CaseStudy'
 import Key from '../components/modules/Key'
 import Footer from '../components/modules/Footer'
 
@@ -222,17 +223,9 @@ class Development extends Component {
                       </Card.Content>
                     </Card>
                     <Button.Group attached='bottom'>
-                      {project.url_to_casestudy &&
-                        <Button
-                          as='a'
-                          href={project.url_to_casestudy}
-                          color='teal'
-                          className='smooth'
-                          icon={{
-                            name: 'search',
-                            size: 'large',
-                            className: 'ui-button-icon',
-                          }}
+                      {project.case_study &&
+                        <CaseStudy
+                          project={project}
                         />}
                       {project.url_to_demo &&
                         <Button
