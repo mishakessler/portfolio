@@ -14,8 +14,8 @@ import {
 } from 'semantic-ui-react'
 
 // Assets
-import Lettermark from '../../assets/graphics/lettermark.png'
-import MenuLettermark from '../../assets/graphics/lettermark-white.png'
+import ColorLettermark from '../../assets/graphics/lettermark.png'
+import WhiteLettermark from '../../assets/graphics/lettermark-white.png'
 
 export default class Header extends Component {
   constructor(props) {
@@ -45,7 +45,10 @@ export default class Header extends Component {
     return (
       <div className="page-header">
         <div className="header-logo">
-          <Link to="/"><img src={Lettermark} alt='Misha Lettermark'></img></Link>
+          <Link to="/">
+            <img id='static-lettermark' className="smooth" src={ColorLettermark} alt='Misha Lettermark'></img>
+            <img id='hover-lettermark' className="smooth" src={WhiteLettermark} alt='Misha Lettermark'></img>
+          </Link>
         </div>
         <div className="desktop-nav hide-on-mobile">
           <Link to="/development" className="smooth">Development</Link>
@@ -78,7 +81,7 @@ export default class Header extends Component {
                 className="hamburger-icon" >
                 <Icon name="ellipsis vertical" />
               </Button>
-              <Image src={MenuLettermark} size="mini" centered />
+              <Image src={WhiteLettermark} size="mini" centered />
               <Link to="/development" className="smooth">Development</Link>
               <Link to="/design" className="smooth">Design</Link>
               <Link to="/entrepreneurship" className="smooth">Entrepreneurship</Link>

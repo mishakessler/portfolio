@@ -270,7 +270,7 @@ const Websites = [
     category: 'Front End', // Concept, Front End, Full Stack
     progress: 'MVP', // R&D, MVP, Post-MVP, Private Beta, Live
 
-    url_to_img: 'https://imgur.com/1grhUj3.png',
+    url_to_img: 'https://imgur.com/Bptthbk.png',
     url_to_demo: 'https://mentalhealthable.surge.sh/',
     url_to_github: 'https://github.com/mishakessler/ga-sei-project1',
 
