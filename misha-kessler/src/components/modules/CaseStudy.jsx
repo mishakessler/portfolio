@@ -28,26 +28,55 @@ export default function CaseStudy(props) {
       />
 
       <Modal.Content>
-        {/* <img src={props.project.cs_img_1} alt="Case Study Landing" /> */}
-        {props.project.cs_img_1}
-        {props.project.cs_intro}
-        {props.project.cs_img_2}
-        {props.project.cs_description}
-        {props.project.cs_conclusion}
+        <Modal.Description>
+
+          {!props.project.cs_img_1 &&
+            <p>Sorry, this case study is still under construction. Check back later!</p>}
+
+          {props.project.cs_img_1 &&
+            <img src={props.project.cs_img_1} alt="Case Study Landing" />}
+          {props.project.cs_intro &&
+            <p>{props.project.cs_intro}</p>}
+          {props.project.cs_img_2 &&
+            <p>{props.project.cs_img_2}</p>}
+          {props.project.cs_description &&
+            <p>{props.project.cs_description}</p>}
+          {props.project.cs_conclusion &&
+            <p>{props.project.cs_conclusion}</p>}
+
+        </Modal.Description>
       </Modal.Content>
 
-      <Modal.Description>
-
-      </Modal.Description>
-
-      {/* <Modal.Actions>
-        <Button basic color='red' inverted>
-          <Icon name='remove' /> No
-        </Button>
-        <Button color='green' inverted>
-          <Icon name='checkmark' /> Yes
-        </Button>
-      </Modal.Actions> */}
-    </Modal>
+      <Modal.Actions>
+        {props.project.url_to_demo &&
+          <Button
+            content='View Live Site'
+            as='a'
+            href={props.project.url_to_demo}
+            target='_blank'
+            color='teal'
+            className='smooth'
+            icon={{
+              name: 'globe',
+              size: 'large',
+              className: 'ui-button-icon',
+            }}
+          />}
+        {props.project.url_to_github &&
+          <Button
+            content='View GitHub Repo'
+            as='a'
+            href={props.project.url_to_github}
+            target='_blank'
+            color='teal'
+            className='smooth'
+            icon={{
+              name: 'github',
+              size: 'large',
+              className: 'ui-button-icon',
+            }}
+          />}
+      </Modal.Actions>
+    </Modal >
   )
 }
