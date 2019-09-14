@@ -9,11 +9,11 @@ const Websites = [
     meta: 'React',
     tagline: 'A portfolio site for Misha Kessler following his stint at General Assembly, built on React with multiple React libraries.',
 
-    cs_intro: 'Intro',
-    cs_description: 'Description',
-    cs_conclusion: 'Conclusion',
-    cs_img_1: 'Img 1',
-    cs_img_2: 'Img 2',
+    cs_intro: null,
+    cs_description: null,
+    cs_conclusion: null,
+    cs_img_1: null,
+    cs_img_2: null,
 
     category: 'Front End', // Concept, Front End, Full Stack
     progress: 'Live', // R&D, MVP, Post-MVP, Private Beta, Live
@@ -51,11 +51,11 @@ const Websites = [
     meta: 'React on Rails',
     tagline: 'A full stack B2B resource directory and knowledge base for social service agencies and related fields that provides comprehensive, filterable, searchable resources and articles.',
 
-    cs_intro: 'Intro',
-    cs_description: 'Description',
-    cs_conclusion: 'Conclusion',
-    cs_img_1: 'Img 1',
-    cs_img_2: 'Img 2',
+    cs_intro: null,
+    cs_description: null,
+    cs_conclusion: null,
+    cs_img_1: null,
+    cs_img_2: null,
 
     category: 'Full Stack', // Concept, Front End, Full Stack
     progress: 'MVP', // R&D, MVP, Post-MVP, Private Beta, Live
@@ -93,11 +93,11 @@ const Websites = [
     meta: 'WordPress',
     tagline: 'A custom WordPress site for individuals in need of crisis intervention resources, featuring immersive, user-friendly design, meticulously designed data infrastructure, and a complete brand identity package.',
 
-    cs_intro: 'Intro',
-    cs_description: 'Description',
-    cs_conclusion: 'Conclusion',
-    cs_img_1: 'Img 1',
-    cs_img_2: 'Img 2',
+    cs_intro: null,
+    cs_description: null,
+    cs_conclusion: null,
+    cs_img_1: null,
+    cs_img_2: null,
 
     category: 'Front End', // Concept, Front End, Full Stack
     progress: 'Private Beta', // R&D, MVP, Post-MVP, Private Beta, Live
@@ -135,11 +135,11 @@ const Websites = [
     meta: 'React',
     tagline: 'A collaborative project with UX designers to conceive and develop a redesigned web presence for a local NYC eatery.',
 
-    cs_intro: 'Intro',
-    cs_description: 'Description',
-    cs_conclusion: 'Conclusion',
-    cs_img_1: 'Img 1',
-    cs_img_2: 'Img 2',
+    cs_intro: null,
+    cs_description: null,
+    cs_conclusion: null,
+    cs_img_1: null,
+    cs_img_2: null,
 
     category: 'Front End', // Concept, Front End, Full Stack
     progress: 'MVP', // R&D, MVP, Post-MVP, Private Beta, Live
@@ -177,11 +177,11 @@ const Websites = [
     meta: 'React & Express',
     tagline: 'The final deliverable from a 4-person group-build, a full-stack forum and review site for whiskey lovers, utilizing React, Express, Bcrypt, JSON Web Token, and Git versioning.',
 
-    cs_intro: 'Intro',
-    cs_description: 'Description',
-    cs_conclusion: 'Conclusion',
-    cs_img_1: 'Img 1',
-    cs_img_2: 'Img 2',
+    cs_intro: null,
+    cs_description: null,
+    cs_conclusion: null,
+    cs_img_1: null,
+    cs_img_2: null,
 
     category: 'Full Stack', // Concept, Front End, Full Stack
     progress: 'MVP', // R&D, MVP, Post-MVP, Private Beta, Live
@@ -219,11 +219,11 @@ const Websites = [
     meta: "React",
     tagline: 'Used DarkSkyAPI & Fundraise.com API on React to develop an interactive and educational dashboard for charity donors.',
 
-    cs_intro: 'Intro',
-    cs_description: 'Description',
-    cs_conclusion: 'Conclusion',
-    cs_img_1: 'Img 1',
-    cs_img_2: 'Img 2',
+    cs_intro: null,
+    cs_description: null,
+    cs_conclusion: null,
+    cs_img_1: null,
+    cs_img_2: null,
 
     category: 'Front End', // Concept, Front End, Full Stack
     progress: 'MVP', // R&D, MVP, Post-MVP, Private Beta, Live
@@ -261,11 +261,11 @@ const Websites = [
     meta: 'HTML, CSS, & JS',
     tagline: 'Used NewsAPI on a vanilla HTML, CSS, and JS application to create a curated mental health news feed.',
 
-    cs_intro: 'Intro',
-    cs_description: 'Description',
-    cs_conclusion: 'Conclusion',
-    cs_img_1: 'Img 1',
-    cs_img_2: 'Img 2',
+    cs_intro: null,
+    cs_description: null,
+    cs_conclusion: null,
+    cs_img_1: null,
+    cs_img_2: null,
 
     category: 'Front End', // Concept, Front End, Full Stack
     progress: 'MVP', // R&D, MVP, Post-MVP, Private Beta, Live
@@ -303,11 +303,11 @@ const Websites = [
     meta: 'WordPress',
     tagline: 'A client portfolio and blogging website featuring a complete redesign and rebrand of a long-running project.',
 
-    cs_intro: 'Intro',
-    cs_description: 'Description',
-    cs_conclusion: 'Conclusion',
-    cs_img_1: 'Img 1',
-    cs_img_2: 'Img 2',
+    cs_intro: null,
+    cs_description: null,
+    cs_conclusion: null,
+    cs_img_1: null,
+    cs_img_2: null,
 
     category: 'Front End', // Concept, Front End, Full Stack
     progress: 'Beta', // R&D, MVP, Post-MVP, Private Beta, Live
@@ -345,11 +345,11 @@ const Websites = [
     meta: 'WordPress',
     tagline: 'A marketing website for my design firm, Remedient LLC, utilizing best practices in tech marketing, branding, and user funneling.',
 
-    cs_intro: 'Intro',
-    cs_description: 'Description',
-    cs_conclusion: 'Conclusion',
-    cs_img_1: 'Img 1',
-    cs_img_2: 'Img 2',
+    cs_intro: null,
+    cs_description: null,
+    cs_conclusion: null,
+    cs_img_1: null,
+    cs_img_2: null,
 
     category: 'Front End', // Concept, Front End, Full Stack
     progress: 'Live', // R&D, MVP, Post-MVP, Private Beta, Live
@@ -387,11 +387,11 @@ const Websites = [
     meta: 'WordPress',
     tagline: 'A client project featuring suicide prevention portraiture with immersive design, consistent branding, and user engagement tactics.',
 
-    cs_intro: 'Intro',
-    cs_description: 'Description',
-    cs_conclusion: 'Conclusion',
-    cs_img_1: 'Img 1',
-    cs_img_2: 'Img 2',
+    cs_intro: null,
+    cs_description: null,
+    cs_conclusion: null,
+    cs_img_1: null,
+    cs_img_2: null,
 
     category: 'Front End', // Concept, Front End, Full Stack
     progress: 'Live', // R&D, MVP, Post-MVP, Private Beta, Live
@@ -429,11 +429,11 @@ const Websites = [
     meta: 'WordPress',
     tagline: 'A comprehensive pro bono website and brand package developed for a Detroit-based suicide postvention charity, Six Feet Over.',
 
-    cs_intro: 'Intro',
-    cs_description: 'Description',
-    cs_conclusion: 'Conclusion',
-    cs_img_1: 'Img 1',
-    cs_img_2: 'Img 2',
+    cs_intro: null,
+    cs_description: null,
+    cs_conclusion: null,
+    cs_img_1: null,
+    cs_img_2: null,
 
     category: 'Front End', // Concept, Front End, Full Stack
     progress: 'Live', // R&D, MVP, Post-MVP, Private Beta, Live
@@ -471,11 +471,11 @@ const Websites = [
     meta: 'WordPress',
     tagline: 'A full stack app concept using a recommender engine to match individuals seeking counseling to the best available counselor, lowering treatment dropout, increasing treatment success rates.',
 
-    cs_intro: 'Intro',
-    cs_description: 'Description',
-    cs_conclusion: 'Conclusion',
-    cs_img_1: 'Img 1',
-    cs_img_2: 'Img 2',
+    cs_intro: null,
+    cs_description: null,
+    cs_conclusion: null,
+    cs_img_1: null,
+    cs_img_2: null,
 
     category: 'Concept', // Concept, Front End, Full Stack
     progress: 'R&D', // R&D, MVP, Post-MVP, Private Beta, Live
