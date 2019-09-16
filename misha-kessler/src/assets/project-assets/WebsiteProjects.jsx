@@ -229,7 +229,7 @@ const Websites = [
 
     name: '7 Summits Suicide Prevention',
     date: 'Jul 2019',
-    meta: "React",
+    meta: 'React',
     tagline: 'Used DarkSkyAPI & Fundraise.com API on React to develop an interactive and educational dashboard for charity donors.',
 
     cs_intro: null,
@@ -309,7 +309,7 @@ const Websites = [
   {
     id: 5,
     featured: false,
-    case_study: false,
+    case_study: true,
 
     name: "Life's New Normal",
     date: 'Mar 2019',

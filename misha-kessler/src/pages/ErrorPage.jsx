@@ -18,11 +18,11 @@ class ErrorPage extends Component {
     super(props)
 
     this.state = {
-      preimage: null,
+      preimage: 'https://media.giphy.com/media/BsQAVgY6ksvIY/giphy.gif',
       title: "Page Not Found",
-      postimage: 'https://imgur.com/',
+      postimage: null,
       tagline: "404 Error",
-      description: "Uh-oh! We got lost somewhere along the way. That said, getting lost is a great opportunity to explore...",
+      description: "Uh-oh! We got lost somewhere along the way...",
       helper: "",
     }
   }

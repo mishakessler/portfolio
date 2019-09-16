@@ -173,7 +173,7 @@ a :hover {
   background: 
   linear-gradient(
     rgba(0, 93, 122, 0.8), 
-    rgba(0, 229, 187, 0.5)
+    rgba(0, 229, 187, 0.3)
   ),
   url(./assets/images/advocate-banner-1.jpg);
   background-size: cover;
@@ -184,7 +184,7 @@ a :hover {
   background: 
   linear-gradient(
     rgba(0, 93, 122, 0.8), 
-    rgba(0, 229, 187, 0.5)
+    rgba(0, 229, 187, 0.3)
   ),
   url(./assets/images/designer-banner-1.jpg);
   background-size: cover;
@@ -195,7 +195,7 @@ a :hover {
   background: 
   linear-gradient(
     rgba(0, 93, 122, 0.8), 
-    rgba(0, 229, 187, 0.5)
+    rgba(0, 229, 187, 0.3)
   ),
   url(./assets/images/developer-banner-1.jpg);
   background-size: cover;
@@ -206,7 +206,7 @@ a :hover {
   background: 
   linear-gradient(
     rgba(0, 93, 122, 0.8), 
-    rgba(0, 229, 187, 0.5)
+    rgba(0, 229, 187, 0.3)
   ),
   url(./assets/images/entrepreneur-banner-1.jpg);
   background-size: cover;
@@ -217,7 +217,7 @@ a :hover {
   background: 
   linear-gradient(
     rgba(0, 93, 122, 0.8), 
-    rgba(0, 229, 187, 0.5)
+    rgba(0, 229, 187, 0.3)
   ),
   url(./assets/images/hobbyist-banner-1.jpg);
   background-size: cover;
@@ -499,6 +499,7 @@ a :hover {
 /********************** Hero ***********************/
 
 .hero {
+  text-align: center;
   min-height: 18vh;
   max-width: 1020px;
   color: white;
@@ -506,11 +507,24 @@ a :hover {
 }
 
 .hero h1 {
+  text-align: left;
   font-size: 2em;
+  margin: 15px auto;
+}
+
+.hero h3 {
+  text-align: left;
+  margin: 15px auto;
+}
+
+.hero img {
+  max-width: calc(100% - 100px);
   margin: 25px auto;
+  border-radius: 10px;
 }
 
 .hero p {
+  text-align: left;
   max-width: 920px;
   margin: 25px auto;
   font-size: 1.1em;
@@ -519,10 +533,9 @@ a :hover {
 
 /******************* Index Pages *******************/
 
-
 .index {
-  max-width: 1020px;
-  margin: 25px auto;
+  max-width: 1280px;
+  margin: 50px auto;
 }
 
 .index h2 {
@@ -544,10 +557,11 @@ a :hover {
 
 .ui.secondary.inverted.pointing.menu {
   font-size: 1.1em;
+  border-width: 0px;
 }
 
 .ui.grid>* {
-  padding: 1.75rem;
+  padding: 1.25rem;
 }
 
 .project-cards {
@@ -618,10 +632,16 @@ a :hover {
   display: inline;
 }
 
+/******************* Case Studies ******************/
 
+.casestudy-modal img {
+  max-width: 100%;
+  margin: 25px auto;
+}
 
-/******************* Detail Pages ******************/
-
+.ui.basic.modal>.header {
+  font-size: 2em;
+}
 
 /******************* About Page ********************/
 
@@ -756,6 +776,10 @@ a :hover {
 
 /***************** Contact Page *****************/
 
+.contact-page .hero h1, .contact-page .hero h3, .about-page .hero h1, .about-page .hero h3 {
+text-align: center;
+}
+
 .contact-body, .contact-socials {
   max-width: 920px;
   margin: 0 auto;
@@ -771,6 +795,13 @@ a :hover {
 
 .contact-socials a {
   margin: 0 15px;
+}
+
+/******************** Error Page ******************/
+
+.error-page, .error-hero {
+  text-align: center;
+  
 }
 
 /***************************************************/
