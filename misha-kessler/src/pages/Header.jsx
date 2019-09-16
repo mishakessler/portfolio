@@ -14,8 +14,8 @@ import {
 } from 'semantic-ui-react'
 
 // Assets
-import ColorLettermark from '../../assets/graphics/lettermark.png'
-import WhiteLettermark from '../../assets/graphics/lettermark-white.png'
+import ColorLettermark from '../assets/graphics/lettermark.png'
+import WhiteLettermark from '../assets/graphics/lettermark-white.png'
 
 export default class Header extends Component {
   constructor(props) {

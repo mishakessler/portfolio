@@ -1,3 +1,16 @@
+import BarrelAgedLanding from './barrel-aged/landing.png'
+import CaraMiaLanding from './cara-mia/landing.png'
+import CrisisInternationalLanding from './crisis-international/landing.png'
+import CIEnterpriseLanding from './crisis-international-enterprise/landing.png'
+import LiveThroughThisLanding from './live-through-this/landing.png'
+import MentalHealthableLanding from './mental-healthable/landing.png'
+import MishaKesslerLanding from './misha-kessler/landing.png'
+import RemedientLanding from './remedient/landing.png'
+import RmdyioLanding from './rmdyio/landing.png'
+import SevenSummitsLanding from './seven-summits/landing.png'
+import SixFeetOverLanding from './six-feet-over/landing.png'
+
+
 const Websites = [
   {
     id: 12,
@@ -18,7 +31,7 @@ const Websites = [
     category: 'Front End', // Concept, Front End, Full Stack
     progress: 'Live', // R&D, MVP, Post-MVP, Private Beta, Live
 
-    url_to_img: 'https://imgur.com/TNSYeV4.png',
+    url_to_img: `${MishaKesslerLanding}`,
     url_to_demo: '/woah',
     url_to_github: 'https://github.com/mishakessler/portfolio',
 
@@ -60,7 +73,7 @@ const Websites = [
     category: 'Full Stack', // Concept, Front End, Full Stack
     progress: 'MVP', // R&D, MVP, Post-MVP, Private Beta, Live
 
-    url_to_img: 'https://imgur.com/HApw990.png',
+    url_to_img: `${CIEnterpriseLanding}`,
     url_to_demo: 'https://crisis-international.surge.sh',
     url_to_github: 'https://github.com/mishakessler/ga-sei-project4',
 
@@ -102,7 +115,7 @@ const Websites = [
     category: 'Front End', // Concept, Front End, Full Stack
     progress: 'Private Beta', // R&D, MVP, Post-MVP, Private Beta, Live
 
-    url_to_img: 'https://imgur.com/GmWGYxo.png',
+    url_to_img: `${CrisisInternationalLanding}`,
     url_to_demo: 'https://beta.crisisinternational.org',
     url_to_github: null,
 
@@ -144,7 +157,7 @@ const Websites = [
     category: 'Front End', // Concept, Front End, Full Stack
     progress: 'MVP', // R&D, MVP, Post-MVP, Private Beta, Live
 
-    url_to_img: 'https://imgur.com/ZLaVcDn.png',
+    url_to_img: `${CaraMiaLanding}`,
     url_to_demo: 'https://cara-mia-redesign.surge.sh/',
     url_to_github: 'https://github.com/mishakessler/cara-mia-redesign',
 
@@ -186,7 +199,7 @@ const Websites = [
     category: 'Full Stack', // Concept, Front End, Full Stack
     progress: 'MVP', // R&D, MVP, Post-MVP, Private Beta, Live
 
-    url_to_img: 'https://imgur.com/ExrZqih.png',
+    url_to_img: `${BarrelAgedLanding}`,
     url_to_demo: 'http://www.barrel-aged.surge.sh',
     url_to_github: 'https://github.com/mishakessler/barrel-aged',
 
@@ -228,7 +241,7 @@ const Websites = [
     category: 'Front End', // Concept, Front End, Full Stack
     progress: 'MVP', // R&D, MVP, Post-MVP, Private Beta, Live
 
-    url_to_img: 'https://imgur.com/uZyd6AC.png',
+    url_to_img: `${SevenSummitsLanding}`,
     url_to_demo: 'https://7ssp.surge.sh/',
     url_to_github: 'https://github.com/mishakessler/ga-sei-project2/tree/master/seven-summits-for-suicide-prevention',
 
@@ -270,7 +283,7 @@ const Websites = [
     category: 'Front End', // Concept, Front End, Full Stack
     progress: 'MVP', // R&D, MVP, Post-MVP, Private Beta, Live
 
-    url_to_img: 'https://imgur.com/Bptthbk.png',
+    url_to_img: `${MentalHealthableLanding}`,
     url_to_demo: 'https://mentalhealthable.surge.sh/',
     url_to_github: 'https://github.com/mishakessler/ga-sei-project1',
 
@@ -312,7 +325,7 @@ const Websites = [
     category: 'Front End', // Concept, Front End, Full Stack
     progress: 'Beta', // R&D, MVP, Post-MVP, Private Beta, Live
 
-    url_to_img: '',
+    url_to_img: null,
     url_to_demo: 'https://lifesnewnormal.remedient.com/',
     url_to_github: null,
 
@@ -354,7 +367,7 @@ const Websites = [
     category: 'Front End', // Concept, Front End, Full Stack
     progress: 'Live', // R&D, MVP, Post-MVP, Private Beta, Live
 
-    url_to_img: 'https://imgur.com/T3E24bH.png',
+    url_to_img: `${RemedientLanding}`,
     url_to_demo: 'https://www.remedient.com/',
     url_to_github: null,
 
@@ -396,7 +409,7 @@ const Websites = [
     category: 'Front End', // Concept, Front End, Full Stack
     progress: 'Live', // R&D, MVP, Post-MVP, Private Beta, Live
 
-    url_to_img: 'https://imgur.com/vZUVE4r.png',
+    url_to_img: `${LiveThroughThisLanding}`,
     url_to_demo: 'https://www.livethroughthis.org/',
     url_to_github: null,
 
@@ -438,7 +451,7 @@ const Websites = [
     category: 'Front End', // Concept, Front End, Full Stack
     progress: 'Live', // R&D, MVP, Post-MVP, Private Beta, Live
 
-    url_to_img: 'https://imgur.com/1efqxBi.png',
+    url_to_img: `${SixFeetOverLanding}`,
     url_to_demo: 'https://www.sixftover.org/',
     url_to_github: null,
 
@@ -480,7 +493,7 @@ const Websites = [
     category: 'Concept', // Concept, Front End, Full Stack
     progress: 'R&D', // R&D, MVP, Post-MVP, Private Beta, Live
 
-    url_to_img: 'https://imgur.com/x12PEMh.png',
+    url_to_img: `${RmdyioLanding}`,
     url_to_demo: 'https://www.rmdy.io/',
     url_to_github: null,
 
@@ -505,4 +518,6 @@ const Websites = [
   },
 ]
 
-export default Websites
+export {
+  Websites
+}

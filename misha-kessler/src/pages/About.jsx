@@ -8,10 +8,11 @@ import {
 } from 'react-router-dom'
 
 // Components
-import Header from '../components/modules/Header'
-import Hero from '../components/modules/Hero'
+import Header from './Header'
+import Hero from './Hero'
+import Footer from './Footer'
+
 import Timeline from '../components/modules/Timeline';
-import Footer from '../components/modules/Footer'
 
 // Assets 
 import Misha from '../assets/images/misha-work.jpg'

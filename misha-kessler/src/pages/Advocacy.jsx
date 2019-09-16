@@ -8,21 +8,28 @@ import {
 
 // React Semantic
 import {
-  Label,
-  Grid,
-  Card,
-  Image,
-  Button,
+  Menu,
 } from 'semantic-ui-react'
 
 // Components
-import Header from '../components/modules/Header'
-import Hero from '../components/modules/Hero'
+import Header from './Header'
+import Hero from './Hero'
 import Key from '../components/modules/Key'
-import Footer from '../components/modules/Footer'
+import Footer from './Footer'
+
+import AdvocacyIndex from '../components/modules/AdvocacyIndex'
 
 // Assets 
-import Advocacies from '../assets/project-assets/Advocacies'
+import {
+  Awards,
+  Committees,
+  Documentaries,
+  Interviews,
+  Memberships,
+  Panels,
+  Publications,
+  Speeches,
+} from '../assets/project-assets/AdvocacyProjects'
 
 class Advocacy extends Component {
   constructor(props) {
@@ -30,16 +37,65 @@ class Advocacy extends Component {
 
     this.state = {
       preimage: null,
-      title: "Featured Advocacy",
+      title: "Featured Thought Leadership",
       tagline: "",
       postimage: null,
       description: "The following cards feature each of the panels, speakerships, media interviews, research publications, reports, news articles, and documentaries in which I've been honored to be included.",
-      helper: "There's a lot to digest here, sorry about that! Portfolio is still under construction.",
-      projects: Advocacies,
+      helper: null,
+
+      activeItem: 'panels',
+
+      awards: Awards,
+      committees: Committees,
+      documentaries: Documentaries,
+      interviews: Interviews,
+      memberships: Memberships,
+      panels: Panels,
+      publications: Publications,
+      speeches: Speeches,
+    }
+  }
+
+  handleItemClick = (e, { name }) =>
+    this.setState({
+      activeItem: name
+    })
+
+  menuRender = (activeItem) => {
+    switch (activeItem) {
+      case 'panels':
+        return <AdvocacyIndex
+          projects={this.state.panels} />
+      case 'speeches':
+        return <AdvocacyIndex
+          projects={this.state.speeches} />
+      case 'interviews':
+        return <AdvocacyIndex
+          projects={this.state.interviews} />
+      case 'documentaries':
+        return <AdvocacyIndex
+          projects={this.state.documentaries} />
+      case 'publications':
+        return <AdvocacyIndex
+          projects={this.state.publications} />
+      case 'committees':
+        return <AdvocacyIndex
+          projects={this.state.committees} />
+      case 'memberships':
+        return <AdvocacyIndex
+          projects={this.state.memberships} />
+      case 'awards':
+        return <AdvocacyIndex
+          projects={this.state.awards} />
+      default:
+        return <AdvocacyIndex
+          projects={this.state.panels} />
     }
   }
 
   render() {
+    const { activeItem } = this.state
+
     return (
       <div className="page advocacy-page">
         <Header />
@@ -53,74 +109,54 @@ class Advocacy extends Component {
           helper={this.state.helper}
         />
         <div className="body advocacy-body">
+          <div className="submenu advocacy-submenu">
+            <Menu
+              inverted
+              secondary
+              stackable
+              fluid
+              pointing
+              widths={8}>
+              <Menu.Item
+                name='panels'
+                active={activeItem === 'panels'}
+                onClick={this.handleItemClick} />
+              <Menu.Item
+                name='speeches'
+                active={activeItem === 'speeches'}
+                onClick={this.handleItemClick} />
+              <Menu.Item
+                name='interviews'
+                active={activeItem === 'interviews'}
+                onClick={this.handleItemClick} />
+              <Menu.Item
+                name='documentaries'
+                active={activeItem === 'documentaries'}
+                onClick={this.handleItemClick} />
+              <Menu.Item
+                name='publications'
+                active={activeItem === 'publications'}
+                onClick={this.handleItemClick} />
+              <Menu.Item
+                name='committees'
+                active={activeItem === 'committees'}
+                onClick={this.handleItemClick} />
+              <Menu.Item
+                name='memberships'
+                active={activeItem === 'memberships'}
+                onClick={this.handleItemClick} />
+              <Menu.Item
+                name='awards'
+                active={activeItem === 'awards'}
+                onClick={this.handleItemClick} />
+            </Menu>
+          </div>
           <div className="index advocacy-index">
-            <Grid stackable centered >
-              {this.state.projects.map(project =>
-                <div key={project.id} className="project-cards">
-                  <Grid.Column>
-                    <Card
-                      attached
-                      link
-                      color='teal'
-                      className='smooth'
-                    >
-                      <Label
-                        as='a'
-                        color='teal'
-                        ribbon='right'
-                        className='dcursor smooth'>
-                        {project.category}
-                      </Label>
-                      {project.featured &&
-                        <Image
-                          src={project.url_to_img}
-                          label={{
-                            as: 'a',
-                            corner: 'left',
-                            icon: 'star'
-                          }}
-                          wrapped ui={true}
-                          className="overlay"
-                        />}
-                      {!project.featured &&
-                        <Image
-                          src={project.url_to_img}
-                          wrapped ui={true}
-                          className="overlay"
-                        />}
-                      <Card.Content>
-                        <Card.Header>{project.name}</Card.Header>
-                        <Card.Meta>
-                          <p>From <span className='pseudo-link smooth'>{project.meta}</span></p>
-                          <p><span className='pseudo-link smooth'>{project.date}</span></p>
-                        </Card.Meta>
-                        <Card.Description>
-                          {project.tagline}
-                        </Card.Description>
-                      </Card.Content>
-                    </Card>
-                    {project.url_to_demo &&
-                      <Button
-                        attached='bottom'
-                        as='a'
-                        href={project.url_to_demo}
-                        target='_blank'
-                        color='teal'
-                        className='smooth'
-                        icon={{
-                          name: 'globe',
-                          size: 'large',
-                          className: 'ui-button-icon',
-                        }}
-                      />}
-                  </Grid.Column>
-                </div>
-              )}
-            </Grid >
+            {this.menuRender(activeItem)}
           </div>
-          <div className='key-modal'>
-            <Key />
-          </div>
+        </div>
+        <div className='key-modal'>
+          <Key />
         </div>
         <Footer />
       </div>

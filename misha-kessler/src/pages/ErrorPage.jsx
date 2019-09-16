@@ -7,9 +7,9 @@ import {
 } from 'react-router-dom'
 
 // Components
-import Header from '../components/modules/Header'
-import Hero from '../components/modules/Hero'
-import Footer from '../components/modules/Footer'
+import Header from './Header'
+import Hero from './Hero'
+import Footer from './Footer'
 
 // Assets 
 
