@@ -8,10 +8,12 @@ import {
 export default function CaseStudy(props) {
   return (
     <Modal
+      className='casestudy-modal'
       basic
+      scrolling
       closeIcon
       centered={false}
-      // dimmer={"blurring"}
+      dimmer={"blurring"}
       trigger={
         <Button
           color='teal'
@@ -24,11 +26,12 @@ export default function CaseStudy(props) {
         />}
     >
       <Modal.Header
-        icon='archive' content={props.project.name}
+        icon='search' content={props.project.name}
       />
 
       <Modal.Content>
         <Modal.Description>
+          <img src={props.project.url_to_img} alt="Case Study Landing" />
 
           {!props.project.cs_img_1 &&
             <p>Sorry, this case study is still under construction. Check back later!</p>}
