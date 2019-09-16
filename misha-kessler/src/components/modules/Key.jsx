@@ -15,9 +15,10 @@ const Key = () => (
     <Button
       basic
       inverted
+      icon
       className='smooth' >
-      Icon Key
-      </Button>}
+      <Icon name='key' />
+    </Button>}
     closeIcon >
     <Modal.Content
       scrolling >

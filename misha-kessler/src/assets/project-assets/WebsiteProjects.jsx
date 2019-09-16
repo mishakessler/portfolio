@@ -518,4 +518,6 @@ const Websites = [
   },
 ]
 
-export default Websites
+export {
+  Websites
+}

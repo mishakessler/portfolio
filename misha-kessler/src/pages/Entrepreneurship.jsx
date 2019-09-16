@@ -7,10 +7,11 @@ import {
 } from 'react-router-dom'
 
 // Components
-import Header from '../components/modules/Header'
-import Hero from '../components/modules/Hero'
+import Header from './Header'
+import Hero from './Hero'
 import Key from '../components/modules/Key'
-import Footer from '../components/modules/Footer'
+import Footer from './Footer'
+
 
 class Entrepreneurship extends Component {
   constructor(props) {

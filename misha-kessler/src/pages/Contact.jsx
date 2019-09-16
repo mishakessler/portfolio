@@ -12,10 +12,11 @@ import {
 } from 'semantic-ui-react'
 
 // Components
-import Header from '../components/modules/Header'
-import Hero from '../components/modules/Hero'
+import Header from './Header'
+import Hero from './Hero'
+import Footer from './Footer'
+
 import ContactForm from '../components/modules/ContactForm'
-import Footer from '../components/modules/Footer'
 
 // Assets 
 import Phone from '../assets/graphics/phone.png'
