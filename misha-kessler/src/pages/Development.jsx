@@ -14,6 +14,9 @@ import Footer from './Footer'
 
 import DevelopmentIndex from '../components/modules/DevelopmentIndex'
 
+import Misha from '../assets/images/misha-development.jpg'
+
+
 // Assets 
 import { Websites } from '../assets/project-assets/WebsiteProjects'
 
@@ -24,10 +27,10 @@ class Development extends Component {
     this.state = {
       preimage: null,
       title: "Featured Websites",
-      tagline: "",
-      postimage: null,
-      description: "",
-      helper: "Each project card features multiple icons to help you preview the project's scope. Feel free to check out the icon key beneath the card gallery, if you're unsure of what some icons imply.",
+      tagline: "Beautiful, immersive, user-friendly websites, built with a mission in mind.",
+      postimage: `${Misha}`,
+      description: "For over 4 years, I've been designing and developing websites for social justice causes. Initially, my passion for large-scale social impact interesected with attractive, user-friendly websites which I developed for nonprofit organizations. To this day, I continue to build websites with the goal of enabling social justice programs in branding themselves across digital mediums, thereby amplifying brand recognition and social impact.",
+      helper: "Each project card features multiple icons to help preview the project's scope. Check out the icon key in the lower right hand corner, if you're unsure of what the icons mean.",
       websites: Websites,
     }
   }
