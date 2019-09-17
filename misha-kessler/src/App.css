@@ -144,16 +144,17 @@ a :hover {
   position: fixed;
   overflow: hidden;
   width: 100vw;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 .page-viewer-pages {
   position: absolute;
-  width: calc(100vw - 20px);
-  height: calc(100vh - 20px);
-  top: 10px;
-  left: 10px;
-  border-radius: 10px;
+  width: calc(100vw - 30px);
+  height: calc(100vh - 30px);
+  min-height: 450px;
+  top: 15px;
+  left: 15px;
+  border-radius: 15px;
   will-change: transform;
 }
 
@@ -238,7 +239,7 @@ a :hover {
 /****************** Landing Text *******************/
 
 .landing-titles {
-  padding: 5vh 5vw 0 5vw;
+  padding: 3vh 3vw 0 3vw;
   text-align: center;
 }
 
@@ -253,7 +254,7 @@ a :hover {
 
 .landing-welcome {
   position: absolute;
-  top: 32vh;
+  top: 30vh;
   left: 3vw;
   z-index: 0;
 }
@@ -265,8 +266,11 @@ a :hover {
 }
 
 .landing-tagline {
-  margin-top: 15vh;
-  padding: 0 13vw;
+  position: absolute;
+  top: 42vh;
+  left: 12vw;
+  right: 12vw;
+  padding: 0;
 }
 
 .landing-tagline h2 {
@@ -877,32 +881,38 @@ text-align: center;
   /** Landing Logo **/
 
   .landing-lettermark {
-    width: 150px;
+    width: 100px;
   }
 
 
   /** Landing Text **/
 
   .landing-titles {
-    padding: 4vh 4vw 0 4vw;
+    padding: 3vh 3vw 0 3vw;
   }
 
   .landing-titles h5 {
     display: block;
+    font-size: 1.5em;
   }
 
   .landing-welcome {
-    top: 28vh;
+    top: 26vh;
     left: 3vw;
   }
 
+  .landing-welcome h1 {
+    font-size: 12em;
+  }
+
   .landing-tagline {
-    margin-top: 15vh;
-    padding: 0 10vw;
+    top: 36vh;
+    left: 10vw;
+    right: 10vw;
   }
 
   .landing-tagline h2 {
-    font-size: 3em;
+    font-size: 3.5em;
   }
 
 
@@ -991,13 +1001,22 @@ text-align: center;
   /** Landing Logo **/
 
   .landing-lettermark {
-    width: 125px;
+    width: 100px;
   }
 
   /** Landing Text **/
 
   .landing-titles {
-    padding: 3vh 3vw 0 3vw;
+    padding: 2.5vh 2.5vw 0 2.5vw;
+  }
+
+  .landing-titles h5 {
+    font-size: 1.3em;
+  }
+
+
+  .landing-welcome {
+    top: 25vh;
   }
 
   .landing-welcome h1 {
@@ -1005,12 +1024,13 @@ text-align: center;
   }
 
   .landing-tagline {
-    margin-top: 15vh;
-    padding: 0 10vw;
+    top: 36vh;
+    left: 8vw;
+    right: 8vw;
   }
 
   .landing-tagline h2 {
-    font-size: 2.4em;
+    font-size: 2.6em;
   }
 
   /** Landing CTAs **/
@@ -1064,21 +1084,21 @@ text-align: center;
   /** Landing Logo **/
 
   .landing-lettermark {
-    width: 75px;
+    width: 50px;
   }
 
   /** Landing Text **/
 
   .landing-titles {
-    padding: 3vh 3vw 0 3vw;
+    padding: 2vh 2vw 0 2vw;
   }
 
   .landing-titles h5 {
-    font-size: 1.15em;
+    font-size: 1.1em;
   }
 
   .landing-welcome {
-    top: 27vh;
+    top: 23vh;
     left: 2vw;
   }
 
@@ -1087,12 +1107,13 @@ text-align: center;
   }
 
   .landing-tagline {
-    margin-top: 12vh;
-    padding: 0 8vw;
+    top: 31vh;
+    left: 6vw;
+    right: 6vw;
   }
 
   .landing-tagline h2 {
-    font-size: 1.5em;
+    font-size: 1.8em;
   }
 
   /** Landing CTAs **/
@@ -1104,20 +1125,17 @@ text-align: center;
   .enter-cta {
     width: 80%;
     left: 10%;
-    bottom: 12vh;
-  }
-  
-  .left-cta, .right-cta {
-    bottom: 4vh;
+    bottom: 15vh;
   }
   
   .right-cta {
+    bottom: 5vh;
     right: 5vw;
   }
-  
+
   .left-cta {
     left: 5vw;
-    bottom: 7vh;
+    bottom: 9vh;
   }
   
   .enter-cta a {
@@ -1131,4 +1149,77 @@ text-align: center;
   .about-journey img {
     float: unset;
   }
+}
+
+
+/***************** Under 320px *****************/
+
+@media all and (max-width: 320px) {
+
+
+  /** Landing Logo **/
+
+  .landing-lettermark {
+    width: 50px;
+  }
+
+  /** Landing Text **/
+
+  .landing-titles {
+    padding: 1.5vh 1.5vw 0 1.5vw;
+  }
+
+  .landing-titles h5 {
+    font-size: 0.9em;
+  }
+
+  .landing-welcome {
+    top: 23vh;
+    left: 2vw;
+  }
+
+  .landing-welcome h1 {
+    font-size: 4em;
+  }
+
+  .landing-tagline {
+    top: 32vh;
+    left: 6vw;
+    right: 6vw;
+  }
+
+  .landing-tagline h2 {
+    font-size: 1.2em;
+  }
+
+  /** Landing CTAs **/
+
+  .ctas {
+    bottom: 7vh;
+  }
+  
+  .enter-cta {
+    width: 80%;
+    left: 10%;
+    bottom: 16vh;
+  }
+  
+  .right-cta {
+    bottom: 5vh;
+    right: 5vw;
+  }
+
+  .left-cta {
+    left: 5vw;
+    bottom: 9vh;
+  }
+  
+  .enter-cta a {
+    font-size: 0.8em; 
+  }
+  
+  .right-cta h6, .left-cta h6 {
+    font-size: 0.8em;
+  }
+
 }
