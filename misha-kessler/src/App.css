@@ -405,20 +405,25 @@ a :hover {
   width: 100vw;
   min-height: 100vh;
   margin: 0;
-  padding: 20px;
+  padding: 25px;
   overflow-y: scroll; 
   overflow-x: hidden;
+}
+
+.page .ui.divider {
+  max-width: 1020px;
+  margin: 0 auto;
 }
 
 .body {
   min-height: 30vh;
 }
 
-.body h3, .about-why h3, .about-journey h3, .about-roles h3 {
+.about-why h3, .about-journey h3, .about-roles h3 {
   margin: 0 auto;
   max-width: 1020px;
   color: white;
-  font-size: 1.4em;
+  font-size: 1.5em;
 }
 
 
@@ -443,7 +448,7 @@ a :hover {
 .advocacy-page {
   background: 
   linear-gradient(
-    rgba(0, 0, 0, 0.6), 
+    rgba(0, 0, 0, 0.7), 
     rgba(0, 0, 0, 0.9)
   ),
   url(./assets/images/advocate-banner-1.jpg);
@@ -455,7 +460,7 @@ a :hover {
 .design-page  {
   background: 
   linear-gradient(
-    rgba(0, 0, 0, 0.6), 
+    rgba(0, 0, 0, 0.7), 
     rgba(0, 0, 0, 0.9)
   ),
   url(./assets/images/designer-banner-1.jpg);
@@ -467,7 +472,7 @@ a :hover {
 .development-page, .about-page, .contact-page, .error-page, .spacetime-page   {
   background: 
   linear-gradient(
-    rgba(0, 0, 0, 0.6), 
+    rgba(0, 0, 0, 0.7), 
     rgba(0, 0, 0, 0.9)
   ),
   url(./assets/images/developer-banner-1.jpg);
@@ -479,7 +484,7 @@ a :hover {
 .entrepreneurship-page  {
   background: 
   linear-gradient(
-    rgba(0, 0, 0, 0.7), 
+    rgba(0, 0, 0, 0.8), 
     rgba(0, 0, 0, 0.9)
   ),
   url(./assets/images/entrepreneur-banner-1.jpg);
@@ -491,7 +496,7 @@ a :hover {
 .hobbyist-page  {
   background: 
   linear-gradient(
-    rgba(0, 0, 0, 0.6), 
+    rgba(0, 0, 0, 0.7), 
     rgba(0, 0, 0, 0.9)
   ),
   url(./assets/images/hobbyist-banner-1.jpg);
@@ -507,7 +512,7 @@ a :hover {
   min-height: 18vh;
   max-width: 1020px;
   color: white;
-  margin: 25px auto;
+  margin: 25px auto 50px auto;
 }
 
 .hero h1 {
@@ -538,7 +543,7 @@ a :hover {
 /******************* Index Pages *******************/
 
 .index {
-  max-width: 1280px;
+  max-width: 1080px;
   margin: 50px auto;
 }
 
@@ -556,16 +561,58 @@ a :hover {
 
 .submenu {
   max-width: 1020px;
-  margin: 10px auto;
+  margin: 0 auto;
+}
+
+.submenu .ui.selection.dropdown {
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: unset;
+
+}
+
+.submenu .ui.selection.active.dropdown:hover {
+  border: 1px solid white;
 }
 
 .ui.secondary.inverted.pointing.menu {
-  font-size: 1.1em;
+  font-size: 1.15em;
   border-width: 0px;
 }
 
+.ui.secondary.inverted.pointing.menu .item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  transition: ease-in-out .3s;
+  -moz-transition: ease-in-out .3s;
+  -o-transition: ease-in-out .3s;
+  -webkit-transition: ease-in-out .3s;
+}
+
+.ui.secondary.inverted.pointing.menu .item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: ease-in-out .3s;
+  -moz-transition: ease-in-out .3s;
+  -o-transition: ease-in-out .3s;
+  -webkit-transition: ease-in-out .3s;
+}
+
+.ui.secondary.inverted.pointing.menu .active.item {
+  transition: ease-in-out .3s;
+  -moz-transition: ease-in-out .3s;
+  -o-transition: ease-in-out .3s;
+  -webkit-transition: ease-in-out .3s;
+}
+
+.advocacy-page h3 {
+  max-width: 963px;
+  margin: 25px auto;
+  color: white;
+  font-size: 1.8em;
+}
+
 .ui.grid>* {
-  padding: 1.25rem;
+  padding: 1.75rem 2.5rem;
 }
 
 .project-cards {
@@ -577,15 +624,16 @@ a :hover {
 }
 
 .advocacy-page .content {
-  height: 150px;
+  height: 160px;
 }
 
 .ui.card {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .ui.card>.image {
   min-height: 183px;
+  border-radius: 5px 5px 0 0;
 }
 
 .ui.card>.image>img, .ui.cards>.card>.image>img {
@@ -857,7 +905,9 @@ text-align: center;
 /***************** 1027 to 1199px *****************/
 
 @media all and (max-width: 1199px) {
-
+  .ui.grid>* {
+    padding: 1.6rem 1.6rem;
+  }
 }
 
 
@@ -876,7 +926,6 @@ text-align: center;
   .hide-on-mobile {
     display: none;
   }
-
 
   /** Landing Logo **/
 
@@ -978,6 +1027,31 @@ text-align: center;
     margin-bottom: 25px;
   }
 
+
+  /** Hero **/
+  
+  .hero img {
+    max-width: calc(100% - 50px);
+    margin: 25px auto;
+    border-radius: 10px;
+  }
+
+
+  /** Indices **/
+
+  .submenu {
+    max-width: 633px;
+  }
+
+  .advocacy-page h3 {
+    max-width: 633px;
+  }
+
+  .ui.grid>* {
+    padding: 1.75rem 1.75rem;
+  }
+
+  
   /** Footer **/
 
   .footer-nav a {
@@ -986,9 +1060,9 @@ text-align: center;
 }
 
 
-/***************** Under 769px *****************/
+/***************** Under 768px *****************/
 
-@media all and (max-width: 769px) {
+@media all and (max-width: 768px) {
 
   .page-viewer-pages {
     position: absolute;
@@ -1065,6 +1139,18 @@ text-align: center;
   .right-cta h6, .left-cta h6 {
     font-size: 1em;
   }
+
+  /** Indices **/
+
+  .submenu {
+    max-width: 293px;
+  }
+
+  .advocacy-page h3 {
+    max-width: 293px;
+  }
+
+  /** About Page **/
 
   .about-journey {
     margin-top: 275px;
@@ -1146,6 +1232,18 @@ text-align: center;
     font-size: .9em;
   }
 
+  /** Hero **/
+
+
+
+  /** Indices **/
+
+  .advocacy-page h3 {
+    max-width: unset;
+  }
+
+  /** About Page **/
+
   .about-journey img {
     float: unset;
   }
@@ -1221,5 +1319,7 @@ text-align: center;
   .right-cta h6, .left-cta h6 {
     font-size: 0.8em;
   }
+
+
 
 }
