@@ -21,7 +21,7 @@ export default function AdvocacyIndex(props) {
                 attached
                 link
                 color='teal'
-                className='smooth'
+                className='dcursor smooth'
               >
                 <Label
                   as='a'
@@ -50,10 +50,10 @@ export default function AdvocacyIndex(props) {
                 <Card.Content>
                   <Card.Header>{project.name}</Card.Header>
                   <Card.Meta>
-                    <p><span className='pseudo-link smooth'>{project.meta}</span></p>
                     <p><span className='pseudo-link smooth'>{project.date}</span></p>
                   </Card.Meta>
                   <Card.Description>
+                    <p><span className='pseudo-link smooth'>{project.meta}</span></p>
                     {project.tagline}
                   </Card.Description>
                 </Card.Content>

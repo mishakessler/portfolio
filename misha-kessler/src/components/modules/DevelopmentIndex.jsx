@@ -11,6 +11,11 @@ import {
   Button,
 } from 'semantic-ui-react'
 
+// React Semantic UI
+import {
+  Divider
+} from 'semantic-ui-react'
+
 import CaseStudy from './CaseStudy'
 
 export default function DevelopmentIndex(props) {
