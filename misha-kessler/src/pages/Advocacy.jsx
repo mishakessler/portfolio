@@ -9,6 +9,7 @@ import {
 // React Semantic
 import {
   Menu,
+  Dropdown,
 } from 'semantic-ui-react'
 
 // Components
@@ -31,6 +32,42 @@ import {
 } from '../assets/project-assets/AdvocacyProjects'
 
 import Misha from '../assets/images/misha-advocacy.jpg'
+
+const categories = [
+  {
+    key: 'panels',
+    text: 'Panels',
+    value: 'panels',
+  }, {
+    key: 'speeches',
+    text: 'Speeches',
+    value: 'speeches',
+  }, {
+    key: 'interviews',
+    text: 'Interviews',
+    value: 'interviews',
+  }, {
+    key: 'documentaries',
+    text: 'Documentaries',
+    value: 'documentaries',
+  }, {
+    key: 'publications',
+    text: 'Publications',
+    value: 'publications',
+  }, {
+    key: 'committees',
+    text: 'Committees',
+    value: 'committees',
+  }, {
+    key: 'memberships',
+    text: 'Memberships',
+    value: 'memberships',
+  }, {
+    key: 'awards',
+    text: 'Awards',
+    value: 'awards',
+  },
+]
 
 class Advocacy extends Component {
   constructor(props) {
@@ -57,6 +94,11 @@ class Advocacy extends Component {
     }
   }
 
+  handleSelect = (e, { value }) =>
+    this.setState({
+      activeItem: value,
+    })
+
   handleItemClick = (e, { name }) =>
     this.setState({
       activeItem: name
@@ -66,30 +108,39 @@ class Advocacy extends Component {
     switch (activeItem) {
       case 'panels':
         return <AdvocacyIndex
+          title='Panels'
           projects={this.state.panels} />
       case 'speeches':
         return <AdvocacyIndex
+          title='Speeches'
           projects={this.state.speeches} />
       case 'interviews':
         return <AdvocacyIndex
+          title='Interviews'
           projects={this.state.interviews} />
       case 'documentaries':
         return <AdvocacyIndex
+          title='Documentaries'
           projects={this.state.documentaries} />
       case 'publications':
         return <AdvocacyIndex
+          title='Publications'
           projects={this.state.publications} />
       case 'committees':
         return <AdvocacyIndex
+          title='Committees'
           projects={this.state.committees} />
       case 'memberships':
         return <AdvocacyIndex
+          title='Memberships'
           projects={this.state.memberships} />
       case 'awards':
         return <AdvocacyIndex
+          title='Awards'
           projects={this.state.awards} />
       default:
         return <AdvocacyIndex
+          title='Panels'
           projects={this.state.panels} />
     }
   }
@@ -109,15 +160,28 @@ class Advocacy extends Component {
           description={this.state.description}
           helper={this.state.helper}
         />
+
         <div className="body advocacy-body">
-          <div className="submenu advocacy-submenu">
+          <div className="submenu advocacy-submenu hide-on-desktop">
+            <Dropdown
+              selection
+              clearable
+              fluid
+              name='activeItem'
+              options={categories}
+              onChange={this.handleSelect}
+              placeholder='View Categories'
+            />
+          </div>
+          <div className="submenu advocacy-submenu hide-on-mobile">
             <Menu
               inverted
               secondary
               stackable
               fluid
               pointing
-              widths={8}>
+              widths={8}
+              className="hide-on-mobile">
               <Menu.Item
                 name='panels'
                 active={activeItem === 'panels'}
@@ -155,12 +219,12 @@ class Advocacy extends Component {
           <div className="index advocacy-index">
             {this.menuRender(activeItem)}
           </div>
-        </div>
+        </div >
         <div className='key-modal'>
           <Key />
         </div>
         <Footer />
-      </div>
+      </div >
     )
   }
 }

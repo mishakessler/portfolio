@@ -29,7 +29,7 @@ export default function DesignIndex(props) {
                   as='a'
                   color='teal'
                   ribbon='right'
-                  className="dcursor smooth">
+                  className="dcursor smooth" >
                   {project.category}
                 </Label>
                 {project.featured &&

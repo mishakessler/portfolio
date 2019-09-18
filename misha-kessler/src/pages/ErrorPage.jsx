@@ -6,6 +6,11 @@ import {
   withRouter
 } from 'react-router-dom'
 
+// React Semantic UI
+import {
+  Divider
+} from 'semantic-ui-react'
+
 // Components
 import Header from './Header'
 import Hero from './Hero'
@@ -40,6 +45,7 @@ class ErrorPage extends Component {
           description={this.state.description}
           helper={this.state.helper}
         />
+        <Divider />
         <div className="body error-body">
 
         </div>

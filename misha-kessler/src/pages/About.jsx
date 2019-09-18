@@ -7,12 +7,18 @@ import {
   withRouter
 } from 'react-router-dom'
 
+// React Semantic UI
+import {
+  Divider
+} from 'semantic-ui-react'
+
 // Components
 import Header from './Header'
 import Hero from './Hero'
 import Footer from './Footer'
 
 import Timeline from '../components/modules/Timeline';
+
 
 // Assets 
 import Misha from '../assets/images/misha-work.jpg'
@@ -44,6 +50,7 @@ class About extends Component {
           description={this.state.description}
           helper={this.state.helper}
         />
+        <Divider />
         <div className="about-why">
           <h3>My "Why"</h3>
           <p>As a young adult, my own experiences with depression and anxiety became the foundation of my career, motivating, informing, and grounding my passionate pursiot of justice and equity in mental healthcare. Since then, the thread of my career has been to bring principles of consumer autonomy, user-oriented design, and evidence-based practices to mental health technology, always with treatment and prevention outcomes as my polestar.</p>
