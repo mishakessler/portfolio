@@ -13,6 +13,7 @@ import {
 export default function AdvocacyIndex(props) {
   return (
     <>
+      <h3>{props.title}</h3>
       <Grid stackable centered >
         {props.projects.map(project =>
           <div key={project.id} className="project-cards">
