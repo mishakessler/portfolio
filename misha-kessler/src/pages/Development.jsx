@@ -6,6 +6,11 @@ import {
   withRouter
 } from 'react-router-dom'
 
+// React Semantic UI
+import {
+  Divider
+} from 'semantic-ui-react'
+
 // Components
 import Header from './Header'
 import Hero from './Hero'
@@ -45,6 +50,7 @@ class Development extends Component {
           description={this.state.description}
           helper={this.state.helper}
         />
+        <Divider />
         <div className="body development-body">
           <div className="index development-index">
             <DevelopmentIndex
