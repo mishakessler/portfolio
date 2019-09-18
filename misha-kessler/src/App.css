@@ -1017,6 +1017,15 @@ text-align: center;
     border-radius: 10px;
   }
 
+
+  /** Indices **/
+
+  .submenu {
+  }
+  
+  .ui.secondary.inverted.pointing.menu {
+    font-size: 1.05em;
+  }
   
   /** Footer **/
 
@@ -1106,6 +1115,12 @@ text-align: center;
     font-size: 1em;
   }
 
+  .submenu {
+
+  }
+
+  /** About Page **/
+
   .about-journey {
     margin-top: 275px;
   }
@@ -1185,6 +1200,14 @@ text-align: center;
   .right-cta h6, .left-cta h6 {
     font-size: .9em;
   }
+
+  /** Indices **/
+
+  .submenu {
+    
+  }
+
+  /** About Page **/
 
   .about-journey img {
     float: unset;
