@@ -26,7 +26,9 @@ const Websites = [
     cs_description: null,
     cs_conclusion: null,
     cs_img_1: null,
+    cs_caption_1: null,
     cs_img_2: null,
+    cs_caption_2: null,
 
     category: 'Front End', // Concept, Front End, Full Stack
     progress: 'Live', // R&D, MVP, Post-MVP, Private Beta, Live
