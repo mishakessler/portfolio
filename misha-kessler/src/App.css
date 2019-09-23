@@ -83,17 +83,17 @@ a :hover {
 /************** Pseudoclass Behaviors **************/
 
 .smooth {
-  transition: ease-in-out .3s;
-  -moz-transition: ease-in-out .3s;
-  -o-transition: ease-in-out .3s;
-  -webkit-transition: ease-in-out .3s;
+  transition: ease-in-out .2s;
+  -moz-transition: ease-in-out .2s;
+  -o-transition: ease-in-out .2s;
+  -webkit-transition: ease-in-out .2s;
 }
 
 .smooth:hover {
-  transition: ease-in-out .3s;
-  -moz-transition: ease-in-out .3s;
-  -o-transition: ease-in-out .3s;
-  -webkit-transition: ease-in-out .3s;
+  transition: ease-in-out .2s;
+  -moz-transition: ease-in-out .2s;
+  -o-transition: ease-in-out .2s;
+  -webkit-transition: ease-in-out .2s;
 }
 
 .pseudo-link:hover {
@@ -528,15 +528,22 @@ a :hover {
 
 .hero img {
   max-width: calc(100% - 100px);
-  margin: 25px auto;
+  margin: 15px auto;
   border-radius: 10px;
 }
 
 .hero p {
   text-align: left;
   max-width: 920px;
-  margin: 25px auto;
+  margin: 15px auto;
   font-size: 1.1em;
+}
+
+.hero .helper-text {
+  max-width: calc(100% - 100px);
+  margin: 25px auto 0 auto;
+  font-size: 0.9em;
+  text-align: center;
 }
 
 
@@ -544,18 +551,18 @@ a :hover {
 
 .index {
   max-width: 1080px;
-  margin: 50px auto;
+  margin: 25px auto;
 }
 
 .index h2 {
   max-width: 920px;
-  margin: 10px auto;
+  margin: 0 auto;
   font-size: 1.5em;
 }
 
 .index p {
   max-width: 820px;
-  margin: 10px auto;
+  margin: 0 auto;
   font-size: 1.05em;
 }
 
@@ -583,25 +590,25 @@ a :hover {
 .ui.secondary.inverted.pointing.menu .item {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   border-top: 1px solid rgba(255, 255, 255, 0.1);
-  transition: ease-in-out .3s;
-  -moz-transition: ease-in-out .3s;
-  -o-transition: ease-in-out .3s;
-  -webkit-transition: ease-in-out .3s;
+  transition: ease-in-out .2s;
+  -moz-transition: ease-in-out .2s;
+  -o-transition: ease-in-out .2s;
+  -webkit-transition: ease-in-out .2s;
 }
 
 .ui.secondary.inverted.pointing.menu .item:hover {
   background-color: rgba(255, 255, 255, 0.1);
-  transition: ease-in-out .3s;
-  -moz-transition: ease-in-out .3s;
-  -o-transition: ease-in-out .3s;
-  -webkit-transition: ease-in-out .3s;
+  transition: ease-in-out .2s;
+  -moz-transition: ease-in-out .2s;
+  -o-transition: ease-in-out .2s;
+  -webkit-transition: ease-in-out .2s;
 }
 
 .ui.secondary.inverted.pointing.menu .active.item {
-  transition: ease-in-out .3s;
-  -moz-transition: ease-in-out .3s;
-  -o-transition: ease-in-out .3s;
-  -webkit-transition: ease-in-out .3s;
+  transition: ease-in-out .2s;
+  -moz-transition: ease-in-out .2s;
+  -o-transition: ease-in-out .2s;
+  -webkit-transition: ease-in-out .2s;
 }
 
 .advocacy-page h3 {
@@ -832,21 +839,28 @@ a :hover {
 text-align: center;
 }
 
-.contact-body, .contact-socials {
-  max-width: 920px;
-  margin: 0 auto;
-}
-
 .contact-body {
+  max-width: 920px;
+  margin: 25px auto;
   text-align: right;
 }
 
 .contact-socials {
+  display: inline-flex;
+  align-content: center;
+  align-items: center;
   text-align: center;
+  max-width: 920px;
+  margin: 25px 0;
 }
 
 .contact-socials a {
-  margin: 0 15px;
+  margin: 0 5px;
+  justify-content: space-evenly;
+}
+
+.contact-socials .ui.middle.aligned.image img {
+  max-width: 100%;
 }
 
 /******************** Error Page ******************/
@@ -1036,6 +1050,10 @@ text-align: center;
     border-radius: 10px;
   }
 
+  .hero .helper-text {
+    max-width: 70%;
+  }
+
 
   /** Indices **/
 
@@ -1043,7 +1061,7 @@ text-align: center;
     max-width: 633px;
   }
 
-  .advocacy-page h3 {
+  .advocacy-body h3 {
     max-width: 633px;
   }
 
@@ -1051,7 +1069,10 @@ text-align: center;
     padding: 1.75rem 1.75rem;
   }
 
-  
+
+  /** Contact Page **/
+
+
   /** Footer **/
 
   .footer-nav a {
@@ -1140,13 +1161,25 @@ text-align: center;
     font-size: 1em;
   }
 
+  /** Hero **/
+
+  .hero img {
+    max-width: 100%;
+    margin: 25px auto;
+    border-radius: 10px;
+  }
+
+  .hero .helper-text {
+    max-width: 80%;
+  }
+
   /** Indices **/
 
   .submenu {
     max-width: 293px;
   }
 
-  .advocacy-page h3 {
+  .advocacy-body h3 {
     max-width: 293px;
   }
 
@@ -1159,6 +1192,9 @@ text-align: center;
   .about-journey img {
     margin-top: -255px;
   }
+
+
+  /** Contact Page **/
 
 }
 
@@ -1234,12 +1270,8 @@ text-align: center;
 
   /** Hero **/
 
-
-
-  /** Indices **/
-
-  .advocacy-page h3 {
-    max-width: unset;
+  .hero .helper-text {
+    max-width: 90%;
   }
 
   /** About Page **/
@@ -1247,6 +1279,9 @@ text-align: center;
   .about-journey img {
     float: unset;
   }
+
+  /** Contact Page **/
+
 }
 
 
@@ -1320,6 +1355,17 @@ text-align: center;
     font-size: 0.8em;
   }
 
+  /** Hero **/
+
+  .hero .helper-text {
+    max-width: 100%;
+  }
+
+  .advocacy-body h3 {
+    max-width: unset;
+  }
+
+  /** Contact **/
 
 
 }
