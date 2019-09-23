@@ -29,10 +29,10 @@ class Design extends Component {
     this.state = {
       preimage: null,
       title: "Featured Designs",
-      tagline: "",
+      tagline: "Professional, sleek, consistent... Multimedia design for modern times.",
       postimage: null,
-      description: "",
-      helper: "Portfolio under construction. Check back soon!",
+      description: "With an eye for detail, a love of consistency across ditigal, print, and social media, and a passion for memorable, user-friendly, accessible design, I've spent many years perfecting the minutiae of my projects' graphic and UX design needs.",
+      helper: "This portfolio is still under construction. Check back soon!",
       projects: Designs,
     }
   }

@@ -54,9 +54,9 @@ export default function DesignIndex(props) {
                     <p>From <span className='pseudo-link smooth'>{project.meta}</span></p>
                     <p><span className='pseudo-link smooth'>{project.date}</span></p>
                   </Card.Meta>
-                  <Card.Description>
+                  {/* <Card.Description>
                     {project.tagline}
-                  </Card.Description>
+                  </Card.Description> */}
                 </Card.Content>
                 <Card.Content extra>
                   <p>At a glance:</p>
