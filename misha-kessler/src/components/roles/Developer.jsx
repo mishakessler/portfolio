@@ -25,7 +25,7 @@ export default function Developer() {
         <span className="hide-on-mobile"><h5>|</h5></span>
         <h5>Jr. Full Stack Developer</h5>
         <span className="hide-on-mobile"><h5>|</h5></span>
-        <h5>Technical Project Manager</h5>
+        <h5>Technical Product Manager</h5>
       </div>
       <div className="landing-welcome smooth">
         <h1 className="smooth">Welcome.</h1>
