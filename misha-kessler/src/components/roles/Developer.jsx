@@ -21,7 +21,9 @@ export default function Developer() {
         <img src={Lettermark} alt='Misha Lettermark' />
       </div>
       <div className="landing-titles">
-        <h5>Full Stack Developer</h5>
+        <h5>Front End Engineer</h5>
+        <span className="hide-on-mobile"><h5>|</h5></span>
+        <h5>Jr. Full Stack Developer</h5>
         <span className="hide-on-mobile"><h5>|</h5></span>
         <h5>Technical Project Manager</h5>
       </div>
