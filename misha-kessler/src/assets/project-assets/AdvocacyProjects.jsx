@@ -534,6 +534,17 @@ const Publications = [
 
 const Speeches = [
   {
+    id: 6,
+    featured: true,
+    date: 'Sep 2019',
+    name: 'Caring is the Underpinning For Any Crisis System...',
+    meta: '#CrisisTalk',
+    tagline: '',
+    category: 'Speaker', // Author, Speaker, Interviewee, Committee Member, Associate Member, Advisor, Awardee
+    url_to_img: `${Speaker}`,
+    url_to_demo: 'https://talk.crisisnow.com/2019/09/17/caring-is-the-underpinning-for-any-crisis-care-system-to-be-successful/',
+  },
+  {
     id: 5,
     featured: true,
     date: 'Sep 2019',
