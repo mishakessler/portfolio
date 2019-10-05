@@ -32,7 +32,7 @@ class About extends Component {
       title: "Hey there, I'm Misha.",
       tagline: "And as you've probably noticed, I've worn many hats in my career.",
       postimage: null,
-      description: "First and foremost, I'm a dedicated and agile developer and social entrepreneur. I have over seven years of experience finding creative solutions to pressing issues in the mental and behavioral health space; in that time, I've become a published and award-winning thought leader in suicide prevention, explored founding and developing my own companies and charities, climbed mountains for fundraisers, and spoken to audiences ranging from charity gala and international summit attendees to the United States Congress.",
+      description: "First and foremost, I'm a dedicated and agile developer and aspiring social entrepreneur. I have over seven years of experience finding creative solutions to pressing issues in the mental and behavioral health space; in that time, I've become a published and award-winning thought leader in suicide prevention, explored founding and developing my own companies and charities, climbed mountains for fundraisers, and spoken to audiences ranging from charity galas and international summit attendees to the United States Congress.",
       helper: "",
     }
   }
@@ -53,7 +53,7 @@ class About extends Component {
         <Divider />
         <div className="about-why">
           <h3>My "Why"</h3>
-          <p>As a young adult, my own experiences with depression and anxiety became the foundation of my career, motivating, informing, and grounding my passionate pursiot of justice and equity in mental healthcare. Since then, the thread of my career has been to bring principles of consumer autonomy, user-oriented design, and evidence-based practices to mental health technology, always with treatment and prevention outcomes as my polestar.</p>
+          <p>As a young adult, my own experiences with depression and anxiety became the foundation of my career, motivating, informing, and grounding my passionate pursuit of justice and equity in mental healthcare. Since then, the thread of my career has been to bring principles of consumer autonomy, user-centered design, and evidence-based practices to digital mental health technology, always with treatment and prevention outcomes as my lodestar.</p>
           <p>Years later, stronger and wiser for my experiences, I'm results-driven, attentive, and built on a growth mindset; I'm always challenging myself to master new skills and create unique resources that improve consumer quality of life.</p>
         </div>
         <div className="about-journey smooth">
