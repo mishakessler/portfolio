@@ -31,7 +31,7 @@ class Development extends Component {
       title: "Featured Websites",
       tagline: "Beautiful, immersive, user-friendly websites, built with a mission in mind.",
       postimage: null,
-      description: "For over 5 years, I've been designing and developing websites for social justice causes. Initially, my passion for large-scale social impact interesected with attractive, user-friendly websites which I developed for nonprofit organizations. To this day, I continue to build websites with the goal of enabling social justice programs in branding themselves across digital mediums, thereby amplifying brand recognition and social impact.",
+      description: "For over 5 years, I've been designing and developing websites for social justice causes. Initially, my passion for large-scale social impact intersected with attractive, user-friendly websites which I developed for nonprofit organizations. To this day, I continue to build websites with the goal of enabling social justice programs in branding themselves across digital mediums, thereby amplifying brand recognition and social impact.",
       helper: "Each project card features multiple icons to help preview the project's scope. Check out the icon key in the lower right hand corner, if you're unsure of what the icons mean.",
       websites: Websites,
     }
