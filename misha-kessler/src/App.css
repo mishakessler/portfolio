@@ -693,6 +693,10 @@ a :hover {
 
 /******************* Case Studies ******************/
 
+.ui.basic.modal {
+  text-align: center;
+}
+
 .casestudy-modal img {
   max-width: 100%;
   margin: 25px auto;
@@ -700,6 +704,10 @@ a :hover {
 
 .ui.basic.modal>.header {
   font-size: 2em;
+}
+
+.ui.modal>.actions {
+  text-align: center;
 }
 
 /******************* About Page ********************/
