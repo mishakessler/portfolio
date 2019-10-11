@@ -25,13 +25,13 @@ export default function Developer() {
         <span className="hide-on-mobile"><h5>|</h5></span>
         <h5>Jr. Full Stack Developer</h5>
         <span className="hide-on-mobile"><h5>|</h5></span>
-        <h5>Technical Product Manager</h5>
+        <h5>Technical Project Manager</h5>
       </div>
       <div className="landing-welcome smooth">
         <h1 className="smooth">Welcome.</h1>
       </div>
       <div className="landing-tagline shaded-text">
-        <h2>My name's <span className="landing-name">Michael Kessler</span>, but you can call me <span className="landing-name">Misha.</span> I build beautiful, agile, full-stack web applications that make a real difference in the world.</h2>
+        <h2>My name's <span className="landing-name">Michael Kessler</span>, but you can call me <span className="landing-name">Misha.</span> I build beautiful, agile, full-stack web applications that aim to make a difference in the world.</h2>
       </div>
       <div className="ctas">
         <div className="left-cta">
