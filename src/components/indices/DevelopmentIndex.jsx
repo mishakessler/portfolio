@@ -11,7 +11,7 @@ import {
   Button,
 } from 'semantic-ui-react'
 
-import CaseStudy from './CaseStudy'
+import CaseStudy from '../case-studies/DevelopmentCaseStudy'
 
 export default function DevelopmentIndex(props) {
   return (
