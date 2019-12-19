@@ -17,6 +17,8 @@ import Hero from './Hero'
 import Key from '../components/modules/Key'
 import Footer from './Footer'
 
+// Data 
+import { Projects } from '../data/EntrepreneurshipProjects'
 
 class Entrepreneurship extends Component {
   constructor(props) {

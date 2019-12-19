@@ -29,7 +29,7 @@ import {
   Panels,
   Publications,
   Speeches,
-} from '../assets/project-assets/AdvocacyProjects'
+} from '../data/AdvocacyProjects'
 
 import Misha from '../assets/images/misha-advocacy.jpg'
 

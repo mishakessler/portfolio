@@ -20,7 +20,7 @@ import Footer from './Footer'
 import DesignIndex from '../components/modules/DesignIndex'
 
 // Assets 
-import Designs from '../assets/project-assets/DesignProjects'
+import Designs from '../data/DesignProjects'
 
 class Design extends Component {
   constructor(props) {
