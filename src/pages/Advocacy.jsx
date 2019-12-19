@@ -17,7 +17,7 @@ import Header from './Header'
 import Hero from './Hero'
 import Key from '../components/modules/Key'
 import Footer from './Footer'
-import AdvocacyIndex from '../components/modules/AdvocacyIndex'
+import AdvocacyIndex from '../components/indices/AdvocacyIndex'
 
 // Assets 
 import {

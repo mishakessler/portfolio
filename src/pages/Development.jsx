@@ -17,7 +17,8 @@ import Hero from './Hero'
 import Key from '../components/modules/Key'
 import Footer from './Footer'
 
-import DevelopmentIndex from '../components/modules/DevelopmentIndex'
+// Index
+import DevelopmentIndex from '../components/indices/DevelopmentIndex'
 
 // Data 
 import { Websites } from '../data/WebsiteProjects'

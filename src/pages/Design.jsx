@@ -17,7 +17,7 @@ import Hero from './Hero'
 import Key from '../components/modules/Key'
 import Footer from './Footer'
 
-import DesignIndex from '../components/modules/DesignIndex'
+import DesignIndex from '../components/indices/DesignIndex'
 
 // Assets 
 import Designs from '../data/DesignProjects'
