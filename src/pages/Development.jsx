@@ -12,10 +12,10 @@ import {
 } from 'semantic-ui-react'
 
 // Components
-import Header from './Header'
-import Hero from './Hero'
+import Header from '../components/modules/Header'
+import Hero from '../components/modules/Hero'
 import Key from '../components/modules/Key'
-import Footer from './Footer'
+import Footer from '../components/modules/Footer'
 
 // Index
 import DevelopmentIndex from '../components/indices/DevelopmentIndex'
