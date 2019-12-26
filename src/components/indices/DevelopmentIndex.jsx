@@ -67,7 +67,7 @@ export default function DevelopmentIndex(props) {
                   </Card.Description>
                 </Card.Content>
                 <Card.Content extra>
-                  <p>At a glance:</p>
+                  {/* <p>At a glance:</p> */}
                   {project.wordpress &&
                     <span>
                       <Icon
