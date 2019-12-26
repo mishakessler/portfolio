@@ -17,8 +17,7 @@ import Developer from '../components/cards/Developer'
 import Entrepreneur from '../components/cards/Entrepreneur'
 import Hobbyist from '../components/cards/Hobbyist'
 
-// Assets 
-
+// Assets
 const cards = [
   <Developer />,
   <Designer />,
