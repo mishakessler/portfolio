@@ -42,7 +42,7 @@ class Contact extends Component {
 
   render() {
     return (
-      <div className="page contact-page">
+      <div className="page static-page contact-page">
         <Header />
         <Hero
           className="contact-hero"

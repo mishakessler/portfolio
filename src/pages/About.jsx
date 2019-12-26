@@ -37,7 +37,7 @@ class About extends Component {
 
   render() {
     return (
-      <div className="page about-page">
+      <div className="page static-page about-page">
         <Header />
         <Hero
           className="about-hero"

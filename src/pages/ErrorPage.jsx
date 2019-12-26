@@ -34,7 +34,7 @@ class ErrorPage extends Component {
 
   render() {
     return (
-      <div className="page error-page">
+      <div className="page static-page error-page">
         <Header />
         <Hero
           className="error-hero"

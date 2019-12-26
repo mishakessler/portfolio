@@ -40,7 +40,7 @@ class Development extends Component {
 
   render() {
     return (
-      <div className="page development-page">
+      <div className="page dynamic-page development-page">
         <Header />
         <Hero
           className="development-hero"

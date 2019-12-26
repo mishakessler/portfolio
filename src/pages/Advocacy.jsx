@@ -153,7 +153,7 @@ class Advocacy extends Component {
     const { activeItem } = this.state
 
     return (
-      <div className="page advocacy-page">
+      <div className="page dynamic-page advocacy-page">
         <Header />
         <Hero
           className="advocacy-hero"

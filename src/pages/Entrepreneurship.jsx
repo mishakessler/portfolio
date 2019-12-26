@@ -40,7 +40,7 @@ class Entrepreneurship extends Component {
 
   render() {
     return (
-      <div className="page entrepreneurship-page">
+      <div className="page dynamic-page entrepreneurship-page">
         <Header />
         <Hero
           className="entrepreneurship-hero"

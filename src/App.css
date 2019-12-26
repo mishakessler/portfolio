@@ -445,6 +445,18 @@ a :hover {
 
 /**************** Page Backgrounds *****************/
 
+.static-page {
+  background: 
+  linear-gradient(
+    rgba(0, 0, 0, 0.65), 
+    rgba(0, 0, 0, 0.85)
+  ),
+  url(./assets/images/hobbyist-banner-1.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top center;
+}
+
 .advocacy-page {
   background: 
   linear-gradient(
@@ -463,7 +475,7 @@ a :hover {
   url(./assets/images/designer-banner-1.jpg);
 }
 
-.development-page, .about-page, .contact-page, .error-page, .spacetime-page   {
+.development-page {
   background: 
   linear-gradient(
     rgba(0, 0, 0, 0.7), 
@@ -472,7 +484,7 @@ a :hover {
   url(./assets/images/developer-banner-1.jpg);
 }
 
-.entrepreneurship-page  {
+.entrepreneurship-page {
   background: 
   linear-gradient(
     rgba(0, 0, 0, 0.8), 
@@ -481,28 +493,18 @@ a :hover {
   url(./assets/images/entrepreneur-banner-1.jpg);
 }
 
-.hobbyist-page  {
-  background: 
-  linear-gradient(
-    rgba(0, 0, 0, 0.7), 
-    rgba(0, 0, 0, 0.9)
-  ),
-  url(./assets/images/hobbyist-banner-1.jpg);
-}
-
 /* Cascading Background Style Necessity NOT DRY */
 
-.advocacy-page, .design-page, .development-page, .entrepreneurship-page, .hobbyist-page {
+.dynamic-page {
   background-attachment: fixed;
   background-size: cover;
-  background-position: center center;
+  background-position: center;
 }
 
-.development-page, .about-page, .contact-page, .error-page, .spacetime-page {
-  background-attachment: fixed;
-  background-size: cover;
+.development-page {
   background-position: top center;
 }
+
 
 /********************** Hero ***********************/
 
@@ -711,16 +713,16 @@ a :hover {
 
 /******************* About Page ********************/
 
-.about-page .hero, .contact-page .hero {
+.static-page .hero {
   text-align: center;
 }
 
-.about-page .hero img, .contact-page .hero img {
+.static-page .hero img {
   width: 200px;
   border-radius: 100%;
 }
 
-.about-page .hero p, .contact-page .hero p {
+.static-page .hero p {
   text-align: left;
 }
 
