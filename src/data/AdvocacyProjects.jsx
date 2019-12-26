@@ -1,3 +1,4 @@
+// Assets
 import Advisor from '../assets/graphics/advocacy-advisor.png'
 import Awardee from '../assets/graphics/advocacy-award.png'
 import Documentary from '../assets/graphics/advocacy-documentary.png'

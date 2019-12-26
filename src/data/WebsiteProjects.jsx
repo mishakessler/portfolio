@@ -1,3 +1,4 @@
+// Assets
 import BarrelAgedLanding from '../assets/projects/barrel-aged/landing.png'
 import CaraMiaLanding from '../assets/projects/cara-mia/landing.png'
 import CrisisInternationalLanding from '../assets/projects/crisis-international/landing.png'
