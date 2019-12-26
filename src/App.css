@@ -452,9 +452,6 @@ a :hover {
     rgba(0, 0, 0, 0.9)
   ),
   url(./assets/images/advocate-banner-1.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center center;
 }
 
 .design-page  {
@@ -464,9 +461,6 @@ a :hover {
     rgba(0, 0, 0, 0.9)
   ),
   url(./assets/images/designer-banner-1.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center center;
 }
 
 .development-page, .about-page, .contact-page, .error-page, .spacetime-page   {
@@ -476,9 +470,6 @@ a :hover {
     rgba(0, 0, 0, 0.9)
   ),
   url(./assets/images/developer-banner-1.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: top center;
 }
 
 .entrepreneurship-page  {
@@ -488,9 +479,6 @@ a :hover {
     rgba(0, 0, 0, 0.9)
   ),
   url(./assets/images/entrepreneur-banner-1.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center center;
 }
 
 .hobbyist-page  {
@@ -500,9 +488,20 @@ a :hover {
     rgba(0, 0, 0, 0.9)
   ),
   url(./assets/images/hobbyist-banner-1.jpg);
+}
+
+/* Cascading Background Style Necessity NOT DRY */
+
+.advocacy-page, .design-page, .development-page, .entrepreneurship-page, .hobbyist-page {
   background-attachment: fixed;
   background-size: cover;
   background-position: center center;
+}
+
+.development-page, .about-page, .contact-page, .error-page, .spacetime-page {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top center;
 }
 
 /********************** Hero ***********************/
