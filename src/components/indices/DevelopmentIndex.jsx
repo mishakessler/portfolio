@@ -11,7 +11,7 @@ import {
   Button,
 } from 'semantic-ui-react'
 
-import CaseStudy from '../case-studies/DevelopmentCaseStudy'
+import DevelopmentModal from '../case-studies/DevelopmentModal'
 
 export default function DevelopmentIndex(props) {
   return (
@@ -67,7 +67,7 @@ export default function DevelopmentIndex(props) {
                   </Card.Description>
                 </Card.Content>
                 <Card.Content extra>
-                  {/* <p>At a glance:</p> */}
+                  <p>At a glance:</p>
                   {project.wordpress &&
                     <span>
                       <Icon
@@ -184,7 +184,7 @@ export default function DevelopmentIndex(props) {
               </Card>
               <Button.Group attached='bottom'>
                 {project.case_study &&
-                  <CaseStudy
+                  <DevelopmentModal
                     project={project}
                   />}
                 {project.url_to_demo &&

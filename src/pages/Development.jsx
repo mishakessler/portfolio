@@ -38,6 +38,18 @@ class Development extends Component {
     }
   }
 
+  // handleOpen = () => {
+  //   this.setState({
+  //     modalOpen: true,
+  //   })
+  // }
+
+  // handleClose = () => {
+  //   this.setState({
+  //     modalOpen: true,
+  //   })
+  // }
+
   render() {
     return (
       <div className="page dynamic-page development-page">
