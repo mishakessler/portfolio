@@ -328,7 +328,7 @@ const Websites = [
     category: 'Front End', // Concept, Front End, Full Stack
     progress: 'Beta', // R&D, MVP, Post-MVP, Private Beta, Live
 
-    url_to_img: null,
+    url_to_img: `${MishaKesslerLanding}`,
     url_to_demo: 'https://lifesnewnormal.remedient.com/',
     url_to_github: null,
 
