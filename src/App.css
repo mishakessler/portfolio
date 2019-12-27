@@ -712,16 +712,16 @@ a :hover {
 
 /******************* About Page ********************/
 
-.static-page .hero {
+.about-page .hero h1, .about-page .hero h3 {
   text-align: center;
 }
 
-.static-page .hero img {
+.about-page .hero img {
   width: 200px;
   border-radius: 100%;
 }
 
-.static-page .hero p {
+.about-page .hero p {
   text-align: left;
 }
 
@@ -843,8 +843,13 @@ a :hover {
 
 /***************** Contact Page *****************/
 
-.contact-page .hero h1, .contact-page .hero h3, .about-page .hero h1, .about-page .hero h3 {
-text-align: center;
+.contact-page .hero h1, .contact-page .hero h3 {
+  text-align: center;
+}
+
+.contact-page .hero img {
+  width: 200px;
+  border-radius: 100%;
 }
 
 .contact-body {
@@ -873,9 +878,8 @@ text-align: center;
 
 /******************** Error Page ******************/
 
-.error-page, .error-hero {
+.error-page .hero h1, .error-page .hero h3, .error-page .hero p {
   text-align: center;
-  
 }
 
 /***************************************************/
