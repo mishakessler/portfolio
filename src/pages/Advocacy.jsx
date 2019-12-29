@@ -21,9 +21,7 @@ import Footer from '../components/modules/Footer'
 // Index
 import AdvocacyIndex from '../components/indices/AdvocacyIndex'
 
-// Case Study
-
-// Assets 
+// Data 
 import {
   Awards,
   Committees,
@@ -35,6 +33,7 @@ import {
   Speeches,
 } from '../data/AdvocacyProjects'
 
+// Assets
 import Misha from '../assets/images/misha-advocacy.jpg'
 
 const categories = [
