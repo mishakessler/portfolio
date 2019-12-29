@@ -567,6 +567,8 @@ a :hover {
   font-size: 1.05em;
 }
 
+/** Index Submenu **/
+
 .submenu {
   max-width: 1020px;
   margin: 0 auto;
@@ -611,31 +613,19 @@ a :hover {
   -webkit-transition: ease-in-out .2s;
 }
 
-.advocacy-page h3 {
-  max-width: 963px;
-  margin: 25px auto;
-  color: white;
-  font-size: 1.8em;
-}
+/** Index Cards **/
 
 .ui.grid>* {
-  padding: 1.75rem 2.5rem;
+  padding: 1.75rem 2.5rem 0rem 2.5rem;
 }
 
 .project-cards {
   text-align: left;
 }
 
-.development-page .description {
-  height: 80px;
-}
-
-.advocacy-page .content {
-  height: 160px;
-}
-
 .ui.card {
   margin-bottom: 8px;
+  z-index: 2;
 }
 
 .ui.card>.image {
@@ -670,6 +660,8 @@ a :hover {
   display: none;
 }
 
+/** Index Card Buttons **/
+
 .ui-button-icon:hover {
   color: unset;
 }
@@ -679,17 +671,40 @@ a :hover {
   margin-right: 1px;
 }
 
-.key-modal {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  text-align: center;
-  z-index: 3;
+.column .ui.attached.buttons, .column .ui.attached.bottom.button {
+  z-index: 1;
+  transform: translateY(-125%);
+  transition: ease-in .25s;
+}
+
+.column:hover .ui.attached.buttons, .column:hover .ui.attached.bottom.button {
+  transform: translateY(0%);
+  transition: ease-in .25s;
 }
 
 .card-meta p, .card-icon {
   display: inline;
 }
+
+/** Development Page **/
+
+.development-page .description {
+  height: 80px;
+}
+
+/** Advocacy Page **/
+
+.advocacy-page h3 {
+  max-width: 963px;
+  margin: 25px auto;
+  color: white;
+  font-size: 1.8em;
+}
+
+.advocacy-page .content {
+  height: 160px;
+}
+
 
 /******************* Case Studies ******************/
 
@@ -710,7 +725,18 @@ a :hover {
   text-align: center;
 }
 
+/******************* Icon Key ******************/
+
+.key-modal {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  text-align: center;
+  z-index: 3;
+}
+
 /******************* About Page ********************/
+
 
 .about-page .hero h1, .about-page .hero h3 {
   text-align: center;

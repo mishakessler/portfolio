@@ -20,7 +20,6 @@ export default function AdvocacyIndex(props) {
             <Grid.Column>
               <Card
                 attached
-                link
                 color='teal'
                 className='dcursor smooth'
               >
@@ -63,6 +62,7 @@ export default function AdvocacyIndex(props) {
                 <Button
                   attached='bottom'
                   as='a'
+                  title='View Project Online'
                   href={project.url_to_demo}
                   target='_blank'
                   color='teal'

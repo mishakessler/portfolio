@@ -14,9 +14,9 @@ export default function CaseStudy(props) {
       scrolling
       closeIcon
       centered={false}
-      // dimmer={"blurring"}
       trigger={
         <Button
+          title='View Case Study'
           color='teal'
           className='smooth'
           icon={{
