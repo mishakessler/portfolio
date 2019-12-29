@@ -11,12 +11,6 @@ body,
   padding: 0;
   min-height: 100vh;
   width: 100vw;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
   /* background-color: #1f262a; */
 }
 
@@ -83,17 +77,17 @@ a :hover {
 /************** Pseudoclass Behaviors **************/
 
 .smooth {
-  transition: ease-in-out .2s;
-  -moz-transition: ease-in-out .2s;
-  -o-transition: ease-in-out .2s;
-  -webkit-transition: ease-in-out .2s;
+  transition: ease-in-out .25s;
+  -moz-transition: ease-in-out .25s;
+  -o-transition: ease-in-out .25s;
+  -webkit-transition: ease-in-out .25s;
 }
 
 .smooth:hover {
-  transition: ease-in-out .2s;
-  -moz-transition: ease-in-out .2s;
-  -o-transition: ease-in-out .2s;
-  -webkit-transition: ease-in-out .2s;
+  transition: ease-in-out .25s;
+  -moz-transition: ease-in-out .25s;
+  -o-transition: ease-in-out .25s;
+  -webkit-transition: ease-in-out .25s;
 }
 
 .pseudo-link:hover {
@@ -138,6 +132,12 @@ a :hover {
   padding: 0;
   height: 100%;
   width: 100%;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .page-viewer {
@@ -147,7 +147,7 @@ a :hover {
   height: 100vh;
 }
 
-.page-viewer-pages {
+.page-viewer-cards {
   position: absolute;
   width: calc(100vw - 30px);
   height: calc(100vh - 30px);
@@ -445,6 +445,18 @@ a :hover {
 
 /**************** Page Backgrounds *****************/
 
+.static-page {
+  background: 
+  linear-gradient(
+    rgba(0, 0, 0, 0.65), 
+    rgba(0, 0, 0, 0.85)
+  ),
+  url(./assets/images/hobbyist-banner-1.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top center;
+}
+
 .advocacy-page {
   background: 
   linear-gradient(
@@ -452,9 +464,6 @@ a :hover {
     rgba(0, 0, 0, 0.9)
   ),
   url(./assets/images/advocate-banner-1.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center center;
 }
 
 .design-page  {
@@ -464,46 +473,38 @@ a :hover {
     rgba(0, 0, 0, 0.9)
   ),
   url(./assets/images/designer-banner-1.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center center;
 }
 
-.development-page, .about-page, .contact-page, .error-page, .spacetime-page   {
+.development-page {
   background: 
   linear-gradient(
     rgba(0, 0, 0, 0.7), 
     rgba(0, 0, 0, 0.9)
   ),
   url(./assets/images/developer-banner-1.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: top center;
 }
 
-.entrepreneurship-page  {
+.entrepreneurship-page {
   background: 
   linear-gradient(
     rgba(0, 0, 0, 0.8), 
     rgba(0, 0, 0, 0.9)
   ),
   url(./assets/images/entrepreneur-banner-1.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center center;
 }
 
-.hobbyist-page  {
-  background: 
-  linear-gradient(
-    rgba(0, 0, 0, 0.7), 
-    rgba(0, 0, 0, 0.9)
-  ),
-  url(./assets/images/hobbyist-banner-1.jpg);
+/* Cascading Background Style Necessity NOT DRY */
+
+.dynamic-page {
   background-attachment: fixed;
   background-size: cover;
-  background-position: center center;
+  background-position: center;
 }
+
+.development-page {
+  background-position: top center;
+}
+
 
 /********************** Hero ***********************/
 
@@ -540,7 +541,7 @@ a :hover {
 }
 
 .hero .helper-text {
-  max-width: calc(100% - 100px);
+  max-width: calc(100% - 250px);
   margin: 25px auto 0 auto;
   font-size: 0.9em;
   text-align: center;
@@ -566,6 +567,8 @@ a :hover {
   font-size: 1.05em;
 }
 
+/** Index Submenu **/
+
 .submenu {
   max-width: 1020px;
   margin: 0 auto;
@@ -575,7 +578,6 @@ a :hover {
   color: white;
   border: 1px solid rgba(255, 255, 255, 0.2);
   background: unset;
-
 }
 
 .submenu .ui.selection.active.dropdown:hover {
@@ -611,31 +613,19 @@ a :hover {
   -webkit-transition: ease-in-out .2s;
 }
 
-.advocacy-page h3 {
-  max-width: 963px;
-  margin: 25px auto;
-  color: white;
-  font-size: 1.8em;
-}
+/** Index Cards **/
 
 .ui.grid>* {
-  padding: 1.75rem 2.5rem;
+  padding: 1.75rem 2.5rem 0rem 2.5rem;
 }
 
 .project-cards {
   text-align: left;
 }
 
-.development-page .description {
-  height: 110px;
-}
-
-.advocacy-page .content {
-  height: 160px;
-}
-
 .ui.card {
   margin-bottom: 8px;
+  z-index: 2;
 }
 
 .ui.card>.image {
@@ -646,10 +636,10 @@ a :hover {
 .ui.card>.image>img, .ui.cards>.card>.image>img {
   background: 
   linear-gradient(
-    rgba(21, 37, 43, .1), 
-    rgb(89, 136, 153, .2)
-  ),
-  url(./assets/graphics/featured.jpg);
+    rgba(0, 93, 122, 0.8), 
+    rgba(0, 229, 187, 0.4)
+  );
+  /* url(./assets/graphics/featured.jpg); */
   background-size: cover;
   background-position: top center;
   min-height: 183px;
@@ -670,6 +660,8 @@ a :hover {
   display: none;
 }
 
+/** Index Card Buttons **/
+
 .ui-button-icon:hover {
   color: unset;
 }
@@ -679,17 +671,40 @@ a :hover {
   margin-right: 1px;
 }
 
-.key-modal {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  text-align: center;
-  z-index: 3;
+.column .ui.attached.buttons, .column .ui.attached.bottom.button {
+  z-index: 1;
+  transform: translateY(-125%);
+  transition: ease-in .25s;
+}
+
+.column:hover .ui.attached.buttons, .column:hover .ui.attached.bottom.button {
+  transform: translateY(0%);
+  transition: ease-in .25s;
 }
 
 .card-meta p, .card-icon {
   display: inline;
 }
+
+/** Development Page **/
+
+.development-page .description {
+  height: 80px;
+}
+
+/** Advocacy Page **/
+
+.advocacy-page h3 {
+  max-width: 963px;
+  margin: 25px auto;
+  color: white;
+  font-size: 1.8em;
+}
+
+.advocacy-page .content {
+  height: 160px;
+}
+
 
 /******************* Case Studies ******************/
 
@@ -710,18 +725,29 @@ a :hover {
   text-align: center;
 }
 
+/******************* Icon Key ******************/
+
+.key-modal {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  text-align: center;
+  z-index: 3;
+}
+
 /******************* About Page ********************/
 
-.about-page .hero, .contact-page .hero {
+
+.about-page .hero h1, .about-page .hero h3 {
   text-align: center;
 }
 
-.about-page .hero img, .contact-page .hero img {
+.about-page .hero img {
   width: 200px;
   border-radius: 100%;
 }
 
-.about-page .hero p, .contact-page .hero p {
+.about-page .hero p {
   text-align: left;
 }
 
@@ -843,8 +869,13 @@ a :hover {
 
 /***************** Contact Page *****************/
 
-.contact-page .hero h1, .contact-page .hero h3, .about-page .hero h1, .about-page .hero h3 {
-text-align: center;
+.contact-page .hero h1, .contact-page .hero h3 {
+  text-align: center;
+}
+
+.contact-page .hero img {
+  width: 200px;
+  border-radius: 100%;
 }
 
 .contact-body {
@@ -873,9 +904,8 @@ text-align: center;
 
 /******************** Error Page ******************/
 
-.error-page, .error-hero {
+.error-page .hero h1, .error-page .hero h3, .error-page .hero p {
   text-align: center;
-  
 }
 
 /***************************************************/
@@ -1093,7 +1123,7 @@ text-align: center;
 
 @media all and (max-width: 768px) {
 
-  .page-viewer-pages {
+  .page-viewer-cards {
     position: absolute;
     width: calc(100vw - 10px);
     height: calc(100vh - 45px);

@@ -1,11 +1,12 @@
-import Advisor from '../graphics/advocacy-advisor.png'
-import Awardee from '../graphics/advocacy-award.png'
-import Documentary from '../graphics/advocacy-documentary.png'
-import Interviewee from '../graphics/advocacy-interview.png'
-import Member from '../graphics/advocacy-member.png'
-import News from '../graphics/advocacy-news.png'
-import Author from '../graphics/advocacy-publication.png'
-import Speaker from '../graphics/advocacy-speech.png'
+// Assets
+import Advisor from '../assets/graphics/advocacy-advisor.png'
+import Awardee from '../assets/graphics/advocacy-award.png'
+import Documentary from '../assets/graphics/advocacy-documentary.png'
+import Interviewee from '../assets/graphics/advocacy-interview.png'
+import Member from '../assets/graphics/advocacy-member.png'
+import News from '../assets/graphics/advocacy-news.png'
+import Author from '../assets/graphics/advocacy-publication.png'
+import Speaker from '../assets/graphics/advocacy-speech.png'
 
 const Awards = [
   {

@@ -14,9 +14,9 @@ export default function CaseStudy(props) {
       scrolling
       closeIcon
       centered={false}
-      dimmer={"blurring"}
       trigger={
         <Button
+          title='View Case Study'
           color='teal'
           className='smooth'
           icon={{
@@ -32,9 +32,9 @@ export default function CaseStudy(props) {
 
       <Modal.Description
         className="card-meta">
-        <Icon
+        {/* <Icon
           name='tags'
-          className="pseudo-link smooth" />
+          className="pseudo-link smooth" /> */}
         <p> <span className='pseudo-link smooth'>{props.project.category}</span> via <span className='pseudo-link smooth'>{props.project.meta}</span></p>
       </Modal.Description>
 

@@ -1,14 +1,15 @@
-import BarrelAgedLanding from './barrel-aged/landing.png'
-import CaraMiaLanding from './cara-mia/landing.png'
-import CrisisInternationalLanding from './crisis-international/landing.png'
-import CIEnterpriseLanding from './crisis-international-enterprise/landing.png'
-import LiveThroughThisLanding from './live-through-this/landing.png'
-import MentalHealthableLanding from './mental-healthable/landing.png'
-import MishaKesslerLanding from './misha-kessler/landing.png'
-import RemedientLanding from './remedient/landing.png'
-import RmdyioLanding from './rmdyio/landing.png'
-import SevenSummitsLanding from './seven-summits/landing.png'
-import SixFeetOverLanding from './six-feet-over/landing.png'
+// Assets
+import BarrelAgedLanding from '../assets/projects/barrel-aged/landing.png'
+import CaraMiaLanding from '../assets/projects/cara-mia/landing.png'
+import CrisisInternationalLanding from '../assets/projects/crisis-international/landing.png'
+import CIEnterpriseLanding from '../assets/projects/crisis-international-enterprise/landing.png'
+import LiveThroughThisLanding from '../assets/projects/live-through-this/landing.png'
+import MentalHealthableLanding from '../assets/projects/mental-healthable/landing.png'
+import MishaKesslerLanding from '../assets/projects/misha-kessler/landing.png'
+import RemedientLanding from '../assets/projects/remedient/landing.png'
+import RmdyioLanding from '../assets/projects/rmdyio/landing.png'
+import SevenSummitsLanding from '../assets/projects/seven-summits/landing.png'
+import SixFeetOverLanding from '../assets/projects/six-feet-over/landing.png'
 
 
 const Websites = [
@@ -51,7 +52,7 @@ const Websites = [
     postgresql: false,
     ruby: false,
     rails: true,
-    auth: true,
+    auth: false,
     adobe: true,
     responsive: true,
     accessible: true,
@@ -64,7 +65,7 @@ const Websites = [
     name: 'Crisis International Enterprise',
     date: 'Aug 2019',
     meta: 'React on Rails',
-    tagline: 'A full stack B2B resource directory and knowledge base for social service agencies and related fields that provides comprehensive, filterable, searchable resources and articles.',
+    tagline: 'A full stack directory and knowledge base for social service agencies that provides comprehensive, filterable, searchable resources and articles.',
 
     cs_intro: null,
     cs_description: null,
@@ -93,7 +94,7 @@ const Websites = [
     postgresql: true,
     ruby: false,
     rails: true,
-    auth: true,
+    auth: false,
     adobe: true,
     responsive: true,
     accessible: true,
@@ -106,7 +107,7 @@ const Websites = [
     name: 'Crisis International',
     date: 'May 2019',
     meta: 'WordPress',
-    tagline: 'A custom WordPress site for individuals in need of crisis intervention resources, featuring immersive, user-friendly design, meticulously designed data infrastructure, and a complete brand identity package.',
+    tagline: 'A proof of concept for individuals in crisis, featuring user-driven design, meticulously designed data infrastructure, and a brand identity package.',
 
     cs_intro: null,
     cs_description: null,
@@ -190,7 +191,7 @@ const Websites = [
     name: 'Barrel-Aged',
     date: 'Jul 2019',
     meta: 'React & Express',
-    tagline: 'The final deliverable from a 4-person group-build, a full-stack forum and review site for whiskey lovers, utilizing React, Express, Bcrypt, JSON Web Token, and Git versioning.',
+    tagline: 'A collaborative full-stack forum and review site for whiskey lovers, utilizing React, Express, Bcrypt, JSON Web Token, and Git versioning.',
 
     cs_intro: null,
     cs_description: null,
@@ -327,7 +328,7 @@ const Websites = [
     category: 'Front End', // Concept, Front End, Full Stack
     progress: 'Beta', // R&D, MVP, Post-MVP, Private Beta, Live
 
-    url_to_img: null,
+    url_to_img: `${MishaKesslerLanding}`,
     url_to_demo: 'https://lifesnewnormal.remedient.com/',
     url_to_github: null,
 
@@ -345,7 +346,7 @@ const Websites = [
     postgresql: false,
     ruby: false,
     rails: false,
-    auth: true,
+    auth: false,
     adobe: true,
     responsive: true,
     accessible: true,
@@ -387,7 +388,7 @@ const Websites = [
     postgresql: false,
     ruby: false,
     rails: false,
-    auth: true,
+    auth: false,
     adobe: true,
     responsive: true,
     accessible: true,
@@ -429,7 +430,7 @@ const Websites = [
     postgresql: false,
     ruby: false,
     rails: false,
-    auth: true,
+    auth: false,
     adobe: true,
     responsive: true,
     accessible: true,
@@ -471,7 +472,7 @@ const Websites = [
     postgresql: false,
     ruby: false,
     rails: false,
-    auth: true,
+    auth: false,
     adobe: true,
     responsive: true,
     accessible: true,
@@ -484,7 +485,7 @@ const Websites = [
     name: 'Rmdy.io',
     date: 'Nov 2015',
     meta: 'WordPress',
-    tagline: 'A full stack app concept using a recommender engine to match individuals seeking counseling to the best available counselor, lowering treatment dropout, increasing treatment success rates.',
+    tagline: 'A full stack app concept for a recommender engine improving therapeutic alliances, lowering treatment dropout and increasing treatment success.',
 
     cs_intro: null,
     cs_description: null,
@@ -513,7 +514,7 @@ const Websites = [
     postgresql: false,
     ruby: false,
     rails: false,
-    auth: true,
+    auth: false,
     adobe: true,
     responsive: true,
     accessible: true,

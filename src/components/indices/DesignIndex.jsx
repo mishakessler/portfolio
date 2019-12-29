@@ -6,14 +6,14 @@ import {
   Label,
   Grid,
   Card,
+  Icon,
   Image,
   Button,
 } from 'semantic-ui-react'
 
-export default function AdvocacyIndex(props) {
+export default function DesignIndex(props) {
   return (
     <>
-      <h3>{props.title}</h3>
       <Grid stackable centered >
         {props.projects.map(project =>
           <div key={project.id} className="project-cards">
@@ -22,20 +22,19 @@ export default function AdvocacyIndex(props) {
                 attached
                 link
                 color='teal'
-                className='dcursor smooth'
+                className="dcursor smooth"
               >
                 <Label
                   as='a'
                   color='teal'
                   ribbon='right'
-                  className='dcursor smooth'>
+                  className="dcursor smooth" >
                   {project.category}
                 </Label>
                 {project.featured &&
                   <Image
                     src={project.url_to_img}
                     label={{
-                      as: 'a',
                       corner: 'left',
                       icon: 'star'
                     }}
@@ -51,12 +50,39 @@ export default function AdvocacyIndex(props) {
                 <Card.Content>
                   <Card.Header>{project.name}</Card.Header>
                   <Card.Meta>
+                    <p>From <span className='pseudo-link smooth'>{project.meta}</span></p>
                     <p><span className='pseudo-link smooth'>{project.date}</span></p>
                   </Card.Meta>
-                  <Card.Description>
-                    <p><span className='pseudo-link smooth'>{project.meta}</span></p>
+                  {/* <Card.Description>
                     {project.tagline}
-                  </Card.Description>
+                  </Card.Description> */}
+                </Card.Content>
+                <Card.Content extra>
+                  <p>At a glance:</p>
+                  {project.wordpress &&
+                    <span>
+                      <Icon
+                        size='large'
+                        name='wordpress'
+                        className="pseudo-link smooth" />
+                    </span>
+                  }
+                  {project.html &&
+                    <span>
+                      <Icon
+                        size='large'
+                        name='html5'
+                        className="pseudo-link smooth" />
+                    </span>
+                  }
+                  {project.css &&
+                    <span>
+                      <Icon
+                        size='large'
+                        name='css3'
+                        className="pseudo-link smooth" />
+                    </span>
+                  }
                 </Card.Content>
               </Card>
               {project.url_to_demo &&

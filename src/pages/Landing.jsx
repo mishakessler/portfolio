@@ -10,16 +10,15 @@ import { useGesture } from 'react-use-gesture'
 // Lodash
 import clamp from 'lodash/clamp'
 
-// Pages
-import Advocate from '../components/roles/Advocate'
-import Designer from '../components/roles/Designer'
-import Developer from '../components/roles/Developer'
-import Entrepreneur from '../components/roles/Entrepreneur'
-import Hobbyist from '../components/roles/Hobbyist'
+// Cards
+import Advocate from '../components/cards/Advocate'
+import Designer from '../components/cards/Designer'
+import Developer from '../components/cards/Developer'
+import Entrepreneur from '../components/cards/Entrepreneur'
+import Hobbyist from '../components/cards/Hobbyist'
 
-// Assets 
-
-const pages = [
+// Assets
+const cards = [
   <Developer />,
   <Designer />,
   <Entrepreneur />,
@@ -29,10 +28,10 @@ const pages = [
 
 export default function Landing() {
   const index = useRef(0)
-  const [props, set] = useSprings(pages.length, i => ({ x: i * window.innerWidth, sc: 1, display: 'block' }))
+  const [props, set] = useSprings(cards.length, i => ({ x: i * window.innerWidth, sc: 1, display: 'block' }))
   const bind = useGesture(({ down, delta: [xDelta], direction: [xDir], distance, cancel }) => {
     if (down && distance > window.innerWidth / 2)
-      cancel((index.current = clamp(index.current + (xDir > 0 ? -1 : 1), 0, pages.length - 1)))
+      cancel((index.current = clamp(index.current + (xDir > 0 ? -1 : 1), 0, cards.length - 1)))
     set(i => {
       if (i < index.current - 1 || i > index.current + 1) return { display: 'none' }
       const x = (i - index.current) * window.innerWidth + (down ? xDelta : 0)
@@ -44,8 +43,8 @@ export default function Landing() {
   return props.map(({ x, display, sc }, i) => (
     <div className="page-viewer-container">
       <animated.div className="page-viewer" {...bind()} key={i} style={{ display, transform: x.interpolate(x => `translate3d(${x}px,0,0)`) }}>
-        <animated.div className="page-viewer-pages" style={{ transform: sc.interpolate(s => `scale(${s})`) }}>
-          {pages[i]}
+        <animated.div className="page-viewer-cards" style={{ transform: sc.interpolate(s => `scale(${s})`) }}>
+          {cards[i]}
         </animated.div>
       </animated.div>
     </div>

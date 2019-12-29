@@ -13,13 +13,15 @@ import {
 } from 'semantic-ui-react'
 
 // Components
-import Header from './Header'
-import Hero from './Hero'
+import Header from '../components/modules/Header'
+import Hero from '../components/modules/Hero'
 import Key from '../components/modules/Key'
-import Footer from './Footer'
-import AdvocacyIndex from '../components/modules/AdvocacyIndex'
+import Footer from '../components/modules/Footer'
 
-// Assets 
+// Index
+import AdvocacyIndex from '../components/indices/AdvocacyIndex'
+
+// Data 
 import {
   Awards,
   Committees,
@@ -29,8 +31,9 @@ import {
   Panels,
   Publications,
   Speeches,
-} from '../assets/project-assets/AdvocacyProjects'
+} from '../data/AdvocacyProjects'
 
+// Assets
 import Misha from '../assets/images/misha-advocacy.jpg'
 
 const categories = [
@@ -149,7 +152,7 @@ class Advocacy extends Component {
     const { activeItem } = this.state
 
     return (
-      <div className="page advocacy-page">
+      <div className="page dynamic-page advocacy-page">
         <Header />
         <Hero
           className="advocacy-hero"

@@ -12,10 +12,16 @@ import {
 } from 'semantic-ui-react'
 
 // Components
-import Header from './Header'
-import Hero from './Hero'
+import Header from '../components/modules/Header'
+import Hero from '../components/modules/Hero'
 import Key from '../components/modules/Key'
-import Footer from './Footer'
+import Footer from '../components/modules/Footer'
+
+// Index
+// import EntrepreneurshipIndex from '../components/indices/EntrepreneurshipIndex'
+
+// Data 
+// import { Projects } from '../data/EntrepreneurshipProjects'
 
 
 class Entrepreneurship extends Component {
@@ -34,7 +40,7 @@ class Entrepreneurship extends Component {
 
   render() {
     return (
-      <div className="page entrepreneurship-page">
+      <div className="page dynamic-page entrepreneurship-page">
         <Header />
         <Hero
           className="entrepreneurship-hero"

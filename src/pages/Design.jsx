@@ -12,15 +12,16 @@ import {
 } from 'semantic-ui-react'
 
 // Components
-import Header from './Header'
-import Hero from './Hero'
+import Header from '../components/modules/Header'
+import Hero from '../components/modules/Hero'
 import Key from '../components/modules/Key'
-import Footer from './Footer'
+import Footer from '../components/modules/Footer'
 
-import DesignIndex from '../components/modules/DesignIndex'
+// Index
+import DesignIndex from '../components/indices/DesignIndex'
 
 // Assets 
-import Designs from '../assets/project-assets/DesignProjects'
+import Designs from '../data/DesignProjects'
 
 class Design extends Component {
   constructor(props) {
@@ -39,7 +40,7 @@ class Design extends Component {
 
   render() {
     return (
-      <div className="page design-page">
+      <div className="page dynamic-page design-page">
         <Header />
         <Hero
           className="design-hero"

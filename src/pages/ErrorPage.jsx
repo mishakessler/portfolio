@@ -12,9 +12,9 @@ import {
 } from 'semantic-ui-react'
 
 // Components
-import Header from './Header'
-import Hero from './Hero'
-import Footer from './Footer'
+import Header from '../components/modules/Header'
+import Hero from '../components/modules/Hero'
+import Footer from '../components/modules/Footer'
 
 // Assets 
 
@@ -34,7 +34,7 @@ class ErrorPage extends Component {
 
   render() {
     return (
-      <div className="page error-page">
+      <div className="page static-page error-page">
         <Header />
         <Hero
           className="error-hero"

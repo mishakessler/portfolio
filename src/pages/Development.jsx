@@ -12,15 +12,16 @@ import {
 } from 'semantic-ui-react'
 
 // Components
-import Header from './Header'
-import Hero from './Hero'
+import Header from '../components/modules/Header'
+import Hero from '../components/modules/Hero'
 import Key from '../components/modules/Key'
-import Footer from './Footer'
+import Footer from '../components/modules/Footer'
 
-import DevelopmentIndex from '../components/modules/DevelopmentIndex'
+// Index
+import DevelopmentIndex from '../components/indices/DevelopmentIndex'
 
-// Assets 
-import { Websites } from '../assets/project-assets/WebsiteProjects'
+// Data 
+import { Websites } from '../data/WebsiteProjects'
 
 class Development extends Component {
   constructor(props) {
@@ -37,9 +38,21 @@ class Development extends Component {
     }
   }
 
+  // handleOpen = () => {
+  //   this.setState({
+  //     modalOpen: true,
+  //   })
+  // }
+
+  // handleClose = () => {
+  //   this.setState({
+  //     modalOpen: true,
+  //   })
+  // }
+
   render() {
     return (
-      <div className="page development-page">
+      <div className="page dynamic-page development-page">
         <Header />
         <Hero
           className="development-hero"

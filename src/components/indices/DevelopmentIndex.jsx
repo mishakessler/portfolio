@@ -11,26 +11,25 @@ import {
   Button,
 } from 'semantic-ui-react'
 
-import CaseStudy from './CaseStudy'
+import DevelopmentModal from '../case-studies/DevelopmentModal'
 
 export default function DevelopmentIndex(props) {
   return (
     <>
       <Grid stackable centered >
         {props.projects.map(project =>
-          <div key={project.id} className="project-cards">
+          <div key={project.id} className='project-cards'>
             <Grid.Column>
               <Card
                 attached
-                link
                 color='teal'
-                className="dcursor smooth"
+                className='dcursor smooth'
               >
                 <Label
                   as='a'
                   color='teal'
                   ribbon='right'
-                  className="dcursor smooth">
+                  className='dcursor smooth'>
                   {project.date}
                 </Label>
                 {project.featured &&
@@ -41,39 +40,39 @@ export default function DevelopmentIndex(props) {
                       icon: 'star'
                     }}
                     wrapped ui={true}
-                    className="overlay"
+                    className='overlay'
                   />}
                 {!project.featured &&
                   <Image
                     src={project.url_to_img}
                     wrapped ui={true}
-                    className="overlay"
+                    className='overlay'
                   />}
                 <Card.Content>
                   <Card.Header
-                    className="card-header">
+                    className='card-header'>
                     {project.name}
                   </Card.Header>
                   <Card.Meta
-                    className="card-meta">
+                    className='card-meta'>
                     <Icon
                       name='tags'
-                      className="pseudo-link smooth" />
+                      className='pseudo-link smooth' />
                     <p><span className='pseudo-link smooth'>{project.category}</span>via <span className='pseudo-link smooth'>{project.meta}</span></p>
                   </Card.Meta>
                   <Card.Description
-                    className="card-description">
+                    className='card-description'>
                     {project.tagline}
                   </Card.Description>
                 </Card.Content>
                 <Card.Content extra>
-                  <p>At a glance:</p>
+                  {/* <p>At a glance:</p> */}
                   {project.wordpress &&
                     <span>
                       <Icon
                         size='large'
                         name='wordpress'
-                        className="pseudo-link smooth" />
+                        className='pseudo-link smooth' />
                     </span>
                   }
                   {project.html &&
@@ -81,7 +80,7 @@ export default function DevelopmentIndex(props) {
                       <Icon
                         size='large'
                         name='html5'
-                        className="pseudo-link smooth" />
+                        className='pseudo-link smooth' />
                     </span>
                   }
                   {project.css &&
@@ -89,7 +88,7 @@ export default function DevelopmentIndex(props) {
                       <Icon
                         size='large'
                         name='css3'
-                        className="pseudo-link smooth" />
+                        className='pseudo-link smooth' />
                     </span>
                   }
                   {project.php &&
@@ -97,7 +96,7 @@ export default function DevelopmentIndex(props) {
                       <Icon
                         size='large'
                         name='php'
-                        className="pseudo-link smooth" />
+                        className='pseudo-link smooth' />
                     </span>
                   }
                   {project.javascript &&
@@ -105,7 +104,7 @@ export default function DevelopmentIndex(props) {
                       <Icon
                         size='large'
                         name='js square'
-                        className="pseudo-link smooth" />
+                        className='pseudo-link smooth' />
                     </span>
                   }
                   {project.expressjs &&
@@ -113,7 +112,7 @@ export default function DevelopmentIndex(props) {
                       <Icon
                         size='large'
                         name=''
-                        className="pseudo-link smooth" />
+                        className='pseudo-link smooth' />
                     </span>
                   }
                   {project.reactjs &&
@@ -121,7 +120,7 @@ export default function DevelopmentIndex(props) {
                       <Icon
                         size='large'
                         name='react'
-                        className="pseudo-link smooth" />
+                        className='pseudo-link smooth' />
                     </span>
                   }
                   {project.mysql &&
@@ -129,7 +128,7 @@ export default function DevelopmentIndex(props) {
                       <Icon
                         size='large'
                         name='server'
-                        className="pseudo-link smooth" />
+                        className='pseudo-link smooth' />
                     </span>
                   }
                   {project.postgresql &&
@@ -137,7 +136,7 @@ export default function DevelopmentIndex(props) {
                       <Icon
                         size='large'
                         name='server'
-                        className="pseudo-link smooth" />
+                        className='pseudo-link smooth' />
                     </span>
                   }
                   {project.ruby &&
@@ -145,7 +144,7 @@ export default function DevelopmentIndex(props) {
                       <Icon
                         size='large'
                         name='gem'
-                        className="pseudo-link smooth" />
+                        className='pseudo-link smooth' />
                     </span>
                   }
                   {project.rails &&
@@ -153,7 +152,7 @@ export default function DevelopmentIndex(props) {
                       <Icon
                         size='large'
                         name='subway'
-                        className="pseudo-link smooth" />
+                        className='pseudo-link smooth' />
                     </span>
                   }
                   {project.auth &&
@@ -161,7 +160,7 @@ export default function DevelopmentIndex(props) {
                       <Icon
                         size='large'
                         name='key'
-                        className="pseudo-link smooth" />
+                        className='pseudo-link smooth' />
                     </span>
                   }
                   {project.responsive &&
@@ -169,7 +168,7 @@ export default function DevelopmentIndex(props) {
                       <Icon
                         size='large'
                         name='mobile alt'
-                        className="pseudo-link smooth" />
+                        className='pseudo-link smooth' />
                     </span>
                   }
                   {project.accessible &&
@@ -177,19 +176,22 @@ export default function DevelopmentIndex(props) {
                       <Icon
                         size='large'
                         name='universal access'
-                        className="pseudo-link smooth" />
+                        className='pseudo-link smooth' />
                     </span>
                   }
                 </Card.Content>
               </Card>
-              <Button.Group attached='bottom'>
+              <Button.Group
+                className='card-buttons'
+                attached='bottom'>
                 {project.case_study &&
-                  <CaseStudy
+                  <DevelopmentModal
                     project={project}
                   />}
                 {project.url_to_demo &&
                   <Button
                     as='a'
+                    title='View Demo'
                     href={project.url_to_demo}
                     target='_blank'
                     color='teal'
@@ -203,6 +205,7 @@ export default function DevelopmentIndex(props) {
                 {project.url_to_github &&
                   <Button
                     as='a'
+                    title='View Repo'
                     href={project.url_to_github}
                     target='_blank'
                     color='teal'
