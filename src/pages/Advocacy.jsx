@@ -78,7 +78,7 @@ class Advocacy extends Component {
 
     this.state = {
       preimage: null,
-      title: "Featured Thought Leadership",
+      title: "Featured Advocacy",
       tagline: "From personal experience to professional expertise.",
       postimage: `${Misha}`,
       description: "My own experiences with depression and anxiety as a young adult became the foundation of my career, motivating, informing, and grounding my pursuits. I continue to serve in roles that aim to improve treatment and prevention outcomes; over the years, I've authored or coauthored a handful of policy and research publications; I'm routinely interviewed for news media and documentaries; I often speak at galas, conferences, and summits, including testifying to the United States Congress; and I serve in multiple advisory and policy roles.",
