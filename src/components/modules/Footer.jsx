@@ -19,7 +19,7 @@ export default function Footer() {
         <Link to="/" className="smooth">Home</Link>
         <Link to="/development" className="smooth">Development</Link>
         <Link to="/design" className="smooth">Design</Link>
-        <Link to="/entrepreneurship" className="smooth">Entrepreneurship</Link>
+        <Link to="/leadership" className="smooth">Leadership</Link>
         <Link to="/advocacy" className="smooth">Advocacy</Link>
         <Link to="/about" className="smooth">About</Link>
         <Link to="/contact" className="smooth">Contact</Link>

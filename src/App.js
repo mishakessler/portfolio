@@ -47,7 +47,7 @@ class App extends Component {
                 <Route exact path="/" component={Landing} />
                 <Route exact path="/development" component={Development} />
                 <Route path="/design" component={Design} />
-                <Route exact path="/entrepreneurship" component={Entrepreneurship} />
+                <Route exact path="/leadership" component={Entrepreneurship} />
                 <Route path="/advocacy" component={Advocacy} />
                 <Route path="/about" component={About} />
                 <Route path="/contact" component={Contact} />
