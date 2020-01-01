@@ -37,13 +37,12 @@ This GitHub repo is for the personal portfolio site of Misha Kessler. As a young
 – Styling Goals
   – Beautifully-styled components, utilizing my personal brand and color psychology to create a consistent, recognizable, friendly, knowledgeable digital presence and "feel."
 
-– Future Features:
+– Future Features
   - Loading Indicators
   - Digital Resume Page (Component with positions; downloads.)
-  - Thought Leadership Project Images
-  - Thought Leadership Case Studies (Pop-ups with more information, videos, pictures rendered.)
+  - Project GIFs on Hover
+  - Leadership Case Studies (Pop-ups with more information, videos, pictures rendered.)
   - Thought Pieces (Blog posts.)
-
 
 ## DESIGN
 
