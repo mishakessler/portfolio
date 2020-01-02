@@ -17,7 +17,7 @@ export default function Footer() {
       <Divider />
       <div className="footer-nav">
         <Link to="/" className="smooth">Home</Link>
-        <Link to="/development" className="smooth">Development</Link>
+        <Link to="/engineering" className="smooth">Engineering</Link>
         <Link to="/design" className="smooth">Design</Link>
         <Link to="/leadership" className="smooth">Leadership</Link>
         <Link to="/advocacy" className="smooth">Advocacy</Link>
