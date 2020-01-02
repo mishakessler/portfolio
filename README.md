@@ -11,44 +11,48 @@
   - [Languages, Frameworks, Libraries](#Languages-Frameworks-Libraries)
   - [Component Heirarchy](#Component-Heirarchy)
 
+<br>
+
 ## OVERVIEW
 
 This GitHub repo is for the personal portfolio site of Misha Kessler. As a young professional with diverse expertise and involvement in multiple industries, I was challenged to design and develop a website that could adequately communicate my experience while not overcrowding the user interface or causing inadvertent information overload.
 
 ### Goals
 
-– Planning Goals
-  – Create a thoroughly developed, helpful `README.md` file for my GitHub visitors.
+- Planning Goals
+  - Create a thoroughly developed, helpful `README.md` file for my GitHub visitors.
 
-– Design Goals
-  – Package all of my prior and ongoing experiences and job positions, across all of my prior industries, 
-  – Utilize best practices in UX/UI design for accessibility, navigability, and findability.
-  – Exude my values and personality through visual appeal, clean design, and engaging interactivity.
+- Design Goals
+  - Package all of my prior and ongoing experiences and job positions, across all of my prior industries, 
+  - Utilize best practices in UX/UI design for accessibility, navigability, and findability.
+  - Exude my values and personality through visual appeal, clean design, and engaging interactivity.
 
-– Development Goals
-  – A well-structured React app, using smartly organized, modular, reusable components.
-  – Smartly-architected data, allowing me to udpate my positions, passion projects, case studies, interviews, committees, memberships, and more, with minimal effort.
-  – Clean, linted code, following naming conventions and style guides.
+- Development Goals
+  - A well-structured React app, using smartly organized, modular, reusable components.
+  - Smartly-architected data, allowing me to udpate my positions, passion projects, case studies, interviews, committees, memberships, and more, with minimal effort.
+  - Clean, linted code, following naming conventions and style guides.
 
-– Feature Goals
-  – Downloadable files, including my technical resume, advocacy resume, _curriculum vitae_, speaker one sheet, etc.
-  – Ample contact options, including social media and a form that automatically alerts my personal email.
+- Feature Goals
+  - Downloadable files, including my technical resume, advocacy resume, _curriculum vitae_, speaker one sheet, etc.
+  - Ample contact options, including social media and a form that automatically alerts my personal email.
 
-– Styling Goals
-  – Beautifully-styled components, utilizing my personal brand and color psychology to create a consistent, recognizable, friendly, knowledgeable digital presence and "feel."
+- Styling Goals
+  - Beautifully-styled components, utilizing my personal brand and color psychology to create a consistent, recognizable, friendly, knowledgeable digital presence and "feel."
 
-– Future Features
+- Future Features
   - Loading Indicators
   - Digital Resume Page (Component with positions; downloads.)
   - Project GIFs on Hover
   - Leadership Case Studies (Pop-ups with more information, videos, pictures rendered.)
   - Thought Pieces (Blog posts.)
 
+<br>
+
 ## DESIGN
 
 ### Personal Brand
 
-Throughout my years in the mental health and suicide prevention industries, my personal brand grew through various roles and contributions in social justice advocacy, public speaking, depressive disorders expertise, data and research consulting, public policy oversight, and more. 
+Throughout my years in the mental health and suicide prevention industries, my personal brand grew through various roles and contributions in social justice advocacy, public speaking, depressive disorders expertise, data and research consulting, public policy oversight, and more.
 
 As my technical and design interests grew, I often started small projects as experiments, but this soon let to having a personal "logo," a color palette, custom iconography, and more... Ultimately, my own brand identity. This 
 
@@ -56,9 +60,7 @@ As my technical and design interests grew, I often started small projects as exp
 
 Custom Icons
 
-
-
-Font Awesome Icons 
+Font Awesome Icons
 
 | Code       | Icon                                                                   |
 | :--------- | :--------------------------------------------------------------------- |
@@ -86,6 +88,8 @@ Font Awesome Icons
 | Adobe Illustrator      | https://cdn.worldvectorlogo.com/logos/adobe-illustrator-cc.svg |
 | Adobe InDesign         | https://cdn.worldvectorlogo.com/logos/indesign-cc.svg          |
 | Accessibility Concerns | universal access                                               |
+
+<br>
 
 ## DEVELOPMENT
 
