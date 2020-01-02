@@ -11,7 +11,7 @@ import {
   Button,
 } from 'semantic-ui-react'
 
-export default function EntrepreneurshipIndex(props) {
+export default function LeadershipIndex(props) {
   return (
     <>
 

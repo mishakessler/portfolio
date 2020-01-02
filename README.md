@@ -131,7 +131,7 @@ src
             |__ AdvocacyIndex.jsx
             |__ DesignIndex.jsx
             |__ DevelopmentIndex.jsx
-            |__ EntrepreneurshipIndex.jsx
+            |__ LeadershipIndex.jsx
       |__ modules/
             |__ Header.jsx
             |__ Hero.jsx
@@ -144,7 +144,7 @@ src
 |__ data/
       |__ AdvocacyProjects.jsx
       |__ DesignProjects.jsx
-      |__ EntrepreneurshipProjects.jsx
+      |__ LeadershipProjects.jsx
       |__ WebsiteProjects.jsx
 |__ pages/
       |__ About.jsx
@@ -152,7 +152,7 @@ src
       |__ Contact.jsx
       |__ Design.jsx
       |__ Development.jsx
-      |__ Entrepreneurship.jsx
+      |__ Leadership.jsx
       |__ ErrorPage.jsx
       |__ Landing.jsx
       |__ SpaceTime.jsx

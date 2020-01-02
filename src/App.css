@@ -117,7 +117,7 @@ a :hover {
 
 .fade-exit.fade-exit-active {
   opacity: 0;
-  transition: opacity 250ms ease-in-out;
+  transition: opacity 500ms ease-in-out;
 }
 
 /***************************************************/
@@ -484,7 +484,7 @@ a :hover {
   url(./assets/images/developer-banner-1.jpg);
 }
 
-.entrepreneurship-page {
+.leadership-page {
   background: 
   linear-gradient(
     rgba(0, 0, 0, 0.8), 

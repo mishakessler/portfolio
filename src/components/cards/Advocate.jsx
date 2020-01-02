@@ -34,7 +34,7 @@ export default function Advocate() {
       <div className="ctas">
         <div className="left-cta">
           <h6 className="smooth">
-            <span className="hide-on-desktop">swipe</span><span className="hide-on-mobile">click & drag</span> right for entrepreneurship</h6>
+            <span className="hide-on-desktop">swipe</span><span className="hide-on-mobile">click & drag</span> right for leadership</h6>
         </div>
         <div className="enter-cta">
           <Link to="/advocacy" className="smooth">

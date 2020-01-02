@@ -51,7 +51,7 @@ export default class Header extends Component {
           </Link>
         </div>
         <div className="desktop-nav hide-on-mobile">
-          <Link to="/development" className="smooth">Development</Link>
+          <Link to="/engineering" className="smooth">Engineering</Link>
           <Link to="/design" className="smooth">Design</Link>
           <Link to="/leadership" className="smooth">Leadership</Link>
           <Link to="/advocacy" className="smooth">Advocacy</Link>
@@ -82,7 +82,7 @@ export default class Header extends Component {
                 <Icon name="ellipsis vertical" />
               </Button>
               <Image src={WhiteLettermark} size="mini" centered />
-              <Link to="/development" className="smooth">Development</Link>
+              <Link to="/engineering" className="smooth">Engineering</Link>
               <Link to="/design" className="smooth">Design</Link>
               <Link to="/leadership" className="smooth">Leadership</Link>
               <Link to="/advocacy" className="smooth">Advocacy</Link>

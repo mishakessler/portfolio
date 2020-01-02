@@ -32,11 +32,11 @@ export default function Entrepreneur() {
             <span className="hide-on-desktop">swipe</span><span className="hide-on-mobile">click & drag</span> right for design</h6>
         </div>
         <div className="enter-cta">
-          <Link to="/entrepreneurship" className="smooth">
+          <Link to="/leadership" className="smooth">
             <Button
               basic
               inverted
-              content='View Entrepreneurship'
+              content='View Leadership'
               labelPosition='right'
               className='smooth'
               icon={{

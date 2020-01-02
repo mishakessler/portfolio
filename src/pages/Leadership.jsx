@@ -18,13 +18,13 @@ import Key from '../components/modules/Key'
 import Footer from '../components/modules/Footer'
 
 // Index
-// import EntrepreneurshipIndex from '../components/indices/EntrepreneurshipIndex'
+// import LeadershipIndex from '../components/indices/LeadershipIndex'
 
 // Data 
-// import { Projects } from '../data/EntrepreneurshipProjects'
+// import { Projects } from '../data/LeadershipProjects'
 
 
-class Entrepreneurship extends Component {
+class Leadership extends Component {
   constructor(props) {
     super(props)
 
@@ -40,10 +40,10 @@ class Entrepreneurship extends Component {
 
   render() {
     return (
-      <div className="page dynamic-page entrepreneurship-page">
+      <div className="page dynamic-page leadership-page">
         <Header />
         <Hero
-          className="entrepreneurship-hero"
+          className="leadership-hero"
           preimage={this.state.preimage}
           title={this.state.title}
           tagline={this.state.tagline}
@@ -52,8 +52,8 @@ class Entrepreneurship extends Component {
           helper={this.state.helper}
         />
         <Divider />
-        <div className="body entrepreneurship-body">
-          <div className="index entrepreneurship-index">
+        <div className="body leadership-body">
+          <div className="index leadership-index">
 
           </div>
           <div className='key-modal'>
@@ -67,4 +67,4 @@ class Entrepreneurship extends Component {
 }
 
 
-export default withRouter(Entrepreneurship)
+export default withRouter(Leadership)
