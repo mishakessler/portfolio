@@ -83,7 +83,7 @@ class About extends Component {
             </p>
           </div>
 
-          <p>For more, check out my <Link to='/advocacy'>Thought Leadership</Link> and <Link to='/entrepreneurship'>Entrepreneurship</Link> portfolios.</p>
+          <p>For more, check out my <Link to='/advocacy'>Thought Leadership</Link> and <Link to='/leadership'>Leadership</Link> portfolios.</p>
 
         </div>
         <Footer />
