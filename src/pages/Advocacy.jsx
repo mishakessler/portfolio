@@ -24,7 +24,7 @@ import AdvocacyIndex from '../components/indices/AdvocacyIndex'
 // Data 
 import {
   Awards,
-  Committees,
+  // Committees,
   Documentaries,
   Interviews,
   Memberships,
@@ -57,11 +57,13 @@ const categories = [
     key: 'publications',
     text: 'Publications',
     value: 'publications',
-  }, {
-    key: 'committees',
-    text: 'Committees',
-    value: 'committees',
-  }, {
+  },
+  // {
+  //   key: 'committees',
+  //   text: 'Committees',
+  //   value: 'committees',
+  // },
+  {
     key: 'memberships',
     text: 'Memberships',
     value: 'memberships',
@@ -78,7 +80,7 @@ class Advocacy extends Component {
 
     this.state = {
       preimage: null,
-      title: "Featured Thought Leadership",
+      title: "Featured Advocacy",
       tagline: "From personal experience to professional expertise.",
       postimage: `${Misha}`,
       description: "My own experiences with depression and anxiety as a young adult became the foundation of my career, motivating, informing, and grounding my pursuits. I continue to serve in roles that aim to improve treatment and prevention outcomes; over the years, I've authored or coauthored a handful of policy and research publications; I'm routinely interviewed for news media and documentaries; I often speak at galas, conferences, and summits, including testifying to the United States Congress; and I serve in multiple advisory and policy roles.",
@@ -87,7 +89,7 @@ class Advocacy extends Component {
       activeItem: 'panels',
 
       awards: Awards,
-      committees: Committees,
+      // committees: Committees,
       documentaries: Documentaries,
       interviews: Interviews,
       memberships: Memberships,
@@ -129,10 +131,10 @@ class Advocacy extends Component {
         return <AdvocacyIndex
           title='Publications'
           projects={this.state.publications} />
-      case 'committees':
-        return <AdvocacyIndex
-          title='Committees'
-          projects={this.state.committees} />
+      // case 'committees':
+      //   return <AdvocacyIndex
+      //     title='Committees'
+      //     projects={this.state.committees} />
       case 'memberships':
         return <AdvocacyIndex
           title='Memberships'
@@ -168,7 +170,6 @@ class Advocacy extends Component {
           <div className="submenu advocacy-submenu hide-on-desktop">
             <Dropdown
               selection
-              clearable
               fluid
               name='activeItem'
               options={categories}
@@ -180,10 +181,9 @@ class Advocacy extends Component {
             <Menu
               inverted
               secondary
-              stackable
               fluid
               pointing
-              widths={8}
+              widths={7}
               className="hide-on-mobile">
               <Menu.Item
                 name='panels'
@@ -205,10 +205,10 @@ class Advocacy extends Component {
                 name='publications'
                 active={activeItem === 'publications'}
                 onClick={this.handleItemClick} />
-              <Menu.Item
+              {/* <Menu.Item
                 name='committees'
                 active={activeItem === 'committees'}
-                onClick={this.handleItemClick} />
+                onClick={this.handleItemClick} /> */}
               <Menu.Item
                 name='memberships'
                 active={activeItem === 'memberships'}

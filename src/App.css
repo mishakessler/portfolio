@@ -117,7 +117,7 @@ a :hover {
 
 .fade-exit.fade-exit-active {
   opacity: 0;
-  transition: opacity 250ms ease-in-out;
+  transition: opacity 500ms ease-in-out;
 }
 
 /***************************************************/
@@ -411,7 +411,7 @@ a :hover {
 }
 
 .page .ui.divider {
-  max-width: 1020px;
+  max-width: 1080px;
   margin: 0 auto;
 }
 
@@ -421,7 +421,7 @@ a :hover {
 
 .about-why h3, .about-journey h3, .about-roles h3 {
   margin: 0 auto;
-  max-width: 1020px;
+  max-width: 1080px;
   color: white;
   font-size: 1.5em;
 }
@@ -484,7 +484,7 @@ a :hover {
   url(./assets/images/developer-banner-1.jpg);
 }
 
-.entrepreneurship-page {
+.leadership-page {
   background: 
   linear-gradient(
     rgba(0, 0, 0, 0.8), 
@@ -511,7 +511,7 @@ a :hover {
 .hero {
   text-align: center;
   min-height: 18vh;
-  max-width: 1020px;
+  max-width: 1080px;
   color: white;
   margin: 25px auto 50px auto;
 }
@@ -570,7 +570,7 @@ a :hover {
 /** Index Submenu **/
 
 .submenu {
-  max-width: 1020px;
+  max-width: 1016px;
   margin: 0 auto;
 }
 
@@ -761,7 +761,7 @@ a :hover {
 }
 
 .about-journey, .about-roles {
-  max-width: 1020px;
+  max-width: 1080px;
   margin: 100px auto;
   padding: 25px;
   background: #00bac8;
@@ -796,7 +796,7 @@ a :hover {
 }
 
 .vertical-timeline {
-  max-width: 1020px;
+  max-width: 1080px;
   padding: 0;
 }
 
@@ -913,7 +913,7 @@ a :hover {
 /***************************************************/
 
 .footer {
-  max-width: 1020px;
+  max-width: 1080px;
   margin: 50px auto 0 auto;
   color: white;
   text-align: center;
@@ -963,23 +963,28 @@ a :hover {
 }
 
 
-/***************** Over 1026px *****************/
+/***************** Over 1024px *****************/
 
-@media all and (min-width: 1026px) {
+@media all and (min-width: 1024px) {
   .hide-on-desktop {
     display: none;
   }
 }
 
 
-/***************** Under 1025px *****************/
+/***************** Under 1023px *****************/
 
-@media all and (max-width: 1025px) {
+@media all and (max-width: 1023px) {
   .hide-on-mobile {
     display: none;
   }
 
   /** Landing Logo **/
+
+  .header-logo img {
+    top: 4vw;
+    left: 4vw;
+  }
 
   .landing-lettermark {
     width: 100px;

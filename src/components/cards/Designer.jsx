@@ -49,7 +49,7 @@ export default function Designer() {
         </div>
         <div className="right-cta">
           <h6 className="smooth">
-            <span className="hide-on-desktop">swipe</span><span className="hide-on-mobile">click & drag</span> left for entrepreneurship</h6>
+            <span className="hide-on-desktop">swipe</span><span className="hide-on-mobile">click & drag</span> left for leadership</h6>
         </div>
       </div>
     </div>

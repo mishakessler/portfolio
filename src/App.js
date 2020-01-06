@@ -18,7 +18,7 @@ import {
 import Landing from './pages/Landing'
 import Development from './pages/Development'
 import Design from './pages/Design'
-import Entrepreneurship from './pages/Entrepreneurship'
+import Leadership from './pages/Leadership'
 import Advocacy from './pages/Advocacy'
 import About from './pages/About'
 import Contact from './pages/Contact'
@@ -45,9 +45,9 @@ class App extends Component {
               classNames='fade'>
               <Switch location={location}>
                 <Route exact path="/" component={Landing} />
-                <Route exact path="/development" component={Development} />
+                <Route exact path="/engineering" component={Development} />
                 <Route path="/design" component={Design} />
-                <Route exact path="/entrepreneurship" component={Entrepreneurship} />
+                <Route exact path="/leadership" component={Leadership} />
                 <Route path="/advocacy" component={Advocacy} />
                 <Route path="/about" component={About} />
                 <Route path="/contact" component={Contact} />

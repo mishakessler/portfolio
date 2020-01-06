@@ -29,7 +29,7 @@ class Development extends Component {
 
     this.state = {
       preimage: null,
-      title: "Featured Websites",
+      title: "Featured Engineering",
       tagline: "Beautiful, immersive, user-friendly websites, built with a mission in mind.",
       postimage: null,
       description: "For over 5 years, I've been designing and developing websites for social justice causes. Initially, my passion for large-scale social impact intersected with attractive, user-friendly websites which I developed for nonprofit organizations. To this day, I continue to build websites with the goal of enabling social justice programs in branding themselves across digital mediums, thereby amplifying brand recognition and social impact.",
