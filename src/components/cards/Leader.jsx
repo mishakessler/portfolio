@@ -14,7 +14,7 @@ import {
 // Assets 
 import Lettermark from '../../assets/graphics/lettermark-white.png'
 
-export default function Entrepreneur() {
+export default function Leader() {
   return (
     <div className="landing-entrepreneur">
       <div className="landing-lettermark">

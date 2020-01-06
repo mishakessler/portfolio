@@ -37,7 +37,7 @@ export default function Developer() {
         <div className="left-cta">
         </div>
         <div className="enter-cta">
-          <Link to="/development" className="smooth">
+          <Link to="/engineering" className="smooth">
             <Button
               basic
               inverted

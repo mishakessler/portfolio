@@ -30,7 +30,7 @@ class Leadership extends Component {
 
     this.state = {
       preimage: null,
-      title: "Featured Projects",
+      title: "Featured Leadership",
       postimage: null,
       tagline: "",
       description: "",

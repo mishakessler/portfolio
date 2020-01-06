@@ -14,14 +14,14 @@ import clamp from 'lodash/clamp'
 import Advocate from '../components/cards/Advocate'
 import Designer from '../components/cards/Designer'
 import Developer from '../components/cards/Developer'
-import Entrepreneur from '../components/cards/Entrepreneur'
+import Leader from '../components/cards/Leader'
 import Hobbyist from '../components/cards/Hobbyist'
 
 // Assets
 const cards = [
   <Developer />,
   <Designer />,
-  <Entrepreneur />,
+  <Leader />,
   <Advocate />,
   <Hobbyist />
 ]

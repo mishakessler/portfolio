@@ -40,11 +40,15 @@ This GitHub repo is for the personal portfolio site of Misha Kessler. As a young
   - Beautifully-styled components, utilizing my personal brand and color psychology to create a consistent, recognizable, friendly, knowledgeable digital presence and "feel."
 
 - Future Features
-  - Loading Indicators
-  - Digital Resume Page (Component with positions; downloads.)
-  - Project GIFs on Hover
+  - New Landing Page (Make React Spring Cards in-page; combine "About" and add "featured in" logos.)
+  - [Loading Indicators with React.Suspense](https://clubhouse.io/developer-how-to/reacts-suspense-is-going-to-evolve-over-the-coming/)
+  - [Dark Mode Toggle](https://css-tricks.com/a-dark-mode-toggle-with-react-and-themeprovider/)
+  - [Multi-frame Rotation on Scroll](https://stackoverflow.com/questions/36723891/scroll-animation-change-image-on-scroll-so-it-appears-to-rotate/36730212)
+  - React Spring Cards for Featured Advocacy Snippets/Quotes
+  - Digital Resume with React Timeline (Component with positions; downloads.)
+  - Project GIFs on Card Hover
   - Leadership Case Studies (Pop-ups with more information, videos, pictures rendered.)
-  - Thought Pieces (Blog posts.)
+  - Thought Pieces (Blog Posts)
 
 <br>
 
