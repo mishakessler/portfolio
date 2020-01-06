@@ -45,7 +45,7 @@ class Contact extends Component {
       <div className="page static-page contact-page">
         <Header />
         <Hero
-          className="contact-hero"
+          className="hero contact-hero"
           preimage={this.state.preimage}
           title={this.state.title}
           tagline={this.state.tagline}

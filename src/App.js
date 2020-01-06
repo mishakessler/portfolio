@@ -45,9 +45,9 @@ class App extends Component {
               classNames='fade'>
               <Switch location={location}>
                 <Route exact path="/" component={Landing} />
-                <Route exact path="/engineering" component={Development} />
+                <Route path="/engineering" component={Development} />
                 <Route path="/design" component={Design} />
-                <Route exact path="/leadership" component={Leadership} />
+                <Route path="/leadership" component={Leadership} />
                 <Route path="/advocacy" component={Advocacy} />
                 <Route path="/about" component={About} />
                 <Route path="/contact" component={Contact} />

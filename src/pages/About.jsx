@@ -40,7 +40,7 @@ class About extends Component {
       <div className="page static-page about-page">
         <Header />
         <Hero
-          className="about-hero"
+          className="hero about-hero"
           preimage={this.state.preimage}
           title={this.state.title}
           tagline={this.state.tagline}
