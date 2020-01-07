@@ -32,7 +32,7 @@ export default function Developer() {
       </div>
       <div className="landing-tagline shaded-text">
         <h2>My name's <span className="landing-name">Michael Kessler</span>, but you can call me <span className="landing-name">Misha.</span> I build beautiful, agile, full-stack web applications that aim to make a difference in the world.</h2>
-        <p>Enter my portfolio by clicking on the button below, or wipe left for my other roles.</p>
+        <p>Enter my portfolio by clicking on the button below, or swipe left for my other roles.</p>
       </div>
       <div className="ctas">
         <div className="left-cta">
