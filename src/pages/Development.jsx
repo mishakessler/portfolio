@@ -1,5 +1,5 @@
 // React
-import React, { Component, Suspense } from 'react'
+import React, { Component } from 'react'
 
 // React Router
 import {
@@ -9,8 +9,6 @@ import {
 // React Semantic UI
 import {
   Divider,
-  Dimmer,
-  Loader
 } from 'semantic-ui-react'
 
 // Components
@@ -68,16 +66,8 @@ class Development extends Component {
         <Divider />
         <div className="body development-body">
           <div className="index development-index">
-
-            <Suspense fallback={
-              <Dimmer active>
-                <Loader active />
-              </Dimmer>
-            }>
-              <DevelopmentIndex
-                projects={this.state.websites} />
-            </Suspense>
-
+            <DevelopmentIndex
+              projects={this.state.websites} />
           </div>
           <div className='key-modal'>
             <Key />
