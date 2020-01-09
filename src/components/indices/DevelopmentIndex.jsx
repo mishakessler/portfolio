@@ -35,6 +35,7 @@ export default function DevelopmentIndex(props) {
                 {project.featured &&
                   <Image
                     src={project.url_to_img}
+                    alt='MacBook Pro with Project Landing'
                     label={{
                       corner: 'left',
                       icon: 'star'
@@ -45,6 +46,7 @@ export default function DevelopmentIndex(props) {
                 {!project.featured &&
                   <Image
                     src={project.url_to_img}
+                    alt='MacBook Pro with Project Landing'
                     wrapped ui={true}
                     className='overlay'
                   />}

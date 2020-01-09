@@ -32,6 +32,7 @@ export default function AdvocacyIndex(props) {
                 {project.featured &&
                   <Image
                     src={project.url_to_img}
+                    alt=''
                     label={{
                       as: 'a',
                       corner: 'left',
@@ -43,6 +44,7 @@ export default function AdvocacyIndex(props) {
                 {!project.featured &&
                   <Image
                     src={project.url_to_img}
+                    alt=''
                     wrapped ui={true}
                     className="overlay"
                   />}
