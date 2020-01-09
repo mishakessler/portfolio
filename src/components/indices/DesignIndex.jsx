@@ -34,6 +34,7 @@ export default function DesignIndex(props) {
                 {project.featured &&
                   <Image
                     src={project.url_to_img}
+                    alt=''
                     label={{
                       corner: 'left',
                       icon: 'star'
@@ -44,6 +45,7 @@ export default function DesignIndex(props) {
                 {!project.featured &&
                   <Image
                     src={project.url_to_img}
+                    alt=''
                     wrapped ui={true}
                     className="overlay"
                   />}

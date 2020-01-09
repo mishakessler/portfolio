@@ -7,7 +7,7 @@ import ReactDOM from 'react-dom';
 // React Router
 import { BrowserRouter as Router } from 'react-router-dom'
 
-import ScrollToTop from './components/plug-ins/ScrollToTop'
+import ScrollToTop from './components/higher-order/ScrollToTop'
 
 import 'semantic-ui-css/semantic.min.css';
 import './index.css';
@@ -22,4 +22,4 @@ ReactDOM.render(
     </ScrollToTop>
   </Router>, document.getElementById('root'));
 
-serviceWorker.unregister();
+serviceWorker.register();

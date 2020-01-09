@@ -40,13 +40,22 @@ This GitHub repo is for the personal portfolio site of Misha Kessler. As a young
   - Beautifully-styled components, utilizing my personal brand and color psychology to create a consistent, recognizable, friendly, knowledgeable digital presence and "feel."
 
 - Future Features
-  - New Landing Page (Make React Spring Cards in-page; combine "About" and add "featured in" logos.)
-  - [Loading Indicators with React.Suspense](https://clubhouse.io/developer-how-to/reacts-suspense-is-going-to-evolve-over-the-coming/)
-  - [Dark Mode Toggle](https://css-tricks.com/a-dark-mode-toggle-with-react-and-themeprovider/)
-  - [Multi-frame Rotation on Scroll](https://stackoverflow.com/questions/36723891/scroll-animation-change-image-on-scroll-so-it-appears-to-rotate/36730212)
-  - React Spring Cards for Featured Advocacy Snippets/Quotes
+  - Optimization
+    - Remove nested loop from indices;
+    - Duplicate and compress images, calling various sizes as needed;
+    - Revert images from local storage to links;
+  - Landing Page
+    - Make React-Spring cards in-page, first for overview of roles and site, latter for snippets, quotes, etc. from all work;
+    - Combine About with Landing;
+    - [Add "featured in" logos](https://css-tricks.com/infinite-all-css-scrolling-slideshow/)
+  - UX Sugar
+    - Loading Spinners via SemanticUI and [React.Suspense](https://clubhouse.io/developer-how-to/reacts-suspense-is-going-to-evolve-over-the-coming/)
+    - Lazy Loading via [React.Lazy](https://blog.bitsrc.io/lazy-loading-react-components-with-react-lazy-and-suspense-f05c4cfde10c)
+  - Styling Sugar
+    - Project GIFs on Card Hover
+    - [Dark Mode Toggle](https://css-tricks.com/a-dark-mode-toggle-with-react-and-themeprovider/)
+    - [Multi-frame Mockup Rotation on Scroll](https://stackoverflow.com/questions/36723891/scroll-animation-change-image-on-scroll-so-it-appears-to-rotate/36730212)
   - Digital Resume with React Timeline (Component with positions; downloads.)
-  - Project GIFs on Card Hover
   - Leadership Case Studies (Pop-ups with more information, videos, pictures rendered.)
   - Thought Pieces (Blog Posts)
 

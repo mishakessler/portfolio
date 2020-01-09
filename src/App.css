@@ -541,6 +541,26 @@ a :hover {
   text-align: center;
 }
 
+/**************** Ftd. Logo Carousel ***************/
+
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  height: 50px;
+}
+
+.carousel img {
+  position: absolute;
+  height: 50px;
+  animation: slideshow 60s linear infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+@keyframes slideshow {  
+  100% { 
+    -webkit-transform: translateX(-150%);  
+  }
+}
 
 /******************* Index Pages *******************/
 

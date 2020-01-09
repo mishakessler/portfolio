@@ -165,7 +165,6 @@ class Advocacy extends Component {
           description={this.state.description}
           helper={this.state.helper}
         />
-
         <div className="body advocacy-body">
           <div className="submenu advocacy-submenu hide-on-desktop">
             <Dropdown
