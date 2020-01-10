@@ -93,6 +93,7 @@ export default function DesignIndex(props) {
                   as='a'
                   href={project.url_to_demo}
                   target='_blank'
+                  rel='noopener'
                   color='teal'
                   className='smooth'
                   icon={{

@@ -66,6 +66,7 @@ export default function AdvocacyIndex(props) {
                   title='View Project Online'
                   href={project.url_to_demo}
                   target='_blank'
+                  rel='noopener'
                   color='teal'
                   className='smooth'
                   icon={{
