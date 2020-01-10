@@ -180,6 +180,7 @@ export default function CaseStudy(props) {
             as='a'
             href={props.project.url_to_demo}
             target='_blank'
+            rel='noopener'
             color='teal'
             className='smooth'
             icon={{
@@ -194,6 +195,7 @@ export default function CaseStudy(props) {
             as='a'
             href={props.project.url_to_github}
             target='_blank'
+            rel='noopener'
             color='teal'
             className='smooth'
             icon={{
