@@ -196,6 +196,7 @@ export default function DevelopmentIndex(props) {
                     title='View Demo'
                     href={project.url_to_demo}
                     target='_blank'
+                    rel='noopener'
                     color='teal'
                     className='smooth'
                     icon={{
@@ -210,6 +211,7 @@ export default function DevelopmentIndex(props) {
                     title='View Repo'
                     href={project.url_to_github}
                     target='_blank'
+                    rel='noopener'
                     color='teal'
                     className='smooth'
                     icon={{
