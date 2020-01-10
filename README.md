@@ -23,7 +23,7 @@ This GitHub repo is for the personal portfolio site of Misha Kessler. As a young
   - Create a thoroughly developed, helpful `README.md` file for my GitHub visitors.
 
 - Design Goals
-  - Package all of my prior and ongoing experiences and job positions, across all of my prior industries, 
+  - Package all of my prior and ongoing experiences and job positions, across all of my prior industries.
   - Utilize best practices in UX/UI design for accessibility, navigability, and findability.
   - Exude my values and personality through visual appeal, clean design, and engaging interactivity.
 
@@ -67,7 +67,7 @@ This GitHub repo is for the personal portfolio site of Misha Kessler. As a young
 
 Throughout my years in the mental health and suicide prevention industries, my personal brand grew through various roles and contributions in social justice advocacy, public speaking, depressive disorders expertise, data and research consulting, public policy oversight, and more.
 
-As my technical and design interests grew, I often started small projects as experiments, but this soon let to having a personal "logo," a color palette, custom iconography, and more... Ultimately, my own brand identity. This 
+As my technical and design interests grew, I often started small projects as experiments, but this soon let to having a personal "logo," a color palette, custom iconography, and more... Ultimately, my own brand identity.
 
 ### Iconography
 
@@ -108,7 +108,7 @@ Font Awesome Icons
 
 ### Title
 
-### Languages, Frameworks, Libraries 
+### Languages, Frameworks, Libraries
 
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
@@ -156,7 +156,7 @@ src
             |__ Lorem.jsx
             |__ CTA.jsx
             |__ Footer.jsx
-      |__ plug-ins/
+      |__ higher-order/
             |__ ScrollToTop.jsx
 |__ data/
       |__ AdvocacyProjects.jsx
