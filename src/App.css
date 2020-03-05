@@ -157,7 +157,7 @@ a :hover {
   will-change: transform;
 }
 
-.landing-advocate, .landing-designer, .landing-developer, .landing-entrepreneur, .landing-hobbyist {
+.advocate-card, .designer-card, .developer-card, .entrepreneur-card, .hobbyist-card {
   width: 100%;
   height: 100%;
   padding-top: 5vh;
@@ -169,7 +169,7 @@ a :hover {
 
 /************** Landing Backgrounds ****************/
 
-.landing-advocate {
+.advocate-card {
   background: 
   linear-gradient(
     150deg,
@@ -178,7 +178,7 @@ a :hover {
   );
 }
 
-.landing-designer {
+.designer-card {
   background: 
   linear-gradient(
     150deg,
@@ -187,7 +187,7 @@ a :hover {
   );
 }
 
-.landing-developer {
+.developer-card {
   background: 
   linear-gradient(
     150deg,
@@ -196,7 +196,7 @@ a :hover {
   );
 }
 
-.landing-entrepreneur {
+.entrepreneur-card {
   background: 
   linear-gradient(
     150deg,
@@ -205,7 +205,7 @@ a :hover {
   );
 }
 
-.landing-hobbyist {
+.hobbyist-card {
   background: 
   linear-gradient(
     150deg,
@@ -214,25 +214,25 @@ a :hover {
   );
 }
 
-/****************** Landing Logo *******************/
+/****************** card Logo *******************/
 
-.landing-lettermark {
+.card-lettermark {
   width: 125px;
   margin: 0 auto;
 }
 
-.landing-lettermark img {
+.card-lettermark img {
   width: 100%;
 }
 
-/****************** Landing Text *******************/
+/****************** Card Text *******************/
 
-.landing-titles {
+.card-titles {
   padding: 3vh 3vw 0 3vw;
   text-align: center;
 }
 
-.landing-titles h5 {
+.card-titles h5 {
   display: inline;
   text-transform: lowercase;
   font-size: 1.1em;
@@ -241,20 +241,20 @@ a :hover {
   margin: 0px 15px;
 }
 
-.landing-welcome {
+.card-welcome {
   position: absolute;
   top: 30vh;
   left: 3vw;
   z-index: 0;
 }
 
-.landing-welcome h1 {
+.card-welcome h1 {
   font-size: 10em;
   font-weight: 900;
   opacity: .08;
 }
 
-.landing-tagline {
+.card-tagline {
   position: absolute;
   top: 42vh;
   left: 12vw;
@@ -262,21 +262,21 @@ a :hover {
   padding: 0;
 }
 
-.landing-tagline h2 {
+.card-tagline h2 {
   font-size: 2.5em;
   margin-bottom: 25px;
   font-weight: 400;
 }
 
-.landing-tagline p {
+.card-tagline p {
   font-style: oblique;
 }
 
-.landing-name {
+.card-name {
   font-weight: 700;
 }
 
-/****************** Landing CTAs *******************/
+/****************** Card CTAs *******************/
 
 .ctas {
   position: absolute;

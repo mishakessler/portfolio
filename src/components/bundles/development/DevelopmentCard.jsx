@@ -16,21 +16,21 @@ import Lettermark from '../../../assets/graphics/lettermark-white.png'
 
 export default function Developer() {
   return (
-    <div className="landing-developer">
-      <div className="landing-lettermark">
+    <div className="card developer-card">
+      <div className="card-lettermark">
         <img src={Lettermark} alt='Misha Lettermark' />
       </div>
-      <div className="landing-titles">
+      <div className="card-titles">
         <h5>Front End Engineer</h5>
         <span className="hide-on-mobile"><h5>|</h5></span>
         <h5>Jr. Full Stack Developer</h5>
         <span className="hide-on-mobile"><h5>|</h5></span>
         <h5>Technical Project Manager</h5>
       </div>
-      <div className="landing-welcome smooth">
+      <div className="card-welcome smooth">
         <h1 className="smooth">Welcome.</h1>
       </div>
-      <div className="landing-tagline shaded-text">
+      <div className="card-tagline shaded-text">
         <h2>My name's <span className="landing-name">Michael Kessler</span>, but you can call me <span className="landing-name">Misha.</span> I build beautiful, agile, full-stack web applications that aim to make a difference in the world.</h2>
         <p>Enter my portfolio by clicking on the button below, or swipe left for my other roles.</p>
       </div>

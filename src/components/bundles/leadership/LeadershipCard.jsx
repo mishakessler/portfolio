@@ -16,14 +16,14 @@ import Lettermark from '../../../assets/graphics/lettermark-white.png'
 
 export default function Leader() {
   return (
-    <div className="landing-entrepreneur">
-      <div className="landing-lettermark">
+    <div className="card entrepreneur-card">
+      <div className="card-lettermark">
         <img src={Lettermark} alt='Misha Lettermark' />
       </div>
-      <div className="landing-titles">
+      <div className="card-titles">
         <h5>Social Innovation Entrepreneur</h5>
       </div>
-      <div className="landing-tagline shaded-text">
+      <div className="card-tagline shaded-text">
         <h2>I conceive, design, and develop sustainably-funded, socially-responsible mental health tech.</h2>
       </div>
       <div className="ctas">

@@ -16,16 +16,16 @@ import Lettermark from '../../../assets/graphics/lettermark-white.png'
 
 export default function Designer() {
   return (
-    <div className="landing-designer">
-      <div className="landing-lettermark">
+    <div className="card designer-card">
+      <div className="card-lettermark">
         <img src={Lettermark} alt='Misha Lettermark' />
       </div>
-      <div className="landing-titles">
+      <div className="card-titles">
         <h5>UI/UX Designer</h5>
         <span className="hide-on-mobile"><h5>|</h5></span>
         <h5>Graphic Designer</h5>
       </div>
-      <div className="landing-tagline shaded-text">
+      <div className="card-tagline shaded-text">
         <h2>I deliver meaningful, consistent, and user-friendly brand idendities across all platforms and print media.</h2>
       </div>
       <div className="ctas">

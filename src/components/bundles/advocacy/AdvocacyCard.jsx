@@ -17,18 +17,18 @@ import Lettermark from '../../../assets/graphics/lettermark-white.png'
 
 export default function Advocate() {
   return (
-    <div className="landing-advocate">
-      <div className="landing-lettermark">
+    <div className="card advocate-card">
+      <div className="card-lettermark">
         <img src={Lettermark} alt='Misha Lettermark' />
       </div>
-      <div className="landing-titles">
+      <div className="card-titles">
         <h5>Advocate</h5>
         <span className="hide-on-mobile"><h5>|</h5></span>
         <h5>Speaker</h5>
         <span className="hide-on-mobile"><h5>|</h5></span>
         <h5>Thought Leader</h5>
       </div>
-      <div className="landing-tagline shaded-text">
+      <div className="card-tagline shaded-text">
         <h2>I use my experiences and knowledge to advocate for mental health and suicide prevention.</h2>
       </div>
       <div className="ctas">
