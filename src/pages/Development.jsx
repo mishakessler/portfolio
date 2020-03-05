@@ -21,7 +21,7 @@ import Footer from '../components/modules/Footer'
 import DevelopmentIndex from '../components/indices/DevelopmentIndex'
 
 // Data 
-import { Websites } from '../data/WebsiteProjects'
+import { Websites } from '../data/DevelopmentProjects'
 
 class Development extends Component {
   constructor(props) {

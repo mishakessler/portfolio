@@ -32,7 +32,6 @@ import ErrorPage from './pages/ErrorPage'
 // Stylesheet
 import './App.css';
 
-
 class App extends Component {
   render() {
     return (

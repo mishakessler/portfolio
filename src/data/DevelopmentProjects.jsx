@@ -11,7 +11,6 @@ import RmdyioLanding from '../assets/projects/rmdyio/landing.png'
 import SevenSummitsLanding from '../assets/projects/seven-summits/landing.png'
 import SixFeetOverLanding from '../assets/projects/six-feet-over/landing.png'
 
-
 const Websites = [
   {
     id: 12,
