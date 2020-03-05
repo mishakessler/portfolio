@@ -16,7 +16,7 @@ import Lettermark from '../../../assets/graphics/lettermark-white.png'
 
 export default function Designer() {
   return (
-    <div className="card designer-card">
+    <div className="card design-card">
       <div className="card-lettermark">
         <img src={Lettermark} alt='Misha Lettermark' />
       </div>

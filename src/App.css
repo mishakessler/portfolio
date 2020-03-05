@@ -157,7 +157,7 @@ a :hover {
   will-change: transform;
 }
 
-.advocate-card, .designer-card, .developer-card, .entrepreneur-card, .hobbyist-card {
+.advocacy-card, .design-card, .development-card, .leadership-card, .hobbyist-card {
   width: 100%;
   height: 100%;
   padding-top: 5vh;
@@ -169,7 +169,7 @@ a :hover {
 
 /************** Landing Backgrounds ****************/
 
-.advocate-card {
+.advocacy-card {
   background: 
   linear-gradient(
     150deg,
@@ -178,7 +178,7 @@ a :hover {
   );
 }
 
-.designer-card {
+.design-card {
   background: 
   linear-gradient(
     150deg,
@@ -187,7 +187,7 @@ a :hover {
   );
 }
 
-.developer-card {
+.development-card {
   background: 
   linear-gradient(
     150deg,
@@ -196,7 +196,7 @@ a :hover {
   );
 }
 
-.entrepreneur-card {
+.leadership-card {
   background: 
   linear-gradient(
     150deg,

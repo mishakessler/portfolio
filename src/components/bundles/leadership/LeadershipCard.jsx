@@ -16,7 +16,7 @@ import Lettermark from '../../../assets/graphics/lettermark-white.png'
 
 export default function Leader() {
   return (
-    <div className="card entrepreneur-card">
+    <div className="card leadership-card">
       <div className="card-lettermark">
         <img src={Lettermark} alt='Misha Lettermark' />
       </div>

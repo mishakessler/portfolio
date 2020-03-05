@@ -17,7 +17,7 @@ import Lettermark from '../../../assets/graphics/lettermark-white.png'
 
 export default function Advocate() {
   return (
-    <div className="card advocate-card">
+    <div className="card advocacy-card">
       <div className="card-lettermark">
         <img src={Lettermark} alt='Misha Lettermark' />
       </div>
