@@ -16,14 +16,16 @@ import {
 
 // Pages
 import Landing from './pages/Landing'
-import Development from './pages/Development'
-import Design from './pages/Design'
-import Leadership from './pages/Leadership'
-import Advocacy from './pages/Advocacy'
 import About from './pages/About'
 import Contact from './pages/Contact'
-import SpaceTime from './pages/SpaceTime';
+import SpaceTime from './pages/SpaceTime'
 import ErrorPage from './pages/ErrorPage'
+
+// Bundled Pages
+import Development from './components/bundles/development/DevelopmentPage'
+import Design from './components/bundles/design/DesignPage'
+import Leadership from './components/bundles/leadership/LeadershipPage'
+import Advocacy from './components/bundles/advocacy/AdvocacyPage'
 
 // Components
 
@@ -31,7 +33,6 @@ import ErrorPage from './pages/ErrorPage'
 
 // Stylesheet
 import './App.css';
-
 
 class App extends Component {
   render() {
