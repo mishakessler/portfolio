@@ -12,16 +12,16 @@ import {
 } from 'semantic-ui-react'
 
 // Components
-import Header from '../components/modules/Header'
-import Hero from '../components/modules/Hero'
-import Key from '../components/modules/Key'
-import Footer from '../components/modules/Footer'
+import Header from '../../modules/Header'
+import Hero from '../../modules/Hero'
+import Key from '../../modules/Key'
+import Footer from '../../modules/Footer'
 
 // Index
-import DevelopmentIndex from '../components/indices/DevelopmentIndex'
+import DevelopmentIndex from './DevelopmentIndex'
 
 // Data 
-import { Websites } from '../data/WebsiteProjects'
+import { Websites } from '../../../data/DevelopmentProjects'
 
 class Development extends Component {
   constructor(props) {
@@ -37,18 +37,6 @@ class Development extends Component {
       websites: Websites,
     }
   }
-
-  // handleOpen = () => {
-  //   this.setState({
-  //     modalOpen: true,
-  //   })
-  // }
-
-  // handleClose = () => {
-  //   this.setState({
-  //     modalOpen: true,
-  //   })
-  // }
 
   render() {
     return (

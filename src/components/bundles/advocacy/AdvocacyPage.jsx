@@ -13,13 +13,13 @@ import {
 } from 'semantic-ui-react'
 
 // Components
-import Header from '../components/modules/Header'
-import Hero from '../components/modules/Hero'
-import Key from '../components/modules/Key'
-import Footer from '../components/modules/Footer'
+import Header from '../../modules/Header'
+import Hero from '../../modules/Hero'
+import Key from '../../modules/Key'
+import Footer from '../../modules/Footer'
 
 // Index
-import AdvocacyIndex from '../components/indices/AdvocacyIndex'
+import AdvocacyIndex from './AdvocacyIndex'
 
 // Data 
 import {
@@ -31,10 +31,10 @@ import {
   Panels,
   Publications,
   Speeches,
-} from '../data/AdvocacyProjects'
+} from '../../../data/AdvocacyProjects'
 
 // Assets
-import Misha from '../assets/images/misha-advocacy.jpg'
+import Misha from '../../../assets/images/misha-advocacy.jpg'
 
 const categories = [
   {

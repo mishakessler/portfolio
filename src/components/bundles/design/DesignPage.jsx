@@ -12,16 +12,16 @@ import {
 } from 'semantic-ui-react'
 
 // Components
-import Header from '../components/modules/Header'
-import Hero from '../components/modules/Hero'
-import Key from '../components/modules/Key'
-import Footer from '../components/modules/Footer'
+import Header from '../../modules/Header'
+import Hero from '../../modules/Hero'
+import Key from '../../modules/Key'
+import Footer from '../../modules/Footer'
 
 // Index
-import DesignIndex from '../components/indices/DesignIndex'
+import DesignIndex from './DesignIndex'
 
 // Assets 
-import Designs from '../data/DesignProjects'
+import { Designs } from '../../../data/DesignProjects'
 
 class Design extends Component {
   constructor(props) {

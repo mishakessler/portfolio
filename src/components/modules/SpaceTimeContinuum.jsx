@@ -18,13 +18,13 @@ export default class SpaceTimeContinuum extends Component {
         centered
         defaultOpen
         className="continuum">
-        <Header content="You're already on this site! Now you've gone and broken the space-time continuum, great." />
+        <Header content="You're already on this site! Now you've gone and broken the space-time continuum." />
         <Modal.Actions>
-          <Link to='/development'>
+          <Link to='/engineering'>
             <Button
               basic
               inverted
-              color='teal' > Fix It
+              color='teal' >Quick, Fix It!
           </Button>
           </Link>
 

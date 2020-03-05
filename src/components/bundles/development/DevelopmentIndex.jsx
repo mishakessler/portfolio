@@ -11,7 +11,7 @@ import {
   Button,
 } from 'semantic-ui-react'
 
-import DevelopmentModal from '../case-studies/DevelopmentModal'
+import DevelopmentModal from './DevelopmentModal'
 
 export default function DevelopmentIndex(props) {
   return (

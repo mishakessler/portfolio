@@ -11,19 +11,19 @@ import { useGesture } from 'react-use-gesture'
 import clamp from 'lodash/clamp'
 
 // Cards
-import Advocate from '../components/cards/Advocate'
-import Designer from '../components/cards/Designer'
-import Developer from '../components/cards/Developer'
-import Leader from '../components/cards/Leader'
-import Hobbyist from '../components/cards/Hobbyist'
+import AdvocacyCard from '../components/bundles/advocacy/AdvocacyCard'
+import DesignCard from '../components/bundles/design/DesignCard'
+import DevelopmentCard from '../components/bundles/development/DevelopmentCard'
+import LeadershipCard from '../components/bundles/leadership/LeadershipCard'
+import HobbyistCard from '../components/cards/HobbyistCard'
 
 // Assets
 const cards = [
-  <Developer />,
-  <Designer />,
-  <Leader />,
-  <Advocate />,
-  <Hobbyist />
+  <DevelopmentCard />,
+  <DesignCard />,
+  <LeadershipCard />,
+  <AdvocacyCard />,
+  <HobbyistCard />
 ]
 
 export default function Landing() {

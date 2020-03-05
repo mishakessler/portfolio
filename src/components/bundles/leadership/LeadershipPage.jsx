@@ -12,17 +12,16 @@ import {
 } from 'semantic-ui-react'
 
 // Components
-import Header from '../components/modules/Header'
-import Hero from '../components/modules/Hero'
-import Key from '../components/modules/Key'
-import Footer from '../components/modules/Footer'
+import Header from '../../modules/Header'
+import Hero from '../../modules/Hero'
+import Key from '../../modules/Key'
+import Footer from '../../modules/Footer'
 
 // Index
-// import LeadershipIndex from '../components/indices/LeadershipIndex'
+// import LeadershipIndex from './LeadershipIndex'
 
 // Data 
-// import { Projects } from '../data/LeadershipProjects'
-
+// import { Committees } from '../../../data/LeadershipProjects'
 
 class Leadership extends Component {
   constructor(props) {

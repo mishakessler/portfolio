@@ -12,7 +12,7 @@ import {
 } from 'semantic-ui-react'
 
 // Assets 
-import Lettermark from '../../assets/graphics/lettermark-white.png'
+import Lettermark from '../../../assets/graphics/lettermark-white.png'
 
 export default function Developer() {
   return (
