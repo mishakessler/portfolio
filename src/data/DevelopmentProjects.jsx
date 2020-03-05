@@ -1,15 +1,15 @@
 // Assets
-import BarrelAgedLanding from '../assets/projects/barrel-aged/landing.png'
-import CaraMiaLanding from '../assets/projects/cara-mia/landing.png'
-import CrisisInternationalLanding from '../assets/projects/crisis-international/landing.png'
-import CIEnterpriseLanding from '../assets/projects/crisis-international-enterprise/landing.png'
-import LiveThroughThisLanding from '../assets/projects/live-through-this/landing.png'
-import MentalHealthableLanding from '../assets/projects/mental-healthable/landing.png'
-import MishaKesslerLanding from '../assets/projects/misha-kessler/landing.png'
-import RemedientLanding from '../assets/projects/remedient/landing.png'
-import RmdyioLanding from '../assets/projects/rmdyio/landing.png'
-import SevenSummitsLanding from '../assets/projects/seven-summits/landing.png'
-import SixFeetOverLanding from '../assets/projects/six-feet-over/landing.png'
+import BarrelAgedLanding from '../assets/asset-bundles/barrel-aged/landing.png'
+import CaraMiaLanding from '../assets/asset-bundles/cara-mia/landing.png'
+import CrisisInternationalLanding from '../assets/asset-bundles/crisis-international/landing.png'
+import CIEnterpriseLanding from '../assets/asset-bundles/crisis-international-enterprise/landing.png'
+import LiveThroughThisLanding from '../assets/asset-bundles/live-through-this/landing.png'
+import MentalHealthableLanding from '../assets/asset-bundles/mental-healthable/landing.png'
+import MishaKesslerLanding from '../assets/asset-bundles/misha-kessler/landing.png'
+import RemedientLanding from '../assets/asset-bundles/remedient/landing.png'
+import RmdyioLanding from '../assets/asset-bundles/rmdyio/landing.png'
+import SevenSummitsLanding from '../assets/asset-bundles/seven-summits/landing.png'
+import SixFeetOverLanding from '../assets/asset-bundles/six-feet-over/landing.png'
 
 
 const Websites = [

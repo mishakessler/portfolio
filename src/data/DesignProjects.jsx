@@ -17,4 +17,4 @@ const Designs = [
   // },
 ]
 
-export default Designs
+export { Designs }
