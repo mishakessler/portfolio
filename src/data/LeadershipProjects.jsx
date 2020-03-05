@@ -1,13 +1,25 @@
 // Assets
 import Advisor from '../assets/graphics/advocacy-advisor.png'
+// import Founder from '../assets/graphics/leadership-founder.png'
 
 const Committees = [
   {
+    id: 8,
+    featured: false,
+    date: 'Jan 2020',
+    name: 'Chair of the Community Workgroup',
+    meta: 'NYS Suicide Prevention Council',
+    tagline: '',
+    category: 'Committee Chair', // Author, Speaker, Interviewee, Committee Member, Associate Member, Advisor, Awardee
+    url_to_img: `${Advisor}`,
+    url_to_demo: 'https://www.omh.ny.gov/omhweb/suicide_prevention/',
+  },
+  {
     id: 7,
     featured: false,
-    date: 'Nov 2018',
-    name: 'Member of the Advisory Steering Committee for NYS',
-    meta: 'The CDCs Nonfatal Suicide-Related Outcomes Surveillance Grant',
+    date: 'Sept 2019',
+    name: 'Member of the Advisory Steering Committee',
+    meta: 'The CDC-NYS Nonfatal Suicide-Related Outcomes Surveillance Grant',
     tagline: '',
     category: 'Committee Member', // Author, Speaker, Interviewee, Committee Member, Associate Member, Advisor, Awardee
     url_to_img: `${Advisor}`,
@@ -83,19 +95,78 @@ const Committees = [
 
 const Projects = [
   {
+    id: 3,
+    featured: true,
+    // date: 'May 2012',
+    name: 'MentalHealthable',
+    meta: 'Mental Health Assistant',
+    tagline: '',
+    category: 'Founder, Designer, & Developer', // Author, Speaker, Interviewee, Committee Member, Associate Member, Advisor, Awardee
+    url_to_img: `${Founder}`,
+    url_to_demo: 'https://www.facebook.com/mhainternational',
+  },
+  {
+    id: 3,
+    featured: true,
+    // date: 'May 2012',
+    name: 'Mental Health Advocates International',
+    meta: 'Membership Group',
+    tagline: '',
+    category: 'Cofounder & Brand Designer', // Author, Speaker, Interviewee, Committee Member, Associate Member, Advisor, Awardee
+    url_to_img: `${Founder}`,
+    url_to_demo: 'https://www.facebook.com/mhainternational',
+  },
+  {
+    id: 2,
+    featured: true,
+    // date: 'May 2012',
+    name: 'Seven Summits for Suicide Prevention',
+    meta: 'Charity',
+    tagline: '',
+    category: 'Founder, Designer, & Developer', // Author, Speaker, Interviewee, Committee Member, Associate Member, Advisor, Awardee
+    url_to_img: `${Founder}`,
+    url_to_demo: 'https://www.mhamd.org/',
+  },
+  {
     id: 1,
     featured: false,
-    date: 'May 2012',
+    // date: 'May 2012',
     name: 'Rmdy.io',
     meta: 'Startup Concept',
     tagline: '',
-    category: 'Founder, Designer, Developer', // Author, Speaker, Interviewee, Committee Member, Associate Member, Advisor, Awardee
-    url_to_img: `${Advisor}`,
-    url_to_demo: 'https://www.mhamd.org/',
+    category: 'Founder, Designer, & Developer', // Author, Speaker, Interviewee, Committee Member, Associate Member, Advisor, Awardee
+    url_to_img: `${Founder}`,
+    url_to_demo: 'https://www.rmdy.io',
+  }
+]
+
+const Companies = [
+  {
+    id: 2,
+    featured: false,
+    // date: 'May 2012',
+    name: 'Remedient LLC',
+    meta: 'WordPress Development Firm',
+    tagline: '',
+    category: 'Sole Proprietor', // Author, Speaker, Interviewee, Committee Member, Associate Member, Advisor, Awardee
+    url_to_img: `${Founder}`,
+    url_to_demo: 'https://www.remedient.com',
+  },
+  {
+    id: 1,
+    featured: false,
+    // date: 'May 2012',
+    name: 'Rmdy.io',
+    meta: 'Benefit Corporation',
+    tagline: '',
+    category: 'President', // Author, Speaker, Interviewee, Committee Member, Associate Member, Advisor, Awardee
+    url_to_img: `${Founder}`,
+    url_to_demo: 'https://www.rmdy.io',
   }
 ]
 
 export {
   Committees,
-  Projects
+  Projects,
+  Companies
 }

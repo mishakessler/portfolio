@@ -16,15 +16,23 @@ body,
 
 /***************** Headers & Fonts *****************/
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: 'Raleway', sans-serif;
 }
 
-h4, h5 {
+h4,
+h5 {
   font-family: 'Lato', sans-serif;
 }
 
@@ -32,7 +40,8 @@ h6 {
   font-family: 'Rock Salt', 'Lato', sans-serif;
 }
 
-p, a {
+p,
+a {
   font-family: 'Quattrocento Sans', sans-serif;
 }
 
@@ -158,7 +167,11 @@ a :hover {
   will-change: transform;
 }
 
-.landing-advocate, .landing-designer, .landing-developer, .landing-entrepreneur, .landing-hobbyist {
+.landing-advocate,
+.landing-designer,
+.landing-developer,
+.landing-entrepreneur,
+.landing-hobbyist {
   width: 100%;
   height: 100%;
   padding-top: 5vh;
@@ -294,7 +307,8 @@ a :hover {
   bottom: 0;
 }
 
-.left-cta, .right-cta {
+.left-cta,
+.right-cta {
   position: absolute;
   bottom: 1vh;
 }
@@ -308,15 +322,17 @@ a :hover {
 }
 
 .enter-cta a {
-  font-size: 1.5em; 
+  font-size: 1.5em;
 }
 
-.right-cta h6, .left-cta h6 {
+.right-cta h6,
+.left-cta h6 {
   font-size: 1.05em;
   opacity: .5;
 }
 
-.right-cta h6:hover, .left-cta h6:hover {
+.right-cta h6:hover,
+.left-cta h6:hover {
   opacity: 1;
 }
 
@@ -348,7 +364,7 @@ a :hover {
   text-transform: uppercase;
 }
 
-.desktop-nav a:hover{
+.desktop-nav a:hover {
   color: #3dbb9f;
 }
 
@@ -400,7 +416,7 @@ a :hover {
   min-height: 100vh;
   margin: 0;
   padding: 25px;
-  overflow-y: scroll; 
+  overflow-y: scroll;
   overflow-x: hidden;
 }
 
@@ -413,7 +429,9 @@ a :hover {
   min-height: 30vh;
 }
 
-.about-why h3, .about-journey h3, .about-roles h3 {
+.about-why h3,
+.about-journey h3,
+.about-roles h3 {
   margin: 0 auto;
   max-width: 1080px;
   color: white;
@@ -421,7 +439,9 @@ a :hover {
 }
 
 
-.about-why p, .about-journey p, .about-roles p {
+.about-why p,
+.about-journey p,
+.about-roles p {
   margin: 0 auto;
   max-width: 920px;
   color: white;
@@ -440,51 +460,41 @@ a :hover {
 /**************** Page Backgrounds *****************/
 
 .static-page {
-  background: 
-  linear-gradient(
-    rgba(0, 0, 0, 0.65), 
-    rgba(0, 0, 0, 0.85)
-  ),
-  url(./assets/images/hobbyist-banner-1.jpg);
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.85)),
+    url(./assets/images/hobbyist-banner-1.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-position: top center;
 }
 
 .advocacy-page {
-  background: 
-  linear-gradient(
-    rgba(0, 0, 0, 0.7), 
-    rgba(0, 0, 0, 0.9)
-  ),
-  url(./assets/images/advocate-banner-1.jpg);
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.9)),
+    url(./assets/images/advocate-banner-1.jpg);
 }
 
-.design-page  {
-  background: 
-  linear-gradient(
-    rgba(0, 0, 0, 0.7), 
-    rgba(0, 0, 0, 0.9)
-  ),
-  url(./assets/images/designer-banner-1.jpg);
+.design-page {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.9)),
+    url(./assets/images/designer-banner-1.jpg);
 }
 
 .development-page {
-  background: 
-  linear-gradient(
-    rgba(0, 0, 0, 0.7), 
-    rgba(0, 0, 0, 0.9)
-  ),
-  url(./assets/images/developer-banner-1.jpg);
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.9)),
+    url(./assets/images/developer-banner-1.jpg);
 }
 
 .leadership-page {
-  background: 
-  linear-gradient(
-    rgba(0, 0, 0, 0.8), 
-    rgba(0, 0, 0, 0.9)
-  ),
-  url(./assets/images/entrepreneur-banner-1.jpg);
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.9)),
+    url(./assets/images/entrepreneur-banner-1.jpg);
 }
 
 /* Cascading Background Style Necessity NOT DRY */
@@ -626,12 +636,11 @@ a :hover {
   border-radius: 5px 5px 0 0;
 }
 
-.ui.card>.image>img, .ui.cards>.card>.image>img {
-  background: 
-  linear-gradient(
-    rgba(0, 93, 122, 0.8), 
-    rgba(0, 229, 187, 0.4)
-  );
+.ui.card>.image>img,
+.ui.cards>.card>.image>img {
+  background:
+    linear-gradient(rgba(0, 93, 122, 0.8),
+      rgba(0, 229, 187, 0.4));
   /* url(./assets/graphics/featured.jpg); */
   background-size: cover;
   background-position: top center;
@@ -649,7 +658,8 @@ a :hover {
   transform: translateX(-114%);
 }
 
-.ui.card:after, .ui.cards:after {
+.ui.card:after,
+.ui.cards:after {
   display: none;
 }
 
@@ -659,23 +669,27 @@ a :hover {
   color: unset;
 }
 
-.ui.buttons:not(.basic):not(.inverted)>.button, .ui.buttons>.ui.button:not(.basic):not(.inverted) {
+.ui.buttons:not(.basic):not(.inverted)>.button,
+.ui.buttons>.ui.button:not(.basic):not(.inverted) {
   margin-left: 1px;
   margin-right: 1px;
 }
 
-.column .ui.attached.buttons, .column .ui.attached.bottom.button {
+.column .ui.attached.buttons,
+.column .ui.attached.bottom.button {
   z-index: 1;
   transform: translateY(-125%);
   transition: ease-in .25s;
 }
 
-.column:hover .ui.attached.buttons, .column:hover .ui.attached.bottom.button {
+.column:hover .ui.attached.buttons,
+.column:hover .ui.attached.bottom.button {
   transform: translateY(0%);
   transition: ease-in .25s;
 }
 
-.card-meta p, .card-icon {
+.card-meta p,
+.card-icon {
   display: inline;
 }
 
@@ -731,7 +745,8 @@ a :hover {
 /******************* About Page ********************/
 
 
-.about-page .hero h1, .about-page .hero h3 {
+.about-page .hero h1,
+.about-page .hero h3 {
   text-align: center;
 }
 
@@ -744,16 +759,21 @@ a :hover {
   text-align: left;
 }
 
-.about-why, .about-roles {
+.about-why,
+.about-roles {
   margin: 50px auto;
 }
 
-.about-why h3, .about-why p, .about-roles h3, .about-roles p {
+.about-why h3,
+.about-why p,
+.about-roles h3,
+.about-roles p {
   text-align: left;
   margin: 25px auto;
 }
 
-.about-journey, .about-roles {
+.about-journey,
+.about-roles {
   max-width: 1080px;
   margin: 100px auto;
   padding: 25px;
@@ -763,7 +783,8 @@ a :hover {
   box-shadow: inset 0px 0px 10px #0F1626;
 }
 
-.about-journey h3, .about-journey p {
+.about-journey h3,
+.about-journey p {
   text-align: left;
   margin: 15px auto;
 }
@@ -784,7 +805,8 @@ a :hover {
   text-decoration: underline;
 }
 
-.about-roles-current, .about-roles-previous {
+.about-roles-current,
+.about-roles-previous {
   margin: 0 auto;
 }
 
@@ -826,7 +848,7 @@ a :hover {
 @media only screen and (min-width: 1170px) {
   .vertical-timeline-element {
     margin: 3em 0;
-  } 
+  }
 }
 
 @media only screen and (max-width: 1169px) {
@@ -836,7 +858,7 @@ a :hover {
 
   .vertical-timeline-element {
     margin: 4em 0;
-  } 
+  }
 
   .vertical-timeline--animate .vertical-timeline-element-icon.bounce-in {
     padding: 5px;
@@ -862,7 +884,8 @@ a :hover {
 
 /***************** Contact Page *****************/
 
-.contact-page .hero h1, .contact-page .hero h3 {
+.contact-page .hero h1,
+.contact-page .hero h3 {
   text-align: center;
 }
 
@@ -897,7 +920,9 @@ a :hover {
 
 /******************** Error Page ******************/
 
-.error-page .hero h1, .error-page .hero h3, .error-page .hero p {
+.error-page .hero h1,
+.error-page .hero h3,
+.error-page .hero p {
   text-align: center;
 }
 
@@ -923,12 +948,11 @@ a :hover {
   text-transform: uppercase;
 }
 
-.footer-nav a:hover{
+.footer-nav a:hover {
   color: #3dbb9f;
 }
 
-.footer-socials {
-}
+.footer-socials {}
 
 .footer-info {
   max-width: 920px;
@@ -942,9 +966,7 @@ a :hover {
 
 /***************** 1200px and up *****************/
 
-@media all and (min-width: 1200px) {
-
-}
+@media all and (min-width: 1200px) {}
 
 
 /***************** 1027 to 1199px *****************/
@@ -1017,7 +1039,8 @@ a :hover {
 
   /** Landing CTAs **/
 
-  .left-cta, .right-cta {
+  .left-cta,
+  .right-cta {
     bottom: .5vh;
   }
 
@@ -1029,7 +1052,8 @@ a :hover {
     left: 3vw;
   }
 
-  .right-cta h6, .left-cta h6 {
+  .right-cta h6,
+  .left-cta h6 {
     font-size: 1.1em;
   }
 
@@ -1047,7 +1071,7 @@ a :hover {
     right: 5vw;
     z-index: 10;
   }
-  
+
   .mobile-nav a {
     text-align: center;
     display: block;
@@ -1079,7 +1103,7 @@ a :hover {
 
 
   /** Hero **/
-  
+
   .hero img {
     max-width: calc(100% - 50px);
     margin: 25px auto;
@@ -1170,30 +1194,32 @@ a :hover {
     height: 5vh;
     bottom: 5vh;
   }
-  
+
   .enter-cta {
     width: 38%;
     left: 31%;
     bottom: 5vh;
   }
-  
-  .left-cta, .right-cta {
+
+  .left-cta,
+  .right-cta {
     bottom: .5vh;
   }
-  
+
   .right-cta {
     right: 4vw;
   }
-  
+
   .left-cta {
     left: 4vw;
   }
-  
+
   .enter-cta a {
-    font-size: 1em; 
+    font-size: 1em;
   }
-  
-  .right-cta h6, .left-cta h6 {
+
+  .right-cta h6,
+  .left-cta h6 {
     font-size: 1em;
   }
 
@@ -1279,13 +1305,13 @@ a :hover {
   .ctas {
     bottom: 7vh;
   }
-  
+
   .enter-cta {
     width: 80%;
     left: 10%;
     bottom: 15vh;
   }
-  
+
   .right-cta {
     bottom: 5vh;
     right: 5vw;
@@ -1295,12 +1321,13 @@ a :hover {
     left: 5vw;
     bottom: 9vh;
   }
-  
+
   .enter-cta a {
-    font-size: 1em; 
+    font-size: 1em;
   }
-  
-  .right-cta h6, .left-cta h6 {
+
+  .right-cta h6,
+  .left-cta h6 {
     font-size: .9em;
   }
 
@@ -1366,13 +1393,13 @@ a :hover {
   .ctas {
     bottom: 7vh;
   }
-  
+
   .enter-cta {
     width: 80%;
     left: 10%;
     bottom: 16vh;
   }
-  
+
   .right-cta {
     bottom: 5vh;
     right: 5vw;
@@ -1382,12 +1409,13 @@ a :hover {
     left: 5vw;
     bottom: 9vh;
   }
-  
+
   .enter-cta a {
-    font-size: 0.8em; 
+    font-size: 0.8em;
   }
-  
-  .right-cta h6, .left-cta h6 {
+
+  .right-cta h6,
+  .left-cta h6 {
     font-size: 0.8em;
   }
 
