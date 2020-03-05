@@ -8,7 +8,7 @@ import {
 
 // React Semantic UI
 import {
-  Divider
+  Divider,
 } from 'semantic-ui-react'
 
 // Components

@@ -62,6 +62,7 @@ class Contact extends Component {
               as='a'
               href='tel:+16466561620'
               target='_blank'
+              rel='noopener'
             />
             <Image
               src={Mobile}
@@ -69,6 +70,7 @@ class Contact extends Component {
               as='a'
               href='sms:+16466561620&body=Hey%2520Misha!'
               target='_blank'
+              rel='noopener'
             />
             <Image
               src={Email}
@@ -76,6 +78,7 @@ class Contact extends Component {
               as='a'
               href='mailto:misha.kessler@gmail.com&subject=Hey%2520Misha!'
               target='_blank'
+              rel='noopener'
             />
             <Image
               src={Github}
@@ -83,6 +86,7 @@ class Contact extends Component {
               as='a'
               href='https://github.com/mishakessler'
               target='_blank'
+              rel='noopener'
             />
             <Image
               src={LinkedIn}
@@ -90,6 +94,7 @@ class Contact extends Component {
               as='a'
               href='https://www.linkedin.com/in/mishakessler'
               target='_blank'
+              rel='noopener'
             />
             <Image
               src={Facebook}
@@ -97,6 +102,7 @@ class Contact extends Component {
               as='a'
               href='https://www.facebook.com/mishakessler'
               target='_blank'
+              rel='noopener'
             />
             <Image
               src={Instagram}
@@ -104,6 +110,7 @@ class Contact extends Component {
               as='a'
               href='https://www.instagram.com/mishakessler'
               target='_blank'
+              rel='noopener'
             />
           </div>
         </div>

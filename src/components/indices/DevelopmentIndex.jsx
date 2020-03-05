@@ -35,6 +35,7 @@ export default function DevelopmentIndex(props) {
                 {project.featured &&
                   <Image
                     src={project.url_to_img}
+                    alt='MacBook Pro with Project Landing'
                     label={{
                       corner: 'left',
                       icon: 'star'
@@ -45,6 +46,7 @@ export default function DevelopmentIndex(props) {
                 {!project.featured &&
                   <Image
                     src={project.url_to_img}
+                    alt='MacBook Pro with Project Landing'
                     wrapped ui={true}
                     className='overlay'
                   />}
@@ -194,6 +196,7 @@ export default function DevelopmentIndex(props) {
                     title='View Demo'
                     href={project.url_to_demo}
                     target='_blank'
+                    rel='noopener'
                     color='teal'
                     className='smooth'
                     icon={{
@@ -208,6 +211,7 @@ export default function DevelopmentIndex(props) {
                     title='View Repo'
                     href={project.url_to_github}
                     target='_blank'
+                    rel='noopener'
                     color='teal'
                     className='smooth'
                     icon={{

@@ -66,11 +66,11 @@ a :hover {
 /****************** Accent Effects *****************/
 
 .shaded-text {
-  text-shadow: -5px 5px 10px #0F162688;
+  text-shadow: -5px 5px 10px rgba(15,22,38,.3);
 }
 
 .shaded-box {
-  box-shadow: -5px 5px 10px #0F162688;
+  box-shadow: -5px 5px 10px rgba(15,22,38,.5);
 }
 
 
@@ -163,7 +163,7 @@ a :hover {
   height: 100%;
   padding-top: 5vh;
   will-change: transform;
-  box-shadow: 0 62.5px 125px -25px rgba(0, 0, 0, 0.5), 0 37.5px 75px -37.5px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 62.5px 125px -25px rgba(0, 0, 0, 0.6), 0 37.5px 75px -37.5px rgba(0, 0, 0, 0.9);
   border-radius: 15px;
   color: white;
 }
@@ -174,61 +174,46 @@ a :hover {
 .landing-advocate {
   background: 
   linear-gradient(
-    rgba(0, 93, 122, 0.8), 
-    rgba(0, 229, 187, 0.3)
-  ),
-  /* url(./assets/images/advocate-banner-1.jpg) */
-  ;
-  background-size: cover;
-  background-position: center center;
+    150deg,
+    #00B5AD,
+    #005D7A
+  );
 }
 
 .landing-designer {
   background: 
   linear-gradient(
-    rgba(0, 93, 122, 0.8), 
-    rgba(0, 229, 187, 0.3)
-  ),
-  /* url(./assets/images/designer-banner-1.jpg) */
-  ;
-  background-size: cover;
-  background-position: center center;
+    150deg,
+    #00B5AD,
+    #005D7A
+  );
 }
 
 .landing-developer {
   background: 
   linear-gradient(
-    rgba(0, 93, 122, 0.8), 
-    rgba(0, 229, 187, 0.3)
-  ),
-  /* url(./assets/images/developer-banner-1.jpg) */
-  ;
-  background-size: cover;
-  background-position: top center;
+    150deg,
+    #00B5AD,
+    #005D7A
+  );
 }
 
 .landing-entrepreneur {
   background: 
   linear-gradient(
-    rgba(0, 93, 122, 0.8), 
-    rgba(0, 229, 187, 0.3)
-  ),
-  /* url(./assets/images/entrepreneur-banner-1.jpg) */
-  ;
-  background-size: cover;
-  background-position: center center;
+    150deg,
+    #00B5AD,
+    #005D7A
+  );
 }
 
 .landing-hobbyist {
   background: 
   linear-gradient(
-    rgba(0, 93, 122, 0.8), 
-    rgba(0, 229, 187, 0.3)
-  ),
-  /* url(./assets/images/hobbyist-banner-1.jpg) */
-  ;
-  background-size: cover;
-  background-position: center center;
+    150deg,
+    #00B5AD,
+    #005D7A
+  );
 }
 
 /****************** Landing Logo *******************/
@@ -283,6 +268,10 @@ a :hover {
   font-size: 2.5em;
   margin-bottom: 25px;
   font-weight: 400;
+}
+
+.landing-tagline p {
+  font-style: oblique;
 }
 
 .landing-name {
@@ -551,7 +540,6 @@ a :hover {
   font-size: 0.9em;
   text-align: center;
 }
-
 
 /******************* Index Pages *******************/
 

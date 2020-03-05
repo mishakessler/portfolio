@@ -34,6 +34,7 @@ export default function DesignIndex(props) {
                 {project.featured &&
                   <Image
                     src={project.url_to_img}
+                    alt=''
                     label={{
                       corner: 'left',
                       icon: 'star'
@@ -44,6 +45,7 @@ export default function DesignIndex(props) {
                 {!project.featured &&
                   <Image
                     src={project.url_to_img}
+                    alt=''
                     wrapped ui={true}
                     className="overlay"
                   />}
@@ -91,6 +93,7 @@ export default function DesignIndex(props) {
                   as='a'
                   href={project.url_to_demo}
                   target='_blank'
+                  rel='noopener'
                   color='teal'
                   className='smooth'
                   icon={{
