@@ -106,7 +106,7 @@ a :hover {
 
 .fade-enter.fade-enter-active {
   opacity: 1;
-  transition: opacity 500ms ease-in-out;
+  transition: opacity 750ms ease-in-out;
 }
 
 .fade-exit {
@@ -116,21 +116,20 @@ a :hover {
 
 .fade-exit.fade-exit-active {
   opacity: 0;
-  transition: opacity 500ms ease-in-out;
+  transition: opacity 750ms ease-in-out;
 }
 
 /***************************************************/
-/******************* LANDING PAGE ******************/
+/******************* card PAGE ******************/
 /***************************************************/
 
-/****************** Landing Views ******************/
+/****************** Card Views ******************/
 
-.page-viewer-container {
-  overscroll-behavior-y: contain;
+.card-viewer-container {
   margin: 0;
   padding: 0;
-  height: 100%;
-  width: 100%;
+  height: 80%;
+  width: 80%;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -139,14 +138,13 @@ a :hover {
   user-select: none;
 }
 
-.page-viewer {
+.card-viewer {
   position: fixed;
-  overflow: hidden;
-  width: 100vw;
-  height: 100vh;
+  width: 80vw;
+  height: 80vh;
 }
 
-.page-viewer-cards {
+.card-viewer-cards {
   position: absolute;
   width: calc(100vw - 30px);
   height: calc(100vh - 30px);
@@ -158,8 +156,8 @@ a :hover {
 }
 
 .advocacy-card, .design-card, .development-card, .leadership-card, .hobbyist-card {
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
   padding-top: 5vh;
   will-change: transform;
   box-shadow: 0 62.5px 125px -25px rgba(0, 0, 0, 0.6), 0 37.5px 75px -37.5px rgba(0, 0, 0, 0.9);
@@ -167,9 +165,9 @@ a :hover {
   color: white;
 }
 
-/************** Landing Backgrounds ****************/
+/************** Card Backgrounds ****************/
 
-.advocacy-card {
+.card {
   background: 
   linear-gradient(
     150deg,
@@ -178,43 +176,7 @@ a :hover {
   );
 }
 
-.design-card {
-  background: 
-  linear-gradient(
-    150deg,
-    #00B5AD,
-    #005D7A
-  );
-}
-
-.development-card {
-  background: 
-  linear-gradient(
-    150deg,
-    #00B5AD,
-    #005D7A
-  );
-}
-
-.leadership-card {
-  background: 
-  linear-gradient(
-    150deg,
-    #00B5AD,
-    #005D7A
-  );
-}
-
-.hobbyist-card {
-  background: 
-  linear-gradient(
-    150deg,
-    #00B5AD,
-    #005D7A
-  );
-}
-
-/****************** card Logo *******************/
+/****************** Card Lettermark *******************/
 
 .card-lettermark {
   width: 125px;
@@ -227,7 +189,7 @@ a :hover {
 
 /****************** Card Text *******************/
 
-.card-titles {
+/* .card-titles {
   padding: 3vh 3vw 0 3vw;
   text-align: center;
 }
@@ -241,12 +203,6 @@ a :hover {
   margin: 0px 15px;
 }
 
-.card-welcome {
-  position: absolute;
-  top: 30vh;
-  left: 3vw;
-  z-index: 0;
-}
 
 .card-welcome h1 {
   font-size: 10em;
@@ -274,11 +230,11 @@ a :hover {
 
 .card-name {
   font-weight: 700;
-}
+} */
 
 /****************** Card CTAs *******************/
 
-.ctas {
+/* .ctas {
   position: absolute;
   height: 5vh;
   width: 100%;
@@ -317,7 +273,7 @@ a :hover {
 
 .right-cta h6:hover, .left-cta h6:hover {
   opacity: 1;
-}
+} */
 
 
 /***************************************************/
@@ -441,8 +397,8 @@ a :hover {
 .static-page {
   background: 
   linear-gradient(
-    rgba(0, 0, 0, 0.65), 
-    rgba(0, 0, 0, 0.85)
+    rgba(0, 0, 0, 0.75), 
+    rgba(0, 0, 0, 0.95)
   ),
   url(./assets/images/hobbyist-banner-1.jpg);
   background-attachment: fixed;
@@ -450,11 +406,33 @@ a :hover {
   background-position: top center;
 }
 
+.dynamic-page {
+  background: 
+  linear-gradient(
+    rgba(0, 0, 0, 0.8), 
+    rgba(0, 0, 0, 1)
+  ),
+  url(./assets/images/developer-banner-1.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top center;
+}
+
+/* .development-page, .card-page {
+  background: 
+  linear-gradient(
+    rgba(0, 0, 0, 0.8), 
+    rgba(0, 0, 0, 1)
+  ),
+  url(./assets/images/developer-banner-1.jpg);
+  background-position: top center;
+}
+
 .advocacy-page {
   background: 
   linear-gradient(
-    rgba(0, 0, 0, 0.7), 
-    rgba(0, 0, 0, 0.9)
+    rgba(0, 0, 0, 0.8), 
+    rgba(0, 0, 0, 1)
   ),
   url(./assets/images/advocate-banner-1.jpg);
 }
@@ -462,41 +440,20 @@ a :hover {
 .design-page  {
   background: 
   linear-gradient(
-    rgba(0, 0, 0, 0.7), 
-    rgba(0, 0, 0, 0.9)
+    rgba(0, 0, 0, 0.8), 
+    rgba(0, 0, 0, 1)
   ),
   url(./assets/images/designer-banner-1.jpg);
-}
-
-.development-page {
-  background: 
-  linear-gradient(
-    rgba(0, 0, 0, 0.7), 
-    rgba(0, 0, 0, 0.9)
-  ),
-  url(./assets/images/developer-banner-1.jpg);
 }
 
 .leadership-page {
   background: 
   linear-gradient(
     rgba(0, 0, 0, 0.8), 
-    rgba(0, 0, 0, 0.9)
+    rgba(0, 0, 0, 1)
   ),
   url(./assets/images/entrepreneur-banner-1.jpg);
-}
-
-/* Cascading Background Style Necessity NOT DRY */
-
-.dynamic-page {
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-}
-
-.development-page {
-  background-position: top center;
-}
+} */
 
 
 /********************** Hero ***********************/
@@ -538,6 +495,24 @@ a :hover {
   margin: 25px auto 0 auto;
   font-size: 0.9em;
   text-align: center;
+}
+
+.landing-welcome {
+  position: absolute;
+  top: 30vh;
+  left: 3vw;
+  z-index: 0;
+}
+
+.landing-welcome h1 {
+  font-size: 12em;
+  font-size: 10em;
+  font-weight: 900;
+  opacity: .08;
+}
+
+.card-welcome h1 {
+
 }
 
 /******************* Index Pages *******************/
@@ -631,7 +606,6 @@ a :hover {
     rgba(0, 93, 122, 0.8), 
     rgba(0, 229, 187, 0.4)
   );
-  /* url(./assets/graphics/featured.jpg); */
   background-size: cover;
   background-position: top center;
   min-height: 183px;
@@ -971,50 +945,50 @@ a :hover {
     display: none;
   }
 
-  /** Landing Logo **/
+  /** Card Logo **/
 
   .header-logo img {
     top: 4vw;
     left: 4vw;
   }
 
-  .landing-lettermark {
+  .card-lettermark {
     width: 100px;
   }
 
 
-  /** Landing Text **/
+  /** Card Text **/
 
-  .landing-titles {
+  .card-titles {
     padding: 3vh 3vw 0 3vw;
   }
 
-  .landing-titles h5 {
+  .card-titles h5 {
     display: block;
     font-size: 1.5em;
   }
 
-  .landing-welcome {
+  .card-welcome {
     top: 26vh;
     left: 3vw;
   }
 
-  .landing-welcome h1 {
+  .card-welcome h1 {
     font-size: 12em;
   }
 
-  .landing-tagline {
+  .card-tagline {
     top: 36vh;
     left: 10vw;
     right: 10vw;
   }
 
-  .landing-tagline h2 {
+  .card-tagline h2 {
     font-size: 3.5em;
   }
 
 
-  /** Landing CTAs **/
+  /** Card CTAs **/
 
   .left-cta, .right-cta {
     bottom: .5vh;
@@ -1128,42 +1102,42 @@ a :hover {
     left: 5px;
   }
 
-  /** Landing Logo **/
+  /** card Logo **/
 
-  .landing-lettermark {
+  .card-lettermark {
     width: 100px;
   }
 
-  /** Landing Text **/
+  /** card Text **/
 
-  .landing-titles {
+  .card-titles {
     padding: 2.5vh 2.5vw 0 2.5vw;
   }
 
-  .landing-titles h5 {
+  .card-titles h5 {
     font-size: 1.3em;
   }
 
 
-  .landing-welcome {
+  .card-welcome {
     top: 25vh;
   }
 
-  .landing-welcome h1 {
+  .card-welcome h1 {
     font-size: 10em;
   }
 
-  .landing-tagline {
+  .card-tagline {
     top: 36vh;
     left: 8vw;
     right: 8vw;
   }
 
-  .landing-tagline h2 {
+  .card-tagline h2 {
     font-size: 2.6em;
   }
 
-  /** Landing CTAs **/
+  /** card CTAs **/
 
   .ctas {
     height: 5vh;
@@ -1238,42 +1212,42 @@ a :hover {
 
 @media all and (max-width: 480px) {
 
-  /** Landing Logo **/
+  /** card Logo **/
 
-  .landing-lettermark {
+  .card-lettermark {
     width: 50px;
   }
 
-  /** Landing Text **/
+  /** card Text **/
 
-  .landing-titles {
+  .card-titles {
     padding: 2vh 2vw 0 2vw;
   }
 
-  .landing-titles h5 {
+  .card-titles h5 {
     font-size: 1.1em;
   }
 
-  .landing-welcome {
+  .card-welcome {
     top: 23vh;
     left: 2vw;
   }
 
-  .landing-welcome h1 {
+  .card-welcome h1 {
     font-size: 5em;
   }
 
-  .landing-tagline {
+  .card-tagline {
     top: 31vh;
     left: 6vw;
     right: 6vw;
   }
 
-  .landing-tagline h2 {
+  .card-tagline h2 {
     font-size: 1.8em;
   }
 
-  /** Landing CTAs **/
+  /** card CTAs **/
 
   .ctas {
     bottom: 7vh;
@@ -1325,42 +1299,42 @@ a :hover {
 @media all and (max-width: 320px) {
 
 
-  /** Landing Logo **/
+  /** card Logo **/
 
-  .landing-lettermark {
+  .card-lettermark {
     width: 50px;
   }
 
-  /** Landing Text **/
+  /** card Text **/
 
-  .landing-titles {
+  .card-titles {
     padding: 1.5vh 1.5vw 0 1.5vw;
   }
 
-  .landing-titles h5 {
+  .card-titles h5 {
     font-size: 0.9em;
   }
 
-  .landing-welcome {
+  .card-welcome {
     top: 23vh;
     left: 2vw;
   }
 
-  .landing-welcome h1 {
+  .card-welcome h1 {
     font-size: 4em;
   }
 
-  .landing-tagline {
+  .card-tagline {
     top: 32vh;
     left: 6vw;
     right: 6vw;
   }
 
-  .landing-tagline h2 {
+  .card-tagline h2 {
     font-size: 1.2em;
   }
 
-  /** Landing CTAs **/
+  /** card CTAs **/
 
   .ctas {
     bottom: 7vh;

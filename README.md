@@ -40,14 +40,20 @@ This GitHub repo is for the personal portfolio site of Misha Kessler. As a young
   - Beautifully-styled components, utilizing my personal brand and color psychology to create a consistent, recognizable, friendly, knowledgeable digital presence and "feel."
 
 - Future Features
+  - Content
+    - Digital Resume with React Timeline (Component with positions; downloads.)
+    - Slash Purpose Page
+    - Social Landing Page
+    - Landing Page
+      - Make React-Spring cards in-page, first for overview of roles and site, latter for snippets, quotes, etc. from all work;
+      - Combine About with Landing;
+      - [Add "featured in" logos](https://css-tricks.com/infinite-all-css-scrolling-slideshow/)
   - Optimization
     - Remove nested loop from indices;
     - Duplicate and compress images, calling various sizes as needed;
     - Revert images from local storage to links;
-  - Landing Page
-    - Make React-Spring cards in-page, first for overview of roles and site, latter for snippets, quotes, etc. from all work;
-    - Combine About with Landing;
-    - [Add "featured in" logos](https://css-tricks.com/infinite-all-css-scrolling-slideshow/)
+    - Add GA with React Router
+
   - UX Sugar
     - Loading Spinners via SemanticUI and [React.Suspense](https://clubhouse.io/developer-how-to/reacts-suspense-is-going-to-evolve-over-the-coming/)
     - Lazy Loading via [React.Lazy](https://blog.bitsrc.io/lazy-loading-react-components-with-react-lazy-and-suspense-f05c4cfde10c)
@@ -55,7 +61,6 @@ This GitHub repo is for the personal portfolio site of Misha Kessler. As a young
     - Project GIFs on Card Hover
     - [Dark Mode Toggle](https://css-tricks.com/a-dark-mode-toggle-with-react-and-themeprovider/)
     - [Multi-frame Mockup Rotation on Scroll](https://stackoverflow.com/questions/36723891/scroll-animation-change-image-on-scroll-so-it-appears-to-rotate/36730212)
-  - Digital Resume with React Timeline (Component with positions; downloads.)
   - Leadership Case Studies (Pop-ups with more information, videos, pictures rendered.)
   - Thought Pieces (Blog Posts)
 
@@ -118,12 +123,11 @@ Font Awesome Icons
 
 ### Component Heirarchy
 
-``` structure
+``` bash
+
 src
 |__ assets/
-      |__ graphics/
-      |__ images/
-      |__ projects/
+      |__ asset-bundles/
             |__ barrel-aged/
             |__ cara-mia/
             |__ crisis-international/
@@ -135,20 +139,28 @@ src
             |__ rmdyio/
             |__ seven-summits/
             |__ six-feet-over/
+      |__ graphics/
+      |__ images/
+
 |__ components/
-      |__ cards/
-            |__ Advocate.jsx
-            |__ Designer.jsx
-            |__ Developer.jsx
-            |__ Entrepreneur.jsx
-            |__ Hobbyist.jsx
-      |__ case-studies/
-            |__ DevelopmentCaseStudy.jsx
-      |__ indices/
-            |__ AdvocacyIndex.jsx
-            |__ DesignIndex.jsx
-            |__ DevelopmentIndex.jsx
-            |__ LeadershipIndex.jsx
+      |__ bundles/
+            |__ advocacy
+                  |__ AdvocacyCard.jsx
+                  |__ AdvocacyIndex.jsx
+                  |__ AdvocacyPage.jsx
+            |__ design
+                  |__ DesignCard.jsx
+                  |__ DesignIndex.jsx
+                  |__ DesignPage.jsx
+            |__ development
+                  |__ DevelopmentCard.jsx
+                  |__ DevelopmentIndex.jsx
+                  |__ DevelopmentModal.jsx
+                  |__ DevelopmentPage.jsx
+            |__ leadership
+                  |__ LeadershipCard.jsx
+                  |__ LeadershipIndex.jsx
+                  |__ LeadershipPage.jsx
       |__ modules/
             |__ Header.jsx
             |__ Hero.jsx
@@ -161,15 +173,11 @@ src
 |__ data/
       |__ AdvocacyProjects.jsx
       |__ DesignProjects.jsx
+      |__ DevelopmentProjects.jsx
       |__ LeadershipProjects.jsx
-      |__ WebsiteProjects.jsx
 |__ pages/
       |__ About.jsx
-      |__ Advocacy.jsx
       |__ Contact.jsx
-      |__ Design.jsx
-      |__ Development.jsx
-      |__ Leadership.jsx
       |__ ErrorPage.jsx
       |__ Landing.jsx
       |__ SpaceTime.jsx

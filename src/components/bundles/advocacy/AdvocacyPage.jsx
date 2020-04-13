@@ -131,10 +131,6 @@ class Advocacy extends Component {
         return <AdvocacyIndex
           title='Publications'
           projects={this.state.publications} />
-      // case 'committees':
-      //   return <AdvocacyIndex
-      //     title='Committees'
-      //     projects={this.state.committees} />
       case 'memberships':
         return <AdvocacyIndex
           title='Memberships'

@@ -6,7 +6,6 @@ import {
   Link
 } from 'react-router-dom'
 
-
 // React Semantic
 import {
   Button,

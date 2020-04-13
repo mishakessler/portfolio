@@ -27,9 +27,9 @@ export default function Developer() {
         <span className="hide-on-mobile"><h5>|</h5></span>
         <h5>Technical Project Manager</h5>
       </div>
-      <div className="card-welcome smooth">
+      {/* <div className="card-welcome smooth">
         <h1 className="smooth">Welcome.</h1>
-      </div>
+      </div> */}
       <div className="card-tagline shaded-text">
         <h2>My name's <span className="landing-name">Michael Kessler</span>, but you can call me <span className="landing-name">Misha.</span> I build beautiful, agile, full-stack web applications that aim to make a difference in the world.</h2>
         <p>Enter my portfolio by clicking on the button below, or swipe left for my other roles.</p>
