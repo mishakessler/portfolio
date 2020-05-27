@@ -26,7 +26,7 @@ export default function Designer() {
         <h5>Graphic Designer</h5>
       </div>
       <div className="landing-tagline shaded-text">
-        <h2>I deliver meaningful, consistent, and user-friendly brand idendities across all platforms and print media.</h2>
+        <h2>I deliver meaningful, consistent, and user-friendly brand identities across all platforms and print media.</h2>
       </div>
       <div className="ctas">
         <div className="left-cta">
