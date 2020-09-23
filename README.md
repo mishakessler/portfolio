@@ -9,11 +9,9 @@
 - [DEVELOPMENT](#development)
   - [Title](#title)
   - [Languages, Frameworks, Libraries](#languages-frameworks-libraries)
-  - [Component Heirarchy](#component-heirarchy)
+  - [Component Hierarchy](#component-hierarchy)
 
 <br>
-
-THIS IS MY ACTUALLY MY MASTER BRANCH
 
 ## OVERVIEW
 
@@ -118,7 +116,7 @@ Font Awesome Icons
 | React SemanticUI | _Lorem ipsum dolor sit amet, consectetur._ |
 |   React Spring   | _Lorem ipsum dolor sit amet, consectetur._ |
 
-### Component Heirarchy
+### Component Hierarchy
 
 ``` structure
 src
