@@ -13,8 +13,6 @@
 
 <br>
 
-THIS IS MY ACTUALLY MY MASTER BRANCH
-
 ## OVERVIEW
 
 This GitHub repo is for the personal portfolio site of Misha Kessler. As a young professional with diverse expertise and involvement in multiple industries, I was challenged to design and develop a website that could adequately communicate my experience while not overcrowding the user interface or causing inadvertent information overload.
