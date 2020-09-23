@@ -1,17 +1,19 @@
 # Misha Kessler <!-- omit in toc -->
 ## Portfolio <!-- omit in toc -->
 
-- [OVERVIEW](#OVERVIEW)
-  - [Goals](#Goals)
-- [DESIGN](#DESIGN)
-  - [Personal Brand](#Personal-Brand)
-  - [Iconography](#Iconography)
-- [DEVELOPMENT](#DEVELOPMENT)
-  - [Title](#Title)
-  - [Languages, Frameworks, Libraries](#Languages-Frameworks-Libraries)
-  - [Component Heirarchy](#Component-Heirarchy)
+- [OVERVIEW](#overview)
+  - [Goals](#goals)
+- [DESIGN](#design)
+  - [Personal Brand](#personal-brand)
+  - [Iconography](#iconography)
+- [DEVELOPMENT](#development)
+  - [Title](#title)
+  - [Languages, Frameworks, Libraries](#languages-frameworks-libraries)
+  - [Component Heirarchy](#component-heirarchy)
 
 <br>
+
+THIS IS MY POST-MVP BRANCH
 
 ## OVERVIEW
 
