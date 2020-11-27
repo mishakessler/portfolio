@@ -9,7 +9,7 @@
 - [DEVELOPMENT](#DEVELOPMENT)
   - [Title](#Title)
   - [Languages, Frameworks, Libraries](#Languages-Frameworks-Libraries)
-  - [Component Heirarchy](#Component-Heirarchy)
+  - [Component Hierarchy](#Component-Hierarchy)
 
 <br>
 
@@ -24,12 +24,12 @@ This GitHub repo is for the personal portfolio site of Misha Kessler. As a young
 
 - Design Goals
   - Package all of my prior and ongoing experiences and job positions, across all of my prior industries.
-  - Utilize best practices in UX/UI design for accessibility, navigability, and findability.
+  - Utilize best practices in UX/UI design for accessibility, navigability, and find-ability.
   - Exude my values and personality through visual appeal, clean design, and engaging interactivity.
 
 - Development Goals
   - A well-structured React app, using smartly organized, modular, reusable components.
-  - Smartly-architected data, allowing me to udpate my positions, passion projects, case studies, interviews, committees, memberships, and more, with minimal effort.
+  - Well-architected data usage, allowing me to update my positions, passion projects, case studies, interviews, committees, memberships, and more, with minimal effort.
   - Clean, linted code, following naming conventions and style guides.
 
 - Feature Goals
@@ -116,7 +116,7 @@ Font Awesome Icons
 | React SemanticUI | _Lorem ipsum dolor sit amet, consectetur._ |
 |   React Spring   | _Lorem ipsum dolor sit amet, consectetur._ |
 
-### Component Heirarchy
+### Component Hierarchy
 
 ``` structure
 src
