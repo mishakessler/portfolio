@@ -15,7 +15,6 @@ import {
 import Header from '../components/modules/Header'
 import Hero from '../components/modules/Hero'
 import Footer from '../components/modules/Footer'
-import ContactForm from '../components/modules/ContactForm'
 
 // Assets 
 import Phone from '../assets/graphics/phone.png'
@@ -34,8 +33,8 @@ class Contact extends Component {
       preimage: "https://imgur.com/pcEs3MH.jpg",
       title: "Get In Touch",
       postimage: null,
-      tagline: "So you want to send a holler my way?",
-      description: "Feel free to use the form here, or email me directly. I do my best to respond within 24 hours, but depending on the season and the reason for emailing, I may take up to 72 hours to respond.",
+      tagline: "Want to get in touch?",
+      description: "I've disabled my contact form due to bot spam, so please email me directly or visit the links below!",
       helper: "",
     }
   }
@@ -54,7 +53,6 @@ class Contact extends Component {
           helper={this.state.helper}
         />
         <div className="body contact-body">
-          <ContactForm />
           <div className="contact-socials">
             <Image
               src={Phone}
