@@ -1,45 +1,45 @@
 // React
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 // React Router
 import {
   Link
-} from 'react-router-dom'
+} from 'react-router-dom';
 
 // React Semantic
 import {
   Image,
   Button,
   Icon
-} from 'semantic-ui-react'
+} from 'semantic-ui-react';
 
 // Assets
-import ColorLettermark from '../../assets/graphics/lettermark.png'
-import WhiteLettermark from '../../assets/graphics/lettermark-white.png'
+import ColorLettermark from '../../assets/graphics/lettermark.png';
+import WhiteLettermark from '../../assets/graphics/lettermark-white.png';
 
 export default class Header extends Component {
   constructor(props) {
-    super(props)
+    super(props);
 
     this.state = {
       menuDiv: false,
       menuButton: true,
-    }
+    };
   }
 
   showMenu = () => {
     this.setState({
       menuDiv: true,
       menuButton: false,
-    })
-  }
+    });
+  };
 
   hideMenu = () => {
     this.setState({
       menuDiv: false,
       menuButton: true,
-    })
-  }
+    });
+  };
 
   render() {
     return (
@@ -52,8 +52,8 @@ export default class Header extends Component {
         </div>
         <div className="desktop-nav hide-on-mobile">
           <Link to="/engineering" className="smooth">Engineering</Link>
-          <Link to="/design" className="smooth">Design</Link>
-          <Link to="/leadership" className="smooth">Leadership</Link>
+          {/* <Link to="/design" className="smooth">Design</Link> */}
+          {/* <Link to="/leadership" className="smooth">Leadership</Link> */}
           <Link to="/advocacy" className="smooth">Advocacy</Link>
           <Link to="/about" className="smooth">About</Link>
           <Link to="/contact" className="menu-cta smooth">Contact</Link>
@@ -92,7 +92,7 @@ export default class Header extends Component {
           }
         </div>
       </div>
-    )
+    );
   }
 }
 
